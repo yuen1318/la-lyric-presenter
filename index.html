@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Lingkod Angeles - Lyric Presenter</title>
+    <style>
+        /* ============================================================
+           LOCAL RALEWAY FONT LOADING
+           Assumes font files are in the "Raleway" directory
+        ============================================================ */
+        
+        /* Regular / Normal weight */
+        @font-face {
+            font-family: 'Raleway';
+            src: url('./Raleway/Raleway-Regular.woff2') format('woff2'),
+                 url('./Raleway/Raleway-Regular.woff') format('woff'),
+                 url('./Raleway/Raleway-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        /* Medium weight (500) */
+        @font-face {
+            font-family: 'Raleway';
+            src: url('./Raleway/Raleway-Medium.woff2') format('woff2'),
+                 url('./Raleway/Raleway-Medium.woff') format('woff'),
+                 url('./Raleway/Raleway-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        /* SemiBold weight (600) */
+        @font-face {
+            font-family: 'Raleway';
+            src: url('./Raleway/Raleway-SemiBold.woff2') format('woff2'),
+                 url('./Raleway/Raleway-SemiBold.woff') format('woff'),
+                 url('./Raleway/Raleway-SemiBold.ttf') format('truetype');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        /* Bold weight (700) */
+        @font-face {
+            font-family: 'Raleway';
+            src: url('./Raleway/Raleway-Bold.woff2') format('woff2'),
+                 url('./Raleway/Raleway-Bold.woff') format('woff'),
+                 url('./Raleway/Raleway-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        /* ExtraBold weight (800) for fullscreen */
+        @font-face {
+            font-family: 'Raleway';
+            src: url('./Raleway/Raleway-ExtraBold.woff2') format('woff2'),
+                 url('./Raleway/Raleway-ExtraBold.woff') format('woff'),
+                 url('./Raleway/Raleway-ExtraBold.ttf') format('truetype');
+            font-weight: 800;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', 'Noto Sans', system-ui, sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            color: #f5f5fa;
+            background-image: url('./background.png');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .lyric-wrapper.has-song {
+            background: rgba(10, 10, 15, 0.45);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        :root {
+            --bg-sidebar: rgba(5, 5, 10, 0.92);
+            --accent: #4f9eff;
+            --border-light: rgba(79, 158, 255, 0.3);
+            --hover-bg: rgba(79, 158, 255, 0.25);
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(30, 30, 40, 0.6);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4f9eff;
+            border-radius: 10px;
+        }
+
+        .app {
+            display: flex;
+            height: 100%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 320px;
+            height: 100%;
+            background: var(--bg-sidebar);
+            backdrop-filter: blur(24px);
+            border-right: 1px solid var(--border-light);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            z-index: 20;
+            transform: translateX(0);
+        }
+
+        .sidebar.hidden {
+            transform: translateX(-100%);
+        }
+
+        .sidebar-header {
+            padding: 28px 20px 20px;
+            border-bottom: 1px solid var(--border-light);
+            margin-top: 60px;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 12px 16px;
+            font-size: 0.95rem;
+            border: 1px solid var(--border-light);
+            border-radius: 14px;
+            background: rgba(20, 20, 28, 0.8);
+            color: #f0f0f8;
+            outline: none;
+            font-family: inherit;
+        }
+
+        .search-box:focus {
+            border-color: #4f9eff;
+            background: rgba(30, 30, 40, 0.95);
+        }
+
+        .song-list-container {
+            flex: 1;
+            overflow-y: auto;
+            padding: 16px 12px;
+        }
+
+        .song-item {
+            margin-bottom: 8px;
+            border-radius: 12px;
+        }
+
+        .song-title {
+            padding: 12px 16px;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #f0f0fa;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: none;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+            letter-spacing: 0.2px;
+            font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        .song-title:hover {
+            background: var(--hover-bg);
+            transform: translateX(6px);
+        }
+
+        .song-title.active-song {
+            background: rgba(79, 158, 255, 0.4);
+            color: #cce4ff;
+            font-weight: 600;
+            border-left: 4px solid #4f9eff;
+        }
+
+        .empty-message {
+            color: #c0c0d0;
+            text-align: center;
+            padding: 40px 16px;
+            font-size: 0.9rem;
+        }
+
+        .status-bar {
+            padding: 14px 18px;
+            border-top: 1px solid var(--border-light);
+            font-size: 0.75rem;
+            color: #c0c0d0;
+            display: flex;
+            justify-content: space-between;
+            font-family: monospace;
+            background: rgba(0,0,0,0.3);
+        }
+
+        .main-area {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .lyric-wrapper {
+            max-width: 90%;
+            width: 100%;
+            padding: 2rem 2.5rem;
+            border-radius: 56px;
+            transition: none;
+            will-change: auto;
+        }
+
+        .sidebar:not(.hidden) ~ .main-area .lyric-wrapper {
+            margin-left: 320px;
+            transition: margin-left 0.2s ease-out;
+        }
+
+        .section-badge {
+            display: none;
+            background: rgba(30, 30, 45, 0.7);
+            backdrop-filter: blur(16px);
+            padding: 10px 28px;
+            border-radius: 80px;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 4px;
+            color: #f0f0fc;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            font-family: 'Raleway', 'Inter', monospace;
+            text-transform: uppercase;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: none;
+        }
+
+        .section-badge.visible {
+            display: inline-block;
+        }
+
+        /* CRITICAL: Force each line to stay as ONE line - no wrapping EVER */
+        .lyric-text {
+            color: #ffffff;
+            font-weight: 600;
+            line-height: 1.4;
+            white-space: pre-wrap;
+            word-break: keep-all;
+            overflow-wrap: normal;
+            word-wrap: normal;
+            font-family: 'Raleway', 'Inter', -apple-system, 'Noto Serif', Georgia, serif;
+            text-align: center;
+            letter-spacing: -0.2px;
+            text-shadow: 0 4px 18px rgba(0, 0, 0, 0.7), 0 2px 8px rgba(0, 0, 0, 0.5);
+            transition: none;
+        }
+
+        .search-toggle-btn {
+            position: fixed;
+            top: 24px;
+            left: 24px;
+            background: rgba(8, 8, 12, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(79,158,255,0.6);
+            color: #d4e6ff;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 35;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+        }
+
+        .search-toggle-btn:hover {
+            background: #1e2a3a;
+            border-color: #7bb2ff;
+            transform: scale(1.05);
+        }
+
+        .search-toggle-btn.fullscreen-hidden {
+            display: none;
+        }
+
+        .black-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #0a0a0c;
+            display: none;
+            cursor: pointer;
+            z-index: 25;
+        }
+
+        body:fullscreen .lyric-wrapper {
+            max-width: 94%;
+            padding: 1.2rem 2rem;
+        }
+        
+        body:fullscreen .lyric-text {
+            font-weight: 700;
+            text-shadow: 0 6px 24px rgba(0, 0, 0, 0.8);
+        }
+        
+        body:fullscreen .section-badge {
+            font-size: 1rem;
+            letter-spacing: 5px;
+            padding: 10px 28px;
+            margin-bottom: 1.8rem;
+        }
+
+        @media (max-width: 850px) {
+            .sidebar { width: 280px; }
+            .sidebar:not(.hidden) ~ .main-area .lyric-wrapper { margin-left: 280px; }
+            .lyric-wrapper { max-width: 88%; padding: 1.5rem; }
+            .search-toggle-btn { width: 46px; height: 46px; top: 20px; left: 20px; }
+            .sidebar-header { margin-top: 56px; }
+        }
+
+        @media (max-width: 600px) {
+            .lyric-wrapper { padding: 1rem; max-width: 94%; }
+            .section-badge { font-size: 0.7rem; padding: 6px 18px; letter-spacing: 3px; }
+        }
+    </style>
+</head>
+<body>
+
+<button class="search-toggle-btn" id="searchToggleBtn" aria-label="Toggle song sidebar">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z" fill="currentColor"/>
+    </svg>
+</button>
+
+<div class="app">
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <input type="text" class="search-box" id="searchInput" placeholder="Search song title..." autocomplete="off">
+        </div>
+        <div class="song-list-container" id="songListContainer"></div>
+        <div class="status-bar">
+                <span id="songCount"></span>
+                <span>◀  ▶ (Navigate) , B (Blackout)</span>
+        </div>
+    </div>
+
+    <div class="main-area" id="mainArea">
+        <div class="lyric-wrapper" id="lyricWrapper">
+            <div class="section-badge" id="sectionBadge"></div>
+            <div class="lyric-text" id="lyricText"></div>
+        </div>
+        <div class="black-overlay" id="blackOverlay"></div>
+    </div>
+</div>
+
+<!-- Load song database from external file -->
+<script src="./songs.js"></script>
+
+<script>
+    // ============================================================
+    //  APP INITIALIZATION - songs are loaded from songs.js
+    // ============================================================
+    
+    const songDatabase = [...rawSongs].sort((a, b) => a.title.localeCompare(b.title, undefined, { sensitivity: 'base' }));
+    
+    // ---------- APP STATE ----------
+    let currentSong = null;
+    let currentSectionIndex = 0;
+    let currentSearchTerm = "";
+    
+    // DOM elements
+    const searchInput = document.getElementById("searchInput");
+    const songListContainer = document.getElementById("songListContainer");
+    const lyricText = document.getElementById("lyricText");
+    const sectionBadge = document.getElementById("sectionBadge");
+    const lyricWrapper = document.getElementById("lyricWrapper");
+    const songCountSpan = document.getElementById("songCount");
+    const sidebar = document.getElementById("sidebar");
+    const searchToggleBtn = document.getElementById("searchToggleBtn");
+    const blackOverlay = document.getElementById("blackOverlay");
+    const mainArea = document.getElementById("mainArea");
+    
+    function escapeHtml(str) {
+        if (!str) return "";
+        return str.replace(/[&<>]/g, function(m) {
+            if (m === '&') return '&amp;';
+            if (m === '<') return '&lt;';
+            if (m === '>') return '&gt;';
+            return m;
+        });
+    }
+    
+    function searchSongsByTitle(query) {
+        if (!query.trim()) return [...songDatabase];
+        const lowerQuery = query.toLowerCase();
+        return songDatabase.filter(song => song.title.toLowerCase().includes(lowerQuery));
+    }
+    
+    // ============================================================
+    //  SOLUTION: Find the LONGEST line (by rendered width) and scale
+    //  the font so that line fits perfectly without wrapping.
+    //  All other lines will automatically fit since they are shorter.
+    // ============================================================
+    function computeOptimalFontSize() {
+        if (!lyricText) return;
+        const rawText = lyricText.innerText;
+        if (!rawText || rawText.trim() === "") {
+            lyricText.style.fontSize = '';
+            return;
+        }
+        
+        // Split by newline - these are the explicit lines we MUST preserve
+        const explicitLines = rawText.split('\n');
+        const nonEmptyLines = explicitLines.filter(line => line.trim().length > 0);
+        if (nonEmptyLines.length === 0) return;
+        
+        // Get available container width (subtract padding/margins)
+        const container = lyricWrapper;
+        let maxAvailableWidth = container.clientWidth - 50; // safe padding
+        if (maxAvailableWidth < 100) {
+            maxAvailableWidth = window.innerWidth * 0.75;
+        }
+        
+        // Create a hidden measuring span that inherits all text styles
+        const measureSpan = document.createElement('span');
+        measureSpan.style.position = 'absolute';
+        measureSpan.style.visibility = 'hidden';
+        measureSpan.style.whiteSpace = 'nowrap'; // CRITICAL: measure as single line
+        measureSpan.style.fontFamily = getComputedStyle(lyricText).fontFamily;
+        measureSpan.style.fontWeight = getComputedStyle(lyricText).fontWeight;
+        measureSpan.style.letterSpacing = getComputedStyle(lyricText).letterSpacing;
+        measureSpan.style.textTransform = getComputedStyle(lyricText).textTransform;
+        document.body.appendChild(measureSpan);
+        
+        // Determine safe font bounds
+        const isFullscreen = !!document.fullscreenElement;
+        const viewportHeight = window.innerHeight;
+        const viewportWidth = window.innerWidth;
+        
+        // Projector-friendly maximum font size (1280x720 or higher)
+        let maxFontRem = 5.2;
+        if (viewportWidth >= 1280 && viewportHeight >= 720) {
+            maxFontRem = 4.6;  // comfortable projection size
+        } else if (viewportHeight > 800) {
+            maxFontRem = 5.0;
+        } else {
+            maxFontRem = 4.2;
+        }
+        if (isFullscreen && viewportWidth >= 1600) maxFontRem = 5.0;
+        
+        const minFontRem = 0.9;
+        
+        // Find the LONGEST line by character length? No, by actual rendered width at a reference size.
+        // We'll use a reference font (2rem) to measure proportional widths, then calculate exact scaling factor.
+        const referenceFontRem = 2.0;
+        measureSpan.style.fontSize = `${referenceFontRem}rem`;
+        
+        // Measure each line's width at reference size
+        let maxLineWidthAtRef = 0;
+        let longestLineText = "";
+        for (let line of explicitLines) {
+            if (line.length === 0) continue;
+            measureSpan.textContent = line;
+            const lineWidth = measureSpan.getBoundingClientRect().width;
+            if (lineWidth > maxLineWidthAtRef) {
+                maxLineWidthAtRef = lineWidth;
+                longestLineText = line;
+            }
+        }
+        
+        if (maxLineWidthAtRef === 0) {
+            document.body.removeChild(measureSpan);
+            return;
+        }
+        
+        // Calculate ideal font size: (available width / measured width at ref) * referenceFontRem
+        // This gives the exact font size that makes the longest line exactly fit.
+        let idealFontRem = (maxAvailableWidth / maxLineWidthAtRef) * referenceFontRem;
+        
+        // Apply constraints
+        let finalFontRem = Math.min(maxFontRem, Math.max(minFontRem, idealFontRem));
+        
+        // Optional: Reduce slightly for breathing room (5% margin)
+        finalFontRem = finalFontRem * 0.96;
+        finalFontRem = Math.max(minFontRem, finalFontRem);
+        
+        // Clean up measuring span
+        document.body.removeChild(measureSpan);
+        
+        // Apply the font size to the lyric text
+        lyricText.style.fontSize = `${finalFontRem}rem`;
+        lyricText.style.whiteSpace = 'pre-wrap';
+        lyricText.style.wordBreak = 'keep-all';
+        lyricText.style.overflowWrap = 'normal';
+        
+        // Additional vertical fit check: ensure total height doesn't exceed viewport by too much
+        setTimeout(() => {
+            const totalTextHeight = lyricText.scrollHeight;
+            const maxHeight = window.innerHeight * 0.88;
+            if (totalTextHeight > maxHeight && finalFontRem > 1.1) {
+                // Reduce font slightly to improve vertical fit, but maintain horizontal integrity
+                const reduction = Math.min(0.15, (totalTextHeight - maxHeight) / maxHeight * 0.2);
+                const adjustedFont = Math.max(1.0, finalFontRem - reduction);
+                lyricText.style.fontSize = `${adjustedFont}rem`;
+            }
+        }, 10);
+        
+        // Fine-tune letter spacing based on the longest line length
+        if (longestLineText.length > 55) {
+            lyricText.style.letterSpacing = '-0.45px';
+        } else if (longestLineText.length > 45) {
+            lyricText.style.letterSpacing = '-0.35px';
+        } else if (longestLineText.length > 35) {
+            lyricText.style.letterSpacing = '-0.25px';
+        } else {
+            lyricText.style.letterSpacing = '-0.15px';
+        }
+    }
+    
+    let fontUpdateTimeout = null;
+    function updateFontSizeInstant() {
+        if (fontUpdateTimeout) clearTimeout(fontUpdateTimeout);
+        // Use requestAnimationFrame for DOM readiness
+        requestAnimationFrame(() => {
+            computeOptimalFontSize();
+        });
+        // Backup call after any layout shifts (fonts, sidebar toggle, etc.)
+        setTimeout(() => computeOptimalFontSize(), 50);
+    }
+    
+    function updateDisplay() {
+        if (currentSong && currentSong.sections && currentSong.sections[currentSectionIndex]) {
+            const section = currentSong.sections[currentSectionIndex];
+            sectionBadge.textContent = section.name;
+            sectionBadge.classList.add("visible");
+            // Using innerText preserves EXACT newline characters from the source string
+            // This ensures that every \n becomes a visual line break
+            lyricText.innerText = section.lyrics;
+            blackOverlay.style.display = "none";
+            lyricWrapper.classList.add("has-song");
+            updateFontSizeInstant();
+        } else if (currentSong) {
+            sectionBadge.textContent = "";
+            sectionBadge.classList.remove("visible");
+            lyricText.innerText = "♢  end of song  ♢";
+            lyricWrapper.classList.add("has-song");
+            updateFontSizeInstant();
+        } else {
+            sectionBadge.textContent = "";
+            sectionBadge.classList.remove("visible");
+            lyricText.innerText = "";
+            lyricWrapper.classList.remove("has-song");
+        }
+        renderSongList(currentSearchTerm);
+    }
+    
+    async function requestFullscreenOnElement(element = document.documentElement) {
+        if (!document.fullscreenElement) {
+            try {
+                await element.requestFullscreen();
+                return true;
+            } catch (err) {
+                console.warn("Fullscreen blocked:", err);
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    async function selectSong(song) {
+        if (!song) return;
+        const wasDifferent = (currentSong !== song);
+        currentSong = song;
+        currentSectionIndex = 0;
+        updateDisplay();
+        
+        if (wasDifferent || (currentSong && currentSong.title === song.title)) {
+            if (!document.fullscreenElement) {
+                try {
+                    await requestFullscreenOnElement(document.documentElement);
+                    if (document.fullscreenElement && !sidebar.classList.contains("hidden")) {
+                        sidebar.classList.add("hidden");
+                    }
+                    updateFontSizeInstant();
+                } catch (err) {}
+            } else {
+                if (!sidebar.classList.contains("hidden")) sidebar.classList.add("hidden");
+                updateFontSizeInstant();
+            }
+        }
+    }
+    
+    function nextSection() {
+        if (!currentSong || !currentSong.sections) return;
+        if (currentSectionIndex + 1 < currentSong.sections.length) {
+            currentSectionIndex++;
+            updateDisplay();
+        }
+    }
+    
+    function prevSection() {
+        if (!currentSong) return;
+        if (currentSectionIndex - 1 >= 0) {
+            currentSectionIndex--;
+            updateDisplay();
+        }
+    }
+    
+    function renderSongList(searchTerm = "") {
+        if (!songDatabase.length) {
+            songListContainer.innerHTML = `<div class="empty-message">✨ no songs available</div>`;
+            songCountSpan.innerText = `0 songs`;
+            return;
+        }
+        const filtered = searchSongsByTitle(searchTerm);
+        songCountSpan.innerText = `${filtered.length} ${filtered.length === 1 ? 'song' : 'songs'}`;
+        if (filtered.length === 0) {
+            songListContainer.innerHTML = `<div class="empty-message">✨ no title matches "${escapeHtml(searchTerm)}"</div>`;
+            return;
+        }
+        songListContainer.innerHTML = "";
+        filtered.forEach(song => {
+            const songDiv = document.createElement("div");
+            songDiv.className = "song-item";
+            const titleDiv = document.createElement("div");
+            titleDiv.className = "song-title";
+            if (currentSong && currentSong.title === song.title) {
+                titleDiv.classList.add("active-song");
+            }
+            titleDiv.textContent = song.title;
+            titleDiv.onclick = () => {
+                selectSong(song);
+                if (window.innerWidth <= 700) sidebar.classList.add("hidden");
+            };
+            songDiv.appendChild(titleDiv);
+            songListContainer.appendChild(songDiv);
+        });
+    }
+    
+    function setupBlackout() {
+        blackOverlay.onclick = () => {
+            blackOverlay.style.display = "none";
+            updateDisplay();
+        };
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "b" || e.key === "B") {
+                e.preventDefault();
+                if (blackOverlay.style.display === "flex") {
+                    blackOverlay.style.display = "none";
+                    updateDisplay();
+                } else {
+                    blackOverlay.style.display = "flex";
+                    lyricText.innerText = "";
+                    sectionBadge.textContent = "";
+                    sectionBadge.classList.remove("visible");
+                }
+            }
+        });
+    }
+    
+    function initKeyboard() {
+        document.addEventListener("keydown", (e) => {
+            const activeEl = document.activeElement;
+            if (activeEl && activeEl.id === "searchInput") return;
+            if (e.key === "ArrowLeft") {
+                e.preventDefault();
+                prevSection();
+            } else if (e.key === "ArrowRight") {
+                e.preventDefault();
+                nextSection();
+            } else if (e.key === "Escape") {
+                if (blackOverlay.style.display === "flex") {
+                    blackOverlay.style.display = "none";
+                    updateDisplay();
+                }
+            }
+        });
+    }
+    
+    function initSidebarToggle() {
+        searchToggleBtn.addEventListener("click", () => {
+            if (sidebar.classList.contains("hidden")) {
+                sidebar.classList.remove("hidden");
+            } else {
+                sidebar.classList.add("hidden");
+            }
+        });
+    }
+    
+    function enableFullscreen() {
+        mainArea.addEventListener("dblclick", () => {
+            if (document.fullscreenElement) {
+                document.exitFullscreen().catch(err => console.warn(err));
+            } else {
+                document.documentElement.requestFullscreen().catch(err => console.warn(err));
+                if (!sidebar.classList.contains("hidden")) sidebar.classList.add("hidden");
+            }
+        });
+        
+        document.addEventListener("fullscreenchange", () => {
+            if (document.fullscreenElement) {
+                searchToggleBtn.classList.add("fullscreen-hidden");
+                if (currentSong) updateFontSizeInstant();
+                if (!sidebar.classList.contains("hidden")) sidebar.classList.add("hidden");
+            } else {
+                searchToggleBtn.classList.remove("fullscreen-hidden");
+                if (currentSong) updateFontSizeInstant();
+            }
+        });
+    }
+    
+    function initSearch() {
+        let debounce;
+        searchInput.addEventListener("input", (e) => {
+            clearTimeout(debounce);
+            debounce = setTimeout(() => {
+                currentSearchTerm = e.target.value;
+                renderSongList(currentSearchTerm);
+            }, 200);
+        });
+    }
+    
+    function initResize() {
+        window.addEventListener("resize", () => {
+            if (currentSong && currentSong.sections && currentSong.sections[currentSectionIndex]) {
+                updateFontSizeInstant();
+            }
+        });
+    }
+    
+    function observeLyrics() {
+        const observer = new MutationObserver(() => {
+            if (currentSong) updateFontSizeInstant();
+        });
+        if (lyricText) observer.observe(lyricText, { childList: true, characterData: true, subtree: true });
+        window.addEventListener('load', () => { if (currentSong) updateFontSizeInstant(); });
+        // Observe sidebar class changes (margin affects width)
+        const sidebarObserver = new MutationObserver(() => {
+            if (currentSong) updateFontSizeInstant();
+        });
+        if (sidebar) sidebarObserver.observe(sidebar, { attributes: true, attributeFilter: ['class'] });
+    }
+    
+    function init() {
+        initSearch();
+        initKeyboard();
+        setupBlackout();
+        initSidebarToggle();
+        enableFullscreen();
+        initResize();
+        observeLyrics();
+        currentSong = null;
+        updateDisplay();
+        renderSongList("");
+    }
+    
+    init();
+</script>
+</body>
+</html>
