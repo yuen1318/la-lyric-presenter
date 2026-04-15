@@ -1,29 +1,15 @@
  
     const rawSongs = [
         {
-            title: "Come Let Us Sing for Joy",
-            sections: [
-                { name: "VERSE 1", lyrics: "Come let us sing for joy to the Lord\nLet us shout to the rock of salvation\nCome before him giving thanks\nAnd extol him with music and song" },
-                { name: "CHORUS", lyrics: "Alleluia, alleluia\nHope in God, O my soul\nIn him your joy will be full" },
-                { name: "VERSE 2", lyrics: "For the Lord is a great God, a King above kings\nIn his hands are the depths of the earth\nThe mountains are his and the sea is his\nHe formed all living things" },
-                { name: "CHORUS", lyrics: "Alleluia, alleluia\nHope in God, O my soul\nIn him your joy will be full" },
-                { name: "VERSE 3", lyrics: "Come let us bow down and worship him\nLet us kneel before the Lord our maker\nFor he is our God and we are his people\nThe flock under his tender care" },
-                { name: "CHORUS", lyrics: "Alleluia, alleluia\nHope in God, O my soul\nIn him your joy will be full" }
-            ]
-        },
-        {
             title: "A New Spirit",
             sections: [
-                { name: "VERSE 1", lyrics: "(Men) Lord I want to serve before You\nWith tongues of fire and a heart set free\nCome rebuild this fallen temple\nI am Yours I surrender and I yield" },
-                { name: "VERSE 2", lyrics: "(Women) Lord I want to sing Your praises\nWith tongues of fire and a heart set free\nCome and fill this broken vessel\nI am Yours I surrender and I yield" },
-                { name: "CHORUS", lyrics: "A new heart I will give you says the Lord\nAnd a new Spirit I will put within you\nA new heart I will give you says the Lord\nAnd a new Spirit I will put within you" },
+                { name: "VERSE 1", lyrics: "(Men)\nLord I want to serve before You\nWith tongues of fire and a heart set free\nCome rebuild this fallen temple\nI am Yours I surrender and I yield" },
+                { name: "VERSE 2", lyrics: "(Women)\nLord I want to sing Your praises\nWith tongues of fire and a heart set free\nCome and fill this broken vessel\nI am Yours I surrender and I yield" },
+                { name: "CHORUS", lyrics: "A new heart I will give you says the Lord\nAnd a new Spirit I will put within you\n(2x)" },
                 { name: "VERSE 3", lyrics: "Lord I’ll be sin’s slave no longer\nThe blood of Christ has set me free\nTake my heart my mind my voice Lord\nI am Yours I surrender and I yield" },
-                { name: "BRIDGE", lyrics: "Renew revive restore us O Lord\nRenew revive restore us O Lord" },
-                { name: "VERSE 5", lyrics: "Renew revive restore us O Lord\nRenew revive restore us O Lord" },
-                { name: "BRIDGE (CONTINUED)", lyrics: "(Men) A new heart I will give you says the Lord\nAnd a new Spirit I will put within you" },
-                { name: "VERSE 6", lyrics: "(Women) Renew revive restore us O Lord\nRenew revive restore us O Lord" },
-                { name: "BRIDGE (CONTINUED, REPEATED)", lyrics: "(Men) A new heart I will give you says the Lord\nAnd a new Spirit I will put within you" },
-                { name: "VERSE 7", lyrics: "(Women) Renew revive restore us O Lord\nRenew revive restore us O Lord" },
+                { name: "CHORUS", lyrics: "A new heart I will give you says the Lord\nAnd a new Spirit I will put within you\n(2x)" },
+                { name: "BRIDGE", lyrics: "Renew, revive, restore us O Lord\n(3x)" },
+                { name: "BRIDGE (CONTINUED)", lyrics: "A new heart I will give you says the Lord\nAnd a new Spirit I will put within you\n\n(Renew, revive, restore us O Lord)\n(2x)" },
                 { name: "VERSE 4", lyrics: "Lord we want to see Your kingdom\nA church renewed and a world redeemed\nCleanse our lips to speak Your gospel\nWe are Yours we surrender and we yield" }
             ]
         },
@@ -32,44 +18,66 @@
             sections: [
                 { name: "VERSE 1", lyrics: "We have heard we have seen\nWonders great mighty deeds\nFrom your hand we receive\nGoodness and mercy" },
                 { name: "VERSE 1 (CONT)", lyrics: "Age to age you command\nWhat you speak ever stands\nBy your word and your power\nWe find hope rest secure\nSo by faith we will rise and declare" },
-                { name: "CHORUS", lyrics: "You are holy\nYou are holy\nYou are holy" },
+                { name: "CHORUS", lyrics: "You are holy\n(3x)" },
                 { name: "VERSE 2", lyrics: "Nations rise kingdoms fail\nYou remain you prevail\nRobed in strength crowned with grace\nJustice and mercy" },
                 { name: "VERSE 2 (CONT)", lyrics: "To your throne we draw near\nBrought by love without fear\nLifted hands hearts redeemed\nFreed from death unashamed\nSo by faith we will rise and declare" },
-                { name: "CHORUS", lyrics: "You are holy\nYou are holy\nYou are holy" },
+                { name: "CHORUS", lyrics: "You are holy\n(3x)" },
                 { name: "BRIDGE", lyrics: "All blessing all glory all honor and praise\nOur God everlasting the Ancient of Days\nIn sovereignty reigning in wisdom and truth\nYour servants your people your children\nBring worship only to you\nWorship only to you" },
-                { name: "END", lyrics: "For you are holy\nYou are holy You are holy\nFor you are holy\nYou are holy You are holy" }
+                { name: "END", lyrics: "For you are holy\nYou are holy\nYou are holy\n(2x)" }
             ]
         },
         {
             title: "All That Is Good",
             sections: [
-                { name: "VERSE 1", lyrics: "All that is good, all that is love\nWhatever is holy, whatever is true –\nYou are their source,\nYou are their fount,\nYou, Lord, and You alone!" },
-                { name: "REFRAIN 1", lyrics: "Holy, holy, holy, O Lord Most High!\nHoly, holy, holy, O Lord Most High!" },
-                { name: "VERSE 2", lyrics: "All that is good, all that is love\nWhatever is holy, whatever is true –\nYou are their source,\nYou are their fount,\nYou, Lord, and You alone!" },
-                { name: "REFRAIN 2", lyrics: "Worthy, worthy, worthy,\nO Lord Most High!\nWorthy, worthy, worthy, O Lord\nYou are worthy, O Lord,\nYou are worthy, O Lord Most High!" }
+                { name: "VERSE", lyrics: "All that is good, all that is love\nWhatever is holy, whatever is true –\nYou are their source,\nYou are their fount,\nYou, Lord, and You alone!" },
+                { name: "REFRAIN 1", lyrics: "Holy,\nholy,\nholy, O Lord Most High!\n(2x)" },
+                { name: "VERSE", lyrics: "All that is good, all that is love\nWhatever is holy, whatever is true –\nYou are their source,\nYou are their fount,\nYou, Lord, and You alone!" },
+                { name: "REFRAIN 2", lyrics: "Worthy, worthy,\nworthy, O Lord Most High!\nWorthy, worthy, worthy, O Lord\nYou are worthy, O Lord,\nYou are worthy, O Lord Most High!" }
             ]
         },
         {
             title: "Arise O Lord",
             sections: [
-                { name: "VERSE 1", lyrics: "The Lord our God is faithful\nIn all His words and deeds.\nHis steadfast love is\nFor all who call upon His name.\nAnd He has given us His word\nThat He will send His Spirit,\nAnd make His dwelling in our midst." },
-                { name: "REFRAIN", lyrics: "Arise, O Lord,\nAnd come to Your resting place.\nLet Your glory fill this temple,\nAnd salvation clothe Your saints.\nArise, O Lord,\nAnd may Your people rejoice in Your goodness.\nRemember Your promise to us, and arise." },
-                { name: "VERSE 2", lyrics: "The highest heavens cannot\nContain the Lord our God,\nNor any temple that man has built\nUpon the earth.\nAnd who are we that God should come and Make His home within us?\nYet by Your word let it be done." },
-                { name: "REFRAIN", lyrics: "Arise, O Lord,\nAnd come to Your resting place.\nLet Your glory fill this temple,\nAnd salvation clothe Your saints.\nArise, O Lord,\nAnd may Your people rejoice in Your goodness.\nRemember Your promise to us, and arise." }
+                { name: "VERSE 1", lyrics: "The Lord our God is faithful\nIn all His words and deeds.\nHis steadfast love is\nFor all who call upon His name." },
+                { name: "VERSE 1 (CONT)", lyrics: "And He has given us His word\nThat He will send His Spirit,\nAnd make His dwelling in our midst." },
+                { name: "REFRAIN", lyrics: "Arise, O Lord,\nAnd come to Your resting place.\nLet Your glory fill this temple,\nAnd salvation clothe Your saints." },
+                { name: "REFRAIN (CONT)", lyrics: "Arise, O Lord,\nAnd may Your people rejoice in Your goodness.\nRemember Your promise to us, and arise." },
+                { name: "VERSE 2", lyrics: "The highest heavens cannot\nContain the Lord our God,\nNor any temple that man has built\nUpon the earth." },
+                { name: "VERSE 2 (CONT)", lyrics: "And who are we that God should come\nand Make His home within us?\nYet by Your word let it be done." },
+                { name: "REFRAIN", lyrics: "Arise, O Lord,\nAnd come to Your resting place.\nLet Your glory fill this temple,\nAnd salvation clothe Your saints." },
+                { name: "REFRAIN (CONT)", lyrics: "Arise, O Lord,\nAnd may Your people rejoice in Your goodness.\nRemember Your promise to us, and arise...." },
+                { name: "REFRAIN", lyrics: "Arise, O Lord,\nAnd come to Your resting place.\nLet Your glory fill this temple,\nAnd salvation clothe Your saints." },
+                { name: "REFRAIN (CONT)", lyrics: "Arise, O Lord,\nAnd may Your people rejoice in Your goodness.\nRemember Your promise to us, and arise." },
             ]
         },
         {
             title: "As We Behold",
             sections: [
-                { name: "VERSE 1", lyrics: "As we behold your presence, O Lord,\nWe call out your name,\nWe praise and acclaim\nThat You alone\nAre our King and our Lord.\nYou are our all, our life\nNothing can compare,\nNo god can compare" },
-                { name: "VERSE 2", lyrics: "So, Lord, we worship you\nNothing shall possess\nOur hearts until they rest\nIn you, our King and Lord.\nYour pleasure we will do,\nOur lives we give anew\nThat you may make your home\nAmong us as we stand\nAnd so to all the land" },
-                { name: "VERSE 3", lyrics: "We give You praise, love,\nGlory and thanks,\nHonor and worship\nFor all you have done.\nOur lives, our wills,\nOur weakness, our strength\nAll for You, our King and Lord." }
+                { name: "VERSE 1", lyrics: "As we behold your presence, O Lord,\nWe call out your name,\nWe praise and acclaim" },
+                { name: "VERSE 1", lyrics: "That You alone\nAre our King and our Lord.\nYou are our all, our life\nNothing can compare,\nNo god can compare" },
+                { name: "VERSE 2", lyrics: "So, Lord, we worship you\nNothing shall possess\nOur hearts until they rest" },
+                { name: "VERSE 2", lyrics: "In you, our King and Lord.\nYour pleasure we will do,\nOur lives we give anew" },
+                { name: "VERSE 2", lyrics: "That you may make your home\nAmong us as we stand\nAnd so to all the land" },
+                { name: "VERSE 3", lyrics: "We give You praise, love,\nGlory and thanks,\nHonor and worship\nFor all you have done." },
+                { name: "VERSE 3", lyrics: "Our lives, our wills,\nOur weakness, our strength\nAll for You, our King and Lord." },
+                { name: "VERSE 1", lyrics: "As we behold your presence, O Lord,\nWe call out your name,\nWe praise and acclaim" },
+                { name: "VERSE 1", lyrics: "That You alone\nAre our King and our Lord.\nYou are our all, our life\nNothing can compare,\nNo god can compare" },
+                { name: "VERSE 2", lyrics: "So, Lord, we worship you\nNothing shall possess\nOur hearts until they rest" },
+                { name: "VERSE 2", lyrics: "In you, our King and Lord.\nYour pleasure we will do,\nOur lives we give anew" },
+                { name: "VERSE 2", lyrics: "That you may make your home\nAmong us as we stand\nAnd so to all the land" },
+                { name: "VERSE 3", lyrics: "We give You praise, love,\nGlory and thanks,\nHonor and worship\nFor all you have done." },
+                { name: "VERSE 3", lyrics: "Our lives, our wills,\nOur weakness, our strength\nAll for You, our King and Lord." },
+                { name: "VERSE 3", lyrics: "We give You praise, love,\nGlory and thanks,\nHonor and worship\nFor all you have done." },
+                { name: "VERSE 3", lyrics: "Our lives, our wills,\nOur weakness, our strength\nAll for You, our King and Lord." }
             ]
         },
         {
             title: "Ascribe Greatness",
             sections: [
-                { name: "VERSE 1", lyrics: "Ascribe greatness to our God, the Rock\nHis work is perfect\nAnd all His ways are just. (2x)\nA God of faithfulness and\nWithout injustice,\nGood and upright is He. (2x)" }
+                { name: "VERSE 1", lyrics: "Ascribe greatness to our God, the Rock\nHis work is perfect\nAnd all His ways are just.\n(2x)" },
+                { name: "VERSE 1", lyrics: "A God of faithfulness and\nWithout injustice,\nGood and upright is He.\n(2x)" },
+                { name: "VERSE 1", lyrics: "Ascribe greatness to our God, the Rock\nHis work is perfect\nAnd all His ways are just.\n(2x)" },
+                { name: "VERSE 1", lyrics: "A God of faithfulness and\nWithout injustice,\nGood and upright is He.\n(2x)" }
             ]
         },
         {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Lingkod Angeles - Lyric Presenter</title>
+    <title>Lingkod Angeles - Lyric Presenter with Slide Counter</title>
     <style>
         /* ============================================================
            LOCAL RALEWAY FONT LOADING
@@ -228,6 +228,7 @@
             border-radius: 56px;
             transition: none;
             will-change: auto;
+            position: relative;
         }
 
         .sidebar:not(.hidden) ~ .main-area .lyric-wrapper {
@@ -274,6 +275,63 @@
             transition: none;
         }
 
+        /* ============================================================
+           SLIDE COUNTER STYLES - Bottom Right
+        ============================================================ */
+        .slide-counter {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(12px);
+            padding: 12px 24px;
+            border-radius: 60px;
+            font-family: 'Raleway', monospace;
+            font-weight: 700;
+            font-size: 1.35rem;
+            letter-spacing: 1.5px;
+            color: #ffffff;
+            border: 1.5px solid rgba(79, 158, 255, 0.7);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            z-index: 40;
+            pointer-events: none;
+            white-space: nowrap;
+        }
+
+        .slide-counter.hidden-counter {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        /* Fullscreen adjustments - even larger */
+        body:fullscreen .slide-counter {
+            bottom: 40px;
+            right: 40px;
+            padding: 16px 32px;
+            font-size: 1.7rem;
+            font-weight: 800;
+            border-width: 2px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        @media (max-width: 850px) {
+            .slide-counter {
+                bottom: 20px;
+                right: 20px;
+                padding: 8px 18px;
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .slide-counter {
+                bottom: 16px;
+                right: 16px;
+                padding: 6px 14px;
+                font-size: 0.95rem;
+            }
+        }
+        
         .search-toggle-btn {
             position: fixed;
             top: 24px;
@@ -320,19 +378,6 @@
             padding: 10px 28px;
             margin-bottom: 1.8rem;
         }
-
-        @media (max-width: 850px) {
-            .sidebar { width: 280px; }
-            .sidebar:not(.hidden) ~ .main-area .lyric-wrapper { margin-left: 280px; }
-            .lyric-wrapper { max-width: 88%; padding: 1.5rem; }
-            .search-toggle-btn { width: 46px; height: 46px; top: 20px; left: 20px; }
-            .sidebar-header { margin-top: 56px; }
-        }
-
-        @media (max-width: 600px) {
-            .lyric-wrapper { padding: 1rem; max-width: 94%; }
-            .section-badge { font-size: 0.7rem; padding: 6px 18px; letter-spacing: 3px; }
-        }
     </style>
 </head>
 <body>
@@ -363,6 +408,9 @@
     </div>
 </div>
 
+<!-- Slide Counter Element - Bottom Right -->
+<div class="slide-counter" id="slideCounter">—/—</div>
+
 <!-- Load song database from external file -->
 <script src="./songs.js"></script>
 
@@ -388,6 +436,7 @@
     const sidebar = document.getElementById("sidebar");
     const searchToggleBtn = document.getElementById("searchToggleBtn");
     const mainArea = document.getElementById("mainArea");
+    const slideCounter = document.getElementById("slideCounter");
     
     function escapeHtml(str) {
         if (!str) return "";
@@ -403,6 +452,37 @@
         if (!query.trim()) return [...songDatabase];
         const lowerQuery = query.toLowerCase();
         return songDatabase.filter(song => song.title.toLowerCase().includes(lowerQuery));
+    }
+    
+    // ============================================================
+    //  UPDATE SLIDE COUNTER DISPLAY (Bottom Right)
+    //  Shows: currentSectionIndex+1 / totalSections
+    //  If no song or no sections, shows "—/—"
+    // ============================================================
+    function updateSlideCounter() {
+        if (currentSong && currentSong.sections && currentSong.sections.length > 0) {
+            const total = currentSong.sections.length;
+            const current = currentSectionIndex + 1;
+            // Ensure current is within valid range (should be, but defensive)
+            if (current >= 1 && current <= total) {
+                slideCounter.textContent = `${current}/${total}`;
+                slideCounter.classList.remove('hidden-counter');
+            } else {
+                slideCounter.textContent = `—/${total}`;
+                slideCounter.classList.remove('hidden-counter');
+            }
+        } else if (currentSong && (!currentSong.sections || currentSong.sections.length === 0)) {
+            // Song exists but no sections? edge case
+            slideCounter.textContent = `0/0`;
+            slideCounter.classList.remove('hidden-counter');
+        } else {
+            // No song selected
+            slideCounter.textContent = `—/—`;
+            slideCounter.classList.remove('hidden-counter');
+        }
+        
+        // Slight additional styling: if fullscreen and no song, still visible but neutral
+        // Add a small animation to subtly indicate update? not needed but fine.
     }
     
     // ============================================================
@@ -559,6 +639,8 @@
             lyricText.innerText = "";
             lyricWrapper.classList.remove("has-song");
         }
+        // Update the slide counter every time display changes (song, section index, etc.)
+        updateSlideCounter();
         renderSongList(currentSearchTerm);
     }
     
@@ -688,6 +770,8 @@
                 searchToggleBtn.classList.remove("fullscreen-hidden");
                 if (currentSong) updateFontSizeInstant();
             }
+            // Update counter positioning may adjust automatically via CSS, but ensure visibility
+            if (slideCounter) slideCounter.classList.remove('hidden-counter');
         });
     }
     
@@ -707,6 +791,7 @@
             if (currentSong && currentSong.sections && currentSong.sections[currentSectionIndex]) {
                 updateFontSizeInstant();
             }
+            // Counter stays visible; no extra logic required
         });
     }
     
@@ -731,8 +816,10 @@
         initResize();
         observeLyrics();
         currentSong = null;
-        updateDisplay();
+        updateDisplay();    // this also calls updateSlideCounter()
         renderSongList("");
+        // Ensure slide counter is correctly initialized even if no song
+        updateSlideCounter();
     }
     
     init();
