@@ -10,7 +10,7 @@
                 { name: "CHORUS", lyrics: "A new heart I will give you says the Lord\nAnd a new Spirit I will put within you\n(2x)" },
                 { name: "BRIDGE", lyrics: "Renew, revive, restore us O Lord\n(3x)" },
                 { name: "BRIDGE (CONTINUED)", lyrics: "A new heart I will give you says the Lord\nAnd a new Spirit I will put within you\n\n(Renew, revive, restore us O Lord)\n(2x)" },
-                { name: "VERSE 4", lyrics: "Lord we want to see Your kingdom\nA church renewed and a world redeemed\nCleanse our lips to speak Your gospel\nWe are Yours we surrender and we yield" }
+                { name: "ENDING", lyrics: "Lord we want to see Your kingdom\nA church renewed and a world redeemed\nCleanse our lips to speak Your gospel\nWe are Yours we surrender and we yield" }
             ]
         },
         {
@@ -23,7 +23,7 @@
                 { name: "VERSE 2 (CONT)", lyrics: "To your throne we draw near\nBrought by love without fear\nLifted hands hearts redeemed\nFreed from death unashamed\nSo by faith we will rise and declare" },
                 { name: "CHORUS", lyrics: "You are holy\n(3x)" },
                 { name: "BRIDGE", lyrics: "All blessing all glory all honor and praise\nOur God everlasting the Ancient of Days\nIn sovereignty reigning in wisdom and truth\nYour servants your people your children\nBring worship only to you\nWorship only to you" },
-                { name: "END", lyrics: "For you are holy\nYou are holy\nYou are holy\n(2x)" }
+                { name: "ENDING", lyrics: "For you are holy\nYou are holy\nYou are holy\n(2x)" }
             ]
         },
         {
@@ -32,7 +32,7 @@
                 { name: "VERSE", lyrics: "All that is good, all that is love\nWhatever is holy, whatever is true –\nYou are their source,\nYou are their fount,\nYou, Lord, and You alone!" },
                 { name: "REFRAIN 1", lyrics: "Holy,\nholy,\nholy, O Lord Most High!\n(2x)" },
                 { name: "VERSE", lyrics: "All that is good, all that is love\nWhatever is holy, whatever is true –\nYou are their source,\nYou are their fount,\nYou, Lord, and You alone!" },
-                { name: "REFRAIN 2", lyrics: "Worthy, worthy,\nworthy, O Lord Most High!\nWorthy, worthy, worthy, O Lord\nYou are worthy, O Lord,\nYou are worthy, O Lord Most High!" }
+                { name: "ENDING", lyrics: "Worthy, worthy,\nworthy, O Lord Most High!\nWorthy, worthy, worthy, O Lord\nYou are worthy, O Lord,\nYou are worthy, O Lord Most High!" }
             ]
         },
         {
@@ -47,7 +47,7 @@
                 { name: "REFRAIN", lyrics: "Arise, O Lord,\nAnd come to Your resting place.\nLet Your glory fill this temple,\nAnd salvation clothe Your saints." },
                 { name: "REFRAIN (CONT)", lyrics: "Arise, O Lord,\nAnd may Your people rejoice in Your goodness.\nRemember Your promise to us, and arise...." },
                 { name: "REFRAIN", lyrics: "Arise, O Lord,\nAnd come to Your resting place.\nLet Your glory fill this temple,\nAnd salvation clothe Your saints." },
-                { name: "REFRAIN (CONT)", lyrics: "Arise, O Lord,\nAnd may Your people rejoice in Your goodness.\nRemember Your promise to us, and arise." },
+                { name: "ENDING", lyrics: "Arise, O Lord,\nAnd may Your people rejoice in Your goodness.\nRemember Your promise to us, and arise." },
             ]
         },
         {
@@ -68,7 +68,7 @@
                 { name: "VERSE 3", lyrics: "We give You praise, love,\nGlory and thanks,\nHonor and worship\nFor all you have done." },
                 { name: "VERSE 3", lyrics: "Our lives, our wills,\nOur weakness, our strength\nAll for You, our King and Lord." },
                 { name: "VERSE 3", lyrics: "We give You praise, love,\nGlory and thanks,\nHonor and worship\nFor all you have done." },
-                { name: "VERSE 3", lyrics: "Our lives, our wills,\nOur weakness, our strength\nAll for You, our King and Lord." }
+                { name: "ENDING", lyrics: "Our lives, our wills,\nOur weakness, our strength\nAll for You, our King and Lord." }
             ]
         },
         {
@@ -77,7 +77,7 @@
                 { name: "VERSE 1", lyrics: "Ascribe greatness to our God, the Rock\nHis work is perfect\nAnd all His ways are just.\n(2x)" },
                 { name: "VERSE 1", lyrics: "A God of faithfulness and\nWithout injustice,\nGood and upright is He.\n(2x)" },
                 { name: "VERSE 1", lyrics: "Ascribe greatness to our God, the Rock\nHis work is perfect\nAnd all His ways are just.\n(2x)" },
-                { name: "VERSE 1", lyrics: "A God of faithfulness and\nWithout injustice,\nGood and upright is He.\n(2x)" }
+                { name: "ENDING", lyrics: "A God of faithfulness and\nWithout injustice,\nGood and upright is He.\n(2x)" }
             ]
         },
         {
@@ -85,8 +85,10 @@
             sections: [
                 { name: "VERSE 1", lyrics: "I will give thanks to Thee,\nO Lord, among the people.\nI will sing praises to Thee\nAmong the nations." },
                 { name: "VERSE 2", lyrics: "For Thy steadfast love is great,\nIs great to the heavens\nAnd Thy faithfulness,\nThy faithfulness to the clouds." },
-                { name: "REFRAIN", lyrics: "Be exalted, O God, above the heavens\nLet Thy glory be over all the earth. (2x)" },
-                { name: "ENDING", lyrics: "Let Thy glory, let Thy glory\nLet Thy glory be over all the earth." }
+                { name: "REFRAIN", lyrics: "Be exalted, O God, above the heavens\nLet Thy glory be over all the earth.\n(2x)" },
+                { name: "VERSE 1", lyrics: "I will give thanks to Thee,\nO Lord, among the people.\nI will sing praises to Thee\nAmong the nations." },
+                { name: "VERSE 2", lyrics: "For Thy steadfast love is great,\nIs great to the heavens\nAnd Thy faithfulness,\nThy faithfulness to the clouds." },
+                { name: "ENDING", lyrics: "Be exalted, O God, above the heavens\nLet Thy glory,\nlet Thy glory\nLet Thy glory be over all the earth." }
             ]
         },
         {
@@ -97,7 +99,7 @@
                 { name: "VERSE 2", lyrics: "Heaven cannot contain Him\nNor the bounds of earth.\nYet, O glorious mystery,\nVirgin gives Him birth." },
                 { name: "REFRAIN", lyrics: "Unto God be glory\nPeace to men be given.\nThis is His will who dwelleth\nIn the heights of heaven." },
                 { name: "VERSE 3", lyrics: "Now the light ariseth\nIn the darkened skies.\nNow the proud are humbled\nAnd the lowly rise." },
-                { name: "REFRAIN", lyrics: "Unto God be glory\nPeace to men be given.\nThis is His will who dwelleth\nIn the heights of heaven." }
+                { name: "ENDING", lyrics: "Unto God be glory\nPeace to men be given.\nThis is His will who dwelleth\nIn the heights of heaven.\n(2x)" }
             ]
         },
         {
@@ -107,7 +109,7 @@
                 { name: "VERSE 1", lyrics: "The kingdom of the world has become\nThe kingdom of our Lord\nAnd of His Christ\nAnd He shall reign forever and ever.\nAmen." },
                 { name: "REFRAIN", lyrics: "Blessing and glory,\nWisdom and thanksgiving,\nHonor and power and might\nBe to our God, forever and ever.\nAmen.  Amen.  Amen." },
                 { name: "VERSE 2", lyrics: "Now the salvation and the power\nAnd the kingdom of our God\nAnd the authority of His Christ have come." },
-                { name: "REFRAIN", lyrics: "Blessing and glory,\nWisdom and thanksgiving,\nHonor and power and might\nBe to our God, forever and ever.\nAmen.  Amen.  Amen." }
+                { name: "ENDING", lyrics: "Blessing and glory,\nWisdom and thanksgiving,\nHonor and power and might\nBe to our God, forever and ever.\nAmen.  Amen.  Amen.\n(2x)" }
             ]
         },
         {
@@ -122,7 +124,7 @@
                 { name: "VERSE 5", lyrics: "Toward the final conflict\nGod’s Word our command\nWe move inevitably onward\nGod’s weapons held in our hands." },
                 { name: "VERSE 6", lyrics: "In Him we shall do more than conquer\nBefore our Lord, who can stand?\nMan shall glorify his Maker\nGod shall be enjoyed\nAnd that one called the deceiver\nHis works shall be destroyed." },
                 { name: "REFRAIN", lyrics: "For the kingdom of this world it shall become\nThe kingdom of our Lord and of His Christ\nAnd He shall reign forever and ever" },
-                { name: "LAST REFRAIN", lyrics: "For the kingdom of this world it shall become\nThe kingdom of our Lord and of His Christ\nAnd He shall reign forever and evermore." }
+                { name: "ENDING", lyrics: "For the kingdom of this world it shall become\nThe kingdom of our Lord and of His Christ\nAnd He shall reign forever and evermore." }
             ]
         },
         {
@@ -131,15 +133,15 @@
                 { name: "VERSE 1", lyrics: "We seek the Lord\nO come Holy Spirit\nAnd teach us to worship\nThe one enthroned on high" },
                 { name: "VERSE 2", lyrics: "Inspire O Spirit\nWith words for the Father\nWe join all creation\nTo fill his courts with praise" },
                 { name: "CHORUS", lyrics: "We sing breathe on us O Breath of God\nBreathe on us O Breath of God" },
-                { name: "CHORUS 2", lyrics: "(Men) We sing breathe on us O Breath of God\nBreathe on us O Breath of God" },
-                { name: "VERSE 3", lyrics: "(Women) O Holy Spirit hover over us\nAnd we will take new form\nWe want to praise the Father lifted high\nAnd see his kingdom come" },
-                { name: "VERSE 1 (REPEATED)", lyrics: "We seek the Lord\nO come Holy Spirit\nAnd teach us to worship\nThe one enthroned on high" },
-                { name: "VERSE 2 (REPEATED)", lyrics: "Inspire O Spirit\nWith words for the Father\nWe join all creation\nTo fill his courts with praise" },
-                { name: "CHORUS (REPEATED)", lyrics: "We sing breathe on us O Breath of God\nBreathe on us O Breath of God" },
-                { name: "CHORUS 2 (REPEATED)", lyrics: "(Men) We sing breathe on us O Breath of God\nBreathe on us O Breath of God" },
-                { name: "VERSE 4", lyrics: "(Women) O Holy Spirit hover over us\nAnd we will take new form\nWe want to praise the Father lifted high\nAnd see his kingdom come" },
-                { name: "CHORUS 2 (REPEATED AGAIN)", lyrics: "(Men) We sing breathe on us O Breath of God\nBreathe on us O Breath of God" },
-                { name: "VERSE 5", lyrics: "(Women) O Holy Spirit hover over us\nAnd we will take new form\nWe want to praise the Father lifted high\nAnd see his kingdom come" }
+                { name: "CHORUS 2", lyrics: "(Men)\nBreathe on us O Breath of God\n\n(Women)\nO Holy Spirit hover over us\nAnd we will take new form" },
+                { name: "CHORUS 2", lyrics: "(Men)\nBreathe on us O Breath of God\n\n(Women)\nWe want to praise the Father lifted high\nAnd see his kingdom come" },
+                { name: "VERSE 1", lyrics: "We seek the Lord\nO come Holy Spirit\nAnd teach us to worship\nThe one enthroned on high" },
+                { name: "VERSE 2", lyrics: "Inspire O Spirit\nWith words for the Father\nWe join all creation\nTo fill his courts with praise" },
+                { name: "CHORUS", lyrics: "We sing breathe on us O Breath of God\nBreathe on us O Breath of God" },
+                { name: "CHORUS 2", lyrics: "(Men)\nBreathe on us O Breath of God\n\n(Women)\nO Holy Spirit hover over us\nAnd we will take new form" },
+                { name: "CHORUS 2", lyrics: "(Men)\nBreathe on us O Breath of God\n\n(Women)\nWe want to praise the Father lifted high\nAnd see his kingdom come" },
+                { name: "ENDING", lyrics: "(Men)\nBreathe on us O Breath of God\n\n(Women)\nO Holy Spirit hover over us\nAnd we will take new form" },
+                { name: "ENDING", lyrics: "(Men)\nBreathe on us O Breath of God\n\n(Women)\nWe want to praise the Father lifted high\nAnd see his kingdom come" },
             ]
         },
         {
@@ -152,53 +154,65 @@
                 { name: "VERSE 3", lyrics: "Admire the towers, the walls,\nThe fortress of God\nWe are hid beneath His wings.\nLord and warrior is armed\nWith scepter and rod\nAnd triumph we see Him bring." },
                 { name: "REFRAIN", lyrics: "Build Your throne in our assembly\nFor we prepare Your habitation.\nPitch Your tent in our praise and glory\nBuild your throne, O Lord." },
                 { name: "VERSE 4", lyrics: "O Jerusalem, declare:\n“Who is your King?”\nElohim, dreaded and strong.\nAll dominions, the pow’rs,\nSpirits of the air\nShall receive the full wrath of God." },
-                { name: "REFRAIN", lyrics: "Build Your throne in our assembly\nFor we prepare Your habitation.\nPitch Your tent in our praise and glory\nBuild Your throne, O Lord." },
+                { name: "REFRAIN", lyrics: "Build Your throne in our assembly\nFor we prepare Your habitation.\nPitch Your tent in our praise and glory\nBuild Your throne, O Lord.\n(2x)" },
                 { name: "ENDING", lyrics: "Build Your throne, build Your throne\nBuild Your throne, O Lord!" }
             ]
         },
         {
             title: "By Your Steadfast Love",
             sections: [
-                { name: "VERSE 1", lyrics: "By Your steadfast love,\nI will enter Your house.\nI will worship You in Your holy temple\nAnd revere Your name\nAs I bow before You,\nExalt in You, my Lord, my shield.\nAlleluia! (8x)" },
-                { name: "SISTERS", lyrics: "By Your steadfast love,\nI will enter Your house.\nI will worship You in Your holy temple\nAnd revere Your name\nAs I bow before You,\nExalt in You, my Lord, my shield.\nBrothers\nAlleluia! (8x)" },
-                { name: "TO END", lyrics: "Alleluia! (8x)" }
+                { name: "VERSE", lyrics: "By Your steadfast love,\nI will enter Your house.\nI will worship You in Your holy temple" },
+                { name: "VERSE", lyrics: "And revere Your name\nAs I bow before You,\nExalt in You, my Lord, my shield.\nAlleluia! (8x)" },
+                { name: "VERSE", lyrics: "By Your steadfast love, (Alleluia)\nI will enter Your house. (Alleluia)\nI will worship You (Alleluia)\nin Your holy temple (Alleluia)" },
+                { name: "VERSE", lyrics: "And revere Your name (Alleluia)\nAs I bow before You, (Alleluia)\nExalt in You, (Alleluia)\nmy Lord, my shield. (Alleluia)" },
+                { name: "ENDING", lyrics: "Alleluia! (8x)" }
             ]
         },
         {
             title: "Can It Be O My Soul",
             sections: [
-                { name: "VERSE 1", lyrics: "Can it be, O my soul,\nI have found the one true treasure?\nHidden deeply at the source\nOf every heart’s desire\nPrecious hope, priceless faith,\nPurest love beyond all measure;\nAt what cost, Lord,\nWhat could such a prize require?" },
-                { name: "VERSE 2", lyrics: "Only all, only love,\nSelfless love all love surpassing;\nIt is You, the Fount of Life\nYou O Lord our heart’s desire\nLet us die to let Him live;\nSilent be your true surrender;\nHopeful watching, humble giving,\nFaithful love." },
-                { name: "VERSE 3", lyrics: "Can it be, O my soul,\nI have found the one true treasure?\nHidden deeply at the source\nOf every heart’s desire\nPrecious hope, priceless faith,\nPurest love beyond all measure;\nAt what cost, Lord,\nWhat could such a prize require?" },
-                { name: "VERSE 4", lyrics: "Only all, only love,\nSelfless love all love surpassing;\nIt is You, the Fount of Life\nYou O Lord our heart’s desire\nLet us die to let Him live;\nSilent be your true surrender;\nHopeful watching, humble giving,\nFaithful love." },
-                { name: "VERSE 5", lyrics: "It is You, Fount of Life,\nYou have been our heart’s desire,\nIt is You, it is You, the Pearl of Great Price.\nIt is You, Fount of Life,\nYou have been our heart’s desire,\nIt is You, it is You, the Pearl of Great Price.\nCan it be, O my soul,\nI have found the one true treasure?" }
+                { name: "VERSE 1", lyrics: "Can it be, O my soul,\nI have found the one true treasure?\nHidden deeply at the source\nOf every heart’s desire" },
+                { name: "VERSE 1", lyrics: "Precious hope, priceless faith,\nPurest love beyond all measure;\nAt what cost, Lord,\nWhat could such a prize require?" },
+                { name: "REFRAIN", lyrics: "Only all, only love,\nSelfless love all love surpassing;\nIt is You, the Fount of Life\nYou O Lord our heart’s desire\nLet us die to let Him live;\nSilent be your true surrender." },
+                { name: "REFRAIN", lyrics: "Hopeful watching, humble giving,\nFaithful love.\nIt is You, Fount of Life,\nYou have been our heart’s desire,\nIt is You, it is You, the Pearl of Great Price." },
+                { name: "VERSE 1", lyrics: "Can it be, O my soul,\nI have found the one true treasure?\nHidden deeply at the source\nOf every heart’s desire" },
+                { name: "VERSE 1", lyrics: "Precious hope, priceless faith,\nPurest love beyond all measure;\nAt what cost, Lord,\nWhat could such a prize require?" },
+                { name: "REFRAIN", lyrics: "Only all, only love,\nSelfless love all love surpassing;\nIt is You, the Fount of Life\nYou O Lord our heart’s desire\nLet us die to let Him live;\nSilent be your true surrender." },
+                { name: "REFRAIN", lyrics: "Hopeful watching, humble giving,\nFaithful love.\nIt is You, Fount of Life,\nYou have been our heart’s desire,\nIt is You, it is You, the Pearl of Great Price." },
+                { name: "ENDING", lyrics: "Can it be, O my soul,\nI have found the one true treasure?" },
             ]
         },
         {
             title: "Come Holy Spirit",
             sections: [
-                { name: "VERSE 1", lyrics: "Come Holy Spirit\nCome great Fire of God\nEnkindle in us the fire of your love\nTransform us that we may become\nThe image of God's only Son" },
-                { name: "CHORUS", lyrics: "Make us h-o-ly, h-o-ly\nAs you are h-o-ly" }
+                { name: "VERSE 1", lyrics: "Come Holy Spirit\nCome great Fire of God\nEnkindle in us the fire of your love\nTransform us that we may become\nThe image of God's only Son\n(2x)" },
+                { name: "CHORUS", lyrics: "Make us h-o-ly, h-o-ly\nAs you are h-o-ly" },
+                { name: "VERSE 1", lyrics: "Come Holy Spirit\nCome great Fire of God\nEnkindle in us the fire of your love\nTransform us that we may become\nThe image of God's only Son\n" },
+                { name: "CHORUS", lyrics: "Make us h-o-ly, h-o-ly\nAs you are h-o-ly" },
+                { name: "ENDING", lyrics: "Come Holy Spirit\nCome great Fire of God\nEnkindle in us the fire of your love\nTransform us that we may become\nThe image of God's only Son\n" }
+
             ]
         },
         {
             title: "Come Let Us Go Up",
             sections: [
-                { name: "REFRAIN", lyrics: "Come, let us go up\nTo the mountain of the Lord\nUnto the house\nOf the God of Jacob.\n(2X)" },
+                { name: "REFRAIN", lyrics: "Come, let us go up\nTo the mountain of the Lord\nUnto the house\nOf the God of Jacob.\n(2x)" },
                 { name: "VERSE 1", lyrics: "And the law will go forth from Zion\nAnd the word of the Lord from Jerusalem.\nWe will walk in His footsteps\nAnd He will teach us His ways." },
-                { name: "REFRAIN", lyrics: "Come, let us go up\nTo the mountain of the Lord\nUnto the house\nOf the God of Jacob.\n(2X)" },
+                { name: "REFRAIN", lyrics: "Come, let us go up\nTo the mountain of the Lord\nUnto the house\nOf the God of Jacob.\n(2x)" },
                 { name: "VERSE 2", lyrics: "And He will judge many peoples,\nAnd decide for mighty nations far and wide.\nSwords will be beaten into plowshares\nAnd nations will not learn war again." },
-                { name: "REFRAIN", lyrics: "Come, let us go up\nTo the mountain of the Lord\nUnto the house of the God of Jacob! (2x)" },
+                { name: "REFRAIN", lyrics: "Come, let us go up\nTo the mountain of the Lord\nUnto the house of the God of Jacob!\n(2x)" },
                 { name: "ENDING", lyrics: "Unto the house of the God of Jacob! (2x)" }
             ]
         },
         {
             title: "Psalm 34 - Come Let Us Magnify The Lord",
             sections: [
-                { name: "VERSE 1", lyrics: "Fear the Lord, you His holy ones, fear the Lord.\nFor those who fear the Lord,\nThey will lack no perfect thing.\nTrust the Lord, you His servants,\nTrust the Lord.\nFor those who trust the Lord,\nThey will never be ashamed." },
+                { name: "VERSE 1", lyrics: "Fear the Lord, you His holy ones, fear the Lord.\nFor those who fear the Lord,\nThey will lack no perfect thing." },
+                { name: "VERSE 1", lyrics: "Trust the Lord, you His servants,\nTrust the Lord.\nFor those who trust the Lord,\nThey will never be ashamed." },
                 { name: "REFRAIN", lyrics: "Come let us magnify the Lord,\nLet His praise be upon our lips.\nCome let us bless Him at all times.\nFor we have tasted and seen.\nWe have tasted and seen." },
-                { name: "VERSE 2", lyrics: "Seek the Lord, you His children, seek the Lord.\nFor those who seek the Lord,\nThey will find Him who redeems.\nLove the Lord, love and serve Him\nForever more.\nFor those who love the Lord,\nThey will see Him face to face." },
-                { name: "REFRAIN", lyrics: "Come let us magnify the Lord,\nLet His praise be upon our lips.\nCome let us bless Him at all times.\nFor we have tasted and seen.\nWe have tasted and seen." }
+                { name: "VERSE 2", lyrics: "Seek the Lord, you His children, seek the Lord.\nFor those who seek the Lord,\nThey will find Him who redeems." },
+                { name: "VERSE 2", lyrics: "Love the Lord, love and serve Him\nForever more.\nFor those who love the Lord,\nThey will see Him face to face." },
+                { name: "ENDING", lyrics: "Come let us magnify the Lord,\nLet His praise be upon our lips.\nCome let us bless Him at all times.\nFor we have tasted and seen.\nWe have tasted and seen.\n(2x)" }
             ]
         },
         {
