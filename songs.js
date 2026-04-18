@@ -232,18 +232,28 @@
             title: "Days Of Elijah",
             sections: [
                 { name: "VERSE 1", lyrics: "These are the days of Elijah\nDeclaring the word of the Lord.\nAnd these are the days\nOf Your servant, Moses\nRighteousness being restored." },
+                { name: "VERSE 2", lyrics: "And these are the days of great trials\nOf famine and darkness and sword;\nStill we are the voice in the desert crying,\n\"Prepare ye the way of the Lord\"" },
                 { name: "REFRAIN", lyrics: "Behold, He comes, riding on the clouds\nShining like the sun at the trumpet call.\nSo lift your voice, it’s the year of jubilee\nAnd out of Zion’s Hill salvation comes." },
                 { name: "VERSE 2", lyrics: "And these are the days of Ezekiel\nThe dry bones becoming as flesh\nAnd these are the days\nOf Your servant, David\nRebuilding a temple of praise." },
-                { name: "VERSE 3", lyrics: "And these are the days of the harvest\nThe fields are white in the world\nAnd we are the laborers\nIn Your vineyard\nDeclaring the word of the Lord." },
+                { name: "VERSE 3", lyrics: "And these are the days of the harvest\nThe fields are as white in the world\nAnd we are the laborers\nIn Your vineyard\nDeclaring the word of the Lord." },
                 { name: "REFRAIN", lyrics: "Behold, He comes, riding on the clouds\nShining like the sun at the trumpet call\nSo lift your voice, it’s the year of jubilee\nAnd out of Zion’s Hill salvation comes." },
-                { name: "COUNTERPOINT", lyrics: "Who was, and who is\nAnd who is to come." }
+                { name: "BRIDGE", lyrics: "There's no God like Jehovah.\n(8x)" },
+                { name: "REFRAIN", lyrics: "Behold, He comes, riding on the clouds\nShining like the sun at the trumpet call\nSo lift your voice, it’s the year of jubilee\nAnd out of Zion’s Hill salvation comes.\n(2x)" },
+                { name: "ENDING", lyrics: "Out of Zion’s Hill salvation comes!\n(2x)" },
+
             ]
         },
         {
             title: "Deeply In Love",
             sections: [
-                { name: "VERSE 1", lyrics: "Called out of darkness into Your light\nCrowned with Your goodness\nYour choicest delights\nFormed in Your image\nBy power from above\nFilled with Your Spirit\nAnd deeply in love." },
-                { name: "VERSE 2", lyrics: "We love You, Lord,\nWith all our heart and soul.\nAnd Lord, You are our treasure\nAnd our all.\nFor You first loved us\nWith an everlasting love.\nIn You we shall live forever,\nDeeply in love." }
+                { name: "VERSE 1", lyrics: "Called out of darkness into Your light\nCrowned with Your goodness\nYour choicest delights" },
+                { name: "VERSE 1", lyrics: "Formed in Your image\nBy power from above\nFilled with Your Spirit\nAnd deeply in love." },
+                { name: "VERSE 2", lyrics: "We love You, Lord,\nWith all our heart and soul.\nAnd Lord, You are our treasure\nAnd our all." },
+                { name: "VERSE 2", lyrics: "For You first loved us\nWith an everlasting love.\nIn You we shall live forever,\nDeeply in love." },
+                { name: "VERSE 1", lyrics: "Called out of darkness into Your light\nCrowned with Your goodness\nYour choicest delights" },
+                { name: "VERSE 1", lyrics: "Formed in Your image\nBy power from above\nFilled with Your Spirit\nAnd deeply in love." },
+                { name: "VERSE 2", lyrics: "We love You, Lord,\nWith all our heart and soul.\nAnd Lord, You are our treasure\nAnd our all." },
+                { name: "VERSE 2", lyrics: "For You first loved us\nWith an everlasting love.\nIn You we shall live forever,\nDeeply in love." }
             ]
         },
         {
@@ -466,9 +476,12 @@
         {
             title: "Holy O Holy",
             sections: [
-                { name: "VERSE 1", lyrics: "Holy, O holy, Lord God Almighty!\nWorthy, O worthy,\nGlorious Prince of peace!\nWe bring our lives to You,\nA sacrifice to You, we stand in awe\nBefore Your holy name." },
-                { name: "REFRAIN", lyrics: "All glory and honor and praise\nBe to the Ancient of days.\nWe praise You, we worship You,\nOur Lord and our King!" },
-                { name: "ENDING", lyrics: "On high!" }
+                { name: "VERSE 1", lyrics: "Holy, O holy, Lord God Almighty!\nWorthy, O worthy\nGlorious Prince of peace!" },
+                { name: "VERSE 1", lyrics: "We bring our lives to You,\nA sacrifice to You, we stand in awe\nBefore Your holy name." },
+                { name: "REFRAIN", lyrics: "All glory and honor and praise\nBe to the Ancient of days.\nWe praise You, we worship You,\nOur Lord and our King!\nOn high!" },
+                { name: "VERSE 1", lyrics: "Holy, O holy, Lord God Almighty!\nWorthy, O worthy\nGlorious Prince of peace!" },
+                { name: "VERSE 1", lyrics: "We bring our lives to You,\nA sacrifice to You, we stand in awe\nBefore Your holy name." },
+                { name: "REFRAIN", lyrics: "All glory and honor and praise\nBe to the Ancient of days.\nWe praise You, we worship You,\nOur Lord and our King!\n(2x)\nOn high!" }
             ]
         },
         {
@@ -479,7 +492,7 @@
                 { name: "CHORUS", lyrics: "How high and how wide\nHow deep and how long\nHow sweet and how strong is Your love!\nHow lavish Your grace\nHow faithful Your ways\nHow great is Your love, O Lord!" },
                 { name: "VERSE 3", lyrics: "Objects of mercy\nWho should have known wrath\nWe’re filled with unspeakable joy.\nRiches of wisdom\nUnsearchable wealth" },
                 { name: "VERSE 4", lyrics: "And the wonder of knowing Your voice.\nYou are our treasure\nAnd our great reward\nOur hope and our glorious King!" },
-                { name: "CHORUS", lyrics: "How high and how wide\nHow deep and how long\nHow sweet and how strong is Your love!\nHow lavish Your grace\nHow faithful Your ways\nHow great is Your love, O Lord!" }
+                { name: "ENDING", lyrics: "How high and how wide\nHow deep and how long\nHow sweet and how strong is Your love!\nHow lavish Your grace\nHow faithful Your ways\nHow great is Your love, O Lord!" }
             ]
         },
         {
@@ -487,52 +500,62 @@
             sections: [
                 { name: "VERSE 1", lyrics: "I bow my knee before Your throne.\nI know my life is not my own.\nI offer up a song of praise\nTo bring You pleasure, Lord." },
                 { name: "VERSE 2", lyrics: "I seek the Giver, not the gift.\nMy heart’s desire is to lift You\nHigh above all earthly kings\nTo bring You pleasure, Lord." },
-                { name: "REFRAIN", lyrics: "Hallelujah!  Hallelujah!\nHallelujah!  Glory to the King!\n(2X)" },
-                { name: "VERSE 3", lyrics: "I bow my knee before Your throne.\nI know my life is not my own.\nI offer up a song of praise\nTo bring You pleasure, Lord." },
-                { name: "VERSE 4", lyrics: "I seek the Giver, not the gift.\nMy heart’s desire is to lift You\nHigh above all earthly kings\nTo bring You pleasure, Lord." },
-                { name: "REFRAIN", lyrics: "Hallelujah!  Hallelujah!\nHallelujah!  Glory to the King!\n(2X)" },
-                { name: "ENDING", lyrics: "Hallelujah!  Glory to the King!" }
+                { name: "REFRAIN", lyrics: "Hallelujah!  Hallelujah!\nHallelujah!  Glory to the King!\n(2x)" },
+                { name: "VERSE 1", lyrics: "I bow my knee before Your throne.\nI know my life is not my own.\nI offer up a song of praise\nTo bring You pleasure, Lord." },
+                { name: "ENDING", lyrics: "Hallelujah!  Hallelujah!\nHallelujah!  Glory to the King!\n(2x)\nHallelujah!  Glory to the King!" }
             ]
         },
         {
             title: "I Delight In Your Will",
             sections: [
-                { name: "VERSE 1", lyrics: "Patiently I sought the Lord;\nHe has heard my cry,\nAnd he has drawn me up\nAnd made my steps secure\n(2X)" },
-                { name: "VERSE 2", lyrics: "And I said, “Behold I come\nIn the steps of my Savior before me.\nBehold I come to you!”" },
-                { name: "VERSE 3", lyrics: "I delight in your will, oh my God;\nAnd your law is within my heart.\nAnd I come to serve your Word." },
-                { name: "VERSE 4", lyrics: "And I will speak of your steadfast love\nAnd I’ll tell of your faithfulness.\nYes, I come to do your will,\nFor you have set me free." },
-                { name: "VERSE 5", lyrics: "Sacrifice and offering\nYou do not desire\nBut you have given me\nAn open ear, Oh Lord.\n(2X)" },
-                { name: "VERSE 6", lyrics: "And I said, “Behold I come\nIn the steps of my Savior before me.\nBehold I come to you!”" },
-                { name: "VERSE 7", lyrics: "I delight in your will, oh my God;\nAnd your law is within my heart.\nAnd I come to serve your Word." },
-                { name: "VERSE 8", lyrics: "And I will speak of your steadfast love\nAnd I’ll tell of your faithfulness.\nYes, I come to do your will,\nFor you have set me free." },
-                { name: "VERSE 9", lyrics: "Great is the Lord! Great is the Lord!\nLet all who love him say it:\nGreat is the Lord!\n(2X)" },
-                { name: "VERSE 10", lyrics: "I delight in your will, oh my God;\nAnd your law is within my heart.\nAnd I come to serve your Word." },
-                { name: "VERSE 11", lyrics: "And I will speak of your steadfast love\nAnd I’ll tell of your faithfulness.\nYes, I come to do your will,\nFor you have set me free." }
+                { name: "VERSE", lyrics: "Patiently I sought the Lord;\nHe has heard my cry,\nAnd he has drawn me up\nAnd made my steps secure\n(2x)" },
+                { name: "VERSE", lyrics: "And I said, “Behold I come\nIn the steps of my Savior before me.\nBehold I come to you!”" },
+                { name: "CHORUS", lyrics: "I delight in your will, oh my God;\nAnd your law is within my heart.\nAnd I come to serve your Word." },
+                { name: "CHORUS", lyrics: "And I will speak of your steadfast love\nAnd I’ll tell of your faithfulness.\nYes, I come to do your will,\nFor you have set me free." },
+                { name: "VERSE", lyrics: "Sacrifice and offering\nYou do not desire\nBut you have given me\nAn open ear, Oh Lord.\n(2x)" },
+                { name: "VERSE", lyrics: "And I said, “Behold I come\nIn the steps of my Savior before me.\nBehold I come to you!”" },
+                { name: "CHORUS", lyrics: "I delight in your will, oh my God;\nAnd your law is within my heart.\nAnd I come to serve your Word." },
+                { name: "CHORUS", lyrics: "And I will speak of your steadfast love\nAnd I’ll tell of your faithfulness.\nYes, I come to do your will,\nFor you have set me free." },
+                { name: "VERSE", lyrics: "Great is the Lord! Great is the Lord!\nLet all who love him say it:\nGreat is the Lord!\n(2x)" },
+                { name: "CHORUS", lyrics: "I delight in your will, oh my God;\nAnd your law is within my heart.\nAnd I come to serve your Word." },
+                { name: "ENDING", lyrics: "And I will speak of your steadfast love\nAnd I’ll tell of your faithfulness.\nYes, I come to do your will,\nFor you have set me free." }
             ]
         },
         {
             title: "I Give You My Heart",
             sections: [
-                { name: "VERSE 1", lyrics: "This is my desire: to honor You.\nLord, with all my heart I worship You.\nAll I have within me, I give You praise.\nAll that I adore is in You." },
-                { name: "VERSE 2", lyrics: "Lord, I give You my heart,\nI give You my soul,\nI live for You alone.\nEvery breath that I take,\nEvery moment I’m awake,\nLord, have Your way in me." }
+                { name: "VERSE", lyrics: "This is my desire: to honor You.\nLord, with all my heart I worship You.\nAll I have within me, I give You praise.\nAll that I adore is in You." },
+                { name: "CHORUS", lyrics: "Lord, I give You my heart,\nI give You my soul,\nI live for You alone." },
+                { name: "CHORUS", lyrics: "Every breath that I take,\nEvery moment I’m awake,\nLord, have Your way in me." },
+                { name: "VERSE", lyrics: "This is my desire: to honor You.\nLord, with all my heart I worship You.\nAll I have within me, I give You praise.\nAll that I adore is in You." },
+                { name: "CHORUS", lyrics: "Lord, I give You my heart,\nI give You my soul,\nI live for You alone." },
+                { name: "ENDING", lyrics: "Every breath that I take,\nEvery moment I’m awake,\nLord, have Your way in me." }
             ]
         },
         {
             title: "I Will Awake the Dawn",
             sections: [
                 { name: "VERSE 1", lyrics: "Awake, O harp and lyre, \nAwake the morning,\nFirst light of day descends to lift my soul.\nYour presence greets me,\nStirs me to seek Thee,\nI come to do Your will." },
-                { name: "REFRAIN", lyrics: "Open my lips, O Lord,\nMy mouth will sing Your praise,\nOpen my eyes to see Your hand this day.\nMy heart is steadfast, \nFor Lord, Your love is steadfast,\nI will awake the dawn!" },
+                { name: "REFRAIN", lyrics: "Open my lips, O Lord,\nMy mouth will sing Your praise,\nOpen my eyes to see Your hand this day." },
+                { name: "REFRAIN", lyrics: "My heart is steadfast, \nFor Lord, Your love is steadfast,\nI will awake the dawn!" },
                 { name: "VERSE 2", lyrics: "In You my soul takes refuge;\nYour wings protect me.\nYou come from heaven and You rout my foes.\nI cry to You, Lord;\nI am delivered, \nI praise Your faithfulness!" },
-                { name: "REFRAIN", lyrics: "Open my lips, O Lord,\nMy mouth will sing Your praise,\nOpen my eyes to see Your hand this day.\nMy heart is steadfast, \nFor Lord, Your love is steadfast,\nI will awake the dawn!" },
+                { name: "REFRAIN", lyrics: "Open my lips, O Lord,\nMy mouth will sing Your praise,\nOpen my eyes to see Your hand this day." },
+                { name: "REFRAIN", lyrics: "My heart is steadfast, \nFor Lord, Your love is steadfast,\nI will awake the dawn!" },
                 { name: "VERSE 3", lyrics: "I will give thanks to You, Lord,\nAmong the peoples.\nAmong the nations I’ll sing praise to You.\nO, be exalted;\nHighly exalted, \nYour glory to the skies!" },
-                { name: "REFRAIN", lyrics: "Open my lips, O Lord,\nMy mouth will sing Your praise,\nOpen my eyes to see Your hand this day.\nMy heart is steadfast, \nFor Lord, Your love is steadfast,\nI will awake the dawn! \n(2x)" }
+                { name: "REFRAIN", lyrics: "Open my lips, O Lord,\nMy mouth will sing Your praise,\nOpen my eyes to see Your hand this day." },
+                { name: "REFRAIN", lyrics: "My heart is steadfast, \nFor Lord, Your love is steadfast,\nI will awake the dawn!" },
+                { name: "REFRAIN", lyrics: "Open my lips, O Lord,\nMy mouth will sing Your praise,\nOpen my eyes to see Your hand this day." },
+                { name: "ENDING", lyrics: "My heart is steadfast, \nFor Lord, Your love is steadfast,\nI will awake the dawn!" },
             ]
         },
         {
             title: "I Will Give Thanks",
             sections: [
-                { name: "VERSE 1", lyrics: "I will give thanks\nI will give thanks to the Lord\nI will give thanks to the Lord \nwith my whole heart (2x)\n\nAnd I will tell All your wonderful deeds.\nI will be glad and exult in you.\nI will sing praise to your name, O Most High.\nI will give thanks to the Lord \nwith my whole heart\n\nI will give thanks\nI will give thanks to the Lord\nI will give thanks to the Lord \nwith my whole heart (2x)\n\nAnd I will tell All your wonderful deeds.\nI will be glad and exult in you.\nI will sing praise to your name,\nO Most High.\nI will give thanks to the Lord \nwith my whole heart\n\nI will give thanks\nI will give thanks to the Lord\nI will give thanks to the Lord \nwith my whole heart (2x)" },
-                { name: "ENDING", lyrics: "I will give thanks to the Lord \nwith my whole heart" }
+                { name: "VERSE", lyrics: "I will give thanks\nI will give thanks to the Lord\nI will give thanks to the Lord with my whole heart\n(2x)"},
+                { name: "CHORUS", lyrics: "And I will tell All your wonderful deeds.\nI will be glad and exult in you.\nI will sing praise to your name, O Most High.\nI will give thanks to the Lord \nwith my whole heart"},
+                { name: "VERSE", lyrics: "I will give thanks\nI will give thanks to the Lord\nI will give thanks to the Lord with my whole heart\n(2x)"},
+                { name: "CHORUS", lyrics: "And I will tell All your wonderful deeds.\nI will be glad and exult in you.\nI will sing praise to your name, O Most High.\nI will give thanks to the Lord \nwith my whole heart"},
+                { name: "ENDING", lyrics: "I will give thanks\nI will give thanks to the Lord\nI will give thanks to the Lord with my whole heart\n(2x)\nI will give thanks to the Lord with my whole heart"},
             ]
         },
         {
