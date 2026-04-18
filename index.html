@@ -219,6 +219,8 @@
             justify-content: center;
             text-align: center;
             z-index: 1;
+            /* ensure touch events are captured */
+            touch-action: pan-y; 
         }
 
         .lyric-wrapper {
@@ -457,13 +459,11 @@
     // ============================================================
     //  UPDATE SLIDE COUNTER DISPLAY (Bottom Right)
     //  Shows: currentSectionIndex+1 / totalSections
-    //  If no song or no sections, shows "—/—"
     // ============================================================
     function updateSlideCounter() {
         if (currentSong && currentSong.sections && currentSong.sections.length > 0) {
             const total = currentSong.sections.length;
             const current = currentSectionIndex + 1;
-            // Ensure current is within valid range (should be, but defensive)
             if (current >= 1 && current <= total) {
                 slideCounter.textContent = `${current}/${total}`;
                 slideCounter.classList.remove('hidden-counter');
@@ -472,23 +472,17 @@
                 slideCounter.classList.remove('hidden-counter');
             }
         } else if (currentSong && (!currentSong.sections || currentSong.sections.length === 0)) {
-            // Song exists but no sections? edge case
             slideCounter.textContent = `0/0`;
             slideCounter.classList.remove('hidden-counter');
         } else {
-            // No song selected
             slideCounter.textContent = `—/—`;
             slideCounter.classList.remove('hidden-counter');
         }
-        
-        // Slight additional styling: if fullscreen and no song, still visible but neutral
-        // Add a small animation to subtly indicate update? not needed but fine.
     }
     
     // ============================================================
     //  SOLUTION: Find the LONGEST line (by rendered width) and scale
     //  the font so that line fits perfectly without wrapping.
-    //  All other lines will automatically fit since they are shorter.
     // ============================================================
     function computeOptimalFontSize() {
         if (!lyricText) return;
@@ -498,38 +492,33 @@
             return;
         }
         
-        // Split by newline - these are the explicit lines we MUST preserve
         const explicitLines = rawText.split('\n');
         const nonEmptyLines = explicitLines.filter(line => line.trim().length > 0);
         if (nonEmptyLines.length === 0) return;
         
-        // Get available container width (subtract padding/margins)
         const container = lyricWrapper;
-        let maxAvailableWidth = container.clientWidth - 50; // safe padding
+        let maxAvailableWidth = container.clientWidth - 50;
         if (maxAvailableWidth < 100) {
             maxAvailableWidth = window.innerWidth * 0.75;
         }
         
-        // Create a hidden measuring span that inherits all text styles
         const measureSpan = document.createElement('span');
         measureSpan.style.position = 'absolute';
         measureSpan.style.visibility = 'hidden';
-        measureSpan.style.whiteSpace = 'nowrap'; // CRITICAL: measure as single line
+        measureSpan.style.whiteSpace = 'nowrap';
         measureSpan.style.fontFamily = getComputedStyle(lyricText).fontFamily;
         measureSpan.style.fontWeight = getComputedStyle(lyricText).fontWeight;
         measureSpan.style.letterSpacing = getComputedStyle(lyricText).letterSpacing;
         measureSpan.style.textTransform = getComputedStyle(lyricText).textTransform;
         document.body.appendChild(measureSpan);
         
-        // Determine safe font bounds
         const isFullscreen = !!document.fullscreenElement;
         const viewportHeight = window.innerHeight;
         const viewportWidth = window.innerWidth;
         
-        // Projector-friendly maximum font size (1280x720 or higher)
         let maxFontRem = 5.2;
         if (viewportWidth >= 1280 && viewportHeight >= 720) {
-            maxFontRem = 4.6;  // comfortable projection size
+            maxFontRem = 4.6;
         } else if (viewportHeight > 800) {
             maxFontRem = 5.0;
         } else {
@@ -538,13 +527,9 @@
         if (isFullscreen && viewportWidth >= 1600) maxFontRem = 5.0;
         
         const minFontRem = 0.9;
-        
-        // Find the LONGEST line by character length? No, by actual rendered width at a reference size.
-        // We'll use a reference font (2rem) to measure proportional widths, then calculate exact scaling factor.
         const referenceFontRem = 2.0;
         measureSpan.style.fontSize = `${referenceFontRem}rem`;
         
-        // Measure each line's width at reference size
         let maxLineWidthAtRef = 0;
         let longestLineText = "";
         for (let line of explicitLines) {
@@ -562,39 +547,28 @@
             return;
         }
         
-        // Calculate ideal font size: (available width / measured width at ref) * referenceFontRem
-        // This gives the exact font size that makes the longest line exactly fit.
         let idealFontRem = (maxAvailableWidth / maxLineWidthAtRef) * referenceFontRem;
-        
-        // Apply constraints
         let finalFontRem = Math.min(maxFontRem, Math.max(minFontRem, idealFontRem));
-        
-        // Optional: Reduce slightly for breathing room (5% margin)
         finalFontRem = finalFontRem * 0.96;
         finalFontRem = Math.max(minFontRem, finalFontRem);
         
-        // Clean up measuring span
         document.body.removeChild(measureSpan);
         
-        // Apply the font size to the lyric text
         lyricText.style.fontSize = `${finalFontRem}rem`;
         lyricText.style.whiteSpace = 'pre-wrap';
         lyricText.style.wordBreak = 'keep-all';
         lyricText.style.overflowWrap = 'normal';
         
-        // Additional vertical fit check: ensure total height doesn't exceed viewport by too much
         setTimeout(() => {
             const totalTextHeight = lyricText.scrollHeight;
             const maxHeight = window.innerHeight * 0.88;
             if (totalTextHeight > maxHeight && finalFontRem > 1.1) {
-                // Reduce font slightly to improve vertical fit, but maintain horizontal integrity
                 const reduction = Math.min(0.15, (totalTextHeight - maxHeight) / maxHeight * 0.2);
                 const adjustedFont = Math.max(1.0, finalFontRem - reduction);
                 lyricText.style.fontSize = `${adjustedFont}rem`;
             }
         }, 10);
         
-        // Fine-tune letter spacing based on the longest line length
         if (longestLineText.length > 55) {
             lyricText.style.letterSpacing = '-0.45px';
         } else if (longestLineText.length > 45) {
@@ -609,11 +583,9 @@
     let fontUpdateTimeout = null;
     function updateFontSizeInstant() {
         if (fontUpdateTimeout) clearTimeout(fontUpdateTimeout);
-        // Use requestAnimationFrame for DOM readiness
         requestAnimationFrame(() => {
             computeOptimalFontSize();
         });
-        // Backup call after any layout shifts (fonts, sidebar toggle, etc.)
         setTimeout(() => computeOptimalFontSize(), 50);
     }
     
@@ -622,8 +594,6 @@
             const section = currentSong.sections[currentSectionIndex];
             sectionBadge.textContent = section.name;
             sectionBadge.classList.add("visible");
-            // Using innerText preserves EXACT newline characters from the source string
-            // This ensures that every \n becomes a visual line break
             lyricText.innerText = section.lyrics;
             lyricWrapper.classList.add("has-song");
             updateFontSizeInstant();
@@ -639,7 +609,6 @@
             lyricText.innerText = "";
             lyricWrapper.classList.remove("has-song");
         }
-        // Update the slide counter every time display changes (song, section index, etc.)
         updateSlideCounter();
         renderSongList(currentSearchTerm);
     }
@@ -751,14 +720,22 @@
         });
     }
     
+    // ============================================================
+    //  TOGGLE FULLSCREEN (used by double-click and double-tap)
+    // ============================================================
+    function toggleFullscreen() {
+        if (document.fullscreenElement) {
+            document.exitFullscreen().catch(err => console.warn(err));
+        } else {
+            document.documentElement.requestFullscreen().catch(err => console.warn(err));
+            if (!sidebar.classList.contains("hidden")) sidebar.classList.add("hidden");
+        }
+    }
+    
     function enableFullscreen() {
-        mainArea.addEventListener("dblclick", () => {
-            if (document.fullscreenElement) {
-                document.exitFullscreen().catch(err => console.warn(err));
-            } else {
-                document.documentElement.requestFullscreen().catch(err => console.warn(err));
-                if (!sidebar.classList.contains("hidden")) sidebar.classList.add("hidden");
-            }
+        // Keep desktop double-click
+        mainArea.addEventListener("dblclick", (e) => {
+            toggleFullscreen();
         });
         
         document.addEventListener("fullscreenchange", () => {
@@ -770,9 +747,87 @@
                 searchToggleBtn.classList.remove("fullscreen-hidden");
                 if (currentSong) updateFontSizeInstant();
             }
-            // Update counter positioning may adjust automatically via CSS, but ensure visibility
             if (slideCounter) slideCounter.classList.remove('hidden-counter');
         });
+    }
+    
+    // ============================================================
+    //  TOUCH GESTURES: SWIPE (left/right) + DOUBLE-TAP (fullscreen)
+    // ============================================================
+    function initTouchGestures() {
+        let touchStartX = 0;
+        let touchStartY = 0;
+        let touchEndX = 0;
+        let touchEndY = 0;
+        let touchStartTime = 0;
+        
+        // double-tap detection
+        let lastTapTime = 0;
+        let lastTapX = 0;
+        let lastTapY = 0;
+        const DOUBLE_TAP_DELAY = 300;
+        const DOUBLE_TAP_DISTANCE = 30;
+        
+        mainArea.addEventListener('touchstart', (e) => {
+            const touch = e.touches[0];
+            touchStartX = touch.clientX;
+            touchStartY = touch.clientY;
+            touchStartTime = Date.now();
+            // don't prevent default here to allow scrolling if needed
+        }, { passive: true });
+        
+        mainArea.addEventListener('touchmove', (e) => {
+            // optional: we don't need to track move for swipe, just prevent if we want
+            // but we'll keep it passive for performance
+        }, { passive: true });
+        
+        mainArea.addEventListener('touchend', (e) => {
+            const touch = e.changedTouches[0];
+            if (!touch) return;
+            
+            touchEndX = touch.clientX;
+            touchEndY = touch.clientY;
+            const deltaX = touchEndX - touchStartX;
+            const deltaY = touchEndY - touchStartY;
+            const absDeltaX = Math.abs(deltaX);
+            const absDeltaY = Math.abs(deltaY);
+            const now = Date.now();
+            
+            // ----- SWIPE DETECTION (horizontal) -----
+            const SWIPE_THRESHOLD = 50;
+            if (absDeltaX > SWIPE_THRESHOLD && absDeltaX > absDeltaY * 1.5) {
+                // Prevent default only when we actually handle a swipe (avoid page zoom/scroll)
+                e.preventDefault();
+                if (deltaX > 0) {
+                    // Swipe right → previous
+                    prevSection();
+                } else {
+                    // Swipe left → next
+                    nextSection();
+                }
+            }
+            
+            // ----- DOUBLE-TAP DETECTION -----
+            const tapX = touchEndX;
+            const tapY = touchEndY;
+            const timeSinceLastTap = now - lastTapTime;
+            const distance = Math.hypot(tapX - lastTapX, tapY - lastTapY);
+            
+            if (timeSinceLastTap < DOUBLE_TAP_DELAY && timeSinceLastTap > 0 && distance < DOUBLE_TAP_DISTANCE) {
+                e.preventDefault();  // prevent synthetic click/zoom
+                toggleFullscreen();
+                // reset to avoid triple-tap
+                lastTapTime = 0;
+            } else {
+                lastTapTime = now;
+                lastTapX = tapX;
+                lastTapY = tapY;
+            }
+        });
+        
+        // Prevent default on touchmove only when we suspect a swipe? Not necessary.
+        // Use CSS touch-action: pan-y on main-area to allow vertical scroll but limit horizontal.
+        // Already set in style: touch-action: pan-y;
     }
     
     function initSearch() {
@@ -791,7 +846,6 @@
             if (currentSong && currentSong.sections && currentSong.sections[currentSectionIndex]) {
                 updateFontSizeInstant();
             }
-            // Counter stays visible; no extra logic required
         });
     }
     
@@ -801,7 +855,6 @@
         });
         if (lyricText) observer.observe(lyricText, { childList: true, characterData: true, subtree: true });
         window.addEventListener('load', () => { if (currentSong) updateFontSizeInstant(); });
-        // Observe sidebar class changes (margin affects width)
         const sidebarObserver = new MutationObserver(() => {
             if (currentSong) updateFontSizeInstant();
         });
@@ -815,10 +868,10 @@
         enableFullscreen();
         initResize();
         observeLyrics();
+        initTouchGestures();    // <-- NEW: swipe and double-tap
         currentSong = null;
-        updateDisplay();    // this also calls updateSlideCounter()
+        updateDisplay();
         renderSongList("");
-        // Ensure slide counter is correctly initialized even if no song
         updateSlideCounter();
     }
     
