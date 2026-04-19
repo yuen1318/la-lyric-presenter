@@ -10,7 +10,6 @@
            Assumes font files are in the "Raleway" directory
         ============================================================ */
         
-        /* Regular / Normal weight */
         @font-face {
             font-family: 'Raleway';
             src: url('./Raleway/static/Raleway-Regular.ttf') format('truetype');
@@ -18,8 +17,6 @@
             font-style: normal;
             font-display: swap;
         }
-
-        /* Medium weight (500) */
         @font-face {
             font-family: 'Raleway';
             src: url('./Raleway/static/Raleway-Medium.ttf') format('truetype');
@@ -27,8 +24,6 @@
             font-style: normal;
             font-display: swap;
         }
-
-        /* SemiBold weight (600) */
         @font-face {
             font-family: 'Raleway';
             src: url('./Raleway/static/Raleway-SemiBold.ttf') format('truetype');
@@ -36,8 +31,6 @@
             font-style: normal;
             font-display: swap;
         }
-
-        /* Bold weight (700) */
         @font-face {
             font-family: 'Raleway';
             src: url('./Raleway/static/Raleway-Bold.ttf') format('truetype');
@@ -45,8 +38,6 @@
             font-style: normal;
             font-display: swap;
         }
-
-        /* ExtraBold weight (800) for fullscreen */
         @font-face {
             font-family: 'Raleway';
             src: url('./Raleway/static/Raleway-ExtraBold.ttf') format('truetype');
@@ -66,7 +57,7 @@
         }
 
         body {
-            font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', 'Noto Sans', system-ui, sans-serif;
+            font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
             height: 100vh;
             overflow: hidden;
             color: #f5f5fa;
@@ -174,7 +165,7 @@
             transition: none;
             text-shadow: 0 1px 2px rgba(0,0,0,0.4);
             letter-spacing: 0.2px;
-            font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-family: 'Raleway', sans-serif;
         }
 
         .song-title:hover {
@@ -261,24 +252,21 @@
             display: inline-block;
         }
 
+        /* CRITICAL: white-space: pre prevents ANY automatic wrapping */
         .lyric-text {
             color: #ffffff;
             font-weight: 600;
             line-height: 1.4;
-            white-space: pre-wrap;
+            white-space: pre;          /* ← only breaks at \n */
             word-break: keep-all;
             overflow-wrap: normal;
-            word-wrap: normal;
             font-family: 'Raleway', 'Inter', -apple-system, 'Noto Serif', Georgia, serif;
             text-align: center;
-            letter-spacing: -0.2px;
             text-shadow: 0 4px 18px rgba(0, 0, 0, 0.7), 0 2px 8px rgba(0, 0, 0, 0.5);
             transition: none;
         }
 
-        /* ============================================================
-           SLIDE COUNTER STYLES - Bottom Right
-        ============================================================ */
+        /* Slide Counter */
         .slide-counter {
             position: fixed;
             bottom: 28px;
@@ -321,19 +309,16 @@
                 padding: 8px 18px;
                 font-size: 1.1rem;
             }
-            
             .lyric-wrapper {
                 padding: 1.2rem 1.5rem !important;
                 border-radius: 32px !important;
                 max-width: 94% !important;
             }
-            
             .lyric-wrapper.has-song {
                 background: rgba(10, 10, 15, 0.3) !important;
                 backdrop-filter: blur(8px) !important;
                 border: 1px solid rgba(255, 255, 255, 0.15) !important;
             }
-            
             .section-badge {
                 padding: 6px 18px !important;
                 margin-bottom: 1.2rem !important;
@@ -349,19 +334,16 @@
                 padding: 6px 14px;
                 font-size: 0.95rem;
             }
-            
             .lyric-wrapper {
                 padding: 0.8rem 1rem !important;
                 border-radius: 24px !important;
                 max-width: 96% !important;
             }
-            
             .lyric-wrapper.has-song {
                 background: rgba(10, 10, 15, 0.2) !important;
                 backdrop-filter: blur(6px) !important;
                 border: 1px solid rgba(255, 255, 255, 0.1) !important;
             }
-            
             .section-badge {
                 padding: 4px 12px !important;
                 margin-bottom: 0.8rem !important;
@@ -433,8 +415,8 @@
         </div>
         <div class="song-list-container" id="songListContainer"></div>
         <div class="status-bar">
-                <span id="songCount"></span>
-                <span>◀  ▶ (Navigate)</span>
+            <span id="songCount"></span>
+            <span>◀  ▶ (Navigate)</span>
         </div>
     </div>
 
@@ -446,25 +428,17 @@
     </div>
 </div>
 
-<!-- Slide Counter Element - Bottom Right -->
 <div class="slide-counter" id="slideCounter">—/—</div>
 
-<!-- Load song database from external file -->
 <script src="./songs.js"></script>
 
 <script>
-    // ============================================================
-    //  APP INITIALIZATION - songs are loaded from songs.js
-    // ============================================================
-    
     const songDatabase = [...rawSongs].sort((a, b) => a.title.localeCompare(b.title, undefined, { sensitivity: 'base' }));
     
-    // ---------- APP STATE ----------
     let currentSong = null;
     let currentSectionIndex = 0;
     let currentSearchTerm = "";
     
-    // DOM elements
     const searchInput = document.getElementById("searchInput");
     const songListContainer = document.getElementById("songListContainer");
     const lyricText = document.getElementById("lyricText");
@@ -478,423 +452,299 @@
     
     function escapeHtml(str) {
         if (!str) return "";
-        return str.replace(/[&<>]/g, function(m) {
-            if (m === '&') return '&amp;';
-            if (m === '<') return '&lt;';
-            if (m === '>') return '&gt;';
-            return m;
-        });
+        return str.replace(/[&<>]/g, m => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;' })[m] || m);
     }
     
     function searchSongsByTitle(query) {
         if (!query.trim()) return [...songDatabase];
-        const lowerQuery = query.toLowerCase();
-        return songDatabase.filter(song => song.title.toLowerCase().includes(lowerQuery));
+        const q = query.toLowerCase();
+        return songDatabase.filter(s => s.title.toLowerCase().includes(q));
     }
     
-    // ============================================================
-    //  UPDATE SLIDE COUNTER DISPLAY (Bottom Right)
-    // ============================================================
     function updateSlideCounter() {
-        if (currentSong && currentSong.sections && currentSong.sections.length > 0) {
+        if (currentSong?.sections?.length) {
             const total = currentSong.sections.length;
             const current = currentSectionIndex + 1;
-            if (current >= 1 && current <= total) {
-                slideCounter.textContent = `${current}/${total}`;
-                slideCounter.classList.remove('hidden-counter');
-            } else {
-                slideCounter.textContent = `—/${total}`;
-                slideCounter.classList.remove('hidden-counter');
-            }
-        } else if (currentSong && (!currentSong.sections || currentSong.sections.length === 0)) {
+            slideCounter.textContent = (current >= 1 && current <= total) ? `${current}/${total}` : `—/${total}`;
+        } else if (currentSong) {
             slideCounter.textContent = `0/0`;
-            slideCounter.classList.remove('hidden-counter');
         } else {
             slideCounter.textContent = `—/—`;
-            slideCounter.classList.remove('hidden-counter');
         }
+        slideCounter.classList.remove('hidden-counter');
     }
     
     // ============================================================
-    //  FONT SCALING - DUAL CONSTRAINT (Width + Height)
-    //  FIXED: Width constraint now uses viewport width, not container width.
-    //  Height constraint ensures no vertical overflow.
+    //  FONT SCALING – ACCOUNTS FOR LETTER-SPACING IN MEASUREMENT
     // ============================================================
     function computeOptimalFontSize() {
         if (!lyricText) return;
         const rawText = lyricText.innerText;
-        if (!rawText || rawText.trim() === "") {
+        if (!rawText?.trim()) {
             lyricText.style.fontSize = '';
             return;
         }
         
         const explicitLines = rawText.split('\n');
-        const nonEmptyLines = explicitLines.filter(line => line.trim().length > 0);
-        if (nonEmptyLines.length === 0) return;
+        const nonEmptyLines = explicitLines.filter(l => l.trim().length > 0);
+        if (!nonEmptyLines.length) return;
         
-        const container = lyricWrapper;
-        const containerStyle = getComputedStyle(container);
-        const paddingLeft = parseFloat(containerStyle.paddingLeft) || 0;
-        const paddingRight = parseFloat(containerStyle.paddingRight) || 0;
-        const paddingTop = parseFloat(containerStyle.paddingTop) || 0;
-        const paddingBottom = parseFloat(containerStyle.paddingBottom) || 0;
+        const containerStyle = getComputedStyle(lyricWrapper);
+        const padL = parseFloat(containerStyle.paddingLeft) || 0;
+        const padR = parseFloat(containerStyle.paddingRight) || 0;
+        const padT = parseFloat(containerStyle.paddingTop) || 0;
+        const padB = parseFloat(containerStyle.paddingBottom) || 0;
         
-        const viewportHeight = window.innerHeight;
-        const viewportWidth = window.innerWidth;
+        const vw = window.innerWidth;
+        const vh = window.innerHeight;
         const isFullscreen = !!document.fullscreenElement;
         
-        // --- WIDTH CONSTRAINT: Based on viewport, not container ---
-        // Account for sidebar if visible (320px wide)
-        let horizontalMargin = 40; // base margin
-        if (!sidebar.classList.contains('hidden')) {
-            horizontalMargin += 320; // sidebar width
-        }
-        // Also account for container padding
-        let maxAvailableWidth = viewportWidth - horizontalMargin - paddingLeft - paddingRight - 20;
-        // Ensure reasonable minimum
-        if (maxAvailableWidth < 200) {
-            maxAvailableWidth = viewportWidth * 0.7;
-        }
-        // Cap at 90% of viewport as safety
-        maxAvailableWidth = Math.min(maxAvailableWidth, viewportWidth * 0.9);
+        // Available width (viewport minus sidebar/margins/padding)
+        let horizMargin = 40;
+        if (!sidebar.classList.contains('hidden')) horizMargin += 320;
+        let maxWidth = vw - horizMargin - padL - padR - 20;
+        maxWidth = Math.min(Math.max(maxWidth, 200), vw * 0.9);
         
-        // --- HEIGHT CONSTRAINT ---
-        // Reserve space for section badge if visible
-        let badgeHeight = 0;
+        // Available height (reserve space for badge and counter)
+        let badgeH = 0;
         if (sectionBadge.classList.contains('visible')) {
             const badgeStyle = getComputedStyle(sectionBadge);
-            const badgeMargin = parseFloat(badgeStyle.marginBottom) || 0;
-            badgeHeight = sectionBadge.offsetHeight + badgeMargin;
+            const marginB = parseFloat(badgeStyle.marginBottom) || 0;
+            badgeH = sectionBadge.offsetHeight + marginB;
         }
-        // Reserve space for slide counter at bottom
         const counterReserve = isFullscreen ? 100 : 70;
-        let maxAvailableHeight = viewportHeight - paddingTop - paddingBottom - badgeHeight - counterReserve - 30;
-        maxAvailableHeight = Math.max(maxAvailableHeight, 150);
+        let maxHeight = vh - padT - padB - badgeH - counterReserve - 30;
+        maxHeight = Math.max(maxHeight, 150);
         
+        // Determine letter-spacing based on line length (pre‑measurement)
+        let longestLineForSpacing = "";
+        for (let line of explicitLines) {
+            if (line.length > longestLineForSpacing.length) longestLineForSpacing = line;
+        }
+        let letterSpacing = '-0.15px';
+        if (longestLineForSpacing.length > 55) letterSpacing = '-0.45px';
+        else if (longestLineForSpacing.length > 45) letterSpacing = '-0.35px';
+        else if (longestLineForSpacing.length > 35) letterSpacing = '-0.25px';
+        
+        // Create measurement span with identical styling
         const measureSpan = document.createElement('span');
         measureSpan.style.position = 'absolute';
         measureSpan.style.visibility = 'hidden';
         measureSpan.style.whiteSpace = 'nowrap';
         measureSpan.style.fontFamily = getComputedStyle(lyricText).fontFamily;
         measureSpan.style.fontWeight = getComputedStyle(lyricText).fontWeight;
-        measureSpan.style.letterSpacing = getComputedStyle(lyricText).letterSpacing;
+        measureSpan.style.letterSpacing = letterSpacing;   // apply same letter-spacing
         measureSpan.style.textTransform = getComputedStyle(lyricText).textTransform;
         document.body.appendChild(measureSpan);
         
-        // --- ABSOLUTE MAX FONT CAPS ---
-        let absoluteMaxFontRem = 5.2;
-        if (viewportWidth >= 1280 && viewportHeight >= 720) {
-            absoluteMaxFontRem = 5.0;
-        } else if (viewportHeight > 800) {
-            absoluteMaxFontRem = 5.2;
-        } else if (viewportWidth <= 600) {
-            absoluteMaxFontRem = 3.8;
-        } else {
-            absoluteMaxFontRem = 4.6;
-        }
-        if (isFullscreen && viewportWidth >= 1600) absoluteMaxFontRem = 5.5;
+        // Max font caps
+        let absMax = 5.2;
+        if (vw >= 1280 && vh >= 720) absMax = 5.0;
+        else if (vh > 800) absMax = 5.2;
+        else if (vw <= 600) absMax = 3.8;
+        else absMax = 4.6;
+        if (isFullscreen && vw >= 1600) absMax = 5.5;
         
-        const minFontRem = 0.9;
-        const referenceFontRem = 2.0;
-        const lineHeightMultiplier = 1.4;
+        const minFont = 0.9;
+        const refFont = 2.0;
+        const lineH = 1.4;
         
-        measureSpan.style.fontSize = `${referenceFontRem}rem`;
+        measureSpan.style.fontSize = `${refFont}rem`;
         
-        // ===== 1. Calculate max font by WIDTH (longest line) =====
-        let maxLineWidthAtRef = 0;
-        let longestLineText = "";
+        // Measure longest line width
+        let maxLineWidth = 0;
         for (let line of explicitLines) {
-            if (line.length === 0) continue;
+            if (!line.length) continue;
             measureSpan.textContent = line;
-            const lineWidth = measureSpan.getBoundingClientRect().width;
-            if (lineWidth > maxLineWidthAtRef) {
-                maxLineWidthAtRef = lineWidth;
-                longestLineText = line;
-            }
+            maxLineWidth = Math.max(maxLineWidth, measureSpan.getBoundingClientRect().width);
         }
         
-        let maxFontByWidth = absoluteMaxFontRem;
-        if (maxLineWidthAtRef > 0) {
-            const idealFontRem = (maxAvailableWidth / maxLineWidthAtRef) * referenceFontRem;
-            maxFontByWidth = Math.min(absoluteMaxFontRem, Math.max(minFontRem, idealFontRem * 0.96));
+        // Width-based font
+        let fontByWidth = absMax;
+        if (maxLineWidth > 0) {
+            const ideal = (maxWidth / maxLineWidth) * refFont;
+            fontByWidth = Math.min(absMax, Math.max(minFont, ideal * 0.95)); // slightly conservative
         }
         
-        // ===== 2. Calculate max font by HEIGHT (total lines) =====
+        // Height-based font
         const numLines = nonEmptyLines.length;
-        let maxFontByHeight = absoluteMaxFontRem;
-        
+        let fontByHeight = absMax;
         if (numLines > 0) {
-            const baseFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
-            const maxFontPxByHeight = maxAvailableHeight / (lineHeightMultiplier * numLines);
-            const maxFontRemByHeight = maxFontPxByHeight / baseFontSize;
-            maxFontByHeight = Math.min(absoluteMaxFontRem, Math.max(minFontRem, maxFontRemByHeight * 0.95));
+            const basePx = parseFloat(getComputedStyle(document.documentElement).fontSize);
+            const maxPx = maxHeight / (lineH * numLines);
+            fontByHeight = Math.min(absMax, Math.max(minFont, (maxPx / basePx) * 0.95));
         }
         
-        // ===== 3. Use the SMALLER of the two constraints =====
-        let finalFontRem = Math.min(maxFontByWidth, maxFontByHeight);
-        finalFontRem = Math.max(minFontRem, finalFontRem);
-        
+        const finalFont = Math.max(minFont, Math.min(fontByWidth, fontByHeight));
         document.body.removeChild(measureSpan);
         
-        // Apply the font size
-        lyricText.style.fontSize = `${finalFontRem}rem`;
-        lyricText.style.whiteSpace = 'pre-wrap';
+        // Apply
+        lyricText.style.fontSize = `${finalFont}rem`;
+        lyricText.style.lineHeight = lineH;
+        lyricText.style.letterSpacing = letterSpacing;
+        lyricText.style.whiteSpace = 'pre';   // never wrap except \n
         lyricText.style.wordBreak = 'keep-all';
         lyricText.style.overflowWrap = 'normal';
-        lyricText.style.lineHeight = lineHeightMultiplier;
-        
-        // Letter-spacing tuning based on line length
-        if (longestLineText.length > 55) {
-            lyricText.style.letterSpacing = '-0.45px';
-        } else if (longestLineText.length > 45) {
-            lyricText.style.letterSpacing = '-0.35px';
-        } else if (longestLineText.length > 35) {
-            lyricText.style.letterSpacing = '-0.25px';
-        } else {
-            lyricText.style.letterSpacing = '-0.15px';
-        }
     }
     
-    let fontUpdateTimeout = null;
+    let fontTimer = null;
     function updateFontSizeInstant() {
-        if (fontUpdateTimeout) clearTimeout(fontUpdateTimeout);
-        requestAnimationFrame(() => {
-            computeOptimalFontSize();
-        });
-        setTimeout(() => computeOptimalFontSize(), 50);
+        if (fontTimer) clearTimeout(fontTimer);
+        requestAnimationFrame(() => computeOptimalFontSize());
+        fontTimer = setTimeout(() => computeOptimalFontSize(), 50);
     }
     
     function updateDisplay() {
-        if (currentSong && currentSong.sections && currentSong.sections[currentSectionIndex]) {
-            const section = currentSong.sections[currentSectionIndex];
-            sectionBadge.textContent = section.name;
-            sectionBadge.classList.add("visible");
-            lyricText.innerText = section.lyrics;
-            lyricWrapper.classList.add("has-song");
-            updateFontSizeInstant();
+        if (currentSong?.sections?.[currentSectionIndex]) {
+            const sec = currentSong.sections[currentSectionIndex];
+            sectionBadge.textContent = sec.name;
+            sectionBadge.classList.add('visible');
+            lyricText.innerText = sec.lyrics;
+            lyricWrapper.classList.add('has-song');
         } else if (currentSong) {
-            sectionBadge.textContent = "";
-            sectionBadge.classList.remove("visible");
-            lyricText.innerText = "♢  end of song  ♢";
-            lyricWrapper.classList.add("has-song");
-            updateFontSizeInstant();
+            sectionBadge.textContent = '';
+            sectionBadge.classList.remove('visible');
+            lyricText.innerText = '♢  end of song  ♢';
+            lyricWrapper.classList.add('has-song');
         } else {
-            sectionBadge.textContent = "";
-            sectionBadge.classList.remove("visible");
-            lyricText.innerText = "";
-            lyricWrapper.classList.remove("has-song");
+            sectionBadge.textContent = '';
+            sectionBadge.classList.remove('visible');
+            lyricText.innerText = '';
+            lyricWrapper.classList.remove('has-song');
         }
+        updateFontSizeInstant();
         updateSlideCounter();
         renderSongList(currentSearchTerm);
     }
     
-    async function requestFullscreenOnElement(element = document.documentElement) {
-        if (!document.fullscreenElement) {
-            try {
-                await element.requestFullscreen();
-                return true;
-            } catch (err) {
-                console.warn("Fullscreen blocked:", err);
-                return false;
-            }
-        }
-        return true;
-    }
-    
     async function selectSong(song) {
         if (!song) return;
-        const wasDifferent = (currentSong !== song);
+        const wasDiff = currentSong !== song;
         currentSong = song;
         currentSectionIndex = 0;
         updateDisplay();
         
-        if (wasDifferent || (currentSong && currentSong.title === song.title)) {
+        if (wasDiff || currentSong) {
             if (!document.fullscreenElement) {
                 try {
-                    await requestFullscreenOnElement(document.documentElement);
-                    if (document.fullscreenElement && !sidebar.classList.contains("hidden")) {
-                        sidebar.classList.add("hidden");
+                    await document.documentElement.requestFullscreen();
+                    if (document.fullscreenElement && !sidebar.classList.contains('hidden')) {
+                        sidebar.classList.add('hidden');
                     }
-                    updateFontSizeInstant();
-                } catch (err) {}
+                } catch {}
             } else {
-                if (!sidebar.classList.contains("hidden")) sidebar.classList.add("hidden");
-                updateFontSizeInstant();
+                if (!sidebar.classList.contains('hidden')) sidebar.classList.add('hidden');
             }
+            updateFontSizeInstant();
         }
     }
     
     function nextSection() {
-        if (!currentSong || !currentSong.sections) return;
-        if (currentSectionIndex + 1 < currentSong.sections.length) {
+        if (currentSong?.sections && currentSectionIndex + 1 < currentSong.sections.length) {
             currentSectionIndex++;
             updateDisplay();
         }
     }
     
     function prevSection() {
-        if (!currentSong) return;
-        if (currentSectionIndex - 1 >= 0) {
+        if (currentSectionIndex > 0) {
             currentSectionIndex--;
             updateDisplay();
         }
     }
     
-    function renderSongList(searchTerm = "") {
+    function renderSongList(term = "") {
         if (!songDatabase.length) {
             songListContainer.innerHTML = `<div class="empty-message">✨ no songs available</div>`;
             songCountSpan.innerText = `0 songs`;
             return;
         }
-        const filtered = searchSongsByTitle(searchTerm);
+        const filtered = searchSongsByTitle(term);
         songCountSpan.innerText = `${filtered.length} ${filtered.length === 1 ? 'song' : 'songs'}`;
-        if (filtered.length === 0) {
-            songListContainer.innerHTML = `<div class="empty-message">✨ no title matches "${escapeHtml(searchTerm)}"</div>`;
+        if (!filtered.length) {
+            songListContainer.innerHTML = `<div class="empty-message">✨ no title matches "${escapeHtml(term)}"</div>`;
             return;
         }
-        songListContainer.innerHTML = "";
+        songListContainer.innerHTML = '';
         filtered.forEach(song => {
-            const songDiv = document.createElement("div");
-            songDiv.className = "song-item";
-            const titleDiv = document.createElement("div");
-            titleDiv.className = "song-title";
-            if (currentSong && currentSong.title === song.title) {
-                titleDiv.classList.add("active-song");
-            }
+            const div = document.createElement('div');
+            div.className = 'song-item';
+            const titleDiv = document.createElement('div');
+            titleDiv.className = 'song-title' + (currentSong?.title === song.title ? ' active-song' : '');
             titleDiv.textContent = song.title;
             titleDiv.onclick = () => {
                 selectSong(song);
-                if (window.innerWidth <= 700) sidebar.classList.add("hidden");
+                if (window.innerWidth <= 700) sidebar.classList.add('hidden');
             };
-            songDiv.appendChild(titleDiv);
-            songListContainer.appendChild(songDiv);
+            div.appendChild(titleDiv);
+            songListContainer.appendChild(div);
         });
     }
     
     function initKeyboard() {
-        document.addEventListener("keydown", (e) => {
-            const activeEl = document.activeElement;
-            if (activeEl && activeEl.id === "searchInput") return;
-            if (e.key === "ArrowLeft") {
-                e.preventDefault();
-                prevSection();
-            } else if (e.key === "ArrowRight") {
-                e.preventDefault();
-                nextSection();
-            }
+        document.addEventListener('keydown', e => {
+            if (document.activeElement?.id === 'searchInput') return;
+            if (e.key === 'ArrowLeft') { e.preventDefault(); prevSection(); }
+            else if (e.key === 'ArrowRight') { e.preventDefault(); nextSection(); }
         });
     }
     
     function initSidebarToggle() {
-        searchToggleBtn.addEventListener("click", () => {
-            if (sidebar.classList.contains("hidden")) {
-                sidebar.classList.remove("hidden");
-            } else {
-                sidebar.classList.add("hidden");
-            }
-            // Recalculate font after sidebar toggle
+        searchToggleBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('hidden');
             if (currentSong) updateFontSizeInstant();
         });
     }
     
-    // ============================================================
-    //  TOGGLE FULLSCREEN (used by double-click and double-tap)
-    // ============================================================
     function toggleFullscreen() {
         if (document.fullscreenElement) {
-            document.exitFullscreen().catch(err => console.warn(err));
+            document.exitFullscreen();
         } else {
-            document.documentElement.requestFullscreen().catch(err => console.warn(err));
-            if (!sidebar.classList.contains("hidden")) sidebar.classList.add("hidden");
+            document.documentElement.requestFullscreen();
+            if (!sidebar.classList.contains('hidden')) sidebar.classList.add('hidden');
         }
     }
     
     function enableFullscreen() {
-        mainArea.addEventListener("dblclick", (e) => {
-            toggleFullscreen();
-        });
-        
-        document.addEventListener("fullscreenchange", () => {
-            if (document.fullscreenElement) {
-                searchToggleBtn.classList.add("fullscreen-hidden");
-                if (currentSong) updateFontSizeInstant();
-                if (!sidebar.classList.contains("hidden")) sidebar.classList.add("hidden");
-            } else {
-                searchToggleBtn.classList.remove("fullscreen-hidden");
-                if (currentSong) updateFontSizeInstant();
-            }
-            if (slideCounter) slideCounter.classList.remove('hidden-counter');
+        mainArea.addEventListener('dblclick', toggleFullscreen);
+        document.addEventListener('fullscreenchange', () => {
+            searchToggleBtn.classList.toggle('fullscreen-hidden', !!document.fullscreenElement);
+            if (currentSong) updateFontSizeInstant();
+            slideCounter.classList.remove('hidden-counter');
         });
     }
     
-    // ============================================================
-    //  TOUCH GESTURES: SWIPE (left/right) + DOUBLE-TAP (fullscreen)
-    // ============================================================
     function initTouchGestures() {
-        let touchStartX = 0;
-        let touchStartY = 0;
-        let touchEndX = 0;
-        let touchEndY = 0;
-        let touchStartTime = 0;
-        
-        let lastTapTime = 0;
-        let lastTapX = 0;
-        let lastTapY = 0;
-        const DOUBLE_TAP_DELAY = 300;
-        const DOUBLE_TAP_DISTANCE = 30;
-        
-        mainArea.addEventListener('touchstart', (e) => {
-            const touch = e.touches[0];
-            touchStartX = touch.clientX;
-            touchStartY = touch.clientY;
-            touchStartTime = Date.now();
+        let startX, startY, lastTap = 0, lastTapX = 0, lastTapY = 0;
+        mainArea.addEventListener('touchstart', e => {
+            const t = e.touches[0];
+            startX = t.clientX; startY = t.clientY;
         }, { passive: true });
-        
-        mainArea.addEventListener('touchmove', (e) => {
-        }, { passive: true });
-        
-        mainArea.addEventListener('touchend', (e) => {
-            const touch = e.changedTouches[0];
-            if (!touch) return;
-            
-            touchEndX = touch.clientX;
-            touchEndY = touch.clientY;
-            const deltaX = touchEndX - touchStartX;
-            const deltaY = touchEndY - touchStartY;
-            const absDeltaX = Math.abs(deltaX);
-            const absDeltaY = Math.abs(deltaY);
-            const now = Date.now();
-            
-            const SWIPE_THRESHOLD = 50;
-            if (absDeltaX > SWIPE_THRESHOLD && absDeltaX > absDeltaY * 1.5) {
+        mainArea.addEventListener('touchend', e => {
+            const t = e.changedTouches[0];
+            if (!t) return;
+            const dx = t.clientX - startX, dy = t.clientY - startY;
+            if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) {
                 e.preventDefault();
-                if (deltaX > 0) {
-                    prevSection();
-                } else {
-                    nextSection();
-                }
+                dx > 0 ? prevSection() : nextSection();
             }
-            
-            const tapX = touchEndX;
-            const tapY = touchEndY;
-            const timeSinceLastTap = now - lastTapTime;
-            const distance = Math.hypot(tapX - lastTapX, tapY - lastTapY);
-            
-            if (timeSinceLastTap < DOUBLE_TAP_DELAY && timeSinceLastTap > 0 && distance < DOUBLE_TAP_DISTANCE) {
+            const now = Date.now();
+            const dist = Math.hypot(t.clientX - lastTapX, t.clientY - lastTapY);
+            if (now - lastTap < 300 && dist < 30) {
                 e.preventDefault();
                 toggleFullscreen();
-                lastTapTime = 0;
+                lastTap = 0;
             } else {
-                lastTapTime = now;
-                lastTapX = tapX;
-                lastTapY = tapY;
+                lastTap = now;
+                lastTapX = t.clientX;
+                lastTapY = t.clientY;
             }
         });
     }
     
     function initSearch() {
         let debounce;
-        searchInput.addEventListener("input", (e) => {
+        searchInput.addEventListener('input', e => {
             clearTimeout(debounce);
             debounce = setTimeout(() => {
                 currentSearchTerm = e.target.value;
@@ -904,23 +754,15 @@
     }
     
     function initResize() {
-        window.addEventListener("resize", () => {
-            if (currentSong && currentSong.sections && currentSong.sections[currentSectionIndex]) {
-                updateFontSizeInstant();
-            }
+        window.addEventListener('resize', () => {
+            if (currentSong?.sections?.[currentSectionIndex]) updateFontSizeInstant();
         });
     }
     
     function observeLyrics() {
-        const observer = new MutationObserver(() => {
-            if (currentSong) updateFontSizeInstant();
-        });
-        if (lyricText) observer.observe(lyricText, { childList: true, characterData: true, subtree: true });
-        window.addEventListener('load', () => { if (currentSong) updateFontSizeInstant(); });
-        const sidebarObserver = new MutationObserver(() => {
-            if (currentSong) updateFontSizeInstant();
-        });
-        if (sidebar) sidebarObserver.observe(sidebar, { attributes: true, attributeFilter: ['class'] });
+        new MutationObserver(() => currentSong && updateFontSizeInstant()).observe(lyricText, { childList: true, characterData: true, subtree: true });
+        window.addEventListener('load', () => currentSong && updateFontSizeInstant());
+        new MutationObserver(() => currentSong && updateFontSizeInstant()).observe(sidebar, { attributes: true, attributeFilter: ['class'] });
     }
     
     function init() {
