@@ -219,13 +219,13 @@
             justify-content: center;
             text-align: center;
             z-index: 1;
-            /* ensure touch events are captured */
             touch-action: pan-y; 
         }
 
         .lyric-wrapper {
             max-width: 90%;
-            width: 100%;
+            width: auto;
+            display: inline-block;
             padding: 2rem 2.5rem;
             border-radius: 56px;
             transition: none;
@@ -261,7 +261,6 @@
             display: inline-block;
         }
 
-        /* CRITICAL: Force each line to stay as ONE line - no wrapping EVER */
         .lyric-text {
             color: #ffffff;
             font-weight: 600;
@@ -305,7 +304,6 @@
             visibility: hidden;
         }
 
-        /* Fullscreen adjustments - even larger */
         body:fullscreen .slide-counter {
             bottom: 40px;
             right: 40px;
@@ -323,6 +321,25 @@
                 padding: 8px 18px;
                 font-size: 1.1rem;
             }
+            
+            .lyric-wrapper {
+                padding: 1.2rem 1.5rem !important;
+                border-radius: 32px !important;
+                max-width: 94% !important;
+            }
+            
+            .lyric-wrapper.has-song {
+                background: rgba(10, 10, 15, 0.3) !important;
+                backdrop-filter: blur(8px) !important;
+                border: 1px solid rgba(255, 255, 255, 0.15) !important;
+            }
+            
+            .section-badge {
+                padding: 6px 18px !important;
+                margin-bottom: 1.2rem !important;
+                font-size: 0.8rem !important;
+                letter-spacing: 3px !important;
+            }
         }
 
         @media (max-width: 600px) {
@@ -331,6 +348,25 @@
                 right: 16px;
                 padding: 6px 14px;
                 font-size: 0.95rem;
+            }
+            
+            .lyric-wrapper {
+                padding: 0.8rem 1rem !important;
+                border-radius: 24px !important;
+                max-width: 96% !important;
+            }
+            
+            .lyric-wrapper.has-song {
+                background: rgba(10, 10, 15, 0.2) !important;
+                backdrop-filter: blur(6px) !important;
+                border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            }
+            
+            .section-badge {
+                padding: 4px 12px !important;
+                margin-bottom: 0.8rem !important;
+                font-size: 0.7rem !important;
+                letter-spacing: 2px !important;
             }
         }
         
@@ -379,53 +415,6 @@
             letter-spacing: 5px;
             padding: 10px 28px;
             margin-bottom: 1.8rem;
-        }
-
-        /* ============================================================
-           MOBILE / TABLET OVERLAY FIX
-           Reduce padding, background opacity, and blur on small screens
-           so the overlay doesn't dominate the view.
-        ============================================================ */
-        @media (max-width: 850px) {
-            .lyric-wrapper {
-                padding: 1.2rem 1.5rem !important;
-                border-radius: 32px !important;
-                max-width: 94% !important;
-            }
-            
-            .lyric-wrapper.has-song {
-                background: rgba(10, 10, 15, 0.3) !important;
-                backdrop-filter: blur(8px) !important;
-                border: 1px solid rgba(255, 255, 255, 0.15) !important;
-            }
-            
-            .section-badge {
-                padding: 6px 18px !important;
-                margin-bottom: 1.2rem !important;
-                font-size: 0.8rem !important;
-                letter-spacing: 3px !important;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .lyric-wrapper {
-                padding: 0.8rem 1rem !important;
-                border-radius: 24px !important;
-                max-width: 96% !important;
-            }
-            
-            .lyric-wrapper.has-song {
-                background: rgba(10, 10, 15, 0.2) !important;
-                backdrop-filter: blur(6px) !important;
-                border: 1px solid rgba(255, 255, 255, 0.1) !important;
-            }
-            
-            .section-badge {
-                padding: 4px 12px !important;
-                margin-bottom: 0.8rem !important;
-                font-size: 0.7rem !important;
-                letter-spacing: 2px !important;
-            }
         }
     </style>
 </head>
@@ -505,7 +494,6 @@
     
     // ============================================================
     //  UPDATE SLIDE COUNTER DISPLAY (Bottom Right)
-    //  Shows: currentSectionIndex+1 / totalSections
     // ============================================================
     function updateSlideCounter() {
         if (currentSong && currentSong.sections && currentSong.sections.length > 0) {
@@ -528,9 +516,9 @@
     }
     
     // ============================================================
-    //  FONT SCALING - FIXED FOR MOBILE/TABLET
-    //  Finds the longest line and scales font to fit width,
-    //  then iteratively reduces height until it fits the screen.
+    //  FONT SCALING - DUAL CONSTRAINT (Width + Height)
+    //  FIXED: Width constraint now uses viewport width, not container width.
+    //  Height constraint ensures no vertical overflow.
     // ============================================================
     function computeOptimalFontSize() {
         if (!lyricText) return;
@@ -545,10 +533,43 @@
         if (nonEmptyLines.length === 0) return;
         
         const container = lyricWrapper;
-        let maxAvailableWidth = container.clientWidth - 50;
-        if (maxAvailableWidth < 100) {
-            maxAvailableWidth = window.innerWidth * 0.75;
+        const containerStyle = getComputedStyle(container);
+        const paddingLeft = parseFloat(containerStyle.paddingLeft) || 0;
+        const paddingRight = parseFloat(containerStyle.paddingRight) || 0;
+        const paddingTop = parseFloat(containerStyle.paddingTop) || 0;
+        const paddingBottom = parseFloat(containerStyle.paddingBottom) || 0;
+        
+        const viewportHeight = window.innerHeight;
+        const viewportWidth = window.innerWidth;
+        const isFullscreen = !!document.fullscreenElement;
+        
+        // --- WIDTH CONSTRAINT: Based on viewport, not container ---
+        // Account for sidebar if visible (320px wide)
+        let horizontalMargin = 40; // base margin
+        if (!sidebar.classList.contains('hidden')) {
+            horizontalMargin += 320; // sidebar width
         }
+        // Also account for container padding
+        let maxAvailableWidth = viewportWidth - horizontalMargin - paddingLeft - paddingRight - 20;
+        // Ensure reasonable minimum
+        if (maxAvailableWidth < 200) {
+            maxAvailableWidth = viewportWidth * 0.7;
+        }
+        // Cap at 90% of viewport as safety
+        maxAvailableWidth = Math.min(maxAvailableWidth, viewportWidth * 0.9);
+        
+        // --- HEIGHT CONSTRAINT ---
+        // Reserve space for section badge if visible
+        let badgeHeight = 0;
+        if (sectionBadge.classList.contains('visible')) {
+            const badgeStyle = getComputedStyle(sectionBadge);
+            const badgeMargin = parseFloat(badgeStyle.marginBottom) || 0;
+            badgeHeight = sectionBadge.offsetHeight + badgeMargin;
+        }
+        // Reserve space for slide counter at bottom
+        const counterReserve = isFullscreen ? 100 : 70;
+        let maxAvailableHeight = viewportHeight - paddingTop - paddingBottom - badgeHeight - counterReserve - 30;
+        maxAvailableHeight = Math.max(maxAvailableHeight, 150);
         
         const measureSpan = document.createElement('span');
         measureSpan.style.position = 'absolute';
@@ -560,28 +581,26 @@
         measureSpan.style.textTransform = getComputedStyle(lyricText).textTransform;
         document.body.appendChild(measureSpan);
         
-        const isFullscreen = !!document.fullscreenElement;
-        const viewportHeight = window.innerHeight;
-        const viewportWidth = window.innerWidth;
-        
-        // --- ADJUSTED MAX FONT SIZES FOR SMALL SCREENS ---
-        let maxFontRem = 5.2;
+        // --- ABSOLUTE MAX FONT CAPS ---
+        let absoluteMaxFontRem = 5.2;
         if (viewportWidth >= 1280 && viewportHeight >= 720) {
-            maxFontRem = 4.6;
+            absoluteMaxFontRem = 5.0;
         } else if (viewportHeight > 800) {
-            maxFontRem = 5.0;
-        } else if (viewportWidth <= 600) {      // phone / small tablet
-            maxFontRem = 3.2;
+            absoluteMaxFontRem = 5.2;
+        } else if (viewportWidth <= 600) {
+            absoluteMaxFontRem = 3.8;
         } else {
-            maxFontRem = 4.2;
+            absoluteMaxFontRem = 4.6;
         }
-        if (isFullscreen && viewportWidth >= 1600) maxFontRem = 5.0;
-        // -------------------------------------------------
+        if (isFullscreen && viewportWidth >= 1600) absoluteMaxFontRem = 5.5;
         
         const minFontRem = 0.9;
         const referenceFontRem = 2.0;
+        const lineHeightMultiplier = 1.4;
+        
         measureSpan.style.fontSize = `${referenceFontRem}rem`;
         
+        // ===== 1. Calculate max font by WIDTH (longest line) =====
         let maxLineWidthAtRef = 0;
         let longestLineText = "";
         for (let line of explicitLines) {
@@ -594,37 +613,35 @@
             }
         }
         
-        if (maxLineWidthAtRef === 0) {
-            document.body.removeChild(measureSpan);
-            return;
+        let maxFontByWidth = absoluteMaxFontRem;
+        if (maxLineWidthAtRef > 0) {
+            const idealFontRem = (maxAvailableWidth / maxLineWidthAtRef) * referenceFontRem;
+            maxFontByWidth = Math.min(absoluteMaxFontRem, Math.max(minFontRem, idealFontRem * 0.96));
         }
         
-        let idealFontRem = (maxAvailableWidth / maxLineWidthAtRef) * referenceFontRem;
-        let finalFontRem = Math.min(maxFontRem, Math.max(minFontRem, idealFontRem));
-        finalFontRem = finalFontRem * 0.96;
+        // ===== 2. Calculate max font by HEIGHT (total lines) =====
+        const numLines = nonEmptyLines.length;
+        let maxFontByHeight = absoluteMaxFontRem;
+        
+        if (numLines > 0) {
+            const baseFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
+            const maxFontPxByHeight = maxAvailableHeight / (lineHeightMultiplier * numLines);
+            const maxFontRemByHeight = maxFontPxByHeight / baseFontSize;
+            maxFontByHeight = Math.min(absoluteMaxFontRem, Math.max(minFontRem, maxFontRemByHeight * 0.95));
+        }
+        
+        // ===== 3. Use the SMALLER of the two constraints =====
+        let finalFontRem = Math.min(maxFontByWidth, maxFontByHeight);
         finalFontRem = Math.max(minFontRem, finalFontRem);
         
         document.body.removeChild(measureSpan);
         
+        // Apply the font size
         lyricText.style.fontSize = `${finalFontRem}rem`;
         lyricText.style.whiteSpace = 'pre-wrap';
         lyricText.style.wordBreak = 'keep-all';
         lyricText.style.overflowWrap = 'normal';
-        
-        // --- ITERATIVE HEIGHT ADJUSTMENT (FIX FOR MOBILE/TABLET) ---
-        setTimeout(() => {
-            const maxHeight = window.innerHeight * 0.88;
-            let currentFont = finalFontRem;
-            let iterations = 0;
-            const MAX_ITER = 8;
-            
-            while (lyricText.scrollHeight > maxHeight && currentFont > 1.1 && iterations < MAX_ITER) {
-                currentFont = Math.max(1.0, currentFont * 0.92);   // reduce by 8% each step
-                lyricText.style.fontSize = `${currentFont}rem`;
-                iterations++;
-            }
-        }, 15);
-        // ---------------------------------------------------------
+        lyricText.style.lineHeight = lineHeightMultiplier;
         
         // Letter-spacing tuning based on line length
         if (longestLineText.length > 55) {
@@ -775,6 +792,8 @@
             } else {
                 sidebar.classList.add("hidden");
             }
+            // Recalculate font after sidebar toggle
+            if (currentSong) updateFontSizeInstant();
         });
     }
     
@@ -791,7 +810,6 @@
     }
     
     function enableFullscreen() {
-        // Keep desktop double-click
         mainArea.addEventListener("dblclick", (e) => {
             toggleFullscreen();
         });
@@ -819,7 +837,6 @@
         let touchEndY = 0;
         let touchStartTime = 0;
         
-        // double-tap detection
         let lastTapTime = 0;
         let lastTapX = 0;
         let lastTapY = 0;
@@ -831,12 +848,9 @@
             touchStartX = touch.clientX;
             touchStartY = touch.clientY;
             touchStartTime = Date.now();
-            // don't prevent default here to allow scrolling if needed
         }, { passive: true });
         
         mainArea.addEventListener('touchmove', (e) => {
-            // optional: we don't need to track move for swipe, just prevent if we want
-            // but we'll keep it passive for performance
         }, { passive: true });
         
         mainArea.addEventListener('touchend', (e) => {
@@ -851,30 +865,24 @@
             const absDeltaY = Math.abs(deltaY);
             const now = Date.now();
             
-            // ----- SWIPE DETECTION (horizontal) -----
             const SWIPE_THRESHOLD = 50;
             if (absDeltaX > SWIPE_THRESHOLD && absDeltaX > absDeltaY * 1.5) {
-                // Prevent default only when we actually handle a swipe (avoid page zoom/scroll)
                 e.preventDefault();
                 if (deltaX > 0) {
-                    // Swipe right → previous
                     prevSection();
                 } else {
-                    // Swipe left → next
                     nextSection();
                 }
             }
             
-            // ----- DOUBLE-TAP DETECTION -----
             const tapX = touchEndX;
             const tapY = touchEndY;
             const timeSinceLastTap = now - lastTapTime;
             const distance = Math.hypot(tapX - lastTapX, tapY - lastTapY);
             
             if (timeSinceLastTap < DOUBLE_TAP_DELAY && timeSinceLastTap > 0 && distance < DOUBLE_TAP_DISTANCE) {
-                e.preventDefault();  // prevent synthetic click/zoom
+                e.preventDefault();
                 toggleFullscreen();
-                // reset to avoid triple-tap
                 lastTapTime = 0;
             } else {
                 lastTapTime = now;
@@ -882,10 +890,6 @@
                 lastTapY = tapY;
             }
         });
-        
-        // Prevent default on touchmove only when we suspect a swipe? Not necessary.
-        // Use CSS touch-action: pan-y on main-area to allow vertical scroll but limit horizontal.
-        // Already set in style: touch-action: pan-y;
     }
     
     function initSearch() {
@@ -926,7 +930,7 @@
         enableFullscreen();
         initResize();
         observeLyrics();
-        initTouchGestures();    // Swipe and double‑tap support
+        initTouchGestures();
         currentSong = null;
         updateDisplay();
         renderSongList("");
