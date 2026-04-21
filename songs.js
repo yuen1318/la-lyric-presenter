@@ -658,31 +658,50 @@ const rawSongs = [
     {
         title: "Lord I Lift Your Name On High",
         sections: [
-            { name: "END", lyrics: "Lord, I lift Your name on high.\nLord, I love to sing Your praises.\nI’m so glad You’re in my life.\nI’m so glad You came to save us.\n\nYou came from heaven to earth\nTo show the way\nFrom the earth to the cross\nMy debt to pay\nFrom the cross to the grave\nFrom the grave to the sky\nLord, I lift Your name on high." }
+            { name: "VERSE", lyrics: "Lord, I lift Your name on high.\nLord, I love to sing Your praises.\nI’m so glad You’re in my life.\nI’m so glad You came to save us." },
+            { name: "REFRAIN", lyrics: "You came from heaven to earth\nTo show the way\nFrom the earth to the cross\nMy debt to pay\nFrom the cross to the grave\nFrom the grave to the sky\nLord, I lift Your name on high." },
+            { name: "VERSE", lyrics: "Lord, I lift Your name on high.\nLord, I love to sing Your praises.\nI’m so glad You’re in my life.\nI’m so glad You came to save us." },
+            { name: "REFRAIN", lyrics: "You came from heaven to earth\nTo show the way\nFrom the earth to the cross\nMy debt to pay\nFrom the cross to the grave\nFrom the grave to the sky\nLord, I lift Your name on high." },
+            { name: "END", lyrics: "You came from heaven to earth\nTo show the way\nFrom the earth to the cross\nMy debt to pay\nFrom the cross to the grave\nFrom the grave to the sky\nLord, I lift Your name on high.\n(2x)" }
         ]
     },
     {
         title: "Lord Jesus We Enthrone You",
         sections: [
-            { name: "END", lyrics: "Lord Jesus, we enthrone You.\nWe proclaim You are King.\nStanding here in the midst of us\nWe raise You up with our praise.\nAnd as we worship build a throne (3x)\nCome, Lord Jesus, and take Your place." }
+            { name: "VERSE", lyrics: "Lord Jesus, we enthrone You.\nWe proclaim You are King.\nStanding here in the midst of us\nWe raise You up with our praise." },
+            { name: "REFRAIN", lyrics: "And as we worship build a throne\n(3x)\n\nCome, Lord Jesus, and take Your place!" },
+            { name: "VERSE", lyrics: "Lord Jesus, we enthrone You.\nWe proclaim You are King.\nStanding here in the midst of us\nWe raise You up with our praise." },
+            { name: "REFRAIN", lyrics: "And as we worship build a throne\n(3x)\n\nCome, Lord Jesus, and take Your place!" },
+            { name: "END", lyrics: "And as we worship build a throne\n(3x)\n\nCome, Lord Jesus, and take Your place!\n(2x)" }
         ]
     },
     {
         title: "Lord We Come Into Your Holy Presence",
         sections: [
-            { name: "END", lyrics: "Lord, we come into Your holy presence\nThere to gaze upon Your face.\nThrough the veil\nWe see You robed in glory\nBefore Your throne to take our place.\n\nAnd with our voices\nWe now praise Your name:\nYou are our King and no other!\nWe cry to You, “Establish your reign!”\nWe shout, “Your Kingdom come!”\n\nHallelujah, our King!  Glory to God!\nWe call on Your name.\nGive us strength for the fight.\nBuild us up by Your power.\nMake us one in Your name.\nYour Kingdom come!" }
+            { name: "VERSE", lyrics: "Lord, we come into Your holy presence\nThere to gaze upon Your face.\nThrough the veil\nWe see You robed in glory\nBefore Your throne to take our place." },
+            { name: "VERSE", lyrics: "And with our voices\nWe now praise Your name:\nYou are our King and no other!\nWe cry to You, “Establish your reign!”\nWe shout, “Your Kingdom come!”" },
+            { name: "REFRAIN", lyrics: "Hallelujah, our King!  Glory to God!\nWe call on Your name.\nGive us strength for the fight.\nBuild us up by Your power.\nMake us one in Your name.\nYour Kingdom come!" },
+            { name: "VERSE", lyrics: "Lord, we come into Your holy presence\nThere to gaze upon Your face.\nThrough the veil\nWe see You robed in glory\nBefore Your throne to take our place." },
+            { name: "VERSE", lyrics: "And with our voices\nWe now praise Your name:\nYou are our King and no other!\nWe cry to You, “Establish your reign!”\nWe shout, “Your Kingdom come!”" },
+            { name: "END", lyrics: "Hallelujah, our King!  Glory to God!\nWe call on Your name.\nGive us strength for the fight.\nBuild us up by Your power.\nMake us one in Your name.\nYour Kingdom come!\n(2x)" },
         ]
     },
     {
         title: "Lord We Give To You",
         sections: [
-            { name: "END", lyrics: "Lord, we give to You\nThe glory and honor You are due\nWith hearts and hands upraised.\nNo worldly riches compare\nWith the joy of seeing You face to face." }
+            { name: "REFRAIN", lyrics: "Lord, we give to You\nThe glory and honor You are due\nWith hearts and hands upraised.\nNo worldly riches compare\nWith the joy of seeing You face to face.\n(2x)" },
+            { name: "END", lyrics: "With the joy of seeing You face to face." }
         ]
     },
     {
-        title: "Lord, Enkindle Me",
+        title: "Lord Enkindle Me",
         sections: [
-            { name: "END", lyrics: "Lord, enkindle me.\nFan the flame in my heart for Thee.\nTake my life to be Your life,\nBe the light in me.\n\nMold me to your likeness,\nPurified in holiness.\nWarm my heart to be Your heart,\nLove Your world through me.\n\nSet my heart on fire for Thee!\nMagnify Your light in me!\nLove that dies… that love may rise\nYour love raised on high!" }
+            { name: "VERSE", lyrics: "Lord, enkindle me.\nFan the flame in my heart for Thee.\nTake my life to be Your life,\nBe the light in me." },
+            { name: "VERSE", lyrics: "Mold me to your likeness,\nPurified in holiness.\nWarm my heart to be Your heart,\nLove Your world through me." },
+            { name: "REFRAIN", lyrics: "Set my heart on fire for Thee!\nMagnify Your light in me!\nLove that dies… that love may rise\nYour love raised on high!" },
+            { name: "VERSE", lyrics: "Lord, enkindle me.\nFan the flame in my heart for Thee.\nTake my life to be Your life,\nBe the light in me." },
+            { name: "VERSE", lyrics: "Mold me to your likeness,\nPurified in holiness.\nWarm my heart to be Your heart,\nLove Your world through me." },
+            { name: "END", lyrics: "Set my heart on fire for Thee!\nMagnify Your light in me!\nLove that dies… that love may rise\nYour love raised on high!\n(2x)\n\nLord, enkindle me." },
         ]
     },
     {
@@ -701,9 +720,13 @@ const rawSongs = [
         title: "Make Us Yours",
         sections: [
             { name: "VERSE", lyrics: "Even now, return to Him.\nRend your hearts, and come to Him;\nFor He is ever faithful \nto heal our faithlessness.\nThe Lord will make us His if we would but return." },
-            { name: "REFRAIN", lyrics: "Make us Yours, Lord\nMake of us a people\nPrecious in Your eyes\n Made whole for You.\nCome restore, Lord\n To send us forth, Lord\nTo walk in holiness with You\nLord, make us Yours." },
+            { name: "REFRAIN", lyrics: "Make us Yours, Lord\nMake of us a people\nPrecious in Your eyes\n Made whole for You." },
+            { name: "REFRAIN", lyrics: "Come restore, Lord\n To send us forth, Lord\nTo walk in holiness with You\nLord, make us Yours." },
             { name: "VERSE", lyrics: "From the north He calls his sons.\nHis children come from far away.\nOvercome with gladness,\nBy streams of living water\nThe ransomed of the Lord \nwill return to Him." },
-            { name: "END", lyrics: "Make us Yours, Lord\nMake of us a people\nPrecious in Your eyes\n Made whole for You.\nCome restore, Lord\n To send us forth, Lord\nTo walk in holiness with You\nLord, make us Yours." }
+            { name: "REFRAIN", lyrics: "Make us Yours, Lord\nMake of us a people\nPrecious in Your eyes\n Made whole for You." },
+            { name: "REFRAIN", lyrics: "Come restore, Lord\n To send us forth, Lord\nTo walk in holiness with You\nLord, make us Yours." },
+            { name: "END", lyrics: "Make us Yours, Lord\nMake of us a people\nPrecious in Your eyes\n Made whole for You." },
+            { name: "END", lyrics: "Come restore, Lord\n To send us forth, Lord\nTo walk in holiness with You\nLord, make us Yours." },
         ]
     },
     {
@@ -721,9 +744,12 @@ const rawSongs = [
     {
         title: "Mighty Is Our God",
         sections: [
-            { name: "REFRAIN", lyrics: "Hallelujah! (8x)\n\nMighty is our God, the everlasting King.\nAll the earth proclaim\nThe glories of His name.\nEnthroned in the heavens\nThe angels sing His praise.\nMighty is our God!  Holy is He!" },
-            { name: "REFRAIN", lyrics: "Hallelujah! (8x)\n\nPraise Him, sun and moon.\nPraise Him, stars of light.\nPraise Him in the depths\nAnd praise Him in the heights.\nLet the heavens be glad\nAnd the earth rejoice!\nMighty is our God!  Holy is He!" },
-            { name: "REFRAIN", lyrics: "Hallelujah! (8x)\n\nWitness to all men \nThe joy of the Lord.\nFor upon us all\nHis love He has poured.\nLet every tongue confess forever:\n“Jesus is Lord!  Worthy is He!”" },
+            { name: "REFRAIN", lyrics: "Hallelujah! (8x)" },
+            { name: "REFRAIN", lyrics: "Mighty is our God, the everlasting King.\nAll the earth proclaim\nThe glories of His name.\nEnthroned in the heavens\nThe angels sing His praise.\nMighty is our God!  Holy is He!" },
+            { name: "REFRAIN", lyrics: "Hallelujah! (8x)" },
+            { name: "REFRAIN", lyrics: "Praise Him, sun and moon.\nPraise Him, stars of light.\nPraise Him in the depths\nAnd praise Him in the heights.\nLet the heavens be glad\nAnd the earth rejoice!\nMighty is our God!  Holy is He!" },
+            { name: "REFRAIN", lyrics: "Hallelujah! (8x)" },
+            { name: "REFRAIN", lyrics: "Witness to all men \nThe joy of the Lord.\nFor upon us all\nHis love He has poured.\nLet every tongue confess forever:\n“Jesus is Lord!  Worthy is He!”" },
             { name: "END", lyrics: "Hallelujah! (8x)" }
         ]
     },
@@ -733,7 +759,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Praise You, Lord, mighty King of Zion,\nMighty God of Israel.\nSave us, Lord, from the roaring lion\nCast down the workings of the infidel." },
             { name: "REFRAIN", lyrics: "O my Strength, I will sing Thy praises.\nThou, O Lord, are a shield to me.\nO my King, though the battle rages\nI look with vict’ry on my enemies." },
             { name: "VERSE", lyrics: "Rouse Thyself like a roaring fire,\nIsrael’s hope, bright Morning Star.\nBurn like chaff the father of liars\nLight up creation with Thy blazing pow’r." },
-            { name: "REFRAIN", lyrics: "O my Strength, I will sing Thy praises.\nThou, O Lord, are a shield to me.\nO my King, though the battle rages\nI look with vict’ry on my enemies." },
+            { name: "REFRAIN", lyrics: "O my Strength, I will sing Thy praises.\nThou, O Lord, are a shield to me.\nO my King, though the battle rages\nI look with vict’ry on my enemies.\n(2x)" },
             { name: "END", lyrics: "Praise You, Lord, mighty King of Zion!" }
         ]
     },
