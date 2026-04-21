@@ -408,7 +408,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "He is the image of the invisible God,\nFirst-born of all creation.\nIn Him all was made,\nThe heavens and earth,\nAll things created through Him." },
             { name: "REFRAIN", lyrics: "He is before all things,\nAnd in Him all things hold together.\nIn Him the fullness of God\nWas pleased to dwell.\nHe is the glory of God,\nBearing the stamp of His nature,\nUpholding the universe by His word." },
             { name: "VERSE", lyrics: "And through His being\nAll things are made one\nAll that was once divided\nHeaven and earth united to Him\nPeace by the blood of His cross." },
-            { name: "END", lyrics: "He is before all things\nAnd in Him all things hold together.\nIn Him the fullness of God\nWas pleased to dwell.\nHe is the glory of God,\nBearing the stamp of His nature,\nUpholding the universe by His word." }
+            { name: "END", lyrics: "He is before all things\nAnd in Him all things hold together.\nIn Him the fullness of God\nWas pleased to dwell.\nHe is the glory of God,\nBearing the stamp of His nature,\nUpholding the universe by His word.\n(2x)" }
         ]
     },
     {
