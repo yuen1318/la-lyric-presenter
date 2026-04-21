@@ -567,17 +567,21 @@ const rawSongs = [
             { name: "REFRAIN", lyrics: "Arise, shine out, for your light has come\nThe glory of Yahweh is rising on you.\nThough night still covers the earth\nAnd darkness the people,\nAbove you Yahweh now rises,\nAbove you His glory appears, arise!" },
             { name: "VERSE", lyrics: "No more will the sun give you daylight\nNor moonlight shine on you\nBut Yahweh will be your eternal light\nYour God will be your splendor." },
             { name: "VERSE", lyrics: "Your sun will set no more\nNor your moon wane.\nBut Yahweh will be your eternal light\nAnd your days of mourning\nWill pass from your sight." },
-            { name: "END", lyrics: "Arise, shine out, for your light has come\nThe glory of Yahweh is rising on you.\nThough night still covers the earth\nAnd darkness the people,\nAbove you Yahweh now rises,\nAbove you His glory appears, arise!" }
+            { name: "END", lyrics: "Arise, shine out, for your light has come\nThe glory of Yahweh is rising on you.\nThough night still covers the earth\nAnd darkness the people,\nAbove you Yahweh now rises,\nAbove you His glory appears, arise!\n(2x)" }
         ]
     },
     {
         title: "Join With Us",
         sections: [
-            { name: "VERSE", lyrics: "Join with us\nAnd let us go to His dwelling place\nBeyond the veil where we see His face\nWhere we are lifted in holy praise.\n\nWe worship Him.\nBehold such beauty and worship Him.\nThe gates of heaven resound within\nFor we were made for\nThis glorious grace." },
+            { name: "VERSE", lyrics: "Join with us\nAnd let us go to His dwelling place\nBeyond the veil where we see His face\nWhere we are lifted in holy praise." },
+            { name: "VERSE", lyrics: "We worship Him.\nBehold such beauty and worship Him.\nThe gates of heaven resound within\nFor we were made for\nThis glorious grace." },
             { name: "REFRAIN", lyrics: "Every heart cries “Holy!”\nEvery knee bends low.\nAlways steadfast, ever faithful,\nHow Your love endures!" },
             { name: "REFRAIN", lyrics: "Face to face with glory\nThat no eye has seen:\n“We become like Him\nWhom we behold.”\nBeholding You!" },
-            { name: "VERSE", lyrics: "We sing to You, \nOur lives surrendered as offerings,\nOur faith in You as the gift we bring.\nThe veil is lifted before Your throne.\n\nWe come to You,\nConformed to You in Your lowliness,\nTransformed by You in Your holiness.\nWe rise from glory to glory, Lord!" },
+            { name: "VERSE", lyrics: "We sing to You, \nOur lives surrendered as offerings,\nOur faith in You as the gift we bring.\nThe veil is lifted before Your throne." },
+            { name: "VERSE", lyrics: "We come to You,\nConformed to You in Your lowliness,\nTransformed by You in Your holiness.\nWe rise from glory to glory, Lord!" },
             { name: "REFRAIN", lyrics: "Every heart cries “Holy!”\nEvery knee bends low.\nAlways steadfast, ever faithful,\nHow Your love endures!" },
+            { name: "REFRAIN", lyrics: "Face to face with glory\nThat no eye has seen:\n“We become like Him\nWhom we behold.”\nBeholding You!" },
+            { name: "END", lyrics: "Every heart cries “Holy!”\nEvery knee bends low.\nAlways steadfast, ever faithful,\nHow Your love endures!" },
             { name: "END", lyrics: "Face to face with glory\nThat no eye has seen:\n“We become like Him\nWhom we behold.”\nBeholding You!" }
         ]
     },
@@ -587,29 +591,31 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Rise up, O children of God\nMake ready your hands for war.\nThe King now stands before us\nWe join together as loyalists\nTo build His kingdom here on earth\nAnd join in heaven’s chorus." },
             { name: "REFRAIN", lyrics: "Lead on, O Lord,\nUnsheathing our swords.\nWe arm ourselves with Your truth.\nBurn in our hearts, enflame our lives.\nThe battle is now, we’re here to fight." },
             { name: "VERSE", lyrics: "This age it seeks to destroy.\nClouds my mind,\nRobs my heart of Your joy.\nWe pray together for vision.\nOur ears are poised to listen.\nLead us now unto war\nWe accept our mission." },
-            { name: "END", lyrics: "Lead on, O Lord,\nUnsheathing our swords.\nWe arm ourselves with Your truth.\nBurn in our hearts, enflame our lives.\nThe battle is now, we’re here to fight." }
+            { name: "REFRAIN", lyrics: "Lead on, O Lord,\nUnsheathing our swords.\nWe arm ourselves with Your truth.\nBurn in our hearts, enflame our lives.\nThe battle is now, we’re here to fight.\n(2x)" },
+            { name: "END", lyrics: "The battle is now, we’re here\nThe battle is now, we’re here\nThe battle is now, we’re here to fight" }
         ]
     },
     {
         title: "Let God Arise",
         sections: [
-            { name: "VERSE", lyrics: "Let us rise with our eyes now fixed on Jesus.\nMay we come to know \nhis precious love victorious.\nLet us stand with the shield of faith around us\n\nLet us raise one voice to glorify our maker.\nSo we move forward, \nwith our eyes fixed on him\nwho ransomed the lowly man from sin." },
+            { name: "VERSE", lyrics: "Let us rise with our eyes now fixed on Jesus.\nMay we come to know \nhis precious love victorious.\nLet us stand with the shield of faith around us" },
+            { name: "VERSE", lyrics: "Let us raise one voice to glorify our maker.\nSo we move forward, \nwith our eyes fixed on him\nwho ransomed the lowly man from sin." },
             { name: "REFRAIN", lyrics: "The clarion calls we will press on towards \nthe one who calls us onwards now into battle\nWith joy we rise \nand we will answer our King's call\nAs we cry \"Holy worthy mighty is our Lord.\"" },
-            { name: "VERSE", lyrics: "Marching on our God will go before us.\nMay we follow in the footsteps of our savior.\nIn his great love he died upon a cross.\n\nLet us press on without counting the cost.\nSo we move forward, with our eyes above\nOn him who ransomed us in love." },
+            { name: "VERSE", lyrics: "Marching on our God will go before us.\nMay we follow in the footsteps of our savior.\nIn his great love he died upon a cross." },
+            { name: "VERSE", lyrics: "Let us press on without counting the cost.\nSo we move forward, with our eyes above\nOn him who ransomed us in love." },
             { name: "REFRAIN", lyrics: "The clarion calls we will press on towards \nthe one who calls us onwards now into battle\nWith joy we rise \nand we will answer our King's call\nAs we cry \"Holy worthy mighty is our Lord.\"" },
-            { name: "VERSE", lyrics: "He is glorious, victorious in pow'r" },
-            { name: "VERSE", lyrics: "Let God arise\n(3x)" },
+            { name: "VERSE", lyrics: "WOMEN:\nHe is glorious, victorious in pow'r (4x)\n\nMEN:\nLet God arise (3x)" },
             { name: "END", lyrics: "As for me I will press on towards \nthe one who calls us onwards now into battle\nWith joy we rise \nand we will answer our King's call\nAs we cry \"Holy worthy mighty is our Lord.\"" }
         ]
     },
     {
         title: "Let The Fire Fall",
         sections: [
-            { name: "VERSE", lyrics: "Holy Spirit, (Holy Spirit)\nCome with Your fire!\nHoly Spirit, (Holy Spirit) \nCome with Your fire!\nHoly Spirit, come with Your fire!\nHoly Spirit, come with Your fire!" },
+            { name: "VERSE", lyrics: "Holy Spirit, (Holy Spirit)\nCome with Your fire!\n(2x)\n\nHoly Spirit, come with Your fire!\n(2x)" },
             { name: "REFRAIN", lyrics: "Come, Holy Spirit, let the fire fall!\nCome, Holy Spirit, let the fire fall!\nLet the fire fall!  Let the fire fall!" },
-            { name: "VERSE", lyrics: "Holy Spirit, (Holy Spirit)\nPurify my heart!\nHoly Spirit, (Holy Spirit) \nPurify my heart!\nHoly Spirit, purify my heart!\nHoly Spirit, purify my heart!" },
+            { name: "VERSE", lyrics: "Holy Spirit, (Holy Spirit)\nPurify my heart!\n(2x)\n\nHoly Spirit, purify my heart!\n(2x)" },
             { name: "REFRAIN", lyrics: "Come, Holy Spirit, let the fire fall!\nCome, Holy Spirit, let the fire fall!\nLet the fire fall!  Let the fire fall!" },
-            { name: "VERSE", lyrics: "Holy Spirit, (Holy Spirit)\nSet my life on fire!\nHoly Spirit, (Holy Spirit)\nSet my life on fire!\nHoly Spirit, set my life on fire!\nHoly Spirit, set my life on fire!" },
+            { name: "VERSE", lyrics: "Holy Spirit, (Holy Spirit)\nSet my life on fire!\n(2x)\n\nHoly Spirit, set my life on fire!\n(2x)" },
             { name: "REFRAIN", lyrics: "Come, Holy Spirit, let the fire fall!\nCome, Holy Spirit, let the fire fall!\nLet the fire fall!  Let the fire fall!" },
             { name: "END", lyrics: "Let the fire fall!  Let the fire fall!" }
         ]
@@ -617,7 +623,12 @@ const rawSongs = [
     {
         title: "Let The Saints Be Joyful",
         sections: [
-            { name: "END", lyrics: "Let the saints be joyful in glory,\nLet the high praises of God\nBe in their mouth,\nAnd a two-edged sword\nIn their hand. (2x)\n\nEnter His gates with thanksgiving,\nEnter His courts with praise.\nBe thankful to Him, bless His name.\nFor the Lord is good\nAnd His mercy is everlasting\nAnd His truth endureth for all time.\n\nGroup 1:\nEnter His gates with thanksgiving,\nEnter His courts with praise!\nBe thankful to Him, bless His name.\nGroup 2:\nLet the saints be joyful in glory,\nLet the high praises of God be in their mouth,\nAnd a two-edged sword in their hand.\n\nGroup 1:\nFor the Lord is good\nAnd His mercy is everlasting\nAnd His truth endureth for all time.\nGroup 2:\nLet the saints be joyful in glory\nLet the high praises of God be in their mouth\nAnd a two-edged sword in their hand.\n\nLet the saints be joyful in glory,\nLet the high praises of God\nBe in their mouth,\nAnd a two-edged sword\nIn their hand. (2x)" }
+            { name: "REFRAIN", lyrics: "Let the saints be joyful in glory,\nLet the high praises of God\nBe in their mouth,\nAnd a two-edged sword\nIn their hand.\n(2x)" },
+            { name: "VERSE", lyrics: "Enter His gates with thanksgiving,\nEnter His courts with praise.\nBe thankful to Him, bless His name.\nFor the Lord is good\nAnd His mercy is everlasting\nAnd His truth endureth for all time." },
+            { name: "REFRAIN", lyrics: "Let the saints be joyful in glory,\nLet the high praises of God\nBe in their mouth,\nAnd a two-edged sword\nIn their hand.\n(2x)" },
+            { name: "VERSE", lyrics: "Enter His gates with thanksgiving,\nEnter His courts with praise.\nBe thankful to Him, bless His name.\nFor the Lord is good\nAnd His mercy is everlasting\nAnd His truth endureth for all time." },
+            { name: "REFRAIN", lyrics: "Let the saints be joyful in glory,\nLet the high praises of God\nBe in their mouth,\nAnd a two-edged sword\nIn their hand.\n(2x)" },
+            { name: "REFRAIN", lyrics: "And a two-edged sword\nIn their hand.\n(3x)" },
         ]
     },
     {
@@ -628,7 +639,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "The angel of the Lord encamps\n‘Round those who fear His name\nTo save them\nAnd deliver them from harm.\nThough lions roar with hunger\nWe lack for no good thing.\nNo wonder then we praise Him\nWith our song." },
             { name: "REFRAIN", lyrics: "Let us exalt His name together forever.\nI sought the Lord, He heard me\nAnd delivered me from my fears.\nLet us exalt His name together forever.\nO, sing His praises, magnify the Lord." },
             { name: "VERSE", lyrics: "Come, children, now and hear me\nIf you would see long life\nJust keep your lips\nFrom wickedness and lies.\nDo good and turn from evil\nSeek peace instead of strife\nLove righteousness\nAnd God will hear your cry." },
-            { name: "END", lyrics: "Let us exalt His name together forever.\nI sought the Lord, He heard me\nAnd delivered me from my fears.\nLet us exalt His name together forever.\nO, sing His praises, magnify the Lord." }
+            { name: "END", lyrics: "Let us exalt His name together forever.\nI sought the Lord, He heard me\nAnd delivered me from my fears.\nLet us exalt His name together forever.\nO, sing His praises, magnify the Lord.\n(2x)\n\nO, sing His praises, magnify the Lord." }
         ]
     },
     {
