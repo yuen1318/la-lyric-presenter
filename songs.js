@@ -645,11 +645,14 @@ const rawSongs = [
     {
         title: "Let Your Glory Fall",
         sections: [
-            { name: "VERSE", lyrics: "Father of creation, \nUnfold Your sovereign plan.\nRaise up a chosen generation\nThat will march through the land.\nAll creation is longing\nFor Your unveiling of pow’r\nWould You release Your anointing?\nO God, let this be the hour!" },
+            { name: "VERSE", lyrics: "Father of creation, \nUnfold Your sovereign plan.\nRaise up a chosen generation\nThat will march through the land." },
+            { name: "VERSE", lyrics: "All creation is longing\nFor Your unveiling of pow’r\nWould You release Your anointing?\nO God, let this be the hour!" },
             { name: "REFRAIN", lyrics: "Let Your glory fall on this room.\nLet it go forth from here to the nations.\nLet Your fragrance rest in this place\nAs we gather to seek Your face." },
-            { name: "VERSE", lyrics: "Ruler of nations,\nThe world has yet to see\nThe full release of Your promise,\nThe Church in victory.\nTurn to us, Lord, and touch us.\nMake us strong in Your might.\nOvercome our weakness,\nThat we could stand up and fight.\n\nLet your Kingdom come. (echo) \nLet Your will be done. (echo)\nLet us see on earth (echo)\nThe glory of Your Son." },
+            { name: "VERSE", lyrics: "Ruler of nations,\nThe world has yet to see\nThe full release of Your promise,\nThe Church in victory." },
+            { name: "VERSE", lyrics: "Turn to us, Lord, and touch us.\nMake us strong in Your might.\nOvercome our weakness,\nThat we could stand up and fight." },
             { name: "REFRAIN", lyrics: "Let Your glory fall on this room.\nLet it go forth from here to the nations.\nLet Your fragrance rest in this place\nAs we gather to seek Your face." },
-            { name: "END", lyrics: "We are gathered to seek Your face." }
+            { name: "VERSE", lyrics: "Let your Kingdom come. (echo) \nLet Your will be done. (echo)\nLet us see on earth (echo)\nThe glory of Your Son.\n(3x)" },
+            { name: "END", lyrics: "Let Your glory fall on this room.\nLet it go forth from here to the nations.\nLet Your fragrance rest in this place\nAs we gather to seek Your face.\n\nWe are gathered to seek Your face." },
         ]
     },
     {
