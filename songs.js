@@ -838,9 +838,13 @@ const rawSongs = [
         title: "Praise The Lord All Nations",
         sections: [
             { name: "VERSE", lyrics: "Rise up, your light has come;\nHis glory shines upon you.\nThough darkness reigns on earth,\nHis light has risen on you.\nAnd to it all the nations come;\nTheir kings shall seek its brightness\nLift up your eyes and see; behold His light." },
-            { name: "REFRAIN", lyrics: "Praise the Lord, all nations\nAnd extol Him all you peoples. (2x)\nFor great is His steadfast love toward us,\nAnd the faithfulness of the Lord \nEndures forever. Alleluia." },
+            { name: "REFRAIN", lyrics: "Praise the Lord, all nations\nAnd extol Him all you peoples.\n(2x)" },
+            { name: "REFRAIN", lyrics: "For great is His steadfast love toward us,\nAnd the faithfulness of the Lord \nEndures forever. Alleluia." },
             { name: "VERSE", lyrics: "From the east and from the west\nHe calls His sons and daughters.\nFrom ev’ry land they come\nTo drink life-giving waters.\nThen you shall see, and radiant be;\nYour heart shall thrill with gladness.\nThe wealth of all the nations shall be yours." },
-            { name: "END", lyrics: "Praise the Lord, all nations\nAnd extol him all you peoples. (2x)\nFor great is His steadfast love toward us,\nAnd the faithfulness of the Lord \nEndures forever. Alleluia.\nAlleluia. Praise the Lord, all nations. (3x)" }
+            { name: "REFRAIN", lyrics: "Praise the Lord, all nations\nAnd extol Him all you peoples.\n(2x)" },
+            { name: "REFRAIN", lyrics: "For great is His steadfast love toward us,\nAnd the faithfulness of the Lord \nEndures forever. Alleluia." },
+            { name: "REFRAIN", lyrics: "Praise the Lord, all nations\nAnd extol Him all you peoples.\n(2x)" },
+            { name: "END", lyrics: "For great is His steadfast love toward us,\nAnd the faithfulness of the Lord \nEndures forever. Alleluia.\n\nAlleluia. Praise the Lord, all nations. (3x)" },
         ]
     },
     {
