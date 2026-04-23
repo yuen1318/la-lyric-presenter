@@ -766,7 +766,12 @@ const rawSongs = [
     {
         title: "More Of You",
         sections: [
-            { name: "END", lyrics: "More of you O God.\nMore of you, Christ Jesus.\nMore of you O Spirit,\nWe want more of who you are.\n\nMore abundant life,\nmore indwelling presence,\nmore transforming power,\nwe want more, we yearn for you.\n\nBe welcomed here \ncome be enthroned on our praise.\nWe have made room, all else is loss, \nwe wait for you.\nWe will not rest, \nuntil you make your home with us.\nUntil you come and satisfy us, we want more.\n\nMore of you O God.\nMore of you, Christ Jesus.\nMore of you O Spirit,\nWe want more of who you are." }
+            { name: "VERSE", lyrics: "More of you O God.\nMore of you, Christ Jesus.\nMore of you O Spirit,\nWe want more of who you are." },
+            { name: "VERSE", lyrics: "More abundant life,\nmore indwelling presence,\nmore transforming power,\nwe want more, we yearn for you." },
+            { name: "REFRAIN", lyrics: "Be welcomed here \ncome be enthroned on our praise.\nWe have made room, all else is loss, \nwe wait for you.\n\nWe will not rest, \nuntil you make your home with us.\nUntil you come and satisfy us, we want more." },
+            { name: "VERSE", lyrics: "More of you O God.\nMore of you, Christ Jesus.\nMore of you O Spirit,\nWe want more of who you are." },
+            { name: "VERSE", lyrics: "More abundant life,\nmore indwelling presence,\nmore transforming power,\nwe want more, we yearn for you." },
+            { name: "END", lyrics: "Be welcomed here \ncome be enthroned on our praise.\nWe have made room, all else is loss, \nwe wait for you.\n\nWe will not rest, \nuntil you make your home with us.\nUntil you come and satisfy us, we want more." },
         ]
     },
     {
@@ -778,7 +783,7 @@ const rawSongs = [
             { name: "CHORUS", lyrics: "(Men) And now my God I search to see your face\n(Women) And rejoice in knowing you (…rejoice in knowing you)\n(Men) To find you in my eyes renewed by faith\n(Women) and adore forever more (…adore forever more)\n(Men) To taste of heaven in the center of my soul\n(Both) I long to love you Lord" },
             { name: "VERSE", lyrics: "I will lift my voice to you, with music celebrating\nYour presence for all eternity\nRejoicing I will praise on harp and lyre playing\nMy portion eternally receive" },
             { name: "CHORUS", lyrics: "(Men) And now my God I search to see your face\n(Women) And rejoice in knowing you (…rejoice in knowing you)\n(Men) To find you in my eyes renewed by faith\n(Women) and adore forever more (…adore forever more)\n(Men) To taste of heaven in the center of my soul\n(Both) I long to love you Lord" },
-            { name: "END", lyrics: "(Men) You are forever my portion O Lord\n(Women) My inheritance the Lord\n(Men) You are forever my portion O Lord\n(Women) My inheritance the Lord\n(Men) You are forever my portion O Lord\n(Women) My inheritance the Lord" }
+            { name: "END", lyrics: "(Men) You are forever my portion O Lord\n(Women) My inheritance the Lord\n(2x)\n\n(Men) You are forever my portion O Lord\n(Both) My inheritance the Lord" }
         ]
     },
     {
@@ -789,7 +794,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "I gaze upon Your temple\nAnd I behold Your beauty and grace.\nYour love is better than life, Lord,\nWith joyful heart\nI will sing of Your praises." },
             { name: "REFRAIN", lyrics: "So I will bless You with all that I am.\nIn Your name I will lift up my hands.\nMy soul shall rise to Your banquet of life\nMy mouth shall praise You with joy\nMy mouth shall praise You with joy." },
             { name: "VERSE", lyrics: "Each night I watch for Your light\nUpon my bed I ponder Your mercy.\nMy soul clings closely to You, Lord.\nYou are my strength\nAnd Your love will uphold me." },
-            { name: "END", lyrics: "So I will bless You with all that I am.\nIn Your name I will lift up my hands.\nMy soul shall rise to Your banquet of life\nMy mouth shall praise You with joy\nMy mouth shall praise You with joy." }
+            { name: "END", lyrics: "So I will bless You with all that I am.\nIn Your name I will lift up my hands.\nMy soul shall rise to Your banquet of life\nMy mouth shall praise You with joy\nMy mouth shall praise You with joy.\n(2x)" }
         ]
     },
     {
