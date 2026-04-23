@@ -853,19 +853,18 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Who shall not fear and glorify\nYour name, O Lord?\nWho shall not bow and worship You,\nO Lord Most High?\nWe will praise Your name!" },
             { name: "REFRAIN", lyrics: "High on high You reign\nHigh on high, enthroned in heaven\nHigh on high You reign\nAll glory belongs to Your name!" },
             { name: "VERSE", lyrics: "Great are Your works, O Lord our God,\nTo those You love.\nMajestic are You in holiness,\nO God, our King.\nWe will praise Your name!" },
-            { name: "REFRAIN", lyrics: "High on high You reign\nHigh on high, enthroned in heaven\nHigh on high You reign\nAll glory belongs to Your name!" },
+            { name: "REFRAIN", lyrics: "High on high You reign\nHigh on high, enthroned in heaven\nHigh on high You reign\nAll glory belongs to Your name!\n(2x)" },
             { name: "END", lyrics: "High on high You reign!" }
         ]
     },
     {
-        title: "Prayer of Augustine",
+        title: "Prayer of Saint Augustine",
         sections: [
             { name: "VERSE", lyrics: "O Beauty ancient, O Beauty so new,\nLate have I loved Thee and feebly yet do.\nThough You were with me\nI was not with You.\nThen You shone Your face,\nAnd I was blind no more." },
             { name: "REFRAIN", lyrics: "My heart searches restlessly,\nAnd finds no rest till it rests in Thee.\nO Seeker, You sought for me,\nYour love has found me\nI am taken by Thee" },
             { name: "VERSE", lyrics: "I sought this world and chased its finer things\nYet were these not in You \nThey would not have been.\nMy ceaseless longing hid the deeper truth\nIn all my desirings \nI was desiring You" },
             { name: "REFRAIN", lyrics: "My heart searches restlessly,\nAnd finds no rest till it rests in Thee.\nO Seeker, You sought for me,\nYour love has found me\nI am taken by Thee" },
             { name: "VERSE", lyrics: "Lord, in my deafness You cried out to me.\nI drew my breath \nAnd now Your fragrance I breathe.\nO Fount of Life You are forever the same\nO Fire of Love\nCome set me aflame." },
-            { name: "REFRAIN", lyrics: "My heart searches restlessly,\nAnd finds no rest till it rests in Thee.\nO Seeker, You sought for me,\nYour love has found me\nI am taken by Thee" },
             { name: "END", lyrics: "My heart searches restlessly,\nAnd finds no rest till it rests in Thee.\nO Seeker, You sought for me,\nYour love has found me\nI am taken by Thee" }
         ]
     },
@@ -873,24 +872,26 @@ const rawSongs = [
         title: "Prince Of Peace",
         sections: [
             { name: "VERSE", lyrics: "You are holy  (You are holy)\nYou are mighty  (You are mighty)\nYou are worthy  (You are worthy)\nWorthy of praise  (Worthy of praise)\nI will follow  (I will follow)\nI will listen  (I will listen)\nI will love You  (I will love You)\nAll of my days  (All of my days)" },
-            { name: "VERSE", lyrics: "I will sing to and worship\nThe King who is worthy.\nI will love and adore You,\nI will bow down before You. (2x)" },
+            { name: "VERSE", lyrics: "(MEN)\nI will sing to and worship\nThe King who is worthy.\nI will love and adore You,\nI will bow down before You." },
             { name: "VERSE", lyrics: "You are my Prince of peace\nAnd I will live my life for You." },
             { name: "VERSE", lyrics: "You are holy  (You are holy)\nYou are mighty  (You are mighty)\nYou are worthy  (You are worthy)\nWorthy of praise  (Worthy of praise)\nI will follow  (I will follow)\nI will listen  (I will listen)\nI will love You  (I will love You)\nAll of my days  (All of my days)" },
-            { name: "VERSE", lyrics: "You are Lord of lords,\nYou are King of kings,\nYou are mighty God, Lord of everything.\nYou’re Emmanuel, you’re the great I AM\nYou’re the Prince of peace\nWho is the Lamb.\n\nYou’re the living God,\nYou’re my saving grace,\nYou will live forever,\nYou are Ancient of days.\nYou are Alpha, Omega, beginning and end.\nYou’re my Savior, Messiah,\nRedeemer and friend." },
+            { name: "VERSE", lyrics: "(WOMEN)\nYou are Lord of lords,\nYou are King of kings,\nYou are mighty God, Lord of everything.\nYou’re Emmanuel, you’re the great I AM\nYou’re the Prince of peace\nWho is the Lamb." },
+            { name: "VERSE", lyrics: "(WOMEN)\nYou’re the living God,\nYou’re my saving grace,\nYou will live forever,\nYou are Ancient of days.\nYou are Alpha, Omega, beginning and end.\nYou’re my Savior, Messiah,\nRedeemer and friend." },
             { name: "VERSE", lyrics: "You are my Prince of peace\nAnd I will live my life for You." },
             { name: "VERSE", lyrics: "You are holy  (You are holy)\nYou are mighty  (You are mighty)\nYou are worthy  (You are worthy)\nWorthy of praise  (Worthy of praise)\nI will follow  (I will follow)\nI will listen  (I will listen)\nI will love You  (I will love You)\nAll of my days  (All of my days)" },
-            { name: "VERSE", lyrics: "I will sing to \nand worship \nThe King who \nis worthy\nI will love \nand adore You, \nI will bow down before You" },
-            { name: "VERSE", lyrics: "You’re the living God,\nYou’re my saving grace,\nYou will live forever,\nYou are ancient of days\nYou are Alpha, Omega,\nbeginning and end.\nYou’re my Savior, Messiah,\nRedeemer and friend." },
-            { name: "END", lyrics: "You are my Prince of peace\nAnd I will live my life for You." }
+            { name: "VERSE", lyrics: "(MEN)\nI will sing to and worship\nThe King who is worthy.\nI will love and adore You,\nI will bow down before You.\n\n(WOMEN)\nYou are Lord of lords,\nYou are King of kings,\nYou are mighty God, Lord of everything.\nYou’re Emmanuel, you’re the great I AM\nYou’re the Prince of peace\nWho is the Lamb." },
+            { name: "VERSE", lyrics: "(MEN)\nI will sing to and worship\nThe King who is worthy.\nI will love and adore You,\nI will bow down before You.\n\n(WOMEN)\nYou’re the living God,\nYou’re my saving grace,\nYou will live forever,\nYou are Ancient of days.\nYou are Alpha, Omega, beginning and end.\nYou’re my Savior, Messiah,\nRedeemer and friend." },
+            { name: "END", lyrics: "You are my Prince of peace\nAnd I will live my life for You.\n(2x)" }
         ]
     },
     {
         title: "Psalm 116 - I Am Your Servant",
         sections: [
-            { name: "VERSE", lyrics: "What shall I offer to You, Lord my God,\nFor all the goodness\nYou have shown to me?\nIn my affliction You gave me mercy,\nYou have restored my soul to its rest.\n\nSo I will pay my vows to You, Lord,\nWithin Your house,\nBefore the people of God." },
+            { name: "VERSE", lyrics: "What shall I offer to You, Lord my God,\nFor all the goodness\nYou have shown to me?\nIn my affliction You gave me mercy,\nYou have restored my soul to its rest.\nSo I will pay my vows to You, Lord,\nWithin Your house,\nBefore the people of God." },
             { name: "REFRAIN", lyrics: "I am Your servant,\nThe one You have chosen,\nI have been called \nand been freed from the grave.\nSo I will lift up the cup of salvation\nAnd I will call on the name of the Lord,\nI will give thanks in the house of the Lord." },
-            { name: "VERSE", lyrics: "I love You, Lord,\nFor You have heard my cry.\nYou freed my life\nFrom the shadow of death.\nMy feet had stumbled,\nYou bore me up, Lord,\nI walk with You in the land of the just.\n\nSo I will pay my vows to You, Lord,\nWithin Your house,\nBefore the people of God." },
-            { name: "END", lyrics: "I am Your servant,\nThe one You have chosen,\nI have been called \nand been freed from the grave.\nSo I will lift up the cup of salvation\nAnd I will call on the name of the Lord,\nI will give thanks in the house of the Lord." }
+            { name: "VERSE", lyrics: "I love You, Lord,\nFor You have heard my cry.\nYou freed my life\nFrom the shadow of death.\nMy feet had stumbled,\nYou bore me up, Lord,\nI walk with You in the land of the just.\nSo I will pay my vows to You, Lord,\nWithin Your house,\nBefore the people of God." },
+            { name: "REFRAIN", lyrics: "I am Your servant,\nThe one You have chosen,\nI have been called \nand been freed from the grave.\nSo I will lift up the cup of salvation\nAnd I will call on the name of the Lord,\nI will give thanks in the house of the Lord." },
+            { name: "END", lyrics: "I am Your servant,\nThe one You have chosen,\nI have been called \nand been freed from the grave.\nSo I will lift up the cup of salvation\nAnd I will call on the name of the Lord,\nI will give thanks in the house of the Lord.\n\nI will give thanks! (2x)" }
         ]
     },
     {
@@ -901,7 +902,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "A day in Your courts\nIs more precious to me\nThan a thousand without You, my God.\nThe servant at Your gates\nIs more blessed than he\nWhose wealth keeps him\nFar from You, Lord." },
             { name: "CHORUS", lyrics: "Blessed are those, Lord,\nWhose strength is in Thee,\nWho find their life in Your praise.\nThey shall grow strong,\nGo from strength unto strength,\nUntil they see You face to face." },
             { name: "VERSE", lyrics: "The Almighty is a sun,\nA shield for His own,\nFor all those who walk in His ways.\nNo blessing withheld,\nEndless favor bestowed\nOn him who has made You his prize." },
-            { name: "END", lyrics: "Blessed are those, Lord,\nWhose strength is in Thee,\nWho find their life in Your praise.\nThey shall grow strong,\nGo from strength unto strength,\nUntil they see You face to face." }
+            { name: "END", lyrics: "Blessed are those, Lord,\nWhose strength is in Thee,\nWho find their life in Your praise.\nThey shall grow strong,\nGo from strength unto strength,\nUntil they see You face to face.\n(2x)" }
         ]
     },
     {
@@ -912,7 +913,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "For the Lord is the great God\nAnd the King above kings\nIn His hands are the depths of the earth\nThe mountains are His and the sea is His\nHe formed all living things." },
             { name: "REFRAIN", lyrics: "Alleluia! Alleluia!\nHope in God, O my soul,\nIn Him your joy will be full." },
             { name: "VERSE", lyrics: "Come, let us bow down and worship Him\nLet us kneel before the Lord our maker.\nFor He is our God and His people are we\nThe flock under His care." },
-            { name: "END", lyrics: "Alleluia! Alleluia!\nHope in God, O my soul,\nIn Him your joy will be full." }
+            { name: "END", lyrics: "Alleluia! Alleluia!\nHope in God, O my soul,\nIn Him your joy will be full.\n\nHope in God, O my soul,\nIn Him your joy will be full." }
         ]
     },
     {
