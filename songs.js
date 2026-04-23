@@ -505,7 +505,7 @@ const rawSongs = [
     {
         title: "I Delight In Your Will",
         sections: [
-            { name: "VERSE", lyrics: "Patiently I sought the Lord;\nHe has heard my cry,\nhe has drawn me up\nAnd made my steps secure\n(2x)" },
+            { name: "VERSE", lyrics: "Patiently I sought the Lord;\nHe has heard my cry,\nAnd He has drawn me up\nAnd made my steps secure\n(2x)" },
             { name: "VERSE", lyrics: "And I said, “Behold I come\nIn the steps of my Savior before me.\nBehold I come to you!”" },
             { name: "CHORUS", lyrics: "I delight in your will, O my God;\nAnd your law is within my heart.\nAnd I come to serve your Word." },
             { name: "CHORUS", lyrics: "And I will speak of your steadfast love\nAnd I’ll tell of your faithfulness.\nYes, I come to do your will,\nFor you have set me free." },
