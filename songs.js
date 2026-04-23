@@ -800,23 +800,28 @@ const rawSongs = [
     {
         title: "My Soul Finds Rest in God Alone",
         sections: [
-            { name: "VERSE", lyrics: "My soul finds rest in God alone,\nMy salvation comes from Him.\nHe alone is my rock, \nHe alone is my salvation.\n\nMy soul finds rest in God alone,\nAll my hope I place in Him.\nHe alone is my fortress, \nHe’s my deliverer, I’ll not be shaken." },
+            { name: "VERSE", lyrics: "My soul finds rest in God alone,\nMy salvation comes from Him.\nHe alone is my rock, \nHe alone is my salvation." },
+            { name: "VERSE", lyrics: "My soul finds rest in God alone,\nAll my hope I place in Him.\nHe alone is my fortress, \nHe’s my deliverer, I’ll not be shaken." },
             { name: "REFRAIN", lyrics: "God alone is my rock\nAnd I’ll not be moved,\nI find shelter in His wings.\nHe alone is my strength and shield.\nHow my heart leaps for joy,\nI will ever give thanks unto Him." },
-            { name: "VERSE", lyrics: "For You have been my refuge, Lord,\nA strong tow’r against the foe\nMy help in times of distress\nMy joy in times of affliction.\n\nFor you have heard my cry, O God,\nListened to my supplication.\nFrom the ends of the earth I cry,\nLead me to the rock that is higher than I." },
-            { name: "END", lyrics: "God alone is my rock\nAnd I’ll not be moved,\nI find shelter in His wings.\nHe alone is my strength and shield.\nHow my heart leaps for joy,\nI will ever give thanks unto Him." }
+            { name: "VERSE", lyrics: "For You have been my refuge, Lord,\nA strong tow’r against the foe\nMy help in times of distress\nMy joy in times of affliction." },
+            { name: "VERSE", lyrics: "For you have heard my cry, O God,\nListened to my supplication.\nFrom the ends of the earth I cry,\nLead me to the rock that is higher than I." },
+            { name: "END", lyrics: "God alone is my rock\nAnd I’ll not be moved,\nI find shelter in His wings.\nHe alone is my strength and shield.\nHow my heart leaps for joy,\nI will ever give thanks unto Him.\n(2x)" }
         ]
     },
     {
         title: "Nada Te Turbe",
         sections: [
-            { name: "END", lyrics: "Nada te turbe, nada te_espante,\nTodo se pasa, Dios no se muda.\nLa paciencia todo lo_alcanza.\nQuien a Dios tiene nada le falta.\nSolo Dios basta! (3x) Aleluya." }
+            { name: "VERSE", lyrics: "Nada te turbe, nada te_espante,\nTodo se pasa, Dios no se muda.\nLa paciencia todo lo_alcanza.\nQuien a Dios tiene nada le falta.\nSolo Dios basta! (3x)\nAleluya.\n(2x)" }
         ]
     },
     {
         title: "Open The Eyes Of My Heart",
         sections: [
-            { name: "VERSE", lyrics: "Open the eyes of my heart, Lord.\nOpen the eyes of my heart,\nI want to see You,\nI want to see You.\n\nTo see You high and lifted up\nShining in the light of Your glory.\nPour out Your power and love\nAs we sing “Holy, holy, holy!”" },
-            { name: "END", lyrics: "Holy, holy, holy!\nHoly, holy, holy!\nHoly, holy, holy!\nI want to see You." }
+            { name: "VERSE", lyrics: "Open the eyes of my heart, Lord.\nOpen the eyes of my heart,\nI want to see You,\nI want to see You.\n(2x)" },
+            { name: "REFRAIN", lyrics: "To see You high and lifted up\nShining in the light of Your glory.\nPour out Your power and love\nAs we sing “Holy, holy, holy!”" },
+            { name: "VERSE", lyrics: "Open the eyes of my heart, Lord.\nOpen the eyes of my heart,\nI want to see You,\nI want to see You.\n(2x)" },
+            { name: "REFRAIN", lyrics: "To see You high and lifted up\nShining in the light of Your glory.\nPour out Your power and love\nAs we sing “Holy, holy, holy!”\n(2x)\n\nI want to see You." },
+            { name: "END", lyrics: "Holy, holy, holy!\nHoly, holy, holy!\nHoly, holy, holy!\nI want to see You.\n(2x)" }
         ]
     },
     {
@@ -825,7 +830,8 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Christ Jesus, though in the form of God\nDid not grasp equality with God\nBut emptying Himself\nTook a servant’s form\nBeing born in the likeness of men." },
             { name: "REFRAIN", lyrics: "Therefore God has highly exalted Him\nAnd bestowed on Him the name,\nThat at Jesus’ name\nEvery knee shall bow in heaven, on earth\nAnd under the earth\nAnd every tongue confess Him Lord\nTo the glory of God the Father." },
             { name: "VERSE", lyrics: "Being found in human form\nChrist Jesus humbled Himself\nBecoming obedient unto death\nEven to death on a cross." },
-            { name: "END", lyrics: "Therefore God has highly exalted Him\nAnd bestowed on Him the name,\nThat at Jesus’ name\nEvery knee shall bow in heaven, on earth\nAnd under the earth\nAnd every tongue confess Him Lord\nTo the glory of God the Father." }
+            { name: "REFRAIN", lyrics: "Therefore God has highly exalted Him\nAnd bestowed on Him the name,\nThat at Jesus’ name\nEvery knee shall bow in heaven, on earth\nAnd under the earth\nAnd every tongue confess Him Lord\nTo the glory of God the Father." },
+            { name: "END", lyrics: "Yes God has highly exalted Him\nAnd bestowed on Him the name,\nThat at Jesus’ name\nEvery knee shall bow in heaven, on earth\nAnd under the earth\nAnd every tongue confess Him Lord\nTo the glory of God the Father." }
         ]
     },
     {
