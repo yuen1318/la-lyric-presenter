@@ -922,12 +922,13 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Purify my heart,\nLet me be as gold and precious silver.\nPurify my heart,\nLet me be as gold, pure gold." },
             { name: "REFRAIN", lyrics: "Refiner’s fire,\nMy heart’s one desire is to be holy,\nSet apart for You, Lord.\nI choose to be holy,\nSet apart for You, my Master\nReady to do Your will." },
             { name: "VERSE", lyrics: "Purify my heart,\nCleanse me from within\nAnd make me holy.\nPurify my heart,\nCleanse me from my sin deep within." },
-            { name: "END", lyrics: "Refiner’s fire,\nMy heart’s one desire is to be holy,\nSet apart for You, Lord.\nI choose to be holy,\nSet apart for You, my Master\nReady to do Your will." }
+            { name: "END", lyrics: "Refiner’s fire,\nMy heart’s one desire is to be holy,\nSet apart for You, Lord.\nI choose to be holy,\nSet apart for You, my Master\nReady to do Your will.\n(2x)" }
         ]
     },
     {
         title: "Return, O My Soul",
         sections: [
+            { name: "VERSE", lyrics: "The Lord is gracious\nHe is merciful.\nIn my distress I called to Him.\nHe rescued me." },
             { name: "REFRAIN", lyrics: "Return, O my soul, to your rest\nReturn, my soul,\nFor the Lord has been good to you" },
             { name: "VERSE", lyrics: "My soul He freed from death\nMy eyes from tears\nI shall walk before the Lord\nIn the land of the living" },
             { name: "REFRAIN", lyrics: "Return, O my soul, to your rest\nReturn, my soul,\nFor the Lord has been good to you" },
