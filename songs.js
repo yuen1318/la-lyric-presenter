@@ -939,12 +939,12 @@ const rawSongs = [
     {
         title: "Rise O People Called To Worship",
         sections: [
-            { name: "VERSE", lyrics: "Rise, O people, called to worship\nHeaven’s highest praise to share\nClothed by God in holy splendor\nJoined by Jesus’ priestly prayer.\n\nHere and now we see but dimly\nThen and there our eyes behold\nHim whom we by faith now worship\nSoon by sight to ever know." },
+            { name: "VERSE", lyrics: "Rise, O people, called to worship\nHeaven’s highest praise to share\nClothed by God in holy splendor\nJoined by Jesus’ priestly prayer.\nHere and now we see but dimly\nThen and there our eyes behold\nHim whom we by faith now worship\nSoon by sight to ever know." },
             { name: "REFRAIN", lyrics: "You, O fount of life eternal\nYou, the source of endless joy\nFace to face with love forever:\n“Gloria!” will angels cry\n“Glory!” will our hearts reply.\n“Holy, holy, holy is the Lord!”" },
-            { name: "VERSE", lyrics: "Lives we’ve offered brought before You\nAs all heaven’s hosts adore\nPray’rs with heav’nly incense burning\nRise to shroud Your holy throne.\n\nCountless saints\nRobed white in splendor\nWashed in blood of spotless Lamb\nNever more to thirst or hunger\nEver more to understand." },
+            { name: "VERSE", lyrics: "Lives we’ve offered brought before You\nAs all heaven’s hosts adore\nPray’rs with heav’nly incense burning\nRise to shroud Your holy throne.\nCountless saints\nRobed white in splendor\nWashed in blood of spotless Lamb\nNever more to thirst or hunger\nEver more to understand." },
             { name: "REFRAIN", lyrics: "You, O fount of life eternal\nYou, the source of endless joy\nFace to face with love forever:\n“Gloria!” will angels cry\n“Glory!” will our hearts reply.\n“Holy, holy, holy is the Lord!”" },
-            { name: "VERSE", lyrics: "Ev’ry tear wiped by the Father\nEvery nation’s tumult quelled\nRoar of sea and crash of thunder\nBy His will creation stilled.\n\nHeaven’s hosts then awed to silence\nAt the Lamb enthroned above\nThen will we the silence shatter\nWorshipping the Face of love!" },
-            { name: "END", lyrics: "You, O fount of life eternal\nYou, the source of endless joy\nFace to face with love forever:\n“Gloria!” will angels cry\n“Glory!” will our hearts reply.\n“Holy, holy, holy is the Lord!”" }
+            { name: "VERSE", lyrics: "Ev’ry tear wiped by the Father\nEvery nation’s tumult quelled\nRoar of sea and crash of thunder\nBy His will creation stilled.\nHeaven’s hosts then awed to silence\nAt the Lamb enthroned above\nThen will we the silence shatter\nWorshipping the Face of love!" },
+            { name: "END", lyrics: "You, O fount of life eternal\nYou, the source of endless joy\nFace to face with love forever:\n“Gloria!” will angels cry\n“Glory!” will our hearts reply.\n“Holy, holy, holy is the Lord!”\n(2x)" }
         ]
     },
     {
@@ -953,7 +953,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Salvation belongs to our God\nWho sits upon the throne\nAnd unto the Lamb:\nPraise and glory, wisdom and thanks\nHonor and power and strength." },
             { name: "REFRAIN", lyrics: "Be to our God forever and ever!\nBe to our God forever and ever!\nBe to our God forever and ever!\nAmen!" },
             { name: "VERSE", lyrics: "And we, the redeemed, shall be strong\nIn purpose and unity\nDeclaring aloud:\nPraise and glory, wisdom and thanks\nHonor and power and strength." },
-            { name: "END", lyrics: "Be to our God forever and ever!\nBe to our God forever and ever!\nBe to our God forever and ever!\nAmen!" }
+            { name: "END", lyrics: "Be to our God forever and ever!\nBe to our God forever and ever!\nBe to our God forever and ever!\nAmen!\n(2x)" }
         ]
     },
     {
@@ -964,31 +964,43 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Lord, I come to Your awesome presence\nFrom the shadows into Your radiance\nBy the blood I may enter Your brightness\nSearch me, try me,\nConsume all my darkness.\nShine on me, shine on me!" },
             { name: "REFRAIN", lyrics: "Shine, Jesus, shine.\nFill this land with the Father’s glory.\nBlaze, Spirit, blaze.  Set our hearts on fire.\nFlow, river, flow.\nFlood the nations with grace and mercy.\nSend forth Your word, Lord,\nAnd let there be light." },
             { name: "VERSE", lyrics: "As we gaze on Your kingly brightness\nSo our faces display Your likeness\nEver changing from glory to glory\nMirrored here, may our lives\nTell your story.\nShine on me, Shine on me!" },
-            { name: "END", lyrics: "Shine, Jesus, shine.\nFill this land with the Father’s glory.\nBlaze, Spirit, blaze.  Set our hearts on fire.\nFlow, river, flow.\nFlood the nations with grace and mercy.\nSend forth Your word, Lord,\nAnd let there be light." }
+            { name: "END", lyrics: "Shine, Jesus, shine.\nFill this land with the Father’s glory.\nBlaze, Spirit, blaze.  Set our hearts on fire.\nFlow, river, flow.\nFlood the nations with grace and mercy.\nSend forth Your word, Lord,\nAnd let there be light.\n(2x)" }
         ]
     },
     {
         title: "Shout To The Lord",
         sections: [
-            { name: "END", lyrics: "My Jesus, my Savior\nLord, there is none like You.\nAll of my days I want to praise\nThe wonders of Your mighty love.\n\nMy comfort, my shelter\nTower of refuge and strength\nLet every breath, all that I am\nNever cease to worship You.\n\nShout to the Lord,\nAll the earth, let us sing\nPower and majesty, praise to the King.\nMountains bow down\nAnd the seas will roar\nAt the sound of Your name.\n\nI sing for joy at the works of Your hand.\nForever I’ll love you, forever I’ll stand.\nNothing compares to the promise\nI have in You." }
+            { name: "VERSE", lyrics: "My Jesus, my Savior\nLord, there is none like You.\nAll of my days I want to praise\nThe wonders of Your mighty love." },
+            { name: "VERSE", lyrics: "My comfort, my shelter\nTower of refuge and strength\nLet every breath, all that I am\nNever cease to worship You." },
+            { name: "REFRAIN", lyrics: "Shout to the Lord,\nAll the earth, let us sing\nPower and majesty, praise to the King.\nMountains bow down\nAnd the seas will roar\nAt the sound of Your name." },
+            { name: "REFRAIN", lyrics: "I sing for joy at the works of Your hand.\nForever I’ll love you, forever I’ll stand.\nNothing compares to the promise\nI have in You." },
+            { name: "VERSE", lyrics: "My Jesus, my Savior\nLord, there is none like You.\nAll of my days I want to praise\nThe wonders of Your mighty love." },
+            { name: "VERSE", lyrics: "My comfort, my shelter\nTower of refuge and strength\nLet every breath, all that I am\nNever cease to worship You." },
+            { name: "REFRAIN", lyrics: "Shout to the Lord,\nAll the earth, let us sing\nPower and majesty, praise to the King.\nMountains bow down\nAnd the seas will roar\nAt the sound of Your name." },
+            { name: "REFRAIN", lyrics: "I sing for joy at the works of Your hand.\nForever I’ll love you, forever I’ll stand.\nNothing compares to the promise\nI have in You." },
+            { name: "REFRAIN", lyrics: "Shout to the Lord,\nAll the earth, let us sing\nPower and majesty, praise to the King.\nMountains bow down\nAnd the seas will roar\nAt the sound of Your name." },
+            { name: "END", lyrics: "I sing for joy at the works of Your hand.\nForever I’ll love you, forever I’ll stand.\nNothing compares to the promise\nI have in You." }
         ]
     },
     {
         title: "So Bless The Lord",
         sections: [
-            { name: "VERSE", lyrics: "Who is He who forgives our iniquities?\nWho is He who heals our disease?\nIt is the Lord who restored your life \nFrom the grave \nand renews your youth like the eagle's.\n\nSo bless the Lord Oh my soul; \nAll within me exalt Him\nRing out my heart; sing out my soul!\nDo not forget in His mercy \nHe has set you free.\nOh Lord be blessed in me." },
-            { name: "VERSE", lyrics: "For the Lord has been \nGracious and merciful,\nAll His ways rich in steadfast love \nAs the skies rise high over all the earth, \nSo far has God removed all your sins.\n\nSo bless the Lord Oh my soul; \nAll within me exalt Him\nRing out my heart; sing out my soul!\nDo not forget in His mercy \nHe has set you free.\nOh Lord be blessed in me." },
-            { name: "END", lyrics: "As a father is moved and compassionate,\nQuick to spare the son whom He loves,\nSo does God's face of grace ever seek\nTo save the people so close to His heart.\n\nSo bless the Lord Oh my soul; \nAll within me exalt Him\nRing out my heart; sing out my soul!\nDo not forget in His mercy \nHe has set you free.\nOh Lord be blessed in me. \n(2x)" }
+            { name: "VERSE", lyrics: "Who is He who forgives our iniquities?\nWho is He who heals our disease?\nIt is the Lord who restored your life \nFrom the grave \nand renews your youth like the eagle's." },
+            { name: "REFRAIN", lyrics: "So bless the Lord Oh my soul; \nAll within me exalt Him\nRing out my heart; sing out my soul!\nDo not forget in His mercy \nHe has set you free.\nOh Lord be blessed in me." },
+            { name: "VERSE", lyrics: "For the Lord has been \nGracious and merciful,\nAll His ways rich in steadfast love \nAs the skies rise high over all the earth, \nSo far has God removed all our sins." },
+            { name: "REFRAIN", lyrics: "So bless the Lord Oh my soul; \nAll within me exalt Him\nRing out my heart; sing out my soul!\nDo not forget in His mercy \nHe has set you free.\nOh Lord be blessed in me." },
+            { name: "VERSE", lyrics: "As a father is moved and compassionate,\nQuick to spare the son whom He loves,\nSo does God's face of grace ever seek\nTo save the people so close to His heart." },
+            { name: "END", lyrics: "So bless the Lord Oh my soul; \nAll within me exalt Him\nRing out my heart; sing out my soul!\nDo not forget in His mercy \nHe has set you free.\nOh Lord be blessed in me.\n(2x)\n\nOh Lord be blessed in me." }
         ]
     },
     {
         title: "Song Of Patrick",
         sections: [
-            { name: "VERSE", lyrics: "This day God gives me \nStrength of high heaven\nSun and moon shining\nFlame in my hearth\n\nFlashing of lightning\nWind in its swiftness\nDeeps of the ocean\nFirmness of earth." },
+            { name: "VERSE", lyrics: "This day God gives me \nStrength of high heaven\nSun and moon shining\nFlame in my hearth\nFlashing of lightning\nWind in its swiftness\nDeeps of the ocean\nFirmness of earth." },
             { name: "REFRAIN", lyrics: "Rising I thank You\nMighty and strong One\nKing of creation, Giver of rest\nLight of the morning\nDispersing the darkness\nYour love awaking the dawn!" },
-            { name: "VERSE", lyrics: "This day God sends me\nStrength as my steersman\nMight to uphold me,\n Wisdom as guide\n\nYour eyes are watchful\nYours ears are list’ning\nYour lips are speaking\nStrength at my side." },
+            { name: "VERSE", lyrics: "This day God sends me\nStrength as my steersman\nMight to uphold me,\n Wisdom as guide\nYour eyes are watchful\nYour ears are list’ning\nYour lips are speaking\nStrength at my side." },
             { name: "REFRAIN", lyrics: "Rising I thank You\nMighty and strong One\nKing of creation, Giver of rest\nLight of the morning\nDispersing the darkness\nYour love awaking the dawn!" },
-            { name: "VERSE", lyrics: "God’s way is my way\nGod’s shield is round me\nGod’s host defends me, \nSaving from ill\n\nAngels of heaven, \nDrive from me always\nAll that would harm me\nStand by me still." },
+            { name: "VERSE", lyrics: "God’s way is my way\nGod’s shield is round me\nGod’s host defends me, \nSaving from ill\nAngels of heaven, \nDrive from me always\nAll that would harm me\nStand by me still." },
             { name: "REFRAIN", lyrics: "Rising I thank You  \nMighty and strong One\nKing of creation, Giver of rest\nLight of the morning\nDispersing the darkness\nYour love awaking the dawn!" },
             { name: "END", lyrics: "Rising I thank You\nMighty and strong One\nKing of creation, Giver of rest\nFirmly confessing: Oneness of Godhead\nThreeness of Persons, Trinity blest!" }
         ]
