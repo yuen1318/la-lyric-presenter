@@ -7,7 +7,6 @@
     <style>
         /* ============================================================
            LOCAL RALEWAY FONT LOADING
-           Assumes font files are in the "Raleway" directory
         ============================================================ */
         
         @font-face {
@@ -257,7 +256,7 @@
             color: #ffffff;
             font-weight: 600;
             line-height: 1.4;
-            white-space: pre;          /* ← only breaks at \n */
+            white-space: pre;
             word-break: keep-all;
             overflow-wrap: normal;
             font-family: 'Raleway', 'Inter', -apple-system, 'Noto Serif', Georgia, serif;
@@ -266,7 +265,7 @@
             transition: none;
         }
 
-        /* Slide Counter */
+        /* ========== BASE STYLES (Landscape first) ========== */
         .slide-title-box,
         .slide-counter {
             position: fixed;
@@ -291,16 +290,51 @@
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
             z-index: 40;
             pointer-events: none;
+            transition: bottom 0.2s ease;
         }
 
+        /* Landscape: bottom corners */
         .slide-title-box {
             left: 28px;
             right: auto;
         }
-
         .slide-counter {
             right: 28px;
             left: auto;
+        }
+
+        /* Portrait: title top center, counter bottom center */
+        @media (orientation: portrait) {
+            .slide-title-box {
+                top: 20px;
+                bottom: auto;
+                left: 50%;
+                right: auto;
+                transform: translateX(-50%);
+                min-width: auto;
+                max-width: 85vw;
+            }
+            .slide-counter {
+                bottom: 20px;
+                left: 50%;
+                right: auto;
+                transform: translateX(-50%);
+                min-width: auto;
+            }
+        }
+
+        /* Landscape: lower them a bit (reduce bottom margin) */
+        @media (orientation: landscape) {
+            .slide-title-box,
+            .slide-counter {
+                bottom: 12px;
+            }
+            .slide-title-box {
+                left: 20px;
+            }
+            .slide-counter {
+                right: 20px;
+            }
         }
 
         .slide-title {
@@ -326,41 +360,39 @@
             visibility: hidden;
         }
 
+        /* Fullscreen overrides */
         body:fullscreen .slide-counter,
         body:fullscreen .slide-title-box {
-            bottom: 40px;
             padding: 16px 32px;
             font-size: 1.7rem;
             font-weight: 800;
             border-width: 2px;
             background: rgba(0, 0, 0, 0.8);
         }
-
-        body:fullscreen .slide-counter {
-            right: 40px;
-            left: auto;
-        }
-
         body:fullscreen .slide-title-box {
-            left: 40px;
+            top: 28px; 
+            transform: translateX(-50%);
+        }
+        body:fullscreen .slide-counter {
+            bottom: 28px;
+            transform: translateX(-50%);
+        }
+        /* In fullscreen + landscape, keep corners? Actually fullscreen portrait also center */
+        body:fullscreen.orientation-landscape .slide-title-box,
+        body:fullscreen .slide-title-box {
+            left: 50%;
             right: auto;
+            top: 28px;
+            bottom: auto;
+        }
+        body:fullscreen .slide-counter {
+            left: 50%;
+            right: auto;
+            bottom: 28px;
         }
 
+        /* Responsive adjustments */
         @media (max-width: 850px) {
-            .slide-counter,
-            .slide-title-box {
-                bottom: 20px;
-                padding: 8px 18px;
-                font-size: 1.1rem;
-            }
-            .slide-counter {
-                right: 20px;
-                left: auto;
-            }
-            .slide-title-box {
-                left: 20px;
-                right: auto;
-            }
             .lyric-wrapper {
                 padding: 1.2rem 1.5rem !important;
                 border-radius: 32px !important;
@@ -380,12 +412,6 @@
         }
 
         @media (max-width: 600px) {
-            .slide-counter {
-                bottom: 16px;
-                right: 16px;
-                padding: 6px 14px;
-                font-size: 0.95rem;
-            }
             .lyric-wrapper {
                 padding: 0.8rem 1rem !important;
                 border-radius: 24px !important;
@@ -401,6 +427,26 @@
                 margin-bottom: 0.8rem !important;
                 font-size: 0.7rem !important;
                 letter-spacing: 2px !important;
+            }
+            /* Portrait: smaller top/bottom spacing */
+            @media (orientation: portrait) {
+                .slide-title-box {
+                    top: 12px;
+                    padding: 6px 12px;
+                    font-size: 0.8rem;
+                }
+                .slide-counter {
+                    bottom: 12px;
+                    padding: 6px 12px;
+                    font-size: 0.8rem;
+                }
+            }
+            @media (orientation: landscape) {
+                .slide-title-box, .slide-counter {
+                    bottom: 8px;
+                    padding: 6px 12px;
+                    font-size: 0.8rem;
+                }
             }
         }
         
@@ -538,14 +584,8 @@
         slideTitleBox.classList.remove('hidden-counter');
     }
 
-    function updateSlideTitlePosition() {
-        if (!slideTitleBox) return;
-        if (sidebar.classList.contains('hidden')) {
-            slideTitleBox.style.left = '28px';
-        } else {
-            slideTitleBox.style.left = '348px';
-        }
-    }
+    // No dynamic left positioning needed because CSS handles orientation & sidebar offset
+    // But we keep an orientation listener to ensure smooth updates (optional)
     
     // ============================================================
     //  FONT SCALING – ACCOUNTS FOR LETTER-SPACING IN MEASUREMENT
@@ -589,7 +629,7 @@
         let maxHeight = vh - padT - padB - badgeH - counterReserve - 30;
         maxHeight = Math.max(maxHeight, 150);
         
-        // Determine letter-spacing based on line length (pre‑measurement)
+        // Determine letter-spacing based on line length
         let longestLineForSpacing = "";
         for (let line of explicitLines) {
             if (line.length > longestLineForSpacing.length) longestLineForSpacing = line;
@@ -599,18 +639,16 @@
         else if (longestLineForSpacing.length > 45) letterSpacing = '-0.35px';
         else if (longestLineForSpacing.length > 35) letterSpacing = '-0.25px';
         
-        // Create measurement span with identical styling
         const measureSpan = document.createElement('span');
         measureSpan.style.position = 'absolute';
         measureSpan.style.visibility = 'hidden';
         measureSpan.style.whiteSpace = 'nowrap';
         measureSpan.style.fontFamily = getComputedStyle(lyricText).fontFamily;
         measureSpan.style.fontWeight = getComputedStyle(lyricText).fontWeight;
-        measureSpan.style.letterSpacing = letterSpacing;   // apply same letter-spacing
+        measureSpan.style.letterSpacing = letterSpacing;
         measureSpan.style.textTransform = getComputedStyle(lyricText).textTransform;
         document.body.appendChild(measureSpan);
         
-        // Max font caps
         let absMax = 5.2;
         if (vw >= 1280 && vh >= 720) absMax = 5.0;
         else if (vh > 800) absMax = 5.2;
@@ -624,7 +662,6 @@
         
         measureSpan.style.fontSize = `${refFont}rem`;
         
-        // Measure longest line width
         let maxLineWidth = 0;
         for (let line of explicitLines) {
             if (!line.length) continue;
@@ -632,14 +669,12 @@
             maxLineWidth = Math.max(maxLineWidth, measureSpan.getBoundingClientRect().width);
         }
         
-        // Width-based font
         let fontByWidth = absMax;
         if (maxLineWidth > 0) {
             const ideal = (maxWidth / maxLineWidth) * refFont;
-            fontByWidth = Math.min(absMax, Math.max(minFont, ideal * 0.95)); // slightly conservative
+            fontByWidth = Math.min(absMax, Math.max(minFont, ideal * 0.95));
         }
         
-        // Height-based font
         const numLines = nonEmptyLines.length;
         let fontByHeight = absMax;
         if (numLines > 0) {
@@ -651,11 +686,10 @@
         const finalFont = Math.max(minFont, Math.min(fontByWidth, fontByHeight));
         document.body.removeChild(measureSpan);
         
-        // Apply
         lyricText.style.fontSize = `${finalFont}rem`;
         lyricText.style.lineHeight = lineH;
         lyricText.style.letterSpacing = letterSpacing;
-        lyricText.style.whiteSpace = 'pre';   // never wrap except \n
+        lyricText.style.whiteSpace = 'pre';
         lyricText.style.wordBreak = 'keep-all';
         lyricText.style.overflowWrap = 'normal';
     }
@@ -709,7 +743,6 @@
                 if (!sidebar.classList.contains('hidden')) sidebar.classList.add('hidden');
             }
             updateFontSizeInstant();
-            updateSlideTitlePosition();
         }
     }
     
@@ -750,7 +783,6 @@
                 selectSong(song);
                 if (window.innerWidth <= 700) {
                     sidebar.classList.add('hidden');
-                    updateSlideTitlePosition();
                 }
             };
             div.appendChild(titleDiv);
@@ -769,7 +801,6 @@
     function initSidebarToggle() {
         searchToggleBtn.addEventListener('click', () => {
             sidebar.classList.toggle('hidden');
-            updateSlideTitlePosition();
             if (currentSong) updateFontSizeInstant();
         });
     }
@@ -788,7 +819,6 @@
         document.addEventListener('fullscreenchange', () => {
             searchToggleBtn.classList.toggle('fullscreen-hidden', !!document.fullscreenElement);
             if (currentSong) updateFontSizeInstant();
-            updateSlideTitlePosition();
             slideCounter.classList.remove('hidden-counter');
         });
     }
@@ -855,7 +885,6 @@
         currentSong = null;
         updateDisplay();
         renderSongList("");
-        updateSlideTitlePosition();
         updateSlideCounter();
     }
     
