@@ -267,34 +267,68 @@
         }
 
         /* Slide Counter */
+        .slide-title-box,
         .slide-counter {
             position: fixed;
             bottom: 28px;
-            right: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 160px;
+            max-width: min(88vw, 320px);
+            width: auto;
+            overflow: hidden;
             background: rgba(0, 0, 0, 0.7);
             backdrop-filter: blur(12px);
-            padding: 12px 24px;
+            padding: 12px 20px;
             border-radius: 60px;
             font-family: 'Raleway', monospace;
             font-weight: 700;
-            font-size: 1.35rem;
+            font-size: 1.15rem;
             letter-spacing: 1.5px;
             color: #ffffff;
             border: 1.5px solid rgba(79, 158, 255, 0.7);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
             z-index: 40;
             pointer-events: none;
+        }
+
+        .slide-title-box {
+            left: 28px;
+            right: auto;
+        }
+
+        .slide-counter {
+            right: 28px;
+            left: auto;
+        }
+
+        .slide-title {
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #d7e8ff;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            opacity: 0.95;
+        }
+
+        .slide-count {
             white-space: nowrap;
         }
 
-        .slide-counter.hidden-counter {
+        .slide-counter.hidden-counter,
+        .slide-title-box.hidden-counter {
             opacity: 0;
             visibility: hidden;
         }
 
-        body:fullscreen .slide-counter {
+        body:fullscreen .slide-counter,
+        body:fullscreen .slide-title-box {
             bottom: 40px;
-            right: 40px;
             padding: 16px 32px;
             font-size: 1.7rem;
             font-weight: 800;
@@ -302,12 +336,30 @@
             background: rgba(0, 0, 0, 0.8);
         }
 
+        body:fullscreen .slide-counter {
+            right: 40px;
+            left: auto;
+        }
+
+        body:fullscreen .slide-title-box {
+            left: 40px;
+            right: auto;
+        }
+
         @media (max-width: 850px) {
-            .slide-counter {
+            .slide-counter,
+            .slide-title-box {
                 bottom: 20px;
-                right: 20px;
                 padding: 8px 18px;
                 font-size: 1.1rem;
+            }
+            .slide-counter {
+                right: 20px;
+                left: auto;
+            }
+            .slide-title-box {
+                left: 20px;
+                right: auto;
             }
             .lyric-wrapper {
                 padding: 1.2rem 1.5rem !important;
@@ -428,7 +480,12 @@
     </div>
 </div>
 
-<div class="slide-counter" id="slideCounter">—/—</div>
+<div class="slide-title-box" id="slideTitleBox">
+    <span class="slide-title" id="slideTitle">—</span>
+</div>
+<div class="slide-counter" id="slideCounter">
+    <span class="slide-count" id="slideCount">—/—</span>
+</div>
 
 <script src="./songs.js"></script>
 
@@ -449,6 +506,9 @@
     const searchToggleBtn = document.getElementById("searchToggleBtn");
     const mainArea = document.getElementById("mainArea");
     const slideCounter = document.getElementById("slideCounter");
+    const slideTitleBox = document.getElementById("slideTitleBox");
+    const slideTitle = document.getElementById("slideTitle");
+    const slideCount = document.getElementById("slideCount");
     
     function escapeHtml(str) {
         if (!str) return "";
@@ -465,13 +525,26 @@
         if (currentSong?.sections?.length) {
             const total = currentSong.sections.length;
             const current = currentSectionIndex + 1;
-            slideCounter.textContent = (current >= 1 && current <= total) ? `${current}/${total}` : `—/${total}`;
+            slideCount.textContent = (current >= 1 && current <= total) ? `${current}/${total}` : `—/${total}`;
+            slideTitle.textContent = currentSong.title || '—';
         } else if (currentSong) {
-            slideCounter.textContent = `0/0`;
+            slideCount.textContent = `0/0`;
+            slideTitle.textContent = currentSong.title || '—';
         } else {
-            slideCounter.textContent = `—/—`;
+            slideCount.textContent = `—/—`;
+            slideTitle.textContent = '—';
         }
         slideCounter.classList.remove('hidden-counter');
+        slideTitleBox.classList.remove('hidden-counter');
+    }
+
+    function updateSlideTitlePosition() {
+        if (!slideTitleBox) return;
+        if (sidebar.classList.contains('hidden')) {
+            slideTitleBox.style.left = '28px';
+        } else {
+            slideTitleBox.style.left = '348px';
+        }
     }
     
     // ============================================================
@@ -636,6 +709,7 @@
                 if (!sidebar.classList.contains('hidden')) sidebar.classList.add('hidden');
             }
             updateFontSizeInstant();
+            updateSlideTitlePosition();
         }
     }
     
@@ -674,7 +748,10 @@
             titleDiv.textContent = song.title;
             titleDiv.onclick = () => {
                 selectSong(song);
-                if (window.innerWidth <= 700) sidebar.classList.add('hidden');
+                if (window.innerWidth <= 700) {
+                    sidebar.classList.add('hidden');
+                    updateSlideTitlePosition();
+                }
             };
             div.appendChild(titleDiv);
             songListContainer.appendChild(div);
@@ -692,6 +769,7 @@
     function initSidebarToggle() {
         searchToggleBtn.addEventListener('click', () => {
             sidebar.classList.toggle('hidden');
+            updateSlideTitlePosition();
             if (currentSong) updateFontSizeInstant();
         });
     }
@@ -710,6 +788,7 @@
         document.addEventListener('fullscreenchange', () => {
             searchToggleBtn.classList.toggle('fullscreen-hidden', !!document.fullscreenElement);
             if (currentSong) updateFontSizeInstant();
+            updateSlideTitlePosition();
             slideCounter.classList.remove('hidden-counter');
         });
     }
@@ -776,6 +855,7 @@
         currentSong = null;
         updateDisplay();
         renderSongList("");
+        updateSlideTitlePosition();
         updateSlideCounter();
     }
     
