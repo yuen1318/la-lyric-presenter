@@ -1051,9 +1051,9 @@ const rawSongs = [
         title: "Strong and Faithful",
         sections: [
             { name: "VERSE", lyrics: "Our hearts know no fear\nStrong and faithful is our God.\nWe are His, precious and dear\nA rock unmoved, He is our God." },
-            { name: "REFRAIN", lyrics: "For though a thousand may fall\nAnd mountains may crumble\nWe shall continue to stand.\nFor men who are mighty and tall\nMay falter and tremble\nWe shall possess the land.\nFor strong and faithful is our God. (2x)" },
+            { name: "REFRAIN", lyrics: "For though a thousand may fall\nAnd mountains may crumble\nWe shall continue to stand.\nFor men who are mighty and tall\nMay falter and tremble\nWe shall possess the land.\nFor strong and faithful is our God.\nFor strong and faithful is our God." },
             { name: "VERSE", lyrics: "Clouds of night may fill the sky\nStorms that rage may blow the day\nBut let your hearts rest in your God\nHe will shield you all the way." },
-            { name: "END", lyrics: "For though a thousand may fall\nAnd mountains may crumble\nWe shall continue to stand.\nFor men who are mighty and tall\nMay falter and tremble\nWe shall possess the land.\nFor strong and faithful is our God. (2x)" }
+            { name: "END", lyrics: "For though a thousand may fall\nAnd mountains may crumble\nWe shall continue to stand.\nFor men who are mighty and tall\nMay falter and tremble\nWe shall possess the land.\nFor strong and faithful is our God.\nFor strong and faithful is our God.\n(2x)\n\nFor strong and faithful is our God." }
         ]
     },
     {
@@ -1067,7 +1067,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "The eyes of the Lord are on the just\nAnd His ears toward all their cries\nThe Lord is near to the broken heart\nAnd the crushed in Spirit, He saves." },
             { name: "REFRAIN", lyrics: "Taste and see\nHow good our God can be!\nO taste and see\nHow good our God can be!" },
             { name: "VERSE", lyrics: "O taste and see the Lord is good\nAnd happy are all who trust in Him\nO fear the Lord, you His holy ones\nTrust in Him and lack no good thing." },
-            { name: "END", lyrics: "Taste and see\nHow good our God can be!\nO taste and see\nHow good our God can be!" }
+            { name: "END", lyrics: "Taste and see\nHow good our God can be!\nO taste and see\nHow good our God can be!\n(2x)" }
         ]
     },
     {
