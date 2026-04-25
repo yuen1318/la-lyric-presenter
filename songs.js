@@ -414,7 +414,7 @@ const rawSongs = [
     {
         title: "He Has Covered Himself In Glory",
         sections: [
-            { name: "REFRAIN", lyrics: "Let us sing to the Lord!\nHe has covered Himself in glory!\nLet us sing to the Lord!\nHe has covered Himself in praise!\n(2X)" },
+            { name: "REFRAIN", lyrics: "Let us sing to the Lord!\nHe has covered Himself in glory!\nLet us sing to the Lord!\nHe has covered Himself in praise!\n(2x)" },
             { name: "VERSE", lyrics: "I will sing to the Lord\nHe is gloriously triumphant\nRider, horse and chariot\nHas He hurled into the sea!" },
             { name: "VERSE", lyrics: "My strength and my courage\nIs the Lord, my Savior.\nHe is my God and the God\nOf my fathers – I exalt Him!" },
             { name: "REFRAIN", lyrics: "Let us sing to the Lord!\nHe has covered Himself in glory!\nLet us sing to the Lord!\nHe has covered Himself in praise!" },
@@ -423,7 +423,7 @@ const rawSongs = [
             { name: "REFRAIN", lyrics: "Let us sing to the Lord!\nHe has covered Himself in glory!\nLet us sing to the Lord!\nHe has covered Himself in praise!" },
             { name: "VERSE", lyrics: "The people You chose\nYou redeemed, and planted them on\nYour holy mountain.\nThe place where You made Your seat,\nThe dwelling place of our God!" },
             { name: "VERSE", lyrics: "From His sanctuary,\nEstablished by His hand,\nSeated in glory, the Lord shall reign\nForever and ever!" },
-            { name: "REFRAIN", lyrics: "Let us sing to the Lord!\nHe has covered Himself in glory!\nLet us sing to the Lord!\nHe has covered Himself in praise!\n(2X)" },
+            { name: "REFRAIN", lyrics: "Let us sing to the Lord!\nHe has covered Himself in glory!\nLet us sing to the Lord!\nHe has covered Himself in praise!\n(2x)" },
             { name: "END", lyrics: "He has covered Himself in glory!\nHe has covered Himself in praise!" }
         ]
     },
@@ -1147,10 +1147,12 @@ const rawSongs = [
     {
         title: "The River Flows",
         sections: [
-            { name: "VERSE", lyrics: "From the throne of God\nAnd from the Lamb the river flows.\nLife redeeming, ever healing,\nAge to age it goes.\n\nNo more sun, the Holy One\nOur light that ever shines.\nCrystal clear, the river here\nWill swell our hearts to join the cry!" },
+            { name: "VERSE", lyrics: "From the throne of God\nAnd from the Lamb the river flows.\nLife redeeming, ever healing,\nAge to age it goes." },
+            { name: "VERSE", lyrics: "No more sun, the Holy One\nOur light that ever shines.\nCrystal clear, the river here\nWill swell our hearts to join the cry!" },
             { name: "REFRAIN", lyrics: "Awake, O sleeper, rise to life\nAnd Christ will give you light.\nLift your head, behold the river!\nHe mounts His throne\nTo shouts of praise\nBe opened, heaven’s gates!\nEnter in, O King of glory!" },
-            { name: "VERSE", lyrics: "“Come!” the Spirit calls\nAnd with the bride, the Spirit cries:\n“Souls that thirst can drink\nTheir fill of water without price.”\n\nBlest are those who wash their robes\nTo gain the tree of life\nFace to face with endless grace\nLift up your hearts to hear the cry." },
-            { name: "END", lyrics: "Awake, O sleeper, rise to life\nAnd Christ will give you light.\nLift your head, behold the river!\nHe mounts His throne\nTo shouts of praise\nBe opened, heaven’s gates!\nEnter in, O King of glory!" }
+            { name: "VERSE", lyrics: "“Come!” the Spirit calls\nAnd with the bride, the Spirit cries:\n“Souls that thirst can drink\nTheir fill of water without price.”" },
+            { name: "VERSE", lyrics: "Blest are those who wash their robes\nTo gain the tree of life\nFace to face with endless grace\nLift up your hearts to hear the cry." },
+            { name: "END", lyrics: "Awake, O sleeper, rise to life\nAnd Christ will give you light.\nLift your head, behold the river!\nHe mounts His throne\nTo shouts of praise\nBe opened, heaven’s gates!\nEnter in, O King of glory!\n(2x)\n\nO King of glory!" }
         ]
     },
     {
@@ -1167,13 +1169,13 @@ const rawSongs = [
     {
         title: "There is Power",
         sections: [
-            { name: "VERSE", lyrics: "There is power in the name in the name above all names\nIn the Son of God who came Jesus Christ the name that saves" },
-            { name: "VERSE", lyrics: "There is power in the word piercing hearts with news unheard\nTurning sinners from dead works raising dead men from the earth" },
-            { name: "CHORUS", lyrics: "There is power in the Spirit of our God in the name in the blood\nThere is power in the Spirit of our God to proclaim to heal to conquer and to live" },
-            { name: "VERSE", lyrics: "There is power in the cross in the blood he shed for us\nTo redeem our every loss to present us pure and just" },
-            { name: "CHORUS", lyrics: "There is power in the Spirit of our God in the name in the blood\nThere is power in the Spirit of our God to proclaim to heal to conquer and to live" },
-            { name: "BRIDGE", lyrics: "And we shall be filled with power when the Spirit comes on us\nAnd we will lift Jesus higher when the Spirit comes on us\nAnd we shall be filled with power when the Spirit comes on us\nAnd we will lift Jesus higher when the Spirit comes on us" },
-            { name: "END", lyrics: "There is power in the Spirit of our God in the name in the blood\nThere is power in the Spirit of our God to proclaim to heal to conquer and to live" }
+            { name: "VERSE", lyrics: "There is power in the name\nin the name above all names\nIn the Son of God who came\nJesus Christ the name that saves" },
+            { name: "VERSE", lyrics: "There is power in the word\npiercing hearts with news unheard\nTurning sinners from dead works\nraising dead men from the earth" },
+            { name: "CHORUS", lyrics: "There is power in the Spirit of our God\nin the name\nin the blood\nThere is power in the Spirit of our God\nto proclaim\nto heal\nto conquer and to live" },
+            { name: "VERSE", lyrics: "There is power in the cross\nin the blood he shed for us\nTo redeem our every loss\nto present us pure and just" },
+            { name: "CHORUS", lyrics: "There is power in the Spirit of our God\nin the name in the blood\nThere is power in the Spirit of our God\nto proclaim to heal to conquer and to live" },
+            { name: "BRIDGE", lyrics: "And we shall be filled with power\nwhen the Spirit comes on us\nAnd we will lift Jesus higher\nwhen the Spirit comes on us\n(2x)" },
+            { name: "END", lyrics: "There is power in the Spirit of our God\nin the name in the blood\nThere is power in the Spirit of our God\nto proclaim\nto heal to\nconquer and to live\n(2x)" }
         ]
     },
     {
