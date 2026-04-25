@@ -1181,7 +1181,10 @@ const rawSongs = [
     {
         title: "Till You See That Your Home Is In Heaven",
         sections: [
-            { name: "END", lyrics: "I will touch your eyes\nDo not lose heart.\nI will touch you again\nTill you see the angels and saints\nSurrounding the throne\n\nTill you see the brightness\nAnd majesty of the throne\nWhere your God reigns forever and ever\nYou’ll see them more clearly\n\nThousands and thousands\nSurrounding the throne\nAnd they’re shouting by night\nAnd by day to your God:\n\nHoly, holy is the Lord God Almighty! (2x)\nAnd I’ll touch you again\nTill you see that your home is in heav’n." }
+            { name: "VERSE", lyrics: "I will touch your eyes\nDo not lose heart.\nI will touch you again\nTill you see the angels and saints\nSurrounding the throne" },
+            { name: "VERSE", lyrics: "Till you see the brightness\nAnd majesty of the throne\nWhere your God reigns forever and ever\nYou’ll see them more clearly" },
+            { name: "VERSE", lyrics: "Thousands and thousands\nSurrounding the throne\nAnd they’re shouting by night\nAnd by day to your God:" },
+            { name: "END", lyrics: "Holy, (holy) holy (holy)\nis the Lord God Almighty!\nHoly, (holy) holy (holy)\nis the Lord God Almighty!\nAnd I’ll touch you again\nTill you see that your home is in heav’n.\n(2x)" }
         ]
     },
     {
@@ -1195,24 +1198,25 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Riches, honor, fame –\nGladly we despise\nThat we may attain\nThe pearl of great price." },
             { name: "REFRAIN", lyrics: "To know You, O Lord,\nAnd to know Your love,\nTo love You and to make You loved!" },
             { name: "VERSE", lyrics: "Nothing in this world\nShall possess our hearts.\nYou alone, O Lord,\nAre the better part!" },
-            { name: "END", lyrics: "To know You, O Lord,\nAnd to know Your love,\nTo love You and to make You loved!" }
+            { name: "END", lyrics: "To know You, O Lord,\nAnd to know Your love,\nTo love You and to make You loved!\n(2x)\n\nTo love You and to make You loved! (2x)" }
         ]
     },
     {
         title: "To The King Of Ages",
         sections: [
-            { name: "END", lyrics: "To the King of ages,\nImmortal and invisible,\nThe only God! (2x)\n\nBe honor and glory\nForever and ever! (2x)\nAmen!" }
+            { name: "REFRAIN", lyrics: "To the King of ages,\nImmortal and invisible,\nThe only God!\n(2x)\n\nBe honor and glory\nForever and ever!\n(2x)\nAmen!" },
+            { name: "END", lyrics: "To the King of ages,\nImmortal and invisible,\nThe only God!\n(2x)\n\nBe honor and glory\nForever and ever!\nBe honor and glory\nForever and ever! Amen!\n(2x)" }
         ]
     },
     {
         title: "To whom shall we go",
         sections: [
             { name: "VERSE", lyrics: "When the battle lines are drawn\nAnd there's war in our land\nAnd our King, the Christ, asks for whom you will fight\nWill you joyfully reply?" },
-            { name: "CHORUS", lyrics: "To whom else shall we go?    Who else would we follow?\nWe have come to know that you are the Christ\nTo whom else shall we go?    Who else would we follow?\nWe have come to know and love you O Lord.\nTo whom else shall we go?" },
+            { name: "CHORUS", lyrics: "To whom else shall we go?\nWho else would we follow?\nWe have come to know that you are the Christ\nTo whom else shall we go?" },
             { name: "VERSE", lyrics: "When the victory is well in hand\nAnd the King takes his throne\nWill he say to us, \"Will you stay with me,\nCome and live within my home?\"" },
-            { name: "CHORUS", lyrics: "To whom else shall we go?    Who else would we follow?\nWe have come to know that you are the Christ\nTo whom else shall we go?    Who else would we follow?\nWe have come to know and love you O Lord.\nTo whom else shall we go?" },
-            { name: "BRIDGE", lyrics: "Your words are Spirit and life! (3x)" },
-            { name: "END", lyrics: "To whom else shall we go?    Who else would we follow?\nWe have come to know that you are the Christ\nTo whom else shall we go?    Who else would we follow?\nWe have come to know and love you O Lord.\nTo whom else shall we go?" }
+            { name: "CHORUS", lyrics: "To whom else shall we go?\nWho else would we follow?\nWe have come to know and love you O Lord.\nTo whom else shall we go?" },
+            { name: "BRIDGE", lyrics: "Your words are Spirit and life!\n(3x)" },
+            { name: "END", lyrics: "To whom else shall we go? Who else would we follow?\nWe have come to know that you are the Christ\nTo whom else shall we go? Who else would we follow?\nWe have come to know and love you O Lord.\nTo whom else shall we go?" }
         ]
     },
     {
