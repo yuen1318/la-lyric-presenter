@@ -1073,13 +1073,15 @@ const rawSongs = [
     {
         title: "Te Deum",
         sections: [
-            { name: "VERSE", lyrics: "You are God, we praise You.\nYou are Lord, we thank You.\nAll creation worships You,\nFather, ancient of days.\n\nTo You all the angels,\nAll the pow’rs of heaven,\nCherubim and seraphim\nSing in endless praise." },
+            { name: "VERSE", lyrics: "You are God, we praise You.\nYou are Lord, we thank You.\nAll creation worships You,\nFather, ancient of days." },
+            { name: "VERSE", lyrics: "To You all the angels,\nAll the pow’rs of heaven,\nCherubim and seraphim\nSing in endless praise." },
             { name: "REFRAIN", lyrics: "You are holy, holy, powerful and mighty!\nYour glory fills the heavens,\nYour splendor fills the earth.\nYou are holy, holy, powerful and mighty!\nYour glory fills the heavens,\nYour splendor fills the earth." },
-            { name: "VERSE", lyrics: "Your servants, the apostles,\nHonor You and praise You.\nThe fellowship of prophets,\nYour greatness glorifies.\n\nThe army of the martyrs,\nRobed in white, adores You.\nThroughout the world Your holy church\nProclaims You to the skies." },
+            { name: "VERSE", lyrics: "Your servants, the apostles,\nHonor You and praise You.\nThe fellowship of prophets,\nYour greatness glorifies." },
+            { name: "VERSE", lyrics: "The army of the martyrs,\nRobed in white, adores You.\nThroughout the world Your holy church\nProclaims You to the skies." },
             { name: "REFRAIN", lyrics: "Father, glorious, infinite in majesty,\nSon victorious,\nSpirit, comfort and guide.\nYou are holy, holy, powerful and mighty!\nYour glory fills the heavens,\nYour splendor fills the earth." },
-            { name: "VERSE", lyrics: "Christ, Son of the Father,\nKing of endless glory,\nYou came among us lowly\nBirth of Mary’s womb.\n\nYou robbed death of its power,\nYou opened heaven’s treasure,\nNow You sit at God’s right hand,\nSoon to be our Judge." },
-            { name: "REFRAIN", lyrics: "Come, Lord Jesus,\nCome to help Your people\nThose for whom You shed Your blood\nTo whom You gave new birth.\nYou are holy, holy, powerful and mighty!\nYour glory fills the heavens,\nYour splendor fills the earth." },
-            { name: "END", lyrics: "Father, glorious, infinite in majesty,\nSon victorious,\nSpirit, comfort and guide.\nYou are holy, holy, powerful and mighty!\nYour glory fills the heavens,\nYour splendor fills the earth." }
+            { name: "VERSE", lyrics: "Christ, Son of the Father,\nKing of endless glory,\nYou came among us lowly\nBirth of Mary’s womb." },
+            { name: "VERSE", lyrics: "You robbed death of its power,\nYou opened heaven’s treasure,\nNow You sit at God’s right hand,\nSoon to be our Judge." },
+            { name: "END", lyrics: "Come, Lord Jesus,\nCome to help Your people\nThose for whom You shed Your blood\nTo whom You gave new birth.\nYou are holy, holy, powerful and mighty!\nYour glory fills the heavens,\nYour splendor fills the earth." }
         ]
     },
     {
@@ -1091,7 +1093,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Once we were no people, Lord,\nNow we are one in the house of God\nLiving stones now joined in Christ.\nFor we have seen Your temple brings\nThe hopeless heart to the hope of glory." },
             { name: "REFRAIN", lyrics: "Take us higher up, draw us deeper still\nFurther into Your heart, O Lord.\nMake us living light, set us on a hill\nShine forth through us, O radiant Son!" },
             { name: "VERSE", lyrics: "For we are a chosen race\nA shining light set up on a hill\nA holy nation, royal priests\nMay we proclaim Your wondrous name\nUntil the day when You come in glory." },
-            { name: "END", lyrics: "Take us higher up, draw us deeper still\nFurther into Your heart, O Lord.\nMake us living light, set us on a hill\nShine forth through us, O radiant Son!" }
+            { name: "END", lyrics: "Take us higher up, draw us deeper still\nFurther into Your heart, O Lord.\nMake us living light, set us on a hill\nShine forth through us, O radiant Son\n(2x)" }
         ]
     },
     {
