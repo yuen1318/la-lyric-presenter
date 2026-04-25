@@ -1230,7 +1230,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Pray for peace, Jerusalem, \nProsperity at home\nPeace inside your city walls\nThat comes from God alone." },
             { name: "REFRAIN", lyrics: "I rejoiced when they said to me:\n“Let us go unto the house of the Lord!”\nStanding there, O Jerusalem,\nIn your gates unto the house of the Lord." },
             { name: "VERSE", lyrics: "Since we are God’s people\nI say, “Peace be to you.”\nMay the God who dwells in us\nYour happiness renew." },
-            { name: "END", lyrics: "I rejoiced when they said to me:\n“Let us go unto the house of the Lord!”\nStanding there, O Jerusalem,\nIn your gates unto the house of the Lord." }
+            { name: "END", lyrics: "I rejoiced when they said to me:\n“Let us go unto the house of the Lord!”\nStanding there, O Jerusalem,\nIn your gates unto the house of the Lord.\n(2x)" }
         ]
     },
     {
@@ -1242,7 +1242,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "We struggle not against mere flesh and blood\nBut strive with dark dominions above.\nOur weapons molded not by human hands\nBut by the pow’r of Christ Jesus we stand\nHolding the sword of the Spirit in hand\nHe is the Word of God!" },
             { name: "REFRAIN", lyrics: "We are men of Jesus Christ\nWe’ve come to serve the Lord\nIn the strength of God.\nCome, O men of Jesus Christ\nCome, servants of the Lord\nCome and take your stand." },
             { name: "VERSE", lyrics: "To Christ our King we offer all our lives\nA fragrant offering and sacrifice\nTo live is Christ, to die is gain for us\nTriumphant praises to God we sing\nRejoice in vict’ry with Christ the King\nHe is the Word of God!" },
-            { name: "END", lyrics: "We are men of Jesus Christ\nWe’ve come to serve the Lord\nIn the strength of God.\nCome, O men of Jesus Christ\nCome, servants of the Lord\nCome and take your stand." }
+            { name: "END", lyrics: "We are men of Jesus Christ\nWe’ve come to serve the Lord\nIn the strength of God.\nCome, O men of Jesus Christ\nCome, servants of the Lord\nCome and take your stand.(2x)\nServe the word of God" }
         ]
     },
     {
@@ -1259,7 +1259,9 @@ const rawSongs = [
             { name: "REFRAIN", lyrics: "For it is written:\n“Every knee shall bend before Me\nAnd every tongue shall give praise\nto God.”" },
             { name: "VERSE", lyrics: "Now not all of us shall fall asleep\nBut all of us are to be changed.\nIn the twinkling of an eye\nAs the last trumpet sounds\nWe shall rise victorious in Christ!" },
             { name: "REFRAIN", lyrics: "For both in life and death\nWe belong to God.\nThat is why Christ has died for us\nAnd come again.\nWe shall all appear before\nThe judgment seat of God" },
-            { name: "END", lyrics: "For it is written:\n“Every knee shall bend before Me\nAnd every tongue shall give praise\nto God.”" }
+            { name: "REFRAIN", lyrics: "For it is written:\n“Every knee shall bend before Me\nAnd every tongue shall give praise\nto God.”" },
+            { name: "REFRAIN", lyrics: "For both in life and death\nWe belong to God.\nThat is why Christ has died for us\nAnd come again.\nWe shall all appear before\nThe judgment seat of God" },
+            { name: "END", lyrics: "For it is written:\n“Every knee shall bend before Me\nAnd every tongue shall give praise\nto God.”" },
         ]
     },
     {
