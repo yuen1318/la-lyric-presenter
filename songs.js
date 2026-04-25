@@ -1099,13 +1099,13 @@ const rawSongs = [
     {
         title: "The Light Of Christ",
         sections: [
-            { name: "REFRAIN", lyrics: "The light of Christ\nHas come into the world.\nThe light of Christ\nHas come into the world." },
+            { name: "REFRAIN", lyrics: "The light of Christ\nHas come into the world.\nThe light of Christ\nHas come into the world.\n(2x)" },
             { name: "VERSE", lyrics: "All men must be born again\nTo see the Kingdom of God.\nThe water and the Spirit\nBring new life in God’s love." },
-            { name: "REFRAIN", lyrics: "The light of Christ\nHas come into the world.\nThe light of Christ\nHas come into the world." },
+            { name: "REFRAIN", lyrics: "The light of Christ (echo)\nHas come into the world. (echo)\nThe light of Christ (echo)\nHas come into the world. (echo)" },
             { name: "VERSE", lyrics: "God gave up His only Son\nOut of love for the world\nSo that all men who believe in Him\nWill live forever." },
-            { name: "REFRAIN", lyrics: "The light of Christ\nHas come into the world.\nThe light of Christ\nHas come into the world." },
+            { name: "REFRAIN", lyrics: "The light of Christ (echo)\nHas come into the world. (echo)\nThe light of Christ (echo)\nHas come into the world. (echo)" },
             { name: "VERSE", lyrics: "The light of God has come to us\nSo that we might have salvation.\nFrom the darkness of our sins\nWe walk into glory with Christ Jesus." },
-            { name: "END", lyrics: "The light of Christ\nHas come into the world.\nThe light of Christ\nHas come into the world." }
+            { name: "REFRAIN", lyrics: "The light of Christ (echo)\nHas come into the world. (echo)\nThe light of Christ (echo)\nHas come into the world. (echo)" }
         ]
     },
     {
@@ -1116,8 +1116,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "On the first day Jesus arose from the dead\nAnd death was led captive away\nMorning broke into the tomb shadows fled\nNight was no more" },
             { name: "CHORUS", lyrics: "So let light shine out of darkness\nFor Christ is the light of the world\nYes the light shines in the darkness\nAnd the darkness has not overcome" },
             { name: "VERSE", lyrics: "On the last day, when earth and heaven have passed\nThe Lord shall create them anew\nWe shall arise from the dead\nAnd the Lamb shall be our light" },
-            { name: "CHORUS", lyrics: "So let light shine out of darkness\nFor Christ is the light of the world\nYes the light shines in the darkness\nAnd the darkness has not overcome" },
-            { name: "END", lyrics: "So let light shine out of darkness\nFor Christ is the light of the world\nYes the light shines in the darkness\nAnd the darkness has not overcome" }
+            { name: "END", lyrics: "So let light shine out of darkness\nFor Christ is the light of the world\nYes the light shines in the darkness\nAnd the darkness has not overcome\n(2x)" }
         ]
     },
     {
@@ -1136,7 +1135,7 @@ const rawSongs = [
     {
         title: "The People Of God",
         sections: [
-            { name: "REFRAIN", lyrics: "The people of God shines forth like lights\nThe sword of the Spirit is in their hands\nThat You, O Lord, might be glorified\nMay Your Kingdom come!" },
+            { name: "REFRAIN", lyrics: "The people of God shines forth like lights\nThe sword of the Spirit is in their hands\nThat You, O Lord, might be glorified\nMay Your Kingdom come!\n(2x)" },
             { name: "VERSE", lyrics: "Come together, O people of God\nLet all men see in our unity\nThat we live for Jesus the King!" },
             { name: "REFRAIN", lyrics: "The people of God shines forth like lights\nThe sword of the Spirit is in their hands\nThat You, O Lord, might be glorified\nMay Your Kingdom come!" },
             { name: "VERSE", lyrics: "Let our hearts not tire and fail\nBurning always with the zeal\nFor the service of Your name." },
