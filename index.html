@@ -476,7 +476,22 @@
         }
 
         .search-toggle-btn.fullscreen-hidden {
-            display: none;
+            opacity: 0.35;
+            pointer-events: auto;
+            z-index: 2147483647;
+        }
+        .search-toggle-btn.fullscreen-hidden:hover {
+            opacity: 1;
+        }
+
+        :root:fullscreen .search-toggle-btn {
+            opacity: 0.35 !important;
+            display: flex !important;
+            pointer-events: auto !important;
+            z-index: 2147483647 !important;
+        }
+        :root:fullscreen .search-toggle-btn:hover {
+            opacity: 1 !important;
         }
 
         body:fullscreen .lyric-wrapper {
