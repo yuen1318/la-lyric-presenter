@@ -106,22 +106,22 @@
 ✅ Unto The House Of The Lord
 ✅ We Are Men of Jesus Christ
 ✅ We Belong to God
-We Enter In
-We Exalt Your Name
-We Will Magnify
-We'll Be Faithful
-While We Still Breathe
-Who Is Like Thee
-Psalm 73 - Whom Have I in Heaven?
-Worship The Lord
-You Are My Delight
-You Are Our Treasure
-You the fount
-I Shall Not Want
-You will receive power
-We come to you
-The Lord of Hosts Is Here
-I Saw the King
+✅ We Enter In
+✅ We Exalt Your Name
+✅ We Will Magnify
+✅ We'll Be Faithful
+✅ While We Still Breathe
+✅ Who Is Like Thee
+✅ Psalm 73 - Whom Have I in Heaven?
+✅ Worship The Lord
+✅ You Are My Delight
+✅ You Are Our Treasure
+✅ You the fount
+❌ I Shall Not Want
+✅ You will receive power
+✅ We come to you
+✅ The Lord of Hosts Is Here
+✅ I Saw the King
 
 
 
@@ -131,3 +131,4 @@ wlang mp3:
 ❌ Make A Joyful Noise
 ❌ Praises On High
 ❌ Given A Chance
+❌ I Shall Not Want
