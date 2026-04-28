@@ -1443,5 +1443,320 @@ const rawSongs = [
             { name: "CHORUS", lyrics: "See the King upon his throne\nSee the victory he has won\nSee his love and mercy saving\nJesus reigns forevermore" },
             { name: "END", lyrics: "See the King upon his throne\nSee the victory he has won\nSee his love and mercy saving\nJesus reigns forevermore\nJesus reigns forevermore" }
         ]
+    },
+    {
+        title: "The Way",
+        sections: [
+            {
+                name: "VERSE",
+                lyrics: "Jesus, I believe in Your promise\nSo I won't be troubled, I know in heaven\nYou've made room for me\nJesus, I believe in Your power\nI know if I ask it, You will fulfill it\nFor the glory of His Name"
+            },
+            {
+                name: "PRE-CHORUS",
+                lyrics: "In this world, we'll have trouble\nBut I take heart, for You have come\nNow my sorrow turns to joy \nAnd I'll gladly sing"
+            },
+            {
+                name: "CHORUS",
+                lyrics: "You are the Way, the Truth,\nYou are the Life\nYou are the Christ, the Messiah\nI can't deny, oh\nYour resurrection gave me life\nI'll confess while I'm alive\nThat You're the Way, the Truth,\nYou are the Life so I will\nLive in You"
+            },
+            {
+                name: "VERSE",
+                lyrics: "Jesus, I abide in Your love\nI bear You witness and keep Your commandments\nThat Your joy be mine\nJesus, send down Your Spirit\nThat He may dwell in me \nTeach me in all things \nAnd guide me in truth"
+            },
+            {
+                name: "PRE-CHORUS",
+                lyrics: "In this world, we'll have trouble\nBut I take heart, for You have come\nNow my sorrow turns to joy \nAnd I'll gladly sing"
+            },
+            {
+                name: "CHORUS",
+                lyrics: "You are the Way, the Truth,\nYou are the Life\nYou are the Christ, the Messiah\nI can't deny, oh\nYour resurrection gave me life\nI'll confess while I'm alive\nThat You're the Way, the Truth,\nYou are the Life so I will\nLive in You"
+            },
+            {
+                name: "BRIDGE",
+                lyrics: "I'll give You my heart, I'll give You my soul,\nMy mind and my strength; I'll give You my all\n(4x)"
+            },
+            {
+                name: "CHORUS",
+                lyrics: "Cuz You’re the Way, the Truth,\nYou are the Life\nYou are the Christ, the Messiah\nI can't deny, oh\nYour resurrection gave me life \nI'll confess while I'm alive\nThat You're the Way, the Truth,\nYou are the Life so I will live"
+            },
+            {
+                name: "END",
+                lyrics: "In You - The Way, the Truth,\nYou are the Life\nYou are the Christ, the Messiah\nI can't deny, oh\nYour resurrection gave me life\nI'll confess while I'm alive\nThat You're the Way, the Truth,\nYou are the Life so I will\nLive in You"
+            }
+        ]
+    },
+    {
+        title: "He is our shield",
+        sections: [
+            {
+                name: "VERSE",
+                lyrics: "He is our shield, our defender\nOur provider, the God in whom we trust\nAnd we are his people\nGuided by his rod and staff\nTo the promised land he leads us on"
+            },
+            {
+                name: "PRE-CHORUS",
+                lyrics: "Heavenly hosts surround his throne with praise\nTo highest heaven our lives we raise"
+            },
+            {
+                name: "CHORUS",
+                lyrics: "He is King of Kings and Lord of Lords\nLight from Light and God from God\nHis mercy flows from sea to sea\nShepherd of our hearts and souls\nWarrior to destroy our foes\nWe follow where your Spirit leads\nLead us on"
+            },
+            {
+                name: "VERSE",
+                lyrics: "He is our shield, our defender\nOur provider, the God in whom we trust\nAnd we are his people\nGuided by his rod and staff\nTo the promised land he leads us on"
+            },
+            {
+                name: "PRE-CHORUS",
+                lyrics: "Heavenly hosts surround his throne with praise\nTo highest heaven our lives we raise"
+            },
+            {
+                name: "END",
+                lyrics: "He is King of Kings and Lord of Lords\nLight from Light and God from God\nHis mercy flows from sea to sea\nShepherd of our hearts and souls\nWarrior to destroy our foes\nWe follow where your Spirit leads\nLead us on...\nLead us on..."
+            }
+        ]
+    },
+    {
+        title: "Psalm 96 - Sing to the Lord a song of praise",
+        sections: [
+            {
+                name: "VERSE",
+                lyrics: "Great is the Lord, worthy of praise.\nHe is to be feared for his righteousness.\nFor all the gods of the nations are idols,\nBut the Lord God brings new life."
+            },
+            {
+                name: "REFRAIN",
+                lyrics: "Sing to the Lord a song of praise,\nWith new hearts, bless His name.\nSing to the Lord a song of praise,\nTo all the earth, His deeds proclaim."
+            },
+            {
+                name: "VERSE",
+                lyrics: "Say among all people, “The Lord is right,\nIn this world of change, He is secure.”\nWorship the Lord for who He is and all He’s made;\nBow before Him, all the earth!"
+            },
+            {
+                name: "REFRAIN",
+                lyrics: "Sing to the Lord a song of praise,\nWith new hearts, bless His name.\nSing to the Lord a song of praise,\nTo all the earth, His deeds proclaim."
+            },
+            {
+                name: "VERSE",
+                lyrics: "Let the heavens rejoice and the earth be glad.\nTrees of the forest will be freed to sing.\nFor our Lord has come to judge the earth\nIn righteousness, in His truth!"
+            },
+            {
+                name: "END",
+                lyrics: "Sing to the Lord a song of praise,\nWith new hearts, bless His name.\nSing to the Lord a song of praise,\nTo all the earth, His deeds proclaim.\n(2x)"
+            }
+        ]
+    },
+    {
+        title: "Psalm 100 - Sing joyfully unto the Lord!",
+        sections: [
+            {
+                name: "REFRAIN",
+                lyrics: "Sing joyfully unto the Lord!\nAll the lands\nServe the Lord with gladness!\nCome into His presence with singing!"
+            },
+            {
+                name: "VERSE",
+                lyrics: "Know the Lord is God.\nHe made us and we are His.\nWe are His people,\nThe sheep of His pasture."
+            },
+            {
+                name: "REFRAIN",
+                lyrics: "Sing joyfully unto the Lord!\nAll the lands\nServe the Lord with gladness!\nCome into His presence with singing!"
+            },
+            {
+                name: "VERSE",
+                lyrics: "Enter His gates with thanksgiving,\nCome into His courts with praise.\nWorship the Lord and bless His name!"
+            },
+            {
+                name: "REFRAIN",
+                lyrics: "Sing joyfully unto the Lord!\nAll the lands\nServe the Lord with gladness!\nCome into His presence with singing!"
+            },
+            {
+                name: "VERSE",
+                lyrics: "For the Lord is good\nHis steadfast love endures forever\nAnd He is faithful to all generations."
+            },
+            {
+                name: "END",
+                lyrics: "Sing joyfully unto the Lord!\nAll the lands\nServe the Lord with gladness!\nCome into His presence with singing!\n(2x)\nwith singing! (3x)"
+            }
+        ]
+    },
+    {
+        title: "Psalm 115 - Not to us",
+        sections: [
+            {
+                name: "REFRAIN",
+                lyrics: "Not to us, O Lord,\nBut to Your name be glory!\nNot to us, O Lord,\nBecause of Your love and faithfulness."
+            },
+            {
+                name: "VERSE",
+                lyrics: "You who fear Him, trust in the Lord\nFor He is our help and shield.\nThe Lord remembers us\nAnd will bless us,\nWill bless both small and great."
+            },
+            {
+                name: "REFRAIN",
+                lyrics: "Not to us, O Lord,\nBut to Your name be glory!\nNot to us, O Lord,\nBecause of Your love and faithfulness."
+            },
+            {
+                name: "VERSE",
+                lyrics: "May you be blessed by the Lord,\nThe Maker of heaven and earth.\nThe highest heavens belong to the Lord\nBut the earth He has given to man."
+            },
+            {
+                name: "REFRAIN",
+                lyrics: "Not to us, O Lord,\nBut to Your name be glory!\nNot to us, O Lord,\nBecause of Your love and faithfulness."
+            },
+            {
+                name: "VERSE",
+                lyrics: "The dead do not praise the Lord,\nThose who go down to the depths.\nIt is we who extol the Lord\nBoth now and forever more."
+            },
+            {
+                name: "REFRAIN",
+                lyrics: "Not to us, O Lord,\nBut to Your name be glory!\nNot to us, O Lord,\nBecause of Your love and faithfulness."
+            }
+        ]
+    },
+    {
+        title: "We want to see Jesus",
+        sections: [
+            {
+                name: "VERSE",
+                lyrics: "We want to see Jesus lifted high\nA banner that flies across this land\nThat all men might see\nThe truth and know\nHe is the way to heaven.\n(2x)"
+            },
+            {
+                name: "REFRAIN",
+                lyrics: "We want to see, we want to see\nWe want to see Jesus lifted high.\n(2x)"
+            },
+            {
+                name: "VERSE",
+                lyrics: "We want to see Jesus lifted high\nA banner that flies across this land\nThat all men might see\nThe truth and know\nHe is the way to heaven.\n(2x)"
+            },
+            {
+                name: "REFRAIN",
+                lyrics: "We want to see, we want to see\nWe want to see Jesus lifted high.\n(2x)"
+            },
+            {
+                name: "BRIDGE",
+                lyrics: "Step by step we’re moving forward\nLittle by little we’re taking ground.\nEvery pray’r a powerful weapon\nStrongholds come tumbling down\nAnd down and down."
+            },
+            {
+                name: "VERSE",
+                lyrics: "We want to see Jesus lifted high\nA banner that flies across this land\nThat all men might see\nThe truth and know\nHe is the way to heaven.\n(2x)"
+            },
+            {
+                name: "END",
+                lyrics: "We want to see, we're gonna see\nWe're gonna see Jesus lifted high.\n(2x)"
+            },
+        ]
+    },
+    {
+        title: "Singing Hallelujah",
+        sections: [
+            {
+                name: "VERSE",
+                lyrics: "We have come to mount Zion,\nTo the city of the Living God;\nThe heavenly Jerusalem,\nWith myriads of angels round the throne."
+            },
+            {
+                name: "REFRAIN",
+                lyrics: "Singing “Hallelujah,”\n(3x)"
+            },
+            {
+                name: "VERSE",
+                lyrics: "And we’ve come unto Jesus\nThrough the blood of the new covenant.\nMade pure to stand\nBefore the throne of grace,\nWith all the first-born saints\nIn endless praise!"
+            },
+            {
+                name: "REFRAIN",
+                lyrics: "Singing “Hallelujah,”\n(3x)"
+            },
+            {
+                name: "VERSE",
+                lyrics: "Since we've found such a kingdom\nWhich shall never be removed,\nLet us worship the Lord in fear and awe,\nIn reverence and heartfelt gratitude!"
+            },
+            {
+                name: "END",
+               lyrics: "Singing “Hallelujah,”\n(6x)"
+            }
+        ]
+    },
+    {
+        title: "I Will Call Upon The Lord",
+        sections: [
+
+            {
+                name: "VERSE",
+                lyrics: "I will call upon the Lord\nWho is worthy to be praised\nSo shall I be saved from my enemies."
+            },
+            {
+                name: "REFRAIN",
+                lyrics: "The Lord reigneth\nAnd blessed be my rock\nAnd let the God of my salvation\nBe exalted! \n(2x)"
+            },
+            {
+                name: "VERSE",
+                lyrics: "I will call upon the Lord\nWho is worthy to be praised\nSo shall I be saved from my enemies."
+            },
+            {
+                name: "END",
+                lyrics: "The Lord reigneth\nAnd blessed be my rock\nAnd let the God of my salvation\nBe exalted! \n(4x)"
+            },
+        ]
+    },
+    {
+        title: "Anchored",
+        sections: [
+            {
+                name: "VERSE",
+                lyrics: "The fear of the Lord (echo)\nIs the beginning of wisdom (echo) \nThe fear of the Lord (echo)\nIs the beginning of wisdom (echo) \nAnd the knowledge of the Holy One \nIs understanding"
+            },
+            {
+                name: "CHORUS",
+                lyrics: "Teach us, Lord, to be righteous\nLead us to stand firm on the unchanging truth\nGive us wisdom and understanding\nTo love You \nWith all our heart"
+            },
+            {
+                name: "VERSE",
+                lyrics: "The ways of the Lord (echo) \nAre above all reason (echo) \nThe ways of the Lord (echo)\nAre above all reason (echo)\nAnd the will of our sovereign God \nEndures forever"
+            },
+            {
+                name: "CHORUS",
+                lyrics: "Teach us, Lord, to be righteous\nLead us to stand firm on the unchanging truth\nGive us wisdom and understanding\nTo love You \nWith all our heart"
+            },
+            {
+                name: "VERSE",
+                lyrics: "God, you always prevail  \nYour Word never fails \nYour way is higher \nYou’re the hope of our souls  \nOur all in all \nTo You, we are anchored, O Lord\n(2X)"
+            },
+            {
+                name: "CHORUS",
+                lyrics: "Teach us, Lord, to be righteous\nLead us to stand firm on the unchanging truth\nGive us wisdom and understanding\nTo love You \nWith all our heart"
+            },
+            {
+                name: "VERSE",
+                lyrics: "The Spirit of the Lord (echo)  \nIs moving within us (echo)  \nThe Spirit of the Lord (echo)\nIs moving within us (echo)"
+            },
+            {
+                name: "END",
+                lyrics: "And the fire of His love \nWill renew the earth \n(2X)"
+            }
+        ]
+    },
+    {
+        title: "My Glorious Victor",
+        sections: [
+            {
+                name: "VERSE",
+                lyrics: "My glorious Victor, Prince divine\nClasp these surrendered hands in thine\nAt length my will is all thine own\nGlad vassal of a Savior’s throne\nGlad vassal of a Savior’s throne"
+            },
+            {
+                name: "VERSE",
+                lyrics: "My Master lead me to thy door\nAnd pierce this willing ear once more\nThy bonds are freedom let me stay\nWith thee to toil endure obey\nWith thee to toil endure obey"
+            },
+            {
+                name: "CHORUS",
+                lyrics: "I am your servant forever\nand here I will remain\nI am your servant forever\nfreely I come and freely stay"
+            },
+            {
+                name: "VERSE",
+                lyrics: "Yes, ear and hand and thought and will\nUse all in thy dear slav’ry still\nSelf’s weary liberties I cast\nBeneath thy feet there keep them fast\nBeneath thy feet there keep them fast"
+            },
+            {
+                name: "VERSE",
+                lyrics: "Tread them still down and then I know\nThese hands shall with thy gifts o’erflow\nAnd pierced ears shall hear the tone\nWhich tells me thou and I are one\nWhich tells me thou and I are one"
+            },
+            {
+                name: "END",
+                lyrics: "I am your servant forever\nand here I will remain\nI am your servant forever\nfreely I come and freely stay\n(2x)"
+            }
+        ]
     }
 ];
