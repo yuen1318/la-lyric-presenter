@@ -73,7 +73,7 @@
         }
 
         .lyric-wrapper.has-song {
-            background: rgba(10, 10, 15, 0.45);
+            background: radial-gradient(ellipse at center, rgba(10, 10, 15, 0.35) 0%, rgba(10, 10, 15, 0.55) 100%);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
@@ -108,6 +108,7 @@
             left: 0;
             top: 0;
             width: 320px;
+            max-width: 85vw;
             height: 100%;
             background: var(--bg-sidebar);
             backdrop-filter: blur(24px);
@@ -124,14 +125,16 @@
         }
 
         .sidebar-header {
-            padding: 28px 20px 20px;
+            padding: 12px 12px 12px 16px;
             border-bottom: 1px solid var(--border-light);
-            margin-top: 60px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
         .search-box {
             width: 100%;
-            padding: 12px 16px;
+            padding: 12px 36px 12px 16px;
             font-size: 0.95rem;
             border: 1px solid var(--border-light);
             border-radius: 14px;
@@ -226,14 +229,16 @@
             position: relative;
         }
 
-        .sidebar:not(.hidden) ~ .main-area .lyric-wrapper {
-            margin-left: 320px;
-            transition: margin-left 0.2s ease-out;
+        @media (min-width: 851px) {
+            .sidebar:not(.hidden) ~ .main-area .lyric-wrapper {
+                margin-left: 320px;
+                transition: margin-left 0.2s ease-out;
+            }
         }
 
         .section-badge {
             display: none;
-            background: rgba(30, 30, 45, 0.7);
+            background: rgba(20, 20, 25, 0.75);
             backdrop-filter: blur(16px);
             padding: 10px 28px;
             border-radius: 80px;
@@ -241,12 +246,12 @@
             font-size: 0.9rem;
             font-weight: 600;
             letter-spacing: 4px;
-            color: #f0f0fc;
-            border: 1px solid rgba(255, 255, 255, 0.25);
+            color: #d0d0d8;
+            border: 1px solid rgba(255, 255, 255, 0.15);
             font-family: 'Raleway', 'Inter', monospace;
             text-transform: uppercase;
             text-shadow: 0 1px 3px rgba(0,0,0,0.3);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
             transition: none;
         }
 
@@ -280,7 +285,7 @@
             max-width: min(88vw, 320px);
             width: auto;
             overflow: hidden;
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(20, 20, 25, 0.75);
             backdrop-filter: blur(12px);
             padding: 12px 20px;
             border-radius: 60px;
@@ -288,9 +293,9 @@
             font-weight: 700;
             font-size: 1.15rem;
             letter-spacing: 1.5px;
-            color: #ffffff;
-            border: 1.5px solid rgba(79, 158, 255, 0.7);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            color: #d0d0d8;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
             z-index: 30;
             pointer-events: none;
             transition: bottom 0.2s ease;
@@ -346,7 +351,7 @@
             font-weight: 600;
             letter-spacing: 0.18em;
             text-transform: uppercase;
-            color: #d7e8ff;
+            color: #d0d0d8;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -369,8 +374,8 @@
             padding: 16px 32px;
             font-size: 1.7rem;
             font-weight: 800;
-            border-width: 2px;
-            background: rgba(0, 0, 0, 0.8);
+            border-width: 1px;
+            background: rgba(20, 20, 25, 0.8);
         }
         body:fullscreen .slide-title-box {
             top: 28px; 
@@ -453,40 +458,84 @@
             }
         }
         
+        .sidebar-top {
+            display: none;
+        }
+
         .search-toggle-btn {
             position: fixed;
-            top: 24px;
-            left: 24px;
+            top: 0;
+            left: 0;
             background: rgba(8, 8, 12, 0.85);
             backdrop-filter: blur(12px);
-            border: 1px solid rgba(79,158,255,0.6);
+            border: none;
+            border-right: 1px solid rgba(255, 255, 255, 0.12);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
             color: #d4e6ff;
             width: 52px;
             height: 52px;
-            border-radius: 50%;
+            border-radius: 0 0 12px 0;
             cursor: pointer;
             z-index: 50;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: all 0.25s ease;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+            transition: opacity 0.25s ease, background 0.2s ease;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
         }
 
         .search-toggle-btn:hover {
-            background: #1e2a3a;
-            border-color: #7bb2ff;
-            transform: scale(1.05);
+            background: rgba(30, 40, 55, 0.95);
+            color: #ffffff;
+        }
+
+        /* Hide open button when sidebar is visible */
+        .search-toggle-btn.btn-hidden {
+            opacity: 0;
+            pointer-events: none;
         }
 
         .search-toggle-btn.fullscreen-hidden {
+            opacity: 0.35;
             pointer-events: auto;
+        }
+        .search-toggle-btn.fullscreen-hidden:hover {
+            opacity: 1;
         }
 
         :root:fullscreen .search-toggle-btn {
+            opacity: 0.35 !important;
             display: flex !important;
             pointer-events: auto !important;
             z-index: 2147483647 !important;
+        }
+        :root:fullscreen .search-toggle-btn.btn-hidden {
+            opacity: 0 !important;
+            pointer-events: none !important;
+        }
+        :root:fullscreen .search-toggle-btn:hover {
+            opacity: 1 !important;
+        }
+
+        /* Close button inside sidebar header — far right */
+        .sidebar-close-btn {
+            flex-shrink: 0;
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
+            color: #b0b0b8;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+        .sidebar-close-btn:hover {
+            background: rgba(255, 80, 80, 0.15);
+            color: #ff8080;
+            border-color: rgba(255, 80, 80, 0.3);
         }
 
         body:fullscreen .lyric-wrapper {
@@ -505,20 +554,93 @@
             padding: 10px 28px;
             margin-bottom: 1.8rem;
         }
+
+        /* === #2 Lyric slide transitions === */
+        .lyric-text {
+            transition: opacity 0.12s ease, transform 0.12s ease;
+        }
+        .lyric-text.slide-out {
+            opacity: 0;
+            transform: translateY(-8px);
+        }
+        .lyric-text.slide-in {
+            opacity: 0;
+            transform: translateY(8px);
+        }
+
+        /* === #3 Section badge color coding === */
+        .section-badge.badge-verse,
+        .section-badge.badge-chorus,
+        .section-badge.badge-bridge,
+        .section-badge.badge-refrain,
+        .section-badge.badge-end {
+            background: rgba(20, 20, 25, 0.75);
+            border-color: rgba(255, 255, 255, 0.15);
+            color: #d0d0d8;
+        }
+
+        /* === #4 Progress dots (removed) === */
+
+        /* === #5 Search clear button === */
+        .search-wrapper {
+            position: relative;
+            flex: 1;
+            min-width: 0;
+        }
+        .search-clear-btn {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #8899aa;
+            font-size: 1.1rem;
+            cursor: pointer;
+            padding: 4px 6px;
+            line-height: 1;
+            border-radius: 50%;
+            display: none;
+        }
+        .search-clear-btn.visible {
+            display: block;
+        }
+        .search-clear-btn:hover {
+            color: #ffffff;
+            background: rgba(79, 158, 255, 0.3);
+        }
+
+        /* === #6 Sidebar backdrop overlay === */
+        .sidebar-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 35;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        .sidebar-backdrop.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
     </style>
 </head>
 <body>
 
-<button class="search-toggle-btn" id="searchToggleBtn" aria-label="Toggle song sidebar">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z" fill="currentColor"/>
-    </svg>
-</button>
-
 <div class="app">
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
     <div class="sidebar hidden" id="sidebar">
         <div class="sidebar-header">
-            <input type="text" class="search-box" id="searchInput" placeholder="Search song title..." autocomplete="off">
+            <div class="search-wrapper">
+                <input type="text" class="search-box" id="searchInput" placeholder="Search song title..." autocomplete="off">
+                <button class="search-clear-btn" id="searchClearBtn" aria-label="Clear search">✕</button>
+            </div>
+            <button class="sidebar-close-btn" id="sidebarCloseBtn" aria-label="Close sidebar">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.3 5.71a1 1 0 0 0-1.41 0L12 10.59 7.11 5.7A1 1 0 0 0 5.7 7.11L10.59 12 5.7 16.89a1 1 0 1 0 1.41 1.41L12 13.41l4.89 4.89a1 1 0 0 0 1.41-1.41L13.41 12l4.89-4.89a1 1 0 0 0 0-1.4z" fill="currentColor"/>
+                </svg>
+            </button>
         </div>
         <div class="song-list-container" id="songListContainer"></div>
         <div class="status-bar">
@@ -534,6 +656,12 @@
         </div>
     </div>
 </div>
+
+<button class="search-toggle-btn" id="searchToggleBtn" aria-label="Open song search">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z" fill="currentColor"/>
+    </svg>
+</button>
 
 <div class="slide-title-box" id="slideTitleBox">
     <span class="slide-title" id="slideTitle">—</span>
@@ -552,18 +680,22 @@
     let currentSearchTerm = "";
     
     const searchInput = document.getElementById("searchInput");
+    const searchClearBtn = document.getElementById("searchClearBtn");
+    const sidebarCloseBtn = document.getElementById("sidebarCloseBtn");
     const songListContainer = document.getElementById("songListContainer");
     const lyricText = document.getElementById("lyricText");
     const sectionBadge = document.getElementById("sectionBadge");
     const lyricWrapper = document.getElementById("lyricWrapper");
     const songCountSpan = document.getElementById("songCount");
     const sidebar = document.getElementById("sidebar");
+    const sidebarBackdrop = document.getElementById("sidebarBackdrop");
     const searchToggleBtn = document.getElementById("searchToggleBtn");
     const mainArea = document.getElementById("mainArea");
     const slideCounter = document.getElementById("slideCounter");
     const slideTitleBox = document.getElementById("slideTitleBox");
     const slideTitle = document.getElementById("slideTitle");
     const slideCount = document.getElementById("slideCount");
+    const progressDots = null;
     
     function escapeHtml(str) {
         if (!str) return "";
@@ -582,15 +714,22 @@
             const current = currentSectionIndex + 1;
             slideCount.textContent = (current >= 1 && current <= total) ? `${current}/${total}` : `—/${total}`;
             slideTitle.textContent = currentSong.title || '—';
+            updateProgressDots(current - 1, total);
         } else if (currentSong) {
             slideCount.textContent = `0/0`;
             slideTitle.textContent = currentSong.title || '—';
+            updateProgressDots(-1, 0);
         } else {
             slideCount.textContent = `—/—`;
             slideTitle.textContent = '—';
+            updateProgressDots(-1, 0);
         }
         slideCounter.classList.remove('hidden-counter');
         slideTitleBox.classList.remove('hidden-counter');
+    }
+
+    function updateProgressDots(activeIndex, total) {
+        // Progress dots removed
     }
 
     // Persistent measurement span for font sizing (avoid DOM thrash)
@@ -708,22 +847,40 @@
         fontTimer = requestAnimationFrame(() => computeOptimalFontSize());
     }
     
+    const badgeColorMap = {
+        'VERSE': 'badge-verse',
+        'CHORUS': 'badge-chorus',
+        'BRIDGE': 'badge-bridge',
+        'REFRAIN': 'badge-refrain',
+        'END': 'badge-end'
+    };
+
+    function setBadgeColor(name) {
+        // Remove all badge color classes
+        sectionBadge.className = 'section-badge';
+        if (name) {
+            sectionBadge.classList.add('visible');
+            const colorClass = badgeColorMap[name.toUpperCase()] || 'badge-verse';
+            sectionBadge.classList.add(colorClass);
+        }
+    }
+
     function updateDisplay() {
         const prevSong = lyricWrapper.dataset.activeSong;
         if (currentSong?.sections?.[currentSectionIndex]) {
             const sec = currentSong.sections[currentSectionIndex];
             sectionBadge.textContent = sec.name;
-            sectionBadge.classList.add('visible');
+            setBadgeColor(sec.name);
             lyricText.innerText = sec.lyrics;
             lyricWrapper.classList.add('has-song');
         } else if (currentSong) {
             sectionBadge.textContent = '';
-            sectionBadge.classList.remove('visible');
+            setBadgeColor(null);
             lyricText.innerText = '♢  end of song  ♢';
             lyricWrapper.classList.add('has-song');
         } else {
             sectionBadge.textContent = '';
-            sectionBadge.classList.remove('visible');
+            setBadgeColor(null);
             lyricText.innerText = '';
             lyricWrapper.classList.remove('has-song');
         }
@@ -749,27 +906,43 @@
                 try {
                     await document.documentElement.requestFullscreen();
                     if (document.fullscreenElement && !sidebar.classList.contains('hidden')) {
-                        sidebar.classList.add('hidden');
+                        closeSidebar();
                     }
                 } catch {}
             } else {
-                if (!sidebar.classList.contains('hidden')) sidebar.classList.add('hidden');
+                if (!sidebar.classList.contains('hidden')) closeSidebar();
             }
             updateFontSizeInstant();
         }
     }
     
+    function transitionSlide(direction, callback) {
+        lyricText.classList.add('slide-out');
+        setTimeout(() => {
+            callback();
+            lyricText.classList.remove('slide-out');
+            lyricText.classList.add('slide-in');
+            requestAnimationFrame(() => {
+                setTimeout(() => lyricText.classList.remove('slide-in'), 15);
+            });
+        }, 120);
+    }
+
     function nextSection() {
         if (currentSong?.sections && currentSectionIndex + 1 < currentSong.sections.length) {
-            currentSectionIndex++;
-            updateDisplay();
+            transitionSlide('next', () => {
+                currentSectionIndex++;
+                updateDisplay();
+            });
         }
     }
     
     function prevSection() {
         if (currentSectionIndex > 0) {
-            currentSectionIndex--;
-            updateDisplay();
+            transitionSlide('prev', () => {
+                currentSectionIndex--;
+                updateDisplay();
+            });
         }
     }
     
@@ -786,21 +959,28 @@
             return;
         }
         songListContainer.innerHTML = '';
+        let activeEl = null;
         filtered.forEach(song => {
             const div = document.createElement('div');
             div.className = 'song-item';
             const titleDiv = document.createElement('div');
-            titleDiv.className = 'song-title' + (currentSong?.title === song.title ? ' active-song' : '');
+            const isActive = currentSong?.title === song.title;
+            titleDiv.className = 'song-title' + (isActive ? ' active-song' : '');
             titleDiv.textContent = song.title;
             titleDiv.onclick = () => {
                 selectSong(song);
                 if (window.innerWidth <= 700) {
-                    sidebar.classList.add('hidden');
+                    closeSidebar();
                 }
             };
             div.appendChild(titleDiv);
             songListContainer.appendChild(div);
+            if (isActive) activeEl = div;
         });
+        // #7: Scroll active song into view
+        if (activeEl) {
+            activeEl.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+        }
     }
     
     function initKeyboard() {
@@ -811,11 +991,25 @@
         });
     }
     
+    function openSidebar() {
+        sidebar.classList.remove('hidden');
+        sidebarBackdrop.classList.add('visible');
+        searchToggleBtn.classList.add('btn-hidden');
+        setTimeout(() => searchInput.focus(), 100);
+        if (currentSong) updateFontSizeInstant();
+    }
+
+    function closeSidebar() {
+        sidebar.classList.add('hidden');
+        sidebarBackdrop.classList.remove('visible');
+        searchToggleBtn.classList.remove('btn-hidden');
+        if (currentSong) updateFontSizeInstant();
+    }
+
     function initSidebarToggle() {
-        searchToggleBtn.addEventListener('click', () => {
-            sidebar.classList.toggle('hidden');
-            if (currentSong) updateFontSizeInstant();
-        });
+        searchToggleBtn.addEventListener('click', openSidebar);
+        sidebarCloseBtn.addEventListener('click', closeSidebar);
+        sidebarBackdrop.addEventListener('click', closeSidebar);
     }
     
     function toggleFullscreen() {
@@ -823,7 +1017,7 @@
             document.exitFullscreen();
         } else {
             document.documentElement.requestFullscreen();
-            if (!sidebar.classList.contains('hidden')) sidebar.classList.add('hidden');
+            if (!sidebar.classList.contains('hidden')) closeSidebar();
         }
     }
     
@@ -868,10 +1062,19 @@
         let debounce;
         searchInput.addEventListener('input', e => {
             clearTimeout(debounce);
+            const val = e.target.value;
+            searchClearBtn.classList.toggle('visible', val.length > 0);
             debounce = setTimeout(() => {
-                currentSearchTerm = e.target.value;
+                currentSearchTerm = val;
                 renderSongList(currentSearchTerm);
             }, 200);
+        });
+        searchClearBtn.addEventListener('click', () => {
+            searchInput.value = '';
+            searchClearBtn.classList.remove('visible');
+            currentSearchTerm = '';
+            renderSongList('');
+            searchInput.focus();
         });
     }
     
