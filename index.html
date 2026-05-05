@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0a0a0f">
     <title>Lingkod Angeles - Lyric Presenter with Slide Counter</title>
+    <link rel="preload" href="./background.webp" as="image">
+    <link rel="preload" href="./Raleway/static/Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./Raleway/static/Raleway-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
     <style>
         /* ============================================================
            LOCAL RALEWAY FONT LOADING
@@ -11,35 +15,35 @@
         
         @font-face {
             font-family: 'Raleway';
-            src: url('./Raleway/static/Raleway-Regular.ttf') format('truetype');
+            src: url('./Raleway/static/Raleway-Regular.woff2') format('woff2');
             font-weight: normal;
             font-style: normal;
             font-display: swap;
         }
         @font-face {
             font-family: 'Raleway';
-            src: url('./Raleway/static/Raleway-Medium.ttf') format('truetype');
+            src: url('./Raleway/static/Raleway-Medium.woff2') format('woff2');
             font-weight: 500;
             font-style: normal;
             font-display: swap;
         }
         @font-face {
             font-family: 'Raleway';
-            src: url('./Raleway/static/Raleway-SemiBold.ttf') format('truetype');
+            src: url('./Raleway/static/Raleway-SemiBold.woff2') format('woff2');
             font-weight: 600;
             font-style: normal;
             font-display: swap;
         }
         @font-face {
             font-family: 'Raleway';
-            src: url('./Raleway/static/Raleway-Bold.ttf') format('truetype');
+            src: url('./Raleway/static/Raleway-Bold.woff2') format('woff2');
             font-weight: bold;
             font-style: normal;
             font-display: swap;
         }
         @font-face {
             font-family: 'Raleway';
-            src: url('./Raleway/static/Raleway-ExtraBold.ttf') format('truetype');
+            src: url('./Raleway/static/Raleway-ExtraBold.woff2') format('woff2');
             font-weight: 800;
             font-style: normal;
             font-display: swap;
@@ -60,7 +64,7 @@
             height: 100vh;
             overflow: hidden;
             color: #f5f5fa;
-            background-image: url('./background.png');
+            background-image: url('./background.webp');
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
@@ -392,40 +396,40 @@
 
         /* Responsive adjustments */
         @media (max-width: 850px) {
-            .lyric-wrapper {
-                padding: 1.2rem 1.5rem !important;
-                border-radius: 32px !important;
-                max-width: 94% !important;
+            .app .main-area .lyric-wrapper {
+                padding: 1.2rem 1.5rem;
+                border-radius: 32px;
+                max-width: 94%;
             }
-            .lyric-wrapper.has-song {
-                background: rgba(10, 10, 15, 0.3) !important;
-                backdrop-filter: blur(8px) !important;
-                border: 1px solid rgba(255, 255, 255, 0.15) !important;
+            .app .main-area .lyric-wrapper.has-song {
+                background: rgba(10, 10, 15, 0.3);
+                backdrop-filter: blur(8px);
+                border: 1px solid rgba(255, 255, 255, 0.15);
             }
-            .section-badge {
-                padding: 6px 18px !important;
-                margin-bottom: 1.2rem !important;
-                font-size: 0.8rem !important;
-                letter-spacing: 3px !important;
+            .app .main-area .section-badge {
+                padding: 6px 18px;
+                margin-bottom: 1.2rem;
+                font-size: 0.8rem;
+                letter-spacing: 3px;
             }
         }
 
         @media (max-width: 600px) {
-            .lyric-wrapper {
-                padding: 0.8rem 1rem !important;
-                border-radius: 24px !important;
-                max-width: 96% !important;
+            .app .main-area .lyric-wrapper {
+                padding: 0.8rem 1rem;
+                border-radius: 24px;
+                max-width: 96%;
             }
-            .lyric-wrapper.has-song {
-                background: rgba(10, 10, 15, 0.2) !important;
-                backdrop-filter: blur(6px) !important;
-                border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            .app .main-area .lyric-wrapper.has-song {
+                background: rgba(10, 10, 15, 0.2);
+                backdrop-filter: blur(6px);
+                border: 1px solid rgba(255, 255, 255, 0.1);
             }
-            .section-badge {
-                padding: 4px 12px !important;
-                margin-bottom: 0.8rem !important;
-                font-size: 0.7rem !important;
-                letter-spacing: 2px !important;
+            .app .main-area .section-badge {
+                padding: 4px 12px;
+                margin-bottom: 0.8rem;
+                font-size: 0.7rem;
+                letter-spacing: 2px;
             }
             /* Portrait: smaller top/bottom spacing */
             @media (orientation: portrait) {
@@ -476,22 +480,13 @@
         }
 
         .search-toggle-btn.fullscreen-hidden {
-            opacity: 0.35;
             pointer-events: auto;
-        }
-        
-        .search-toggle-btn.fullscreen-hidden:hover {
-            opacity: 1;
         }
 
         :root:fullscreen .search-toggle-btn {
-            opacity: 0.35 !important;
             display: flex !important;
             pointer-events: auto !important;
             z-index: 2147483647 !important;
-        }
-        :root:fullscreen .search-toggle-btn:hover {
-            opacity: 1 !important;
         }
 
         body:fullscreen .lyric-wrapper {
@@ -521,7 +516,7 @@
 </button>
 
 <div class="app">
-    <div class="sidebar" id="sidebar">
+    <div class="sidebar hidden" id="sidebar">
         <div class="sidebar-header">
             <input type="text" class="search-box" id="searchInput" placeholder="Search song title..." autocomplete="off">
         </div>
@@ -598,9 +593,14 @@
         slideTitleBox.classList.remove('hidden-counter');
     }
 
-    // No dynamic left positioning needed because CSS handles orientation & sidebar offset
-    // But we keep an orientation listener to ensure smooth updates (optional)
-    
+    // Persistent measurement span for font sizing (avoid DOM thrash)
+    const measureSpan = document.createElement('span');
+    measureSpan.style.position = 'absolute';
+    measureSpan.style.visibility = 'hidden';
+    measureSpan.style.whiteSpace = 'nowrap';
+    measureSpan.style.pointerEvents = 'none';
+    document.body.appendChild(measureSpan);
+
     // ============================================================
     //  FONT SCALING – ACCOUNTS FOR LETTER-SPACING IN MEASUREMENT
     // ============================================================
@@ -653,15 +653,10 @@
         else if (longestLineForSpacing.length > 45) letterSpacing = '-0.35px';
         else if (longestLineForSpacing.length > 35) letterSpacing = '-0.25px';
         
-        const measureSpan = document.createElement('span');
-        measureSpan.style.position = 'absolute';
-        measureSpan.style.visibility = 'hidden';
-        measureSpan.style.whiteSpace = 'nowrap';
         measureSpan.style.fontFamily = getComputedStyle(lyricText).fontFamily;
         measureSpan.style.fontWeight = getComputedStyle(lyricText).fontWeight;
         measureSpan.style.letterSpacing = letterSpacing;
         measureSpan.style.textTransform = getComputedStyle(lyricText).textTransform;
-        document.body.appendChild(measureSpan);
         
         let absMax = 5.2;
         if (vw >= 1280 && vh >= 720) absMax = 5.0;
@@ -698,7 +693,6 @@
         }
         
         const finalFont = Math.max(minFont, Math.min(fontByWidth, fontByHeight));
-        document.body.removeChild(measureSpan);
         
         lyricText.style.fontSize = `${finalFont}rem`;
         lyricText.style.lineHeight = lineH;
@@ -710,12 +704,12 @@
     
     let fontTimer = null;
     function updateFontSizeInstant() {
-        if (fontTimer) clearTimeout(fontTimer);
-        requestAnimationFrame(() => computeOptimalFontSize());
-        fontTimer = setTimeout(() => computeOptimalFontSize(), 50);
+        if (fontTimer) cancelAnimationFrame(fontTimer);
+        fontTimer = requestAnimationFrame(() => computeOptimalFontSize());
     }
     
     function updateDisplay() {
+        const prevSong = lyricWrapper.dataset.activeSong;
         if (currentSong?.sections?.[currentSectionIndex]) {
             const sec = currentSong.sections[currentSectionIndex];
             sectionBadge.textContent = sec.name;
@@ -735,7 +729,12 @@
         }
         updateFontSizeInstant();
         updateSlideCounter();
-        renderSongList(currentSearchTerm);
+        // Only re-render song list when the active song changes
+        const newSong = currentSong?.title || '';
+        if (prevSong !== newSong) {
+            lyricWrapper.dataset.activeSong = newSong;
+            renderSongList(currentSearchTerm);
+        }
     }
     
     async function selectSong(song) {
@@ -862,7 +861,7 @@
                 lastTapX = t.clientX;
                 lastTapY = t.clientY;
             }
-        });
+        }, { passive: false });
     }
     
     function initSearch() {
@@ -883,7 +882,6 @@
     }
     
     function observeLyrics() {
-        new MutationObserver(() => currentSong && updateFontSizeInstant()).observe(lyricText, { childList: true, characterData: true, subtree: true });
         window.addEventListener('load', () => currentSong && updateFontSizeInstant());
         new MutationObserver(() => currentSong && updateFontSizeInstant()).observe(sidebar, { attributes: true, attributeFilter: ['class'] });
     }
