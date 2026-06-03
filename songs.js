@@ -1758,5 +1758,26 @@ const rawSongs = [
                 lyrics: "I am your servant forever\nand here I will remain\nI am your servant forever\nfreely I come and freely stay\n(2x)"
             }
         ]
+    },
+    {
+        title: "Make Us More Like You",
+        sections: [
+            {
+                name: "VERSE",
+                lyrics: "Amidst the battle and gathering storms\nFrom living stones a temple forms\nTear open the heavens and send down your flame\n\nRefined by your presence and called by your name\nThe holy of holies is opened to us\nSo Lord, make us holy like you"
+            },
+            {
+                name: "CHORUS",
+                lyrics: "Purify us, make us more like you\nMirrors of your glory, walking in the truth\nJesus Christ, make us holy, make us new\nFree to serve you in the life you call us to\nMake us more like you"
+            },
+            {
+                name: "VERSE",
+                lyrics: "Into the day, the night behind us\nThe fire of God to forge and guide us\nShaped by your word, moved by your grace\n\nHealed by your mercy to look on your face\nObedient, faithful, courageous and pure\nA people made whole in your love"
+            },
+            {
+                name: "END",
+                lyrics: "Purify us, make us more like you\nMirrors of your glory, walking in the truth\nJesus Christ, make us holy, make us new\nFree to serve you in the life you call us to\n(2X)\nMake us more like you"
+            }
+        ]
     }
 ];
