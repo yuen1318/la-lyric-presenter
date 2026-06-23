@@ -914,7 +914,7 @@ const rawSongs = [
         title: "Prince Of Peace",
         sections: [
             { name: "VERSE", lyrics: "You are holy  (You are holy)\nYou are mighty  (You are mighty)\nYou are worthy  (You are worthy)\nWorthy of praise  (Worthy of praise)\nI will follow  (I will follow)\nI will listen  (I will listen)\nI will love You  (I will love You)\nAll of my days  (All of my days)" },
-            { name: "VERSE", lyrics: "(MEN)\nI will sing to and worship\nThe King who is worthy.\nI will love and adore You,\nI will bow down before You." },
+            { name: "VERSE", lyrics: "(MEN)\nI will sing to and worship\nThe King who is worthy.\nI will love and adore You,\nI will bow down before You.\n(2x)" },
             { name: "VERSE", lyrics: "You are my Prince of peace\nAnd I will live my life for You." },
             { name: "VERSE", lyrics: "You are holy  (You are holy)\nYou are mighty  (You are mighty)\nYou are worthy  (You are worthy)\nWorthy of praise  (Worthy of praise)\nI will follow  (I will follow)\nI will listen  (I will listen)\nI will love You  (I will love You)\nAll of my days  (All of my days)" },
             { name: "VERSE", lyrics: "(WOMEN)\nYou are Lord of lords,\nYou are King of kings,\nYou are mighty God, Lord of everything.\nYou’re Emmanuel, you’re the great I AM\nYou’re the Prince of peace\nWho is the Lamb." },
@@ -1209,7 +1209,7 @@ const rawSongs = [
         ]
     },
     {
-        title: "To whom shall we go",
+        title: "To Whom Shall We Go",
         sections: [
             { name: "VERSE", lyrics: "When the battle lines are drawn\nAnd there's war in our land\nAnd our King, the Christ, asks for whom you will fight\nWill you joyfully reply?" },
             { name: "CHORUS", lyrics: "To whom else shall we go?\nWho else would we follow?\nWe have come to know that you are the Christ\nTo whom else shall we go?" },

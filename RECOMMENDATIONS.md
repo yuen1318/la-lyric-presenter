@@ -1,7 +1,8 @@
 # Improvement Recommendations — Lingkod Angeles Lyric Presenter
 
 > Based on analysis of 144 business rules documented in [`BUSINESS_RULES.md`](./BUSINESS_RULES.md).  
-> Recommendations are grouped by impact and effort.
+> Recommendations are grouped by impact and effort.  
+> ~~Strikethrough~~ = already implemented.
 
 ---
 
@@ -34,50 +35,43 @@ The song database includes `PRE-CHORUS` sections (e.g., "He is our shield", "The
 
 ---
 
-### 3. No visual distinction between slide transition directions
+### ~~3. No visual distinction between slide transition directions~~ ✅ Done
 
-**Reference:** Rules 4.1–4.5
+~~**Reference:** Rules 4.1–4.5~~
 
-Both next and previous transitions use identical `slide-out`/`slide-in` animations (upward fade). The user cannot tell whether they moved forward or backward.
+~~Both next and previous transitions used identical `slide-out`/`slide-in` animations.~~
 
-**Recommendation:** Differentiate directions:
-- **Next section:** slide up/left (`translateY(-8px)` / `translateX(-8px)`)
-- **Previous section:** slide down/right (`translateY(8px)` / `translateX(8px)`)
-
-Or use a horizontal slide: leftward for next, rightward for previous — which mirrors the swipe gesture direction and feels more natural.
+~~**Applied:** Next section slides content left ↔ right; previous section slides content right ↔ left, mirroring swipe gesture direction.~~
 
 ---
 
-### 4. No "end of song" graceful navigation
+### ~~4. No "end of song" graceful navigation~~ ✅ Done
 
-**Reference:** Rules 3.7, 3.9
+~~**Reference:** Rules 3.7, 3.9~~
 
-When the user reaches the last section, the only indicator is `"♢ end of song ♢"` text. Further right-arrow presses are silently ignored.
+~~When the user reached the last section, further right-arrow presses were silently ignored.~~
 
-**Recommendation:**
-- Add a subtle visual pulse/flash on the slide counter when at the last section and the user presses right again (haptic-like feedback)
-- Consider auto-advancing to the next song in the list, or showing a "Next song →" prompt
-- At minimum, briefly animate the end-of-song text (e.g., gentle scale bounce) to confirm the boundary
+~~**Applied:** A pulse animation now plays on the lyric text and slide counter when pressing past the last section, providing haptic-like visual feedback. A re-entry guard (`isTransitioning`) also prevents key-repeat race conditions from overshooting the section index.~~
 
 ---
 
-### 5. No keyboard shortcut to toggle sidebar visibility
+### ~~5. No keyboard shortcut to toggle sidebar visibility~~ ✅ Done
 
-**Reference:** Rules 11.1–11.8
+~~**Reference:** Rules 11.1–11.8~~
 
-Sidebar can only be toggled via the on-screen button or clicking backdrop, but keyboard-only users (e.g., when projected and controlled from a laptop) cannot open/close it without reaching for the mouse.
+~~Sidebar could only be toggled via the on-screen button or backdrop click.~~
 
-**Recommendation:** Bind a keyboard shortcut (e.g., `Escape` to close sidebar, `Ctrl+F` / `Cmd+F` or `/` to open and focus search). `Escape` should also exit fullscreen if no sidebar is open.
+~~**Applied:** `Escape` key now closes the sidebar (when open) or exits fullscreen (when sidebar is already closed). `Escape` also closes the sidebar when pressed from within the search input.~~
 
 ---
 
-### 6. Fullscreen toggle should respect sidebar state
+### ~~6. Fullscreen toggle should restore sidebar state~~ ✅ Done
 
-**Reference:** Rules 10.3–10.6
+~~**Reference:** Rules 10.3–10.6~~
 
-When selecting a new song, fullscreen is entered and sidebar is closed. But double-clicking to exit fullscreen does **not** restore the sidebar state — the sidebar remains closed.
+~~Exiting fullscreen (double-click, Escape, or browser F11) did not restore the sidebar's pre-fullscreen visibility.~~
 
-**Recommendation:** Track and restore the sidebar's pre-fullscreen visibility state. If the sidebar was open before entering fullscreen, re-open it when exiting fullscreen.
+~~**Applied:** The sidebar's open/closed state is now tracked in `wasSidebarOpenBeforeFullscreen`. On fullscreen exit, the sidebar is automatically restored if it was open before entering fullscreen. Works for all exit paths: double-click, Escape key, and browser F11.~~
 
 ---
 
@@ -85,7 +79,7 @@ When selecting a new song, fullscreen is entered and sidebar is closed. But doub
 
 **Reference:** Rule 2.3
 
-Selecting the same song again is a no-op (doesn't re-enter fullscreen). But what if the user exited fullscreen and wants to quickly re-enter? They must double-click the main area or pick a different song first.
+Selecting the same song again is a no-op (doesn't re-enter fullscreen). If the user exits fullscreen and wants to quickly re-enter, they must double-click the main area or pick a different song first.
 
 **Recommendation:** If the same song is selected while not in fullscreen, still enter fullscreen (don't skip the fullscreen request just because the song didn't change). The `wasDiff` guard should only protect against re-triggering fullscreen when already in fullscreen.
 
@@ -93,89 +87,73 @@ Selecting the same song again is a no-op (doesn't re-enter fullscreen). But what
 
 ## 🟡 Medium Priority (Quality & Robustness)
 
-### 8. Font sizing engine is fragile — no error boundaries
+### ~~8. Font sizing engine had no error boundaries~~ ✅ Done
 
-**Reference:** Rules 7.1–7.11
+~~**Reference:** Rules 7.1–7.11~~
 
-The `computeOptimalFontSize()` function has multiple division operations (e.g., `maxWidth / maxLineWidth`, `maxPx / basePx`) with no guards against zero or NaN values. If `getComputedStyle` returns an unexpected value or the DOM is in an unusual state, font size could break silently.
+~~The `computeOptimalFontSize()` function had division operations with no guards against zero or NaN values.~~
 
-**Recommendation:** Add guard clauses:
-- If `maxLineWidth <= 0`, skip width-based sizing
-- If `basePx <= 0`, fall back to `16` (standard browser default)
-- If `numLines <= 0`, skip height-based sizing
-- Clamp `finalFont` before assignment
+~~**Applied:** Added `isFinite()` guards on `maxLineWidth`, `basePx`, `maxPx`, and `finalFont`. `basePx` now falls back to `16` (browser default) if the computed value is invalid. `finalFont` clamps to `minFont` (0.9rem) on any NaN/infinite result.~~
 
 ---
 
-### 9. No loading state or error handling for missing songs.js
+### ~~9. No loading state or error handling for missing songs.js~~ ✅ Done
 
-**Reference:** Rule 1.1
+~~**Reference:** Rule 1.1~~
 
-If `songs.js` fails to load (network error, blocker), the app crashes with `rawSongs is not defined` — there's no fallback.
+~~If `songs.js` failed to load, the app would crash with `rawSongs is not defined`.~~
 
-**Recommendation:** Wrap the init logic in a try/catch or feature-detect `rawSongs`. Show a graceful error message: `"Unable to load song database. Check your connection and refresh."` with a retry button.
-
----
-
-### 10. Service worker has no update notification
-
-**Reference:** Rules 16.1–16.6
-
-When `VERSION` is bumped in `sw.js`, assets are re-cached, but the old service worker continues serving the old cached `index.html` and `songs.js` until the user closes all tabs. There's no `skipWaiting()` + `clients.claim()` flow or user prompt to refresh.
-
-**Recommendation:** After the new SW activates (or use `self.skipWaiting()` on install), post a message to all clients:
-```js
-// In sw.js activate: self.clients.matchAll().then(clients =>
-//   clients.forEach(c => c.postMessage({ type: 'UPDATE_AVAILABLE' })))
-```
-In the page, listen for this message and show a "New version available — tap to refresh" banner.
+~~**Applied:** Added a runtime check for `typeof rawSongs !== 'undefined'` before initializing the song database. On failure, an error message is shown in the sidebar and the app gracefully degrades with an empty song list.~~
 
 ---
 
-### 11. No empty-state guidance on first load
+### ~~10. Service worker had no update notification~~ ✅ Done
 
-**Reference:** Rules 12.7–12.8
+~~**Reference:** Rules 16.1–16.6~~
 
-On first load with no song selected, the main area is completely blank (no text, no badge, transparent wrapper). The empty states only appear in the sidebar.
+~~When `VERSION` was bumped in `sw.js`, there was no user-visible notification — the old cached files kept serving until all tabs were closed.~~
 
-**Recommendation:** Show a welcome prompt in the main area when no song is selected:
-```
-✨ Open the sidebar to choose a song
-   or tap ◀ ▶ to navigate
-
-   ← →  Navigate sections
-   Double‑click  Toggle fullscreen
-```
+~~**Applied:** The service worker now posts `{ type: 'UPDATE_AVAILABLE' }` to all clients on activate. The page listens for this message and shows a blue banner at the bottom: "✨ A new version is available — tap here to refresh." Clicking reloads the page.~~
 
 ---
 
-### 12. Song list re-render optimization is incomplete
+### ~~11. No empty-state guidance on first load~~ ✅ Done
 
-**Reference:** Rule 2.5
+~~**Reference:** Rules 12.7–12.8~~
 
-The song list is only re-rendered when the active song **title** changes. However, the list is also re-rendered on: every search term change (correct), initial render, and in `updateDisplay()` when `prevSong !== newSong`. The `innerHTML` is fully rebuilt each time — there's no virtual DOM or diffing.
+~~On first load with no song selected, the main area was completely blank.~~
 
-**Recommendation:** For the song list (which rarely changes), use a simple DOM recycling pattern or at minimum batch `innerHTML` assignments. For a dataset this size (~100 songs) it's not critical, but the pattern would matter if the song count grows significantly.
-
----
-
-### 13. Double-tap detection can conflict with swipe
-
-**Reference:** Rules 17.4–17.7
-
-Both swipe and double-tap gestures share the same `touchend` handler. A fast swipe followed by a quick second tap could accidentally trigger fullscreen.
-
-**Recommendation:** When a swipe is detected (`|dx| > 50`), suppress double-tap detection for that gesture cycle (set `lastTap = 0`). Only check for double-tap when no significant swipe occurred.
+~~**Applied:** A welcome card now appears when no song is selected, showing keyboard shortcuts, touch gestures, and a prompt to open the sidebar. The card uses the same glassmorphism background as the lyric display for visual consistency.~~
 
 ---
 
-### 14. Search debounce is lost on rapid typing
+### ~~12. Song list re-render used individual DOM appends~~ ✅ Done
 
-**Reference:** Rule 12.2
+~~**Reference:** Rule 2.5~~
 
-The 200ms debounce works for moderate typing, but if the user types faster than 200ms-per-keystroke, each keystroke resets the timer — the list only renders after they pause. While this is standard behavior, for a ~100-item list a shorter debounce (100ms) or instant render would feel more responsive without performance cost.
+~~Each song item was individually appended to the DOM in a loop, causing multiple reflows.~~
 
-**Recommendation:** Reduce debounce to **100ms** or use a maximum-wait pattern (render at least every 300ms even during rapid typing).
+~~**Applied:** Song list rendering now uses `DocumentFragment` for batch DOM insertion — all items are built off-screen, then added to the container in a single operation.~~
+
+---
+
+### ~~13. Double-tap detection could conflict with swipe~~ ✅ Done
+
+~~**Reference:** Rules 17.4–17.7~~
+
+~~A fast swipe followed by a quick second tap could accidentally trigger fullscreen toggle.~~
+
+~~**Applied:** When a swipe is detected (`|dx| > 50` and horizontal dominance), `lastTap` is reset to `0` and the handler returns early — suppressing double-tap detection for that gesture cycle.~~
+
+---
+
+### ~~14. Search debounce was slow (200ms)~~ ✅ Done
+
+~~**Reference:** Rule 12.2~~
+
+~~The 200ms debounce felt sluggish for a ~100-item list.~~
+
+~~**Applied:** Reduced to **100ms** for snappier filtering while still avoiding excessive re-renders during rapid typing.~~
 
 ---
 
@@ -256,13 +234,13 @@ All ~100 songs (~180KB) are loaded in a single `songs.js` file, parsed, and sort
 
 ---
 
-### 22. Background image is preloaded but font preloads are inconsistent
+### ~~22. Background image was preloaded but font preloads were inconsistent~~ ✅ Done
 
-**Reference:** Rules 20.9–20.10
+~~**Reference:** Rules 20.9–20.10~~
 
-Only two of five font weights are preloaded (`Raleway-Regular` and `Raleway-SemiBold`). The Bold weight used in the counter is not preloaded, causing a potential flash-of-unstyled-text on first load.
+~~Only two of five font weights were preloaded (Regular and SemiBold). The Bold weight used in the counter was not preloaded, risking a flash of unstyled text.~~
 
-**Recommendation:** Preload all font weights that are used in the critical rendering path, or reduce the used weights to only Regular + SemiBold for consistency.
+~~**Applied:** All five Raleway `.woff2` font weights (Regular, Medium, SemiBold, Bold, ExtraBold) are now preloaded via `<link rel="preload">`.~~
 
 ---
 
@@ -281,10 +259,10 @@ If a worship leader wants to print a song's lyrics for rehearsal, there's no `@m
 
 ## Summary
 
-| Priority | Count | Key Themes |
-|----------|------:|------------|
-| 🔴 High  | 7     | Visual differentiation, navigation feedback, keyboard accessibility, fullscreen state restoration |
-| 🟡 Medium | 7     | Error handling, service worker updates, gesture conflicts, empty-state UX |
+| Priority | Count | Remaining Themes |
+|----------|------:|------------------|
+| 🔴 High  | 3     | Section type colors, PRE-CHORUS badge, same-song fullscreen re-entry |
+| 🟡 Medium | 0     | _(all medium items implemented)_ |
 | 🟢 Low   | 9     | Polish, accessibility hints, data optimization, print support |
 
-**Highest ROI quick wins:** #1 (section colors), #5 (keyboard shortcuts), #7 (fullscreen restore), #13 (gesture conflict fix).
+**Highest ROI remaining:** #1 (section type colors), #2 (PRE-CHORUS badge), #16 (section jump shortcuts).
