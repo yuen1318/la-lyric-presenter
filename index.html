@@ -7,7 +7,10 @@
     <title>Lingkod Angeles - Lyric Presenter with Slide Counter</title>
     <link rel="preload" href="./background.webp" as="image">
     <link rel="preload" href="./Raleway/static/Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./Raleway/static/Raleway-Medium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./Raleway/static/Raleway-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./Raleway/static/Raleway-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./Raleway/static/Raleway-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
     <style>
         /* ============================================================
            LOCAL RALEWAY FONT LOADING
@@ -555,17 +558,27 @@
             margin-bottom: 1.8rem;
         }
 
-        /* === #2 Lyric slide transitions === */
+        /* === #2 Lyric slide transitions (direction-aware) === */
         .lyric-text {
             transition: opacity 0.12s ease, transform 0.12s ease;
         }
-        .lyric-text.slide-out {
+        /* Next section: slides out to the left, enters from the right */
+        .lyric-text.slide-next-out {
             opacity: 0;
-            transform: translateY(-8px);
+            transform: translateX(-12px);
         }
-        .lyric-text.slide-in {
+        .lyric-text.slide-next-in {
             opacity: 0;
-            transform: translateY(8px);
+            transform: translateX(12px);
+        }
+        /* Previous section: slides out to the right, enters from the left */
+        .lyric-text.slide-prev-out {
+            opacity: 0;
+            transform: translateX(12px);
+        }
+        .lyric-text.slide-prev-in {
+            opacity: 0;
+            transform: translateX(-12px);
         }
 
         /* === #3 Section badge color coding === */
@@ -624,6 +637,76 @@
             opacity: 1;
             pointer-events: auto;
         }
+
+        /* === End-of-song pulse animation === */
+        .lyric-text.end-of-song-pulse,
+        .slide-counter.end-of-song-pulse {
+            animation: endPulse 0.4s ease-out;
+        }
+        @keyframes endPulse {
+            0%   { transform: scale(1); }
+            30%  { transform: scale(1.04); }
+            100% { transform: scale(1); }
+        }
+
+        /* === Service-worker update banner === */
+        .update-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(79, 158, 255, 0.95);
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            z-index: 2147483647;
+            cursor: pointer;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+        .update-banner.visible {
+            transform: translateY(0);
+        }
+        .update-banner:hover {
+            background: rgba(59, 138, 255, 0.98);
+        }
+
+        /* === Welcome / empty-state message === */
+        .welcome-message {
+            display: none;
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1.1rem;
+            font-weight: 500;
+            line-height: 1.8;
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+            padding: 1.5rem 2rem;
+            background: radial-gradient(ellipse at center, rgba(10, 10, 15, 0.35) 0%, rgba(10, 10, 15, 0.55) 100%);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            max-width: 90vw;
+        }
+        .welcome-message.visible {
+            display: block;
+        }
+        .welcome-message kbd {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 6px;
+            padding: 2px 8px;
+            font-family: monospace;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            margin: 0 2px;
+        }
     </style>
 </head>
 <body>
@@ -653,6 +736,13 @@
         <div class="lyric-wrapper" id="lyricWrapper">
             <div class="section-badge" id="sectionBadge"></div>
             <div class="lyric-text" id="lyricText"></div>
+            <div class="welcome-message" id="welcomeMessage">
+                ✨ Open the sidebar to choose a song<br>
+                or tap <kbd>◀</kbd> <kbd>▶</kbd> to navigate<br><br>
+                <kbd>←</kbd> <kbd>→</kbd> &nbsp;Navigate sections<br>
+                Double‑click &nbsp;Toggle fullscreen<br>
+                <kbd>Esc</kbd> &nbsp;Close sidebar / Exit fullscreen
+            </div>
         </div>
     </div>
 </div>
@@ -670,14 +760,26 @@
     <span class="slide-count" id="slideCount">—/—</span>
 </div>
 
+<div class="update-banner" id="updateBanner">✨ A new version is available — tap here to refresh</div>
+
 <script src="./songs.js"></script>
 
 <script>
-    const songDatabase = [...rawSongs].sort((a, b) => a.title.localeCompare(b.title, undefined, { sensitivity: 'base' }));
+    const songDatabase = (typeof rawSongs !== 'undefined' && Array.isArray(rawSongs))
+        ? [...rawSongs].sort((a, b) => a.title.localeCompare(b.title, undefined, { sensitivity: 'base' }))
+        : [];
+
+    if (!songDatabase.length) {
+        document.getElementById('songListContainer').innerHTML =
+            `<div class="empty-message">⚠️ Unable to load song database.<br><small>Check your connection and refresh.</small></div>`;
+        document.getElementById('songCount').innerText = '0 songs';
+    }
     
     let currentSong = null;
     let currentSectionIndex = 0;
     let currentSearchTerm = "";
+    let wasSidebarOpenBeforeFullscreen = false;
+    let isTransitioning = false;
     
     const searchInput = document.getElementById("searchInput");
     const searchClearBtn = document.getElementById("searchClearBtn");
@@ -695,6 +797,7 @@
     const slideTitleBox = document.getElementById("slideTitleBox");
     const slideTitle = document.getElementById("slideTitle");
     const slideCount = document.getElementById("slideCount");
+    const welcomeMessage = document.getElementById("welcomeMessage");
     const progressDots = null;
     
     function escapeHtml(str) {
@@ -818,20 +921,24 @@
         }
         
         let fontByWidth = absMax;
-        if (maxLineWidth > 0) {
+        if (maxLineWidth > 0 && isFinite(maxLineWidth)) {
             const ideal = (maxWidth / maxLineWidth) * refFont;
             fontByWidth = Math.min(absMax, Math.max(minFont, ideal * 0.95));
         }
-        
+
         const numLines = nonEmptyLines.length;
         let fontByHeight = absMax;
         if (numLines > 0) {
-            const basePx = parseFloat(getComputedStyle(document.documentElement).fontSize);
+            let basePx = parseFloat(getComputedStyle(document.documentElement).fontSize);
+            if (!basePx || basePx <= 0 || !isFinite(basePx)) basePx = 16; // fallback to browser default
             const maxPx = maxHeight / (lineH * numLines);
-            fontByHeight = Math.min(absMax, Math.max(minFont, (maxPx / basePx) * 0.95));
+            if (isFinite(maxPx) && maxPx > 0) {
+                fontByHeight = Math.min(absMax, Math.max(minFont, (maxPx / basePx) * 0.95));
+            }
         }
-        
-        const finalFont = Math.max(minFont, Math.min(fontByWidth, fontByHeight));
+
+        let finalFont = Math.max(minFont, Math.min(fontByWidth, fontByHeight));
+        if (!isFinite(finalFont) || finalFont <= 0) finalFont = minFont;
         
         lyricText.style.fontSize = `${finalFont}rem`;
         lyricText.style.lineHeight = lineH;
@@ -883,6 +990,12 @@
             setBadgeColor(null);
             lyricText.innerText = '';
             lyricWrapper.classList.remove('has-song');
+            welcomeMessage.classList.add('visible');
+        }
+
+        // Hide welcome message when a song is active, show when no song
+        if (currentSong) {
+            welcomeMessage.classList.remove('visible');
         }
         updateFontSizeInstant();
         updateSlideCounter();
@@ -900,9 +1013,11 @@
         currentSong = song;
         currentSectionIndex = 0;
         updateDisplay();
-        
+
         if (wasDiff || currentSong) {
             if (!document.fullscreenElement) {
+                // Remember sidebar state before entering fullscreen
+                wasSidebarOpenBeforeFullscreen = !sidebar.classList.contains('hidden');
                 try {
                     await document.documentElement.requestFullscreen();
                     if (document.fullscreenElement && !sidebar.classList.contains('hidden')) {
@@ -917,27 +1032,44 @@
     }
     
     function transitionSlide(direction, callback) {
-        lyricText.classList.add('slide-out');
+        const outClass = direction === 'next' ? 'slide-next-out' : 'slide-prev-out';
+        const inClass  = direction === 'next' ? 'slide-next-in'  : 'slide-prev-in';
+        isTransitioning = true;
+        lyricText.classList.add(outClass);
         setTimeout(() => {
             callback();
-            lyricText.classList.remove('slide-out');
-            lyricText.classList.add('slide-in');
+            lyricText.classList.remove(outClass);
+            lyricText.classList.add(inClass);
             requestAnimationFrame(() => {
-                setTimeout(() => lyricText.classList.remove('slide-in'), 15);
+                setTimeout(() => {
+                    lyricText.classList.remove(inClass);
+                    isTransitioning = false;
+                }, 15);
             });
         }, 120);
     }
 
     function nextSection() {
+        if (isTransitioning) return;
         if (currentSong?.sections && currentSectionIndex + 1 < currentSong.sections.length) {
             transitionSlide('next', () => {
                 currentSectionIndex++;
                 updateDisplay();
             });
+        } else if (currentSong?.sections && currentSectionIndex + 1 >= currentSong.sections.length) {
+            // At the end — pulse the lyric text for haptic-like feedback
+            lyricText.classList.remove('end-of-song-pulse');
+            void lyricText.offsetWidth; // force reflow to restart animation
+            lyricText.classList.add('end-of-song-pulse');
+            // Also briefly pulse the slide counter
+            slideCounter.classList.remove('end-of-song-pulse');
+            void slideCounter.offsetWidth;
+            slideCounter.classList.add('end-of-song-pulse');
         }
     }
     
     function prevSection() {
+        if (isTransitioning) return;
         if (currentSectionIndex > 0) {
             transitionSlide('prev', () => {
                 currentSectionIndex--;
@@ -960,6 +1092,7 @@
         }
         songListContainer.innerHTML = '';
         let activeEl = null;
+        const fragment = document.createDocumentFragment();
         filtered.forEach(song => {
             const div = document.createElement('div');
             div.className = 'song-item';
@@ -974,9 +1107,10 @@
                 }
             };
             div.appendChild(titleDiv);
-            songListContainer.appendChild(div);
+            fragment.appendChild(div);
             if (isActive) activeEl = div;
         });
+        songListContainer.appendChild(fragment);
         // #7: Scroll active song into view
         if (activeEl) {
             activeEl.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
@@ -985,9 +1119,21 @@
     
     function initKeyboard() {
         document.addEventListener('keydown', e => {
-            if (document.activeElement?.id === 'searchInput') return;
+            if (document.activeElement?.id === 'searchInput') {
+                // Escape from search input closes sidebar
+                if (e.key === 'Escape') { closeSidebar(); }
+                return;
+            }
             if (e.key === 'ArrowLeft') { e.preventDefault(); prevSection(); }
             else if (e.key === 'ArrowRight') { e.preventDefault(); nextSection(); }
+            else if (e.key === 'Escape') {
+                e.preventDefault();
+                if (!sidebar.classList.contains('hidden')) {
+                    closeSidebar();
+                } else if (document.fullscreenElement) {
+                    document.exitFullscreen();
+                }
+            }
         });
     }
     
@@ -1014,8 +1160,19 @@
     
     function toggleFullscreen() {
         if (document.fullscreenElement) {
+            const shouldRestoreSidebar = wasSidebarOpenBeforeFullscreen;
             document.exitFullscreen();
+            // Restore sidebar after exiting fullscreen if it was open before
+            if (shouldRestoreSidebar) {
+                // Small delay to let fullscreen exit complete
+                setTimeout(() => {
+                    if (!document.fullscreenElement && sidebar.classList.contains('hidden')) {
+                        openSidebar();
+                    }
+                }, 150);
+            }
         } else {
+            wasSidebarOpenBeforeFullscreen = !sidebar.classList.contains('hidden');
             document.documentElement.requestFullscreen();
             if (!sidebar.classList.contains('hidden')) closeSidebar();
         }
@@ -1027,6 +1184,11 @@
             searchToggleBtn.classList.toggle('fullscreen-hidden', !!document.fullscreenElement);
             if (currentSong) updateFontSizeInstant();
             slideCounter.classList.remove('hidden-counter');
+            // Restore sidebar when exiting fullscreen if it was open before
+            if (!document.fullscreenElement && wasSidebarOpenBeforeFullscreen && sidebar.classList.contains('hidden')) {
+                setTimeout(() => openSidebar(), 100);
+                wasSidebarOpenBeforeFullscreen = false;
+            }
         });
     }
     
@@ -1040,9 +1202,13 @@
             const t = e.changedTouches[0];
             if (!t) return;
             const dx = t.clientX - startX, dy = t.clientY - startY;
-            if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+            const isSwipe = Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5;
+            if (isSwipe) {
                 e.preventDefault();
                 dx > 0 ? prevSection() : nextSection();
+                // Suppress double-tap detection after a swipe
+                lastTap = 0;
+                return;
             }
             const now = Date.now();
             const dist = Math.hypot(t.clientX - lastTapX, t.clientY - lastTapY);
@@ -1067,7 +1233,7 @@
             debounce = setTimeout(() => {
                 currentSearchTerm = val;
                 renderSongList(currentSearchTerm);
-            }, 200);
+            }, 100);
         });
         searchClearBtn.addEventListener('click', () => {
             searchInput.value = '';
@@ -1108,6 +1274,18 @@
 <script>
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js');
+  // Listen for update notifications from the service worker
+  navigator.serviceWorker.addEventListener('message', event => {
+    if (event.data?.type === 'UPDATE_AVAILABLE') {
+      const banner = document.getElementById('updateBanner');
+      if (banner) {
+        banner.classList.add('visible');
+        banner.onclick = () => {
+          window.location.reload();
+        };
+      }
+    }
+  });
 }
 </script>
 </body>
