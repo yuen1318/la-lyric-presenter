@@ -862,7 +862,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Open the eyes of my heart, Lord.\nOpen the eyes of my heart,\nI want to see You,\nI want to see You.\n(2x)" },
             { name: "REFRAIN", lyrics: "To see You high and lifted up\nShining in the light of Your glory.\nPour out Your power and love\nAs we sing “Holy, holy, holy!”" },
             { name: "VERSE", lyrics: "Open the eyes of my heart, Lord.\nOpen the eyes of my heart,\nI want to see You,\nI want to see You.\n(2x)" },
-            { name: "REFRAIN", lyrics: "To see You high and lifted up\nShining in the light of Your glory.\nPour out Your power and love\nAs we sing “Holy, holy, holy!”\n(2x)\n\nI want to see You." },
+            { name: "REFRAIN", lyrics: "To see You high and lifted up\nShining in the light of Your glory.\nPour out Your power and love\nAs we sing “Holy, holy, holy!”\n(2x)" },
             { name: "END", lyrics: "Holy, holy, holy!\nHoly, holy, holy!\nHoly, holy, holy!\nI want to see You.\n(2x)" }
         ]
     },
@@ -955,7 +955,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "For the Lord is the great God\nAnd the King above kings\nIn His hands are the depths of the earth\nThe mountains are His and the sea is His\nHe formed all living things." },
             { name: "REFRAIN", lyrics: "Alleluia! Alleluia!\nHope in God, O my soul,\nIn Him your joy will be full." },
             { name: "VERSE", lyrics: "Come, let us bow down and worship Him\nLet us kneel before the Lord our maker.\nFor He is our God and His people are we\nThe flock under His care." },
-            { name: "END", lyrics: "Alleluia! Alleluia!\nHope in God, O my soul,\nIn Him your joy will be full.\n\nHope in God, O my soul,\nIn Him your joy will be full." }
+            { name: "END", lyrics: "Alleluia! Alleluia!\nHope in God, O my soul,\nIn Him your joy will be full.\n(2x)" }
         ]
     },
     {
