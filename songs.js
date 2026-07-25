@@ -598,6 +598,17 @@ const rawSongs = [
         ]
     },
     {
+        title: "In Your Light We See Light",
+        sections: [
+            { name: "VERSE", lyrics: "How priceless is Your steadfast love,\nO Lord, far more than life itself!\nIn the shadow of Your wings\nShall all who seek\nFind refuge and strength." },
+            { name: "REFRAIN", lyrics: "For in You is the fountain of life,\nIn Your light, we see light.\nFor in You is the fountain of life,\nIn Your light do we see light." },
+            { name: "VERSE", lyrics: "Through the abundance\nOf Your steadfast love\nWe come into Your holy place.\nIn the fear of You we worship\nAt Your throne of mercy and grace." },
+            { name: "REFRAIN", lyrics: "For in You is the fountain of life,\nIn Your light, we see light.\nFor in You is the fountain of life,\nIn Your light do we see light." },
+            { name: "VERSE", lyrics: "We feast on the abundance\nOf Your house as on the richest food.\nFrom Your river of delights\nWe drink our fill of all that is good." },
+            { name: "END", lyrics: "For in You is the fountain of life,\nIn Your light, we see light.\nFor in You is the fountain of life,\nIn Your light do we see light.\n(2x)" },
+        ]
+    },
+    {
         title: "Isaiah 60",
         sections: [
             { name: "REFRAIN", lyrics: "Arise, shine out, for your light has come\nThe glory of Yahweh is rising on you.\nThough night still covers the earth\nAnd darkness the people,\nAbove you Yahweh now rises,\nAbove you His glory appears, arise!" },
