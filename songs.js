@@ -256,7 +256,7 @@ const rawSongs = [
     {
         title: "Exodus 15",
         sections: [
-            { name: "VERSE", lyrics: "The Lord is my strength and my song.\nAnd He has become my salvation,\nHe is my God!\n(2x)" },
+            { name: "VERSE", lyrics: "The Lord is my strength and my song.\nAnd He is become my salvation,\nHe is my God!\n(2x)" },
             { name: "VERSE", lyrics: "And I shall prepare Him my heart!\n(3x)" },
             { name: "VERSE", lyrics: "The Lord, He shall reign\nForever and ever, Amen!\n(2x)" },
             { name: "END", lyrics: "And I shall prepare Him my heart!\n(3x)" }
