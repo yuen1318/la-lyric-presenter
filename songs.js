@@ -1790,5 +1790,258 @@ const rawSongs = [
                 lyrics: "Purify us, make us more like you\nMirrors of your glory, walking in the truth\nJesus Christ, make us holy, make us new\nFree to serve you in the life you call us to\n(2X)\nMake us more like you"
             }
         ]
+    },
+    {
+        title: "LD - Ordinary Time",
+        sections: [
+            {
+                name: "ASSISTANT",
+                lyrics: "In the beginning was the Word,\nAnd the Word was with God,\nAnd the Word was God."
+            },
+            {
+                name: "GROUP",
+                lyrics: "All things were made through Him,\nand without Him nothing was made\nthat has been made."
+            },
+            {
+                name: "ASSISTANT",
+                lyrics: "In Him was life,\nAnd the life\nwas the light of men."
+            },
+            {
+                name: "GROUP",
+                lyrics: "The light shines in the darkness,\nand the darkness\nhas not overcome it."
+            },
+            {
+                name: "ASSISTANT",
+                lyrics: "Heavenly Father, in honor of Your Son,\nLight of the World and Author of Life,\nwe are about to kindle\nthe light for the Lord’s Day.\nOn this day You raised Your Son,\nJesus, from the dead,\nand began the new creation."
+            },
+            {
+                name: "ASSISTANT",
+                lyrics: "May our celebration of\nHis resurrection this day\nbe filled with Your peace\nand heavenly blessing.\nBe gracious to us and cause\nYour Holy Spirit to dwell\nmore richly among us."
+            },
+            {
+                name: "ASSISTANT",
+                lyrics: "Father of mercy, continue\nYour loving kindness toward us.\nMake us worthy to walk\nin the way of Your Son,\nloyal to Your teaching,\nand unwavering in love and service."
+            },
+            {
+                name: "ASSISTANT",
+                lyrics: "Keep far from us all anxiety,\ndarkness and gloom;\nand grant that peace,\nlight and joy ever abide among us."
+            },
+            {
+                name: "GROUP",
+                lyrics: "For in You is the fountain of life;\nIn Your light do we see light."
+            },
+            {
+                name: "ASSISTANT",
+                lyrics: "(Light the candle)"
+            },
+            {
+                name: "ASSISTANT",
+                lyrics: "Blessed are You, Lord our God,\nwho created light on the first day,\nand raised Your Son, the Light of the World,\nto begin the new creation."
+            },
+            {
+                name: "ASSISTANT",
+                lyrics: "Blessed are You, Lord our God,\nKing of the Universe, who give us joy\nas we kindle the light for the Lord’s Day."
+            },
+            {
+                name: "GROUP",
+                lyrics: "Amen"
+            },
+            {
+                name: "LEADER",
+                lyrics: "Let us trust in the Lord\nand in His saving help."
+            },
+            {
+                name: "GROUP",
+                lyrics: "The Lord is my light\nand my salvation."
+            },
+            {
+                name: "LEADER",
+                lyrics: "Let us receive His life\nand rejoice in His presence."
+            },
+            {
+                name: "GROUP",
+                lyrics: "He is the true light\nthat enlightens every man."
+            },
+            {
+                name: "LEADER",
+                lyrics: "Let us keep His commandments\nand walk in His ways."
+            },
+            {
+                name: "GROUP",
+                lyrics: "His word is a lamp\nto my feet and a light for my path."
+            },
+            {
+                name: "LEADER",
+                lyrics: "Let us proclaim His goodness\nand show forth His glory."
+            },
+            {
+                name: "GROUP",
+                lyrics: "We are the light of the world\nand the salt of the earth."
+            },
+            {
+                name: "LEADER",
+                lyrics: "Brothers and sisters,\nthis is the Lord’s Day."
+            },
+            {
+                name: "GROUP",
+                lyrics: "Let us welcome it in joy and peace."
+            },
+            {
+                name: "LEADER",
+                lyrics: "Today we set aside the concerns of the week\nthat we may honor the Lord\nand celebrate His resurrection.\nToday we cease from our work\nin order to worship God,\nand remember the eternal life\nto which He has called us."
+            },
+            {
+                name: "GROUP",
+                lyrics: "The Lord Himself is with us,\nto refresh and strengthen us."
+            },
+            {
+                name: "LEADER",
+                lyrics: "Let us welcome God\namong us and give Him glory."
+            },
+            {
+                name: "GROUP",
+                lyrics: "Let us love one another in Christ."
+            },
+            {
+                name: "LEADER",
+                lyrics: "May the Holy Spirit be with us,\nto deepen our devotion to the Lord,\nand to increase our zeal for the\nway of life He has given us."
+            },
+            {
+                name: "GROUP",
+                lyrics: "Amen."
+            },
+            {
+                name: "LEADER",
+                lyrics: "(Worship)"
+            },
+            {
+                name: "LEADER",
+                lyrics: "(Men - Pour and raise the wine)"
+            },
+            {
+                name: "LEADER",
+                lyrics: "Let us praise God with this symbol of joy,\nand thank Him for the\nblessings of the past week\nfor health, strength, and wisdom,\nfor our life together\nin (Family/Community)"
+            },
+            {
+                name: "LEADER",
+                lyrics: "for the discipline of our trials\nand temptations, for the happiness\nthat has come to us out of our work."
+            },
+            {
+                name: "LEADER",
+                lyrics: "Let us thank him this day especially for\nthe great blessings he has\nbestowed on us in Christ.\nFrom His fullness we have all\nreceived grace upon grace.\nWe who were dead through sin\nhave been brought to life"
+            },
+            {
+                name: "LEADER",
+                lyrics: "together with Christ,\nand raised up with Him,\nand made to sit in\nheavenly places with Him.\nLord our God, you have brought us\ninto the rest of Christ."
+            },
+            {
+                name: "GROUP",
+                lyrics: "Now we live with Him\nthrough the Holy Spirit,\nand we look for the day\nwhen we will dwell with Him\nin Your everlasting Kingdom."
+            },
+            {
+                name: "LEADER",
+                lyrics: "Blessed are you, Lord, our God,\nKing of the Universe,\nwho have created the fruit of the vine"
+            },
+            {
+                name: "GROUP",
+                lyrics: "Amen."
+            },
+            {
+                name: "LEADER",
+                lyrics: "Blessed are you, Lord our God,\nfor the true rest you have\ngiven us in your Son Jesus,\nand for this day which is a\ncommemoration of his redeeming work.\nWe welcome this day with gladness,\nand consecrate it to the"
+            },
+            {
+                name: "LEADER",
+                lyrics: "celebration of His resurrection\nand of the new creation founded in Him.\nLook graciously upon your\nservants and show us your glory.\nBlessed are you, Lord our God,\nwho favor your people in\nthe days set aside to your honor."
+            },
+            {
+                name: "GROUP",
+                lyrics: "Amen.\n\n(Pass the wine)"
+            },
+            {
+                name: "LEADER",
+                lyrics: "(Men - Raise the bread)"
+            },
+            {
+                name: "LEADER",
+                lyrics: "The eyes of all look to you, O Lord,\nand you give them\ntheir food in due season."
+            },
+            {
+                name: "GROUP",
+                lyrics: "You open Your hand,\nYou satisfy the desire\nof every living thing."
+            },
+            {
+                name: "LEADER",
+                lyrics: "Blessed are you,\nLord our God, King of the Universe,\nwho brings forth bread from the earth."
+            },
+            {
+                name: "GROUP",
+                lyrics: "Amen.\n\n(Begin the meal)"
+            },
+            {
+                name: "LEADER",
+                lyrics: "Let us bless the Lord."
+            },
+            {
+                name: "GROUP",
+                lyrics: "Blessed be the name of the Lord\nfrom this time forth and forever."
+            },
+            {
+                name: "LEADER",
+                lyrics: "Let us bless our God,\nof whose bounty we have partaken."
+            },
+            {
+                name: "GROUP",
+                lyrics: "Blessed be our God,\nof whose bounty we have partaken,\nand through whose goodness we live."
+            },
+            {
+                name: "LEADER",
+                lyrics: "Blessed are you, Lord our God,\nwho feed the whole world with your goodness,\nwith grace, with steadfast love and mercy.\nThrough your great goodness\nfood has never failed us.\nMay it not fail us for ever and ever,\nfor your great Name’s sake,"
+            },
+            {
+                name: "LEADER",
+                lyrics: "since you nourish and sustain all beings,\nand do good to all, and provide food for all\nyour creatures whom you have created.\nBlessed are you, Lord our God,\nKing of the Universe, who gives food to all."
+            },
+            {
+                name: "GROUP",
+                lyrics: "Blessed be His name forever."
+            },
+            {
+                name: "LEADER",
+                lyrics: "Blessed are you, Lord our God,\nfor by your great mercy we have been born anew\nto a living hope through the resurrection\nof Jesus Christ from the dead,\nand to an inheritance"
+            },
+            {
+                name: "LEADER",
+                lyrics: "that is imperishable,\nundefiled and unfading.\nBlessed are You, Lord our God,\nKing of the Universe,\nfor giving us new life in Your Son."
+            },
+            {
+                name: "GROUP",
+                lyrics: "Blessed be His name forever."
+            },
+            {
+                name: "LEADER",
+                lyrics: "Have mercy, Lord our God,\nupon Your people who belong to Your Son,\nthe dwelling place of Your Spirit.\nGrant that the Christian people throughout\nthe world may attain the unity\nfor which Jesus prayed"
+            },
+            {
+                name: "LEADER",
+                lyrics: "on the eve of his sacrifice, and that we in\n(Family/Community)\nmay be a sign of that unity\nand a means of its growth.\nMay all your people be renewed\nin the power of your Spirit,"
+            },
+            {
+                name: "LEADER",
+                lyrics: "so that we might be\nwithout spot or blemish,\nand ready for your Son’s return.\nBlessed are you, Lord our God,\nKing of the Universe,\nRuler and Builder of your people."
+            },
+            {
+                name: "GROUP",
+                lyrics: "Blessed be His name forever."
+            },
+            {
+                name: "LEADER",
+                lyrics: "May the Lord bless you and keep you;\nmay the Lord make his face to shine\nupon you and be gracious to you;\nmay the Lord lift up his countenance\nupon you and give you peace."
+            },
+            {
+                name: "GROUP",
+                lyrics: "Amen.\n\nHAPPY LORD'S DAY!"
+            },
+        ]
     }
 ];
