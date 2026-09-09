@@ -3,23 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="theme-color" content="#0a0a0f">
-    <title>Lingkod Angeles - Lyric Presenter with Slide Counter</title>
-    <link rel="preload" href="./background.webp" as="image">
+    <meta name="theme-color" content="#000000">
+    <title>Lyric Presenter</title>
+    <link rel="preload" href="./bg.webp" as="image">
     <link rel="preload" href="./Raleway/static/Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./Raleway/static/Raleway-Medium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./Raleway/static/Raleway-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./Raleway/static/Raleway-Bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="./Raleway/static/Raleway-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+    <script src="./songs.js"></script>
     <style>
-        /* ============================================================
-           LOCAL RALEWAY FONT LOADING
-        ============================================================ */
-        
         @font-face {
             font-family: 'Raleway';
             src: url('./Raleway/static/Raleway-Regular.woff2') format('woff2');
-            font-weight: normal;
+            font-weight: 400;
             font-style: normal;
             font-display: swap;
         }
@@ -40,7 +36,7 @@
         @font-face {
             font-family: 'Raleway';
             src: url('./Raleway/static/Raleway-Bold.woff2') format('woff2');
-            font-weight: bold;
+            font-weight: 700;
             font-style: normal;
             font-display: swap;
         }
@@ -51,11 +47,48 @@
             font-style: normal;
             font-display: swap;
         }
+        /* ============================================================
+           APPLE DESIGN SYSTEM — Lyric Presenter (Transparent Nav)
+        ============================================================ */
+        :root {
+            --color-primary: #0066cc;
+            --color-primary-focus: #0071e3;
+            --color-primary-on-dark: #2997ff;
+            --color-canvas: #ffffff;
+            --color-canvas-parchment: #f5f5f7;
+            --color-surface-pearl: #fafafc;
+            --color-surface-tile-1: #272729;
+            --color-surface-tile-2: #2a2a2c;
+            --color-surface-tile-3: #252527;
+            --color-surface-black: #000000;
+            --color-ink: #1d1d1f;
+            --color-body-on-dark: #ffffff;
+            --color-body-muted: #cccccc;
+            --color-ink-muted-80: #333333;
+            --color-ink-muted-48: #7a7a7a;
+            --color-hairline: #e0e0e0;
+            --color-divider-soft: #f0f0f0;
+            --color-chip-translucent: #d2d2d7;
+
+            --font-display: "Raleway", "SF Pro Display", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+            --font-body: "Raleway", "SF Pro Text", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+
+            --type-nav: 400 12px/1.0 var(--font-body);
+            --type-caption: 400 14px/1.43 var(--font-body);
+            --type-caption-strong: 600 14px/1.29 var(--font-body);
+            --type-body: 400 17px/1.47 var(--font-body);
+            --type-body-strong: 600 17px/1.24 var(--font-body);
+            --type-tagline: 600 21px/1.19 var(--font-body);
+            --type-display-lg: 600 40px/1.10 var(--font-display);
+            --type-fine-print: 400 12px/1.0 var(--font-body);
+            --type-button: 400 14px/1.29 var(--font-body);
+        }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
         }
 
         html, body {
@@ -63,11 +96,12 @@
         }
 
         body {
-            font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+            font: var(--type-body);
+            letter-spacing: -0.374px;
             height: 100vh;
             overflow: hidden;
-            color: #f5f5fa;
-            background-image: url('./background.webp');
+            color: var(--color-body-on-dark);
+            background-image: url('./bg.webp');
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
@@ -75,137 +109,261 @@
             position: relative;
         }
 
-        .lyric-wrapper.has-song {
-            background: radial-gradient(ellipse at center, rgba(10, 10, 15, 0.35) 0%, rgba(10, 10, 15, 0.55) 100%);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-        }
-
-        :root {
-            --bg-sidebar: rgba(5, 5, 10, 0.92);
-            --accent: #4f9eff;
-            --border-light: rgba(79, 158, 255, 0.3);
-            --hover-bg: rgba(79, 158, 255, 0.25);
-        }
-
-        ::-webkit-scrollbar {
-            width: 6px;
-        }
-        ::-webkit-scrollbar-track {
-            background: rgba(30, 30, 40, 0.6);
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #4f9eff;
-            border-radius: 10px;
-        }
-
-        .app {
-            display: flex;
-            height: 100%;
-            position: relative;
-        }
-
-        .sidebar {
+        /* ============================================================
+           TRANSPARENT GLOBAL TOP NAV
+        ============================================================ */
+        .global-nav {
             position: fixed;
-            left: 0;
             top: 0;
-            width: 320px;
-            max-width: 85vw;
-            height: 100%;
-            background: var(--bg-sidebar);
-            backdrop-filter: blur(24px);
-            border-right: 1px solid var(--border-light);
+            left: 0;
+            right: 0;
+            padding: 18px 20px 0;
+            z-index: 100;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            column-gap: 12px;
+            pointer-events: none;
+        }
+
+        .global-nav > * {
+            pointer-events: auto;
+        }
+
+        /* ============================================================
+           MAGIC SEARCH / TITLE BAR + DROPDOWN
+        ============================================================ */
+        .search-shell {
+            position: relative;
+            grid-column: 2;
+            justify-self: center;
+            width: min(var(--search-pill-w, 900px), calc(100vw - 360px));
             display: flex;
             flex-direction: column;
-            transition: transform 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
-            z-index: 40;
-            transform: translateX(0);
+            align-items: center;
+            transition: width 200ms ease;
         }
 
-        .sidebar.hidden {
-            transform: translateX(-100%);
-        }
-
-        .sidebar-header {
-            padding: 12px 12px 12px 16px;
-            border-bottom: 1px solid var(--border-light);
+        .top-search-bar {
+            position: relative;
+            height: 70px;
+            width: 100%;
+            max-width: var(--search-pill-w, 720px);
+            background: rgba(30, 30, 32, 0.78);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 9999px;
             display: flex;
             align-items: center;
-            gap: 8px;
+            padding: 0 24px;
+            gap: 12px;
+            cursor: text;
+            transition: transform 120ms ease, background-color 160ms ease, box-shadow 160ms ease, max-width 200ms ease;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
         }
 
-        .search-box {
-            width: 100%;
-            padding: 12px 36px 12px 16px;
-            font-size: 0.95rem;
-            border: 1px solid var(--border-light);
-            border-radius: 14px;
-            background: rgba(20, 20, 28, 0.8);
-            color: #f0f0f8;
-            outline: none;
-            font-family: inherit;
+        .top-search-bar:focus-within {
+            outline: 2px solid var(--color-primary-focus);
+            outline-offset: 2px;
         }
 
-        .search-box:focus {
-            border-color: #4f9eff;
-            background: rgba(30, 30, 40, 0.95);
+        .top-search-icon {
+            width: 28px;
+            height: 28px;
+            color: rgba(255, 255, 255, 0.55);
+            flex-shrink: 0;
         }
 
-        .song-list-container {
+        .top-search-input {
             flex: 1;
+            min-width: 0;
+            border: none;
+            background: transparent;
+            font: var(--type-body);
+            font-size: 28px;
+            letter-spacing: -0.374px;
+            color: var(--color-body-on-dark);
+            outline: none;
+            padding: 0;
+        }
+
+        .top-search-input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .top-title-label {
+            flex: 1;
+            min-width: 0;
+            text-align: center;
+            font: var(--type-body-strong);
+            font-size: 28px;
+            letter-spacing: 3.4px;
+            text-transform: uppercase;
+            color: var(--color-body-on-dark);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: none;
+        }
+
+        .top-search-bar.has-song .top-search-input {
+            display: none;
+        }
+
+        .top-search-bar.has-song .top-search-icon {
+            display: none;
+        }
+
+        .top-search-bar.has-song .top-title-label {
+            display: block;
+        }
+
+        .top-search-bar.has-song {
+            cursor: pointer;
+            background: rgba(30, 30, 32, 0.86);
+        }
+
+        .top-clear-btn {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 18px;
+            line-height: 1;
+            transition: transform 120ms ease, color 160ms ease, background-color 160ms ease;
+        }
+
+        .top-clear-btn.visible {
+            display: flex;
+        }
+
+        .top-clear-btn:active {
+            transform: translateY(-50%) scale(0.92);
+        }
+
+        .top-clear-btn:hover {
+            color: var(--color-body-on-dark);
+            background: rgba(255, 255, 255, 0.18);
+        }
+
+        /* Dropdown song list */
+        .song-dropdown {
+            position: absolute;
+            top: calc(100% + 12px);
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 720px;
+            max-height: 320px;
             overflow-y: auto;
-            padding: 16px 12px;
+            background: rgba(30, 30, 32, 0.94);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 18px;
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
+            padding: 8px;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: opacity 160ms ease, visibility 160ms ease;
+            z-index: 101;
+        }
+
+        .song-dropdown.visible {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .song-dropdown:empty {
+            display: none;
+        }
+
+        .song-dropdown {
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255, 255, 255, 0.18) transparent;
+        }
+
+        .song-dropdown::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .song-dropdown::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .song-dropdown::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.14);
+            border-radius: 8px;
+            border: 2px solid transparent;
+            background-clip: padding-box;
+        }
+
+        .song-dropdown::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.28);
+            background-clip: padding-box;
         }
 
         .song-item {
-            margin-bottom: 8px;
-            border-radius: 12px;
+            margin-bottom: 2px;
         }
 
         .song-title {
-            padding: 12px 16px;
-            font-size: 1rem;
-            font-weight: 500;
-            color: #f0f0fa;
-            border-radius: 12px;
+            padding: 18px 24px;
+            font: var(--type-body);
+            font-size: 22px;
+            letter-spacing: -0.374px;
+            color: var(--color-body-on-dark);
+            border-radius: 14px;
             cursor: pointer;
-            transition: none;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.4);
-            letter-spacing: 0.2px;
-            font-family: 'Raleway', sans-serif;
+            transition: background-color 160ms ease, transform 120ms ease;
         }
 
         .song-title:hover {
-            background: var(--hover-bg);
-            transform: translateX(6px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .song-title:active {
+            transform: scale(0.98);
         }
 
         .song-title.active-song {
-            background: rgba(79, 158, 255, 0.4);
-            color: #cce4ff;
+            background: rgba(41, 151, 255, 0.14);
+            color: var(--color-body-on-dark);
             font-weight: 600;
-            border-left: 4px solid #4f9eff;
+            box-shadow: inset 3px 0 0 var(--color-primary-on-dark);
         }
 
         .empty-message {
-            color: #c0c0d0;
+            color: rgba(255, 255, 255, 0.5);
             text-align: center;
-            padding: 40px 16px;
-            font-size: 0.9rem;
+            padding: 24px 16px;
+            font: var(--type-caption);
+            letter-spacing: -0.224px;
         }
 
-        .status-bar {
-            padding: 14px 18px;
-            border-top: 1px solid var(--border-light);
-            font-size: 0.75rem;
-            color: #c0c0d0;
-            display: flex;
-            justify-content: space-between;
-            font-family: monospace;
-            background: rgba(0,0,0,0.3);
+        .song-count {
+            padding: 8px 14px 4px;
+            font: var(--type-caption);
+            letter-spacing: -0.224px;
+            color: rgba(255, 255, 255, 0.5);
         }
 
+        /* ============================================================
+           MAIN STAGE
+        ============================================================ */
         .main-area {
             position: fixed;
             left: 0;
@@ -218,7 +376,9 @@
             justify-content: center;
             text-align: center;
             z-index: 1;
-            touch-action: pan-y; 
+            touch-action: pan-y;
+            padding: 110px 0 48px;
+            box-sizing: border-box;
         }
 
         .lyric-wrapper {
@@ -232,37 +392,42 @@
             position: relative;
         }
 
-        @media (min-width: 851px) {
-            .sidebar:not(.hidden) ~ .main-area .lyric-wrapper {
-                margin-left: 320px;
-                transition: margin-left 0.2s ease-out;
-            }
-        }
-
         .section-badge {
-            display: none;
-            background: rgba(20, 20, 25, 0.75);
-            backdrop-filter: blur(16px);
-            padding: 10px 28px;
-            border-radius: 80px;
-            margin-bottom: 2rem;
-            font-size: 0.9rem;
-            font-weight: 600;
-            letter-spacing: 4px;
+            grid-column: 1;
+            justify-self: start;
+            align-self: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(30, 30, 32, 0.78);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            height: 70px;
+            padding: 0 24px;
+            border-radius: 9999px;
+            font: var(--type-body-strong);
+            font-size: 28px;
+            letter-spacing: 2.5px;
             color: #d0d0d8;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            font-family: 'Raleway', 'Inter', monospace;
+            border: 1px solid rgba(255, 255, 255, 0.12);
             text-transform: uppercase;
             text-shadow: 0 1px 3px rgba(0,0,0,0.3);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
             transition: none;
+            pointer-events: none;
+            white-space: nowrap;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+            visibility: hidden;
+            opacity: 0;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .section-badge.visible {
-            display: inline-block;
+            visibility: visible;
+            opacity: 1;
         }
 
-        /* CRITICAL: white-space: pre prevents ANY automatic wrapping */
         .lyric-text {
             color: #ffffff;
             font-weight: 600;
@@ -270,139 +435,210 @@
             white-space: pre;
             word-break: keep-all;
             overflow-wrap: normal;
-            font-family: 'Raleway', 'Inter', -apple-system, 'Noto Serif', Georgia, serif;
+            font-family: var(--font-display);
             text-align: center;
             text-shadow: 0 4px 18px rgba(0, 0, 0, 0.7), 0 2px 8px rgba(0, 0, 0, 0.5);
-            transition: none;
+            transition: opacity 0.12s ease, transform 0.12s ease;
         }
 
-        /* ========== BASE STYLES (Landscape first) ========== */
-        .slide-title-box,
+        .lyric-wrapper.has-song {
+            background: radial-gradient(ellipse at center, rgba(10, 10, 15, 0.35) 0%, rgba(10, 10, 15, 0.55) 100%);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* ============================================================
+           SLIDE COUNTER (nav, upper-right)
+        ============================================================ */
         .slide-counter {
-            position: fixed;
-            bottom: 28px;
-            display: flex;
+            grid-column: 3;
+            justify-self: end;
+            align-self: center;
+            display: inline-flex;
             align-items: center;
             justify-content: center;
-            min-width: 160px;
-            max-width: min(88vw, 320px);
             width: auto;
-            overflow: hidden;
-            background: rgba(20, 20, 25, 0.75);
-            backdrop-filter: blur(12px);
-            padding: 12px 20px;
-            border-radius: 60px;
-            font-family: 'Raleway', monospace;
-            font-weight: 700;
-            font-size: 1.15rem;
-            letter-spacing: 1.5px;
-            color: #d0d0d8;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            z-index: 30;
+            background: rgba(30, 30, 32, 0.78);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            height: 70px;
+            padding: 0 24px;
+            border-radius: 9999px;
+            font: var(--type-body-strong);
+            font-size: 28px;
+            letter-spacing: -0.2px;
+            color: var(--color-body-on-dark);
+            border: 1px solid rgba(255, 255, 255, 0.12);
             pointer-events: none;
-            transition: bottom 0.2s ease;
-        }
-
-        /* Landscape: bottom corners */
-        .slide-title-box {
-            left: 28px;
-            right: auto;
-        }
-        .slide-counter {
-            right: 28px;
-            left: auto;
-        }
-
-        /* Portrait: title top center, counter bottom center */
-        @media (orientation: portrait) {
-            .slide-title-box {
-                top: 20px;
-                bottom: auto;
-                left: 50%;
-                right: auto;
-                transform: translateX(-50%);
-                min-width: auto;
-                max-width: 85vw;
-            }
-            .slide-counter {
-                bottom: 20px;
-                left: 50%;
-                right: auto;
-                transform: translateX(-50%);
-                min-width: auto;
-            }
-        }
-
-        /* Landscape: lower them a bit (reduce bottom margin) */
-        @media (orientation: landscape) {
-            .slide-title-box,
-            .slide-counter {
-                bottom: 12px;
-            }
-            .slide-title-box {
-                left: 20px;
-            }
-            .slide-counter {
-                right: 20px;
-            }
-        }
-
-        .slide-title {
-            font-family: 'Raleway', sans-serif;
-            font-size: 0.95rem;
-            font-weight: 600;
-            letter-spacing: 0.18em;
-            text-transform: uppercase;
-            color: #d0d0d8;
+            white-space: nowrap;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+            max-width: 100%;
             overflow: hidden;
             text-overflow: ellipsis;
-            white-space: nowrap;
-            opacity: 0.95;
         }
 
         .slide-count {
             white-space: nowrap;
         }
 
-        .slide-counter.hidden-counter,
-        .slide-title-box.hidden-counter {
-            opacity: 0;
+        .slide-counter.hidden-counter {
             visibility: hidden;
+            opacity: 0;
         }
 
-        /* Fullscreen overrides */
-        body:fullscreen .slide-counter,
-        body:fullscreen .slide-title-box {
-            padding: 16px 32px;
-            font-size: 1.7rem;
-            font-weight: 800;
-            border-width: 1px;
-            background: rgba(20, 20, 25, 0.8);
-        }
-        body:fullscreen .slide-title-box {
-            top: 28px; 
-            transform: translateX(-50%);
-        }
-        body:fullscreen .slide-counter {
-            bottom: 28px;
-            transform: translateX(-50%);
-        }
-        /* In fullscreen + landscape, keep corners? Actually fullscreen portrait also center */
-        body:fullscreen.orientation-landscape .slide-title-box,
-        body:fullscreen .slide-title-box {
-            left: 50%;
-            right: auto;
-            top: 28px;
-            bottom: auto;
-        }
-        body:fullscreen .slide-counter {
-            left: 50%;
-            right: auto;
-            bottom: 28px;
+        /* ============================================================
+           WELCOME MESSAGE
+        ============================================================ */
+        .welcome-message {
+            display: none;
+            color: rgba(255, 255, 255, 0.9);
+            font: var(--type-body);
+            line-height: 1.8;
+            text-align: center;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+            padding: 1.5rem 2rem;
+            background: radial-gradient(ellipse at center, rgba(10, 10, 15, 0.35) 0%, rgba(10, 10, 15, 0.55) 100%);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 24px;
+            max-width: 90vw;
         }
 
-        /* Responsive adjustments */
+        .welcome-message.visible {
+            display: block;
+        }
+
+        .welcome-message kbd {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 6px;
+            padding: 2px 8px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+            font-size: 0.9rem;
+            letter-spacing: 0;
+            margin: 0 2px;
+        }
+
+        /* ============================================================
+           TRANSITIONS & ANIMATIONS
+        ============================================================ */
+        .lyric-text.slide-next-out {
+            opacity: 0;
+            transform: translateX(-12px);
+        }
+        .lyric-text.slide-next-in {
+            opacity: 0;
+            transform: translateX(12px);
+        }
+        .lyric-text.slide-prev-out {
+            opacity: 0;
+            transform: translateX(12px);
+        }
+        .lyric-text.slide-prev-in {
+            opacity: 0;
+            transform: translateX(-12px);
+        }
+
+        .section-badge.badge-verse,
+        .section-badge.badge-chorus,
+        .section-badge.badge-bridge,
+        .section-badge.badge-refrain,
+        .section-badge.badge-end {
+            background: rgba(20, 20, 25, 0.75);
+            border-color: rgba(255, 255, 255, 0.15);
+            color: #d0d0d8;
+        }
+
+        .lyric-text.end-of-song-pulse,
+        .slide-counter.end-of-song-pulse {
+            animation: endPulse 0.4s ease-out;
+        }
+
+        @keyframes endPulse {
+            0%   { transform: scale(1); }
+            30%  { transform: scale(1.04); }
+            100% { transform: scale(1); }
+        }
+
+        /* ============================================================
+           UPDATE BANNER
+        ============================================================ */
+        .update-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--color-primary);
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            font: var(--type-body-strong);
+            font-size: 0.95rem;
+            z-index: 2147483647;
+            cursor: pointer;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+            letter-spacing: -0.224px;
+        }
+
+        .update-banner.visible {
+            transform: translateY(0);
+        }
+
+        .update-banner:hover {
+            background: var(--color-primary-focus);
+        }
+
+        .rotate-prompt {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.92);
+            color: #fff;
+            z-index: 2147483646;
+            text-align: center;
+            padding: 24px;
+        }
+
+        .rotate-prompt.visible {
+            display: flex;
+        }
+
+        .rotate-prompt-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .rotate-icon {
+            font-size: 4rem;
+            line-height: 1;
+            animation: rotatePhone 2s ease-in-out infinite;
+        }
+
+        .rotate-prompt p {
+            font: var(--type-body-strong);
+            font-size: 1.1rem;
+            margin: 0;
+            max-width: 260px;
+            line-height: 1.4;
+        }
+
+        @keyframes rotatePhone {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(90deg); }
+        }
+
+        /* ============================================================
+           RESPONSIVE
+        ============================================================ */
         @media (max-width: 850px) {
             .app .main-area .lyric-wrapper {
                 padding: 1.2rem 1.5rem;
@@ -414,15 +650,208 @@
                 backdrop-filter: blur(8px);
                 border: 1px solid rgba(255, 255, 255, 0.15);
             }
-            .app .main-area .section-badge {
-                padding: 6px 18px;
-                margin-bottom: 1.2rem;
-                font-size: 0.8rem;
-                letter-spacing: 3px;
+        }
+
+        /* Tablet portrait: iPad mini etc. */
+        @media (min-width: 601px) and (max-width: 1024px) and (orientation: portrait) {
+            .main-area {
+                padding: 96px 0 80px;
+            }
+            .global-nav {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                padding: 18px 0 0;
+            }
+            .search-shell {
+                width: min(var(--search-pill-w, 900px), calc(100vw - 32px));
+                grid-column: auto;
+            }
+            .top-search-bar {
+                height: 56px;
+                padding: 0 20px;
+                gap: 10px;
+            }
+            .top-search-icon {
+                width: 22px;
+                height: 22px;
+            }
+            .top-search-input {
+                font-size: 22px;
+            }
+            .top-title-label {
+                font-size: 22px;
+                letter-spacing: 2.6px;
+            }
+            .top-clear-btn {
+                right: 8px;
+                width: 32px;
+                height: 32px;
+                font-size: 13px;
+            }
+            .section-badge,
+            .slide-counter {
+                position: fixed;
+                bottom: 14px;
+                top: auto;
+                transform: none;
+                z-index: 100;
+                height: 56px;
+                max-width: 40vw;
+                padding: 0 20px;
+                font-size: 22px;
+                letter-spacing: 1.5px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                border-radius: 9999px;
+                align-items: center;
+                justify-content: center;
+            }
+            .section-badge {
+                left: 14px;
+                text-transform: uppercase;
+            }
+            .section-badge.visible {
+                visibility: visible;
+                opacity: 1;
+            }
+            .slide-counter {
+                right: 14px;
+                display: inline-flex;
+            }
+            .app .main-area .lyric-wrapper {
+                padding: 1rem 1.25rem;
+                border-radius: 28px;
+                max-width: 96%;
+            }
+        }
+
+        /* Tablet landscape: iPad mini etc. */
+        @media (min-width: 601px) and (max-width: 1024px) and (orientation: landscape) {
+            .main-area {
+                padding: 96px 0 48px;
+            }
+            .global-nav {
+                padding: 14px 20px 0;
+            }
+            .search-shell {
+                width: min(var(--search-pill-w, 900px), calc(100vw - 280px));
+                grid-column: 2;
+            }
+            .top-search-bar {
+                height: 56px;
+                padding: 0 20px;
+                gap: 10px;
+            }
+            .top-search-icon {
+                width: 22px;
+                height: 22px;
+            }
+            .top-search-input {
+                font-size: 22px;
+            }
+            .top-title-label {
+                font-size: 22px;
+                letter-spacing: 2.6px;
+            }
+            .top-clear-btn {
+                right: 8px;
+                width: 32px;
+                height: 32px;
+                font-size: 13px;
+            }
+            .section-badge,
+            .slide-counter {
+                position: static;
+                transform: none;
+                height: 56px;
+                padding: 0 20px;
+                font-size: 22px;
+                letter-spacing: 1.5px;
+                max-width: 25vw;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                border-radius: 9999px;
+                align-items: center;
+                justify-content: center;
+            }
+            .section-badge.visible {
+                visibility: visible;
+                opacity: 1;
             }
         }
 
         @media (max-width: 600px) {
+            .main-area {
+                padding: 82px 0 70px;
+            }
+            .global-nav {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                padding: 18px 0 0;
+            }
+            .search-shell {
+                width: min(var(--search-pill-w, 900px), calc(100vw - 24px));
+                grid-column: auto;
+            }
+            .top-search-bar {
+                height: 48px;
+                padding: 0 16px;
+                gap: 8px;
+            }
+            .top-search-icon {
+                width: 18px;
+                height: 18px;
+            }
+            .top-search-input {
+                font-size: 18px;
+            }
+            .top-title-label {
+                font-size: 18px;
+                letter-spacing: 2.2px;
+            }
+            .top-clear-btn {
+                right: 6px;
+                width: 28px;
+                height: 28px;
+                font-size: 12px;
+            }
+            .song-title {
+                padding: 11px 14px;
+                font-size: 16px;
+                border-radius: 10px;
+            }
+            .section-badge,
+            .slide-counter {
+                position: fixed;
+                bottom: 12px;
+                top: auto;
+                transform: none;
+                z-index: 100;
+                height: 48px;
+                max-width: 42vw;
+                padding: 0 16px;
+                font-size: 18px;
+                letter-spacing: 1.5px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                border-radius: 9999px;
+                align-items: center;
+                justify-content: center;
+            }
+            .section-badge {
+                left: 12px;
+                text-transform: uppercase;
+            }
+            .section-badge.visible {
+                visibility: visible;
+                opacity: 1;
+            }
+            .slide-counter {
+                right: 12px;
+                display: inline-flex;
+            }
             .app .main-area .lyric-wrapper {
                 padding: 0.8rem 1rem;
                 border-radius: 24px;
@@ -433,336 +862,102 @@
                 backdrop-filter: blur(6px);
                 border: 1px solid rgba(255, 255, 255, 0.1);
             }
-            .app .main-area .section-badge {
-                padding: 4px 12px;
-                margin-bottom: 0.8rem;
-                font-size: 0.7rem;
-                letter-spacing: 2px;
+        }
+
+        @media (orientation: landscape) and (max-height: 500px) {
+            .main-area {
+                padding: 88px 0 48px;
             }
-            /* Portrait: smaller top/bottom spacing */
-            @media (orientation: portrait) {
-                .slide-title-box {
-                    top: 12px;
-                    padding: 6px 12px;
-                    font-size: 0.8rem;
-                }
-                .slide-counter {
-                    bottom: 12px;
-                    padding: 6px 12px;
-                    font-size: 0.8rem;
-                }
+            .global-nav {
+                padding: 12px 20px 0;
             }
-            @media (orientation: landscape) {
-                .slide-title-box, .slide-counter {
-                    bottom: 8px;
-                    padding: 6px 12px;
-                    font-size: 0.8rem;
-                }
+            .search-shell {
+                width: min(var(--search-pill-w, 900px), calc(100vw - 240px));
             }
-        }
-        
-        .sidebar-top {
-            display: none;
-        }
-
-        .search-toggle-btn {
-            position: fixed;
-            top: 0;
-            left: 0;
-            background: rgba(8, 8, 12, 0.85);
-            backdrop-filter: blur(12px);
-            border: none;
-            border-right: 1px solid rgba(255, 255, 255, 0.12);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-            color: #d4e6ff;
-            width: 52px;
-            height: 52px;
-            border-radius: 0 0 12px 0;
-            cursor: pointer;
-            z-index: 50;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: opacity 0.25s ease, background 0.2s ease;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-        }
-
-        .search-toggle-btn:hover {
-            background: rgba(30, 40, 55, 0.95);
-            color: #ffffff;
-        }
-
-        /* Hide open button when sidebar is visible */
-        .search-toggle-btn.btn-hidden {
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        .search-toggle-btn.fullscreen-hidden {
-            opacity: 0.35;
-            pointer-events: auto;
-        }
-        .search-toggle-btn.fullscreen-hidden:hover {
-            opacity: 1;
-        }
-
-        :root:fullscreen .search-toggle-btn {
-            opacity: 0.35 !important;
-            display: flex !important;
-            pointer-events: auto !important;
-            z-index: 2147483647 !important;
-        }
-        :root:fullscreen .search-toggle-btn.btn-hidden {
-            opacity: 0 !important;
-            pointer-events: none !important;
-        }
-        :root:fullscreen .search-toggle-btn:hover {
-            opacity: 1 !important;
-        }
-
-        /* Close button inside sidebar header — far right */
-        .sidebar-close-btn {
-            flex-shrink: 0;
-            width: 36px;
-            height: 36px;
-            border-radius: 8px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            background: rgba(255, 255, 255, 0.05);
-            color: #b0b0b8;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background 0.2s ease, color 0.2s ease;
-        }
-        .sidebar-close-btn:hover {
-            background: rgba(255, 80, 80, 0.15);
-            color: #ff8080;
-            border-color: rgba(255, 80, 80, 0.3);
-        }
-
-        body:fullscreen .lyric-wrapper {
-            max-width: 94%;
-            padding: 1.2rem 2rem;
-        }
-        
-        body:fullscreen .lyric-text {
-            font-weight: 700;
-            text-shadow: 0 6px 24px rgba(0, 0, 0, 0.8);
-        }
-        
-        body:fullscreen .section-badge {
-            font-size: 1rem;
-            letter-spacing: 5px;
-            padding: 10px 28px;
-            margin-bottom: 1.8rem;
-        }
-
-        /* === #2 Lyric slide transitions (direction-aware) === */
-        .lyric-text {
-            transition: opacity 0.12s ease, transform 0.12s ease;
-        }
-        /* Next section: slides out to the left, enters from the right */
-        .lyric-text.slide-next-out {
-            opacity: 0;
-            transform: translateX(-12px);
-        }
-        .lyric-text.slide-next-in {
-            opacity: 0;
-            transform: translateX(12px);
-        }
-        /* Previous section: slides out to the right, enters from the left */
-        .lyric-text.slide-prev-out {
-            opacity: 0;
-            transform: translateX(12px);
-        }
-        .lyric-text.slide-prev-in {
-            opacity: 0;
-            transform: translateX(-12px);
-        }
-
-        /* === #3 Section badge color coding === */
-        .section-badge.badge-verse,
-        .section-badge.badge-chorus,
-        .section-badge.badge-bridge,
-        .section-badge.badge-refrain,
-        .section-badge.badge-end {
-            background: rgba(20, 20, 25, 0.75);
-            border-color: rgba(255, 255, 255, 0.15);
-            color: #d0d0d8;
-        }
-
-        /* === #4 Progress dots (removed) === */
-
-        /* === #5 Search clear button === */
-        .search-wrapper {
-            position: relative;
-            flex: 1;
-            min-width: 0;
-        }
-        .search-clear-btn {
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            background: none;
-            border: none;
-            color: #8899aa;
-            font-size: 1.1rem;
-            cursor: pointer;
-            padding: 4px 6px;
-            line-height: 1;
-            border-radius: 50%;
-            display: none;
-        }
-        .search-clear-btn.visible {
-            display: block;
-        }
-        .search-clear-btn:hover {
-            color: #ffffff;
-            background: rgba(79, 158, 255, 0.3);
-        }
-
-        /* === #6 Sidebar backdrop overlay === */
-        .sidebar-backdrop {
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 35;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.3s ease;
-        }
-        .sidebar-backdrop.visible {
-            opacity: 1;
-            pointer-events: auto;
-        }
-
-        /* === End-of-song pulse animation === */
-        .lyric-text.end-of-song-pulse,
-        .slide-counter.end-of-song-pulse {
-            animation: endPulse 0.4s ease-out;
-        }
-        @keyframes endPulse {
-            0%   { transform: scale(1); }
-            30%  { transform: scale(1.04); }
-            100% { transform: scale(1); }
-        }
-
-        /* === Service-worker update banner === */
-        .update-banner {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(79, 158, 255, 0.95);
-            color: #fff;
-            text-align: center;
-            padding: 14px 20px;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 600;
-            font-size: 0.95rem;
-            z-index: 2147483647;
-            cursor: pointer;
-            transform: translateY(100%);
-            transition: transform 0.3s ease;
-            letter-spacing: 0.5px;
-        }
-        .update-banner.visible {
-            transform: translateY(0);
-        }
-        .update-banner:hover {
-            background: rgba(59, 138, 255, 0.98);
-        }
-
-        /* === Welcome / empty-state message === */
-        .welcome-message {
-            display: none;
-            color: rgba(255, 255, 255, 0.85);
-            font-size: 1.1rem;
-            font-weight: 500;
-            line-height: 1.8;
-            text-align: center;
-            font-family: 'Raleway', sans-serif;
-            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-            padding: 1.5rem 2rem;
-            background: radial-gradient(ellipse at center, rgba(10, 10, 15, 0.35) 0%, rgba(10, 10, 15, 0.55) 100%);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 24px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-            max-width: 90vw;
-        }
-        .welcome-message.visible {
-            display: block;
-        }
-        .welcome-message kbd {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.12);
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            border-radius: 6px;
-            padding: 2px 8px;
-            font-family: monospace;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-            margin: 0 2px;
+            .top-search-bar {
+                height: 48px;
+                padding: 0 18px;
+                gap: 10px;
+            }
+            .top-search-icon {
+                width: 20px;
+                height: 20px;
+            }
+            .top-search-input {
+                font-size: 20px;
+            }
+            .top-title-label {
+                font-size: 20px;
+                letter-spacing: 2.4px;
+            }
+            .top-clear-btn {
+                right: 7px;
+                width: 30px;
+                height: 30px;
+                font-size: 13px;
+            }
+            .section-badge,
+            .slide-counter {
+                position: static;
+                transform: none;
+                height: 48px;
+                padding: 0 18px;
+                font-size: 20px;
+                letter-spacing: 1.5px;
+                max-width: 30vw;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                border-radius: 9999px;
+                align-items: center;
+                justify-content: center;
+            }
+            .section-badge.visible {
+                visibility: visible;
+                opacity: 1;
+            }
         }
     </style>
 </head>
 <body>
 
-<div class="app">
-    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
-    <div class="sidebar hidden" id="sidebar">
-        <div class="sidebar-header">
-            <div class="search-wrapper">
-                <input type="text" class="search-box" id="searchInput" placeholder="Search song title..." autocomplete="off">
-                <button class="search-clear-btn" id="searchClearBtn" aria-label="Clear search">✕</button>
-            </div>
-            <button class="sidebar-close-btn" id="sidebarCloseBtn" aria-label="Close sidebar">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.3 5.71a1 1 0 0 0-1.41 0L12 10.59 7.11 5.7A1 1 0 0 0 5.7 7.11L10.59 12 5.7 16.89a1 1 0 1 0 1.41 1.41L12 13.41l4.89 4.89a1 1 0 0 0 1.41-1.41L13.41 12l4.89-4.89a1 1 0 0 0 0-1.4z" fill="currentColor"/>
-                </svg>
-            </button>
+<div class="global-nav" id="globalNav">
+    <div class="section-badge" id="sectionBadge"></div>
+    <div class="search-shell" id="searchShell">
+        <div class="top-search-bar" id="topSearchBar">
+            <svg class="top-search-icon" id="topSearchIcon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z" fill="currentColor"/>
+            </svg>
+            <input type="text" class="top-search-input" id="topSearchInput" placeholder="Search songs…" autocomplete="off">
+            <span class="top-title-label" id="topTitleLabel">—</span>
+            <button class="top-clear-btn" id="topClearBtn" aria-label="Clear search">✕</button>
         </div>
-        <div class="song-list-container" id="songListContainer"></div>
-        <div class="status-bar">
-            <span id="songCount"></span>
-            <span>◀  ▶ (Navigate)</span>
-        </div>
+        <div class="song-dropdown" id="songDropdown"></div>
     </div>
-
-    <div class="main-area" id="mainArea">
-        <div class="lyric-wrapper" id="lyricWrapper">
-            <div class="section-badge" id="sectionBadge"></div>
-            <div class="lyric-text" id="lyricText"></div>
-            <div class="welcome-message" id="welcomeMessage">
-                ✨ Open the sidebar to choose a song<br>
-                or tap <kbd>◀</kbd> <kbd>▶</kbd> to navigate<br><br>
-                <kbd>←</kbd> <kbd>→</kbd> &nbsp;Navigate sections<br>
-                Double‑click &nbsp;Toggle fullscreen<br>
-                <kbd>Esc</kbd> &nbsp;Close sidebar / Exit fullscreen
-            </div>
-        </div>
+    <div class="slide-counter hidden-counter" id="slideCounter">
+        <span class="slide-count" id="slideCount">—/—</span>
     </div>
 </div>
 
-<button class="search-toggle-btn" id="searchToggleBtn" aria-label="Open song search">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z" fill="currentColor"/>
-    </svg>
-</button>
-
-<div class="slide-title-box" id="slideTitleBox">
-    <span class="slide-title" id="slideTitle">—</span>
-</div>
-<div class="slide-counter" id="slideCounter">
-    <span class="slide-count" id="slideCount">—/—</span>
+<div class="main-area" id="mainArea">
+    <div class="lyric-wrapper" id="lyricWrapper">
+        <div class="lyric-text" id="lyricText"></div>
+        <div class="welcome-message" id="welcomeMessage">
+            ✨ Type in the search bar to find a song<br>
+            <kbd>←</kbd> <kbd>→</kbd> &nbsp;Navigate sections<br>
+            Double‑click &nbsp;Toggle fullscreen<br>
+            <kbd>Esc</kbd> &nbsp;Exit fullscreen
+        </div>
+    </div>
 </div>
 
 <div class="update-banner" id="updateBanner">✨ A new version is available — tap here to refresh</div>
 
-<script src="./songs.js"></script>
+<div class="rotate-prompt" id="rotatePrompt">
+    <div class="rotate-prompt-inner">
+        <div class="rotate-icon">↻</div>
+        <p>Please rotate your device to landscape</p>
+    </div>
+</div>
 
 <script>
     const songDatabase = (typeof rawSongs !== 'undefined' && Array.isArray(rawSongs))
@@ -770,65 +965,90 @@
         : [];
 
     if (!songDatabase.length) {
-        document.getElementById('songListContainer').innerHTML =
+        document.getElementById('songDropdown').innerHTML =
             `<div class="empty-message">⚠️ Unable to load song database.<br><small>Check your connection and refresh.</small></div>`;
-        document.getElementById('songCount').innerText = '0 songs';
     }
-    
+
     let currentSong = null;
     let currentSectionIndex = 0;
     let currentSearchTerm = "";
+    let isSearching = false;
     let wasSidebarOpenBeforeFullscreen = false;
     let isTransitioning = false;
-    
-    const searchInput = document.getElementById("searchInput");
-    const searchClearBtn = document.getElementById("searchClearBtn");
-    const sidebarCloseBtn = document.getElementById("sidebarCloseBtn");
-    const songListContainer = document.getElementById("songListContainer");
+
+    const topSearchBar = document.getElementById("topSearchBar");
+    const topSearchInput = document.getElementById("topSearchInput");
+    const topTitleLabel = document.getElementById("topTitleLabel");
+    const topClearBtn = document.getElementById("topClearBtn");
+    const songDropdown = document.getElementById("songDropdown");
     const lyricText = document.getElementById("lyricText");
     const sectionBadge = document.getElementById("sectionBadge");
     const lyricWrapper = document.getElementById("lyricWrapper");
-    const songCountSpan = document.getElementById("songCount");
-    const sidebar = document.getElementById("sidebar");
-    const sidebarBackdrop = document.getElementById("sidebarBackdrop");
-    const searchToggleBtn = document.getElementById("searchToggleBtn");
     const mainArea = document.getElementById("mainArea");
     const slideCounter = document.getElementById("slideCounter");
-    const slideTitleBox = document.getElementById("slideTitleBox");
-    const slideTitle = document.getElementById("slideTitle");
     const slideCount = document.getElementById("slideCount");
     const welcomeMessage = document.getElementById("welcomeMessage");
+    const rotatePrompt = document.getElementById("rotatePrompt");
+
     const progressDots = null;
-    
+
     function escapeHtml(str) {
         if (!str) return "";
         return str.replace(/[&<>]/g, m => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;' })[m] || m);
     }
-    
+
     function searchSongsByTitle(query) {
         if (!query.trim()) return [...songDatabase];
         const q = query.toLowerCase();
         return songDatabase.filter(s => s.title.toLowerCase().includes(q));
     }
-    
+
+    function updateTopBar() {
+        if (currentSong) {
+            topSearchBar.classList.add('has-song');
+            topTitleLabel.textContent = currentSong.title || '—';
+            topSearchInput.value = currentSong.title || '';
+            topClearBtn.classList.remove('visible');
+            fitSearchWidthToTitle(currentSong.title);
+        } else {
+            topSearchBar.classList.remove('has-song');
+            topTitleLabel.textContent = '—';
+            topClearBtn.classList.remove('visible');
+            resetSearchWidth();
+        }
+    }
+
+    function showDropdown() {
+        isSearching = true;
+        songDropdown.classList.add('visible');
+    }
+
+    function hideDropdown() {
+        isSearching = false;
+        songDropdown.classList.remove('visible');
+        if (currentSong) {
+            updateTopBar();
+        }
+    }
+
     function updateSlideCounter() {
         if (currentSong?.sections?.length) {
             const total = currentSong.sections.length;
             const current = currentSectionIndex + 1;
             slideCount.textContent = (current >= 1 && current <= total) ? `${current}/${total}` : `—/${total}`;
-            slideTitle.textContent = currentSong.title || '—';
             updateProgressDots(current - 1, total);
         } else if (currentSong) {
             slideCount.textContent = `0/0`;
-            slideTitle.textContent = currentSong.title || '—';
             updateProgressDots(-1, 0);
         } else {
             slideCount.textContent = `—/—`;
-            slideTitle.textContent = '—';
             updateProgressDots(-1, 0);
         }
-        slideCounter.classList.remove('hidden-counter');
-        slideTitleBox.classList.remove('hidden-counter');
+        if (currentSong) {
+            slideCounter.classList.remove('hidden-counter');
+        } else {
+            slideCounter.classList.add('hidden-counter');
+        }
     }
 
     function updateProgressDots(activeIndex, total) {
@@ -843,9 +1063,6 @@
     measureSpan.style.pointerEvents = 'none';
     document.body.appendChild(measureSpan);
 
-    // ============================================================
-    //  FONT SCALING – ACCOUNTS FOR LETTER-SPACING IN MEASUREMENT
-    // ============================================================
     function computeOptimalFontSize() {
         if (!lyricText) return;
         const rawText = lyricText.innerText;
@@ -853,39 +1070,32 @@
             lyricText.style.fontSize = '';
             return;
         }
-        
+
         const explicitLines = rawText.split('\n');
         const nonEmptyLines = explicitLines.filter(l => l.trim().length > 0);
         if (!nonEmptyLines.length) return;
-        
+
         const containerStyle = getComputedStyle(lyricWrapper);
         const padL = parseFloat(containerStyle.paddingLeft) || 0;
         const padR = parseFloat(containerStyle.paddingRight) || 0;
         const padT = parseFloat(containerStyle.paddingTop) || 0;
         const padB = parseFloat(containerStyle.paddingBottom) || 0;
-        
+
         const vw = window.innerWidth;
         const vh = window.innerHeight;
         const isFullscreen = !!document.fullscreenElement;
-        
-        // Available width (viewport minus sidebar/margins/padding)
+
         let horizMargin = 40;
-        if (!sidebar.classList.contains('hidden')) horizMargin += 320;
         let maxWidth = vw - horizMargin - padL - padR - 20;
         maxWidth = Math.min(Math.max(maxWidth, 200), vw * 0.9);
-        
-        // Available height (reserve space for badge and counter)
+
         let badgeH = 0;
-        if (sectionBadge.classList.contains('visible')) {
-            const badgeStyle = getComputedStyle(sectionBadge);
-            const marginB = parseFloat(badgeStyle.marginBottom) || 0;
-            badgeH = sectionBadge.offsetHeight + marginB;
-        }
-        const counterReserve = isFullscreen ? 100 : 70;
-        let maxHeight = vh - padT - padB - badgeH - counterReserve - 30;
+        const globalNavEl = document.getElementById('globalNav');
+        const navReserve = globalNavEl ? globalNavEl.offsetHeight + 22 : 110;
+        const bottomMargin = isFullscreen ? 60 : 48;
+        let maxHeight = vh - padT - padB - navReserve - bottomMargin - 20;
         maxHeight = Math.max(maxHeight, 150);
-        
-        // Determine letter-spacing based on line length
+
         let longestLineForSpacing = "";
         for (let line of explicitLines) {
             if (line.length > longestLineForSpacing.length) longestLineForSpacing = line;
@@ -894,32 +1104,32 @@
         if (longestLineForSpacing.length > 55) letterSpacing = '-0.45px';
         else if (longestLineForSpacing.length > 45) letterSpacing = '-0.35px';
         else if (longestLineForSpacing.length > 35) letterSpacing = '-0.25px';
-        
+
         measureSpan.style.fontFamily = getComputedStyle(lyricText).fontFamily;
         measureSpan.style.fontWeight = getComputedStyle(lyricText).fontWeight;
         measureSpan.style.letterSpacing = letterSpacing;
         measureSpan.style.textTransform = getComputedStyle(lyricText).textTransform;
-        
+
         let absMax = 5.2;
         if (vw >= 1280 && vh >= 720) absMax = 5.0;
         else if (vh > 800) absMax = 5.2;
         else if (vw <= 600) absMax = 3.8;
         else absMax = 4.6;
         if (isFullscreen && vw >= 1600) absMax = 5.5;
-        
+
         const minFont = 0.9;
         const refFont = 2.0;
         const lineH = 1.4;
-        
+
         measureSpan.style.fontSize = `${refFont}rem`;
-        
+
         let maxLineWidth = 0;
         for (let line of explicitLines) {
             if (!line.length) continue;
             measureSpan.textContent = line;
             maxLineWidth = Math.max(maxLineWidth, measureSpan.getBoundingClientRect().width);
         }
-        
+
         let fontByWidth = absMax;
         if (maxLineWidth > 0 && isFinite(maxLineWidth)) {
             const ideal = (maxWidth / maxLineWidth) * refFont;
@@ -930,7 +1140,7 @@
         let fontByHeight = absMax;
         if (numLines > 0) {
             let basePx = parseFloat(getComputedStyle(document.documentElement).fontSize);
-            if (!basePx || basePx <= 0 || !isFinite(basePx)) basePx = 16; // fallback to browser default
+            if (!basePx || basePx <= 0 || !isFinite(basePx)) basePx = 16;
             const maxPx = maxHeight / (lineH * numLines);
             if (isFinite(maxPx) && maxPx > 0) {
                 fontByHeight = Math.min(absMax, Math.max(minFont, (maxPx / basePx) * 0.95));
@@ -939,7 +1149,7 @@
 
         let finalFont = Math.max(minFont, Math.min(fontByWidth, fontByHeight));
         if (!isFinite(finalFont) || finalFont <= 0) finalFont = minFont;
-        
+
         lyricText.style.fontSize = `${finalFont}rem`;
         lyricText.style.lineHeight = lineH;
         lyricText.style.letterSpacing = letterSpacing;
@@ -947,13 +1157,13 @@
         lyricText.style.wordBreak = 'keep-all';
         lyricText.style.overflowWrap = 'normal';
     }
-    
+
     let fontTimer = null;
     function updateFontSizeInstant() {
         if (fontTimer) cancelAnimationFrame(fontTimer);
         fontTimer = requestAnimationFrame(() => computeOptimalFontSize());
     }
-    
+
     const badgeColorMap = {
         'VERSE': 'badge-verse',
         'CHORUS': 'badge-chorus',
@@ -963,7 +1173,6 @@
     };
 
     function setBadgeColor(name) {
-        // Remove all badge color classes
         sectionBadge.className = 'section-badge';
         if (name) {
             sectionBadge.classList.add('visible');
@@ -993,44 +1202,42 @@
             welcomeMessage.classList.add('visible');
         }
 
-        // Hide welcome message when a song is active, show when no song
         if (currentSong) {
             welcomeMessage.classList.remove('visible');
         }
         updateFontSizeInstant();
         updateSlideCounter();
-        // Only re-render song list when the active song changes
+        updateTopBar();
+
         const newSong = currentSong?.title || '';
         if (prevSong !== newSong) {
             lyricWrapper.dataset.activeSong = newSong;
-            renderSongList(currentSearchTerm);
+            renderDropdown(currentSearchTerm);
         }
     }
-    
+
     async function selectSong(song) {
         if (!song) return;
         const wasDiff = currentSong !== song;
         currentSong = song;
         currentSectionIndex = 0;
         updateDisplay();
+        hideDropdown();
 
         if (wasDiff || currentSong) {
             if (!document.fullscreenElement) {
-                // Remember sidebar state before entering fullscreen
-                wasSidebarOpenBeforeFullscreen = !sidebar.classList.contains('hidden');
+                wasSidebarOpenBeforeFullscreen = false;
                 try {
                     await document.documentElement.requestFullscreen();
-                    if (document.fullscreenElement && !sidebar.classList.contains('hidden')) {
-                        closeSidebar();
-                    }
+                    lockLandscape();
                 } catch {}
             } else {
-                if (!sidebar.classList.contains('hidden')) closeSidebar();
+                lockLandscape();
             }
             updateFontSizeInstant();
         }
     }
-    
+
     function transitionSlide(direction, callback) {
         const outClass = direction === 'next' ? 'slide-next-out' : 'slide-prev-out';
         const inClass  = direction === 'next' ? 'slide-next-in'  : 'slide-prev-in';
@@ -1057,17 +1264,15 @@
                 updateDisplay();
             });
         } else if (currentSong?.sections && currentSectionIndex + 1 >= currentSong.sections.length) {
-            // At the end — pulse the lyric text for haptic-like feedback
             lyricText.classList.remove('end-of-song-pulse');
-            void lyricText.offsetWidth; // force reflow to restart animation
+            void lyricText.offsetWidth;
             lyricText.classList.add('end-of-song-pulse');
-            // Also briefly pulse the slide counter
             slideCounter.classList.remove('end-of-song-pulse');
             void slideCounter.offsetWidth;
             slideCounter.classList.add('end-of-song-pulse');
         }
     }
-    
+
     function prevSection() {
         if (isTransitioning) return;
         if (currentSectionIndex > 0) {
@@ -1077,22 +1282,26 @@
             });
         }
     }
-    
-    function renderSongList(term = "") {
+
+    function renderDropdown(term = "") {
         if (!songDatabase.length) {
-            songListContainer.innerHTML = `<div class="empty-message">✨ no songs available</div>`;
-            songCountSpan.innerText = `0 songs`;
+            songDropdown.innerHTML = `<div class="empty-message">✨ no songs available</div>`;
             return;
         }
         const filtered = searchSongsByTitle(term);
-        songCountSpan.innerText = `${filtered.length} ${filtered.length === 1 ? 'song' : 'songs'}`;
         if (!filtered.length) {
-            songListContainer.innerHTML = `<div class="empty-message">✨ no title matches "${escapeHtml(term)}"</div>`;
+            songDropdown.innerHTML = `<div class="empty-message">✨ no title matches "${escapeHtml(term)}"</div>`;
             return;
         }
-        songListContainer.innerHTML = '';
+        songDropdown.innerHTML = '';
         let activeEl = null;
         const fragment = document.createDocumentFragment();
+
+        const countDiv = document.createElement('div');
+        countDiv.className = 'song-count';
+        countDiv.textContent = `${filtered.length} ${filtered.length === 1 ? 'song' : 'songs'}`;
+        fragment.appendChild(countDiv);
+
         filtered.forEach(song => {
             const div = document.createElement('div');
             div.className = 'song-item';
@@ -1102,96 +1311,157 @@
             titleDiv.textContent = song.title;
             titleDiv.onclick = () => {
                 selectSong(song);
-                if (window.innerWidth <= 700) {
-                    closeSidebar();
-                }
             };
             div.appendChild(titleDiv);
             fragment.appendChild(div);
             if (isActive) activeEl = div;
         });
-        songListContainer.appendChild(fragment);
-        // #7: Scroll active song into view
+        songDropdown.appendChild(fragment);
         if (activeEl) {
             activeEl.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
         }
     }
-    
+
     function initKeyboard() {
         document.addEventListener('keydown', e => {
-            if (document.activeElement?.id === 'searchInput') {
-                // Escape from search input closes sidebar
-                if (e.key === 'Escape') { closeSidebar(); }
+            if (document.activeElement?.id === 'topSearchInput') {
+                if (e.key === 'Escape') {
+                    topSearchInput.blur();
+                    hideDropdown();
+                }
                 return;
             }
             if (e.key === 'ArrowLeft') { e.preventDefault(); prevSection(); }
             else if (e.key === 'ArrowRight') { e.preventDefault(); nextSection(); }
             else if (e.key === 'Escape') {
                 e.preventDefault();
-                if (!sidebar.classList.contains('hidden')) {
-                    closeSidebar();
+                if (songDropdown.classList.contains('visible')) {
+                    hideDropdown();
                 } else if (document.fullscreenElement) {
                     document.exitFullscreen();
                 }
             }
         });
     }
-    
-    function openSidebar() {
-        sidebar.classList.remove('hidden');
-        sidebarBackdrop.classList.add('visible');
-        searchToggleBtn.classList.add('btn-hidden');
-        setTimeout(() => searchInput.focus(), 100);
-        if (currentSong) updateFontSizeInstant();
-    }
 
-    function closeSidebar() {
-        sidebar.classList.add('hidden');
-        sidebarBackdrop.classList.remove('visible');
-        searchToggleBtn.classList.remove('btn-hidden');
-        if (currentSong) updateFontSizeInstant();
-    }
-
-    function initSidebarToggle() {
-        searchToggleBtn.addEventListener('click', openSidebar);
-        sidebarCloseBtn.addEventListener('click', closeSidebar);
-        sidebarBackdrop.addEventListener('click', closeSidebar);
-    }
-    
-    function toggleFullscreen() {
-        if (document.fullscreenElement) {
-            const shouldRestoreSidebar = wasSidebarOpenBeforeFullscreen;
-            document.exitFullscreen();
-            // Restore sidebar after exiting fullscreen if it was open before
-            if (shouldRestoreSidebar) {
-                // Small delay to let fullscreen exit complete
-                setTimeout(() => {
-                    if (!document.fullscreenElement && sidebar.classList.contains('hidden')) {
-                        openSidebar();
-                    }
-                }, 150);
+    function initSearch() {
+        let debounce;
+        topSearchInput.addEventListener('input', e => {
+            clearTimeout(debounce);
+            const val = e.target.value;
+            topClearBtn.classList.toggle('visible', val.length > 0);
+            debounce = setTimeout(() => {
+                currentSearchTerm = val;
+                renderDropdown(currentSearchTerm);
+                showDropdown();
+            }, 100);
+        });
+        topSearchInput.addEventListener('focus', () => {
+            if (currentSong) {
+                // If a song is already playing, start a fresh search
+                currentSearchTerm = '';
+                topSearchInput.value = '';
+                topClearBtn.classList.remove('visible');
             }
-        } else {
-            wasSidebarOpenBeforeFullscreen = !sidebar.classList.contains('hidden');
-            document.documentElement.requestFullscreen();
-            if (!sidebar.classList.contains('hidden')) closeSidebar();
-        }
-    }
-    
-    function enableFullscreen() {
-        mainArea.addEventListener('dblclick', toggleFullscreen);
-        document.addEventListener('fullscreenchange', () => {
-            searchToggleBtn.classList.toggle('fullscreen-hidden', !!document.fullscreenElement);
-            if (currentSong) updateFontSizeInstant();
-            slideCounter.classList.remove('hidden-counter');
-            // Restore sidebar when exiting fullscreen if it was open before
-            if (!document.fullscreenElement && wasSidebarOpenBeforeFullscreen && sidebar.classList.contains('hidden')) {
-                setTimeout(() => openSidebar(), 100);
-                wasSidebarOpenBeforeFullscreen = false;
+            renderDropdown(currentSearchTerm);
+            showDropdown();
+        });
+        topClearBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            topSearchInput.value = '';
+            topClearBtn.classList.remove('visible');
+            currentSearchTerm = '';
+            renderDropdown('');
+            topSearchInput.focus();
+        });
+        const searchShellEl = document.getElementById('searchShell');
+        searchShellEl.addEventListener('pointerdown', (e) => {
+            if (e.target === topClearBtn) return;
+            if (songDropdown.contains(e.target)) return; // let dropdown item clicks work
+            // Focus on press (not click) so a press anywhere in the search area — incl. the
+            // rounded-pill corners that fall outside the pill itself — still opens search.
+            if (e.target !== topSearchInput) e.preventDefault();
+            if (currentSong) {
+                // Reopen search to pick a different song; keep current song playing until a new one is selected
+                currentSearchTerm = '';
+                topSearchInput.value = '';
+                topClearBtn.classList.remove('visible');
+                topSearchBar.classList.remove('has-song');
+                resetSearchWidth();
+                topSearchInput.focus();
+                renderDropdown('');
+                showDropdown();
+            } else {
+                topSearchInput.focus();
+                renderDropdown(currentSearchTerm);
+                showDropdown();
+            }
+        });
+
+        // Click outside closes dropdown
+        document.addEventListener('click', e => {
+            const shell = document.getElementById('searchShell');
+            if (shell && !shell.contains(e.target)) {
+                hideDropdown();
             }
         });
     }
-    
+
+    function toggleFullscreen() {
+        if (document.fullscreenElement) {
+            document.exitFullscreen();
+        } else {
+            document.documentElement.requestFullscreen();
+        }
+    }
+
+    function lockLandscape() {
+        if (screen.orientation?.lock) {
+            screen.orientation.lock('landscape').catch(() => {});
+        }
+    }
+
+    function unlockOrientation() {
+        if (screen.orientation?.unlock) {
+            screen.orientation.unlock();
+        }
+    }
+
+    function enableFullscreen() {
+        mainArea.addEventListener('dblclick', toggleFullscreen);
+        document.addEventListener('fullscreenchange', () => {
+            if (document.fullscreenElement) {
+                lockLandscape();
+            } else {
+                unlockOrientation();
+            }
+            if (currentSong) updateFontSizeInstant();
+            if (currentSong) slideCounter.classList.remove('hidden-counter');
+        });
+    }
+
+    function updateRotatePrompt() {
+        if (!rotatePrompt) return;
+        // Detect iOS even when "Request Desktop Website" changes the user agent string
+        const isIOS = /iPad|iPhone|iPod/.test(navigator.platform) ||
+                      (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        const isMobile = /Mobi|Android/i.test(navigator.userAgent) || isIOS;
+        const isPortrait = window.innerHeight > window.innerWidth;
+        const isPhone = window.innerWidth <= 600;
+        const canLock = !!screen.orientation?.lock;
+        if (isMobile && isPhone && isPortrait && !canLock) {
+            rotatePrompt.classList.add('visible');
+        } else {
+            rotatePrompt.classList.remove('visible');
+        }
+    }
+
+    function initOrientationHelpers() {
+        updateRotatePrompt();
+        window.addEventListener('resize', updateRotatePrompt);
+        window.addEventListener('orientationchange', updateRotatePrompt);
+    }
+
     function initTouchGestures() {
         let startX, startY, lastTap = 0, lastTapX = 0, lastTapY = 0;
         mainArea.addEventListener('touchstart', e => {
@@ -1206,7 +1476,6 @@
             if (isSwipe) {
                 e.preventDefault();
                 dx > 0 ? prevSection() : nextSection();
-                // Suppress double-tap detection after a swipe
                 lastTap = 0;
                 return;
             }
@@ -1223,58 +1492,72 @@
             }
         }, { passive: false });
     }
-    
-    function initSearch() {
-        let debounce;
-        searchInput.addEventListener('input', e => {
-            clearTimeout(debounce);
-            const val = e.target.value;
-            searchClearBtn.classList.toggle('visible', val.length > 0);
-            debounce = setTimeout(() => {
-                currentSearchTerm = val;
-                renderSongList(currentSearchTerm);
-            }, 100);
-        });
-        searchClearBtn.addEventListener('click', () => {
-            searchInput.value = '';
-            searchClearBtn.classList.remove('visible');
-            currentSearchTerm = '';
-            renderSongList('');
-            searchInput.focus();
-        });
-    }
-    
+
     function initResize() {
         window.addEventListener('resize', () => {
             if (currentSong?.sections?.[currentSectionIndex]) updateFontSizeInstant();
+            if (currentSong) fitSearchWidthToTitle(currentSong.title);
         });
     }
-    
+
     function observeLyrics() {
         window.addEventListener('load', () => currentSong && updateFontSizeInstant());
-        new MutationObserver(() => currentSong && updateFontSizeInstant()).observe(sidebar, { attributes: true, attributeFilter: ['class'] });
     }
-    
+
+    function measureTitleWidth(text) {
+        const cs = getComputedStyle(topTitleLabel);
+        const span = document.createElement('span');
+        span.style.position = 'absolute';
+        span.style.visibility = 'hidden';
+        span.style.whiteSpace = 'nowrap';
+        span.style.fontFamily = cs.fontFamily;
+        span.style.fontSize = cs.fontSize;
+        span.style.fontWeight = cs.fontWeight;
+        span.style.fontStyle = cs.fontStyle;
+        span.style.letterSpacing = cs.letterSpacing;
+        span.style.textTransform = cs.textTransform;
+        span.textContent = text || '';
+        document.body.appendChild(span);
+        const w = span.getBoundingClientRect().width;
+        span.remove();
+        return w;
+    }
+
+    function fitSearchWidthToTitle(title) {
+        const textW = measureTitleWidth(title);
+        const barStyle = getComputedStyle(topSearchBar);
+        const padL = parseFloat(barStyle.paddingLeft) || 0;
+        const padR = parseFloat(barStyle.paddingRight) || 0;
+        // text width + actual horizontal padding + comfort buffer, with a sensible minimum
+        const pill = Math.max(180, Math.ceil(textW) + padL + padR + 14);
+        document.documentElement.style.setProperty('--search-pill-w', pill + 'px');
+    }
+
+    function resetSearchWidth() {
+        document.documentElement.style.setProperty('--search-pill-w', '720px');
+    }
+
     function init() {
         initSearch();
         initKeyboard();
-        initSidebarToggle();
         enableFullscreen();
         initResize();
         observeLyrics();
         initTouchGestures();
+        initOrientationHelpers();
         currentSong = null;
         updateDisplay();
-        renderSongList("");
+        renderDropdown("");
         updateSlideCounter();
+        resetSearchWidth();
+        if (document.fonts?.ready) document.fonts.ready.then(resetSearchWidth);
     }
-    
+
     init();
 </script>
 <script>
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js');
-  // Listen for update notifications from the service worker
   navigator.serviceWorker.addEventListener('message', event => {
     if (event.data?.type === 'UPDATE_AVAILABLE') {
       const banner = document.getElementById('updateBanner');

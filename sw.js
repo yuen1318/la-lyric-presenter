@@ -1,11 +1,10 @@
-const VERSION = '1.0.0'; // ← bump this on each deploy
+const VERSION = '2.0.0'; // ← bump this on each deploy
 const CACHE_NAME = `la-lyric-v${VERSION}`;
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
   './songs.js',
-  './background.webp',
-  './la.png',
+  './bg.webp',
   './Raleway/static/Raleway-Regular.woff2',
   './Raleway/static/Raleway-Medium.woff2',
   './Raleway/static/Raleway-SemiBold.woff2',
