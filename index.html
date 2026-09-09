@@ -590,52 +590,6 @@
             background: var(--color-primary-focus);
         }
 
-        .rotate-prompt {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            background: rgba(0, 0, 0, 0.92);
-            color: #fff;
-            z-index: 2147483646;
-            text-align: center;
-            padding: 24px;
-        }
-
-        .rotate-prompt.visible {
-            display: flex;
-        }
-
-        .rotate-prompt-inner {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 16px;
-        }
-
-        .rotate-icon {
-            font-size: 4rem;
-            line-height: 1;
-            animation: rotatePhone 2s ease-in-out infinite;
-        }
-
-        .rotate-prompt p {
-            font: var(--type-body-strong);
-            font-size: 1.1rem;
-            margin: 0;
-            max-width: 260px;
-            line-height: 1.4;
-        }
-
-        @keyframes rotatePhone {
-            0%, 100% { transform: rotate(0deg); }
-            50% { transform: rotate(90deg); }
-        }
-
         /* ============================================================
            RESPONSIVE
         ============================================================ */
@@ -952,13 +906,6 @@
 
 <div class="update-banner" id="updateBanner">✨ A new version is available — tap here to refresh</div>
 
-<div class="rotate-prompt" id="rotatePrompt">
-    <div class="rotate-prompt-inner">
-        <div class="rotate-icon">↻</div>
-        <p>Please rotate your device to landscape</p>
-    </div>
-</div>
-
 <script>
     const songDatabase = (typeof rawSongs !== 'undefined' && Array.isArray(rawSongs))
         ? [...rawSongs].sort((a, b) => a.title.localeCompare(b.title, undefined, { sensitivity: 'base' }))
@@ -988,7 +935,6 @@
     const slideCounter = document.getElementById("slideCounter");
     const slideCount = document.getElementById("slideCount");
     const welcomeMessage = document.getElementById("welcomeMessage");
-    const rotatePrompt = document.getElementById("rotatePrompt");
 
     const progressDots = null;
 
@@ -1440,28 +1386,6 @@
         });
     }
 
-    function updateRotatePrompt() {
-        if (!rotatePrompt) return;
-        // Detect iOS even when "Request Desktop Website" changes the user agent string
-        const isIOS = /iPad|iPhone|iPod/.test(navigator.platform) ||
-                      (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-        const isMobile = /Mobi|Android/i.test(navigator.userAgent) || isIOS;
-        const isPortrait = window.innerHeight > window.innerWidth;
-        const isPhone = window.innerWidth <= 600;
-        const canLock = !!screen.orientation?.lock;
-        if (isMobile && isPhone && isPortrait && !canLock) {
-            rotatePrompt.classList.add('visible');
-        } else {
-            rotatePrompt.classList.remove('visible');
-        }
-    }
-
-    function initOrientationHelpers() {
-        updateRotatePrompt();
-        window.addEventListener('resize', updateRotatePrompt);
-        window.addEventListener('orientationchange', updateRotatePrompt);
-    }
-
     function initTouchGestures() {
         let startX, startY, lastTap = 0, lastTapX = 0, lastTapY = 0;
         mainArea.addEventListener('touchstart', e => {
@@ -1544,7 +1468,6 @@
         initResize();
         observeLyrics();
         initTouchGestures();
-        initOrientationHelpers();
         currentSong = null;
         updateDisplay();
         renderDropdown("");
