@@ -1201,7 +1201,7 @@ const rawSongs = [
     {
         title: "To Love You and To Make You Loved",
         sections: [
-            { name: "REFRAIN", lyrics: "To know You, O Lord,\nAnd to know Your love,\nTo love You and to make You loved!" },
+            { name: "REFRAIN", lyrics: "To know You, O Lord,\nAnd to know Your love,\nTo love You and to make You loved!\n(2x)" },
             { name: "VERSE", lyrics: "Servants of the Lord\nOurs the upward call:\nTo lay down our lives\nAnd to give our all." },
             { name: "REFRAIN", lyrics: "To know You, O Lord,\nAnd to know Your love,\nTo love You and to make You loved!" },
             { name: "VERSE", lyrics: "For to live is Christ\nAnd to die is gain\nBoth in death and life\nOurs a single aim!" },
