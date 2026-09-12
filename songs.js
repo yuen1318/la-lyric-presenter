@@ -186,9 +186,9 @@ const rawSongs = [
         sections: [
             { name: "VERSE", lyrics: "Come Holy Spirit\nCome great Fire of God\nEnkindle in us the fire of your love\nTransform us that we may become\nThe image of God's only Son\n(2x)" },
             { name: "CHORUS", lyrics: "Make us h-o-ly, h-o-ly\nAs you are h-o-ly" },
-            { name: "VERSE", lyrics: "Come Holy Spirit\nCome great Fire of God\nEnkindle in us the fire of your love\nTransform us that we may become\nThe image of God's only Son\n" },
+            { name: "VERSE", lyrics: "Come Holy Spirit\nCome great Fire of God\nEnkindle in us the fire of your love\nTransform us that we may become\nThe image of God's only Son" },
             { name: "CHORUS", lyrics: "Make us h-o-ly, h-o-ly\nAs you are h-o-ly" },
-            { name: "END", lyrics: "Come Holy Spirit\nCome great Fire of God\nEnkindle in us the fire of your love\nTransform us that we may become\nThe image of God's only Son\n" }
+            { name: "END", lyrics: "Come Holy Spirit\nCome great Fire of God\nEnkindle in us the fire of your love\nTransform us that we may become\nThe image of God's only Son" }
         ]
     },
     {
@@ -2077,7 +2077,7 @@ const rawSongs = [
             },
             {
                 name: "CANTOR",
-                lyrics: "“What can bring us\nhappiness?” many say.\nLift up the light\nof Your face on us, O Lord.\n"
+                lyrics: "“What can bring us\nhappiness?” many say.\nLift up the light\nof Your face on us, O Lord."
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -2266,7 +2266,7 @@ const rawSongs = [
             },
             {
                 name: "CANTOR",
-                lyrics: "Praise God in his holy place,\npraise him in his mighty heavens.\nPraise him for his powerful deeds,\npraise his surpassing greatness.\n"
+                lyrics: "Praise God in his holy place,\npraise him in his mighty heavens.\nPraise him for his powerful deeds,\npraise his surpassing greatness."
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -2283,6 +2283,107 @@ const rawSongs = [
             {
                 name: "[C1]GROUP[/C1]",
                 lyrics: "[C1](PSALM 150)\nPraise the Lord for his infinite greatness, alleluia.[/C1]"
+            },
+            {
+                name: "LEADER",
+                lyrics: "(SPONTANEOUS WORSHIP)\n(SCRIPTURE MEDITATION)\n(PRAYER OF RESPONSE)\n(PETITION)\n(THE LORD'S PRAYER)\n(CLOSING PRAYER)\n(SIGN OF THE CROSS)"
+            }
+        ]
+    },
+    {
+        title: "Morning Prayer WK4 Friday",
+        sections: [
+            {
+                name: "LEADER",
+                lyrics: "(PSALM 51)\nCreate a clean heart in me, O God; renew in me a steadfast spirit.\n(THE SIGN OF THE CROSS)"
+            },
+            {
+                name: "LEADER",
+                lyrics: "O God come to my assistance"
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]O Lord make haste to help me[/C1]"
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1](DOXOLOGY)\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "Have mercy on me, God, in your kindness.\nIn you compassion blot out my offense.\nO wash me more and more from my guilt\nand cleanse me from my sin."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]My offenses truly I know them;\nmy sin is always before me.\nAgainst you, you alone, have I sinned;\nwhat is evil in your sight I have done.\n[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "That you may be justified when you give sentence\nand be without reproach when you judge.\nO see, in guilt I was born,\na sinner was I conceived."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Indeed you love truth in the heart;\nthen in the secret of my heart teach me wisdom.\nO purify me, then I shall be clean;\nO wash me, I shall be whiter than snow.[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "Make me hear rejoicing and gladness,\nthat the bones you have crushed may revive.\nFrom my sins turn away your face\nand blot out all my guilt."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]A pure heart create for me, O God,\nput a steadfast spirit within me,\nDo not cast me away from your presence,\nnor deprive me of your holy spirit.[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "Give me again the joy of your help;\nwith a spirit of fervor sustain me,\nthat I may teach transgressors your ways\nand sinners may return to you."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]O rescue me, God, my helper,\nand my tongue shall ring out your goodness.\nO Lord, open my lips\nand my mouth shall declare your praise.[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "For in sacrifice you take no delight,\nburnt offering from me you would refuse,\nmy sacrifice, a contrite spirit.\nA humbled, contrite heart you will not spurn."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]In your goodness, show favor to Zion:\nrebuild the walls of Jerusalem.\nThen you will be pleased with lawful sacrifice,\nholocausts offered on your altar.[/C1]"
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1](DOXOLOGY)\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1](PSALM 51)\nCreate a clean heart in me, O God; renew in me a steadfast spirit.[/C1]"
+            },
+            {
+                name: "LEADER",
+                lyrics: "(PSALM 147:12-20)\nZion, praise your God, who sent his Word to renew the earth."
+            },
+            {
+                name: "CANTOR",
+                lyrics: "O praise the Lord, Jerusalem!\nZion praise your God!\nHe has strengthened the bars of your gates,\nhe has blessed the children within you.\nHe established peace on your borders,\nhe feeds you with finest wheat."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]He sends out his word to the ear\nhand swiftly runs his command.\nHe showers down snow white as wool,\nhe scatters hoar-frost like ashes.[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "He hurls down hailstones like crumbs.\nThe waters are frozen at his touch;\nhe sends forth his word and it melts them:\nat the breath of his mouth the waters flow."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]He makes his word known to Jacob,\nto Israel his laws and decrees.\nHe has not dealt thus with other nations;\nhe has not taught then his decrees.[/C1]"
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1](DOXOLOGY)\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1](PSALM 147:12-20)\nZion, praise your God, who sent his Word to renew the earth.[/C1]"
             },
             {
                 name: "LEADER",
