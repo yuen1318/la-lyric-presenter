@@ -2295,7 +2295,7 @@ const rawSongs = [
         sections: [
             {
                 name: "LEADER",
-                lyrics: "(PSALM 51)\nCreate a clean heart in me,\nO God; renew in me a steadfast spirit.\n(SIGN OF THE CROSS)"
+                lyrics: "(PSALM 51)\nCreate a clean heart in me, O God;\nrenew in me a steadfast spirit.\n(SIGN OF THE CROSS)"
             },
             {
                 name: "LEADER",
@@ -2355,7 +2355,7 @@ const rawSongs = [
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](PSALM 51)\nCreate a clean heart in me,\nO God; renew in me a steadfast spirit.[/C1]"
+                lyrics: "[C1](PSALM 51)\nCreate a clean heart in me, O God;\nrenew in me a steadfast spirit.[/C1]"
             },
             {
                 name: "LEADER",
