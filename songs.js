@@ -2056,8 +2056,8 @@ const rawSongs = [
                 lyrics: "[C1]O Lord, make haste to help me.[/C1]"
             },
             {
-                name: "[C1]DOXOLOGY[/C1]",
-                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1](DOXOLOGY)\nPraise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "CANTOR",
@@ -2088,8 +2088,8 @@ const rawSongs = [
                 lyrics: "I will lie down in peace\nand sleep comes at once.\nFor You alone, Lord,\nmake me dwell in safety."
             },
             {
-                name: "[C1]DOXOLOGY[/C1]",
-                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1](DOXOLOGY)\nPraise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "CANTOR",
@@ -2160,8 +2160,8 @@ const rawSongs = [
                 lyrics: "With length of life I will content him,\nI shall let him see My saving power."
             },
             {
-                name: "[C1]DOXOLOGY[/C1]",
-                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1](DOXOLOGY)\nPraise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -2176,8 +2176,8 @@ const rawSongs = [
                 lyrics: "Now, Lord, you will let\nyour servant go in peace\nAccording to your word\nFor my eyes have seen your saving deed\nWhich you have set before all men\nA light for revelation to the Gentiles\nAnd for glory to your people Israel."
             },
             {
-                name: "[C1]DOXOLOGY[/C1]",
-                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1](DOXOLOGY)\nPraise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "CANTOR",
@@ -2186,6 +2186,107 @@ const rawSongs = [
             {
                 name: "[C1]GROUP[/C1]",
                 lyrics: "[C1]Amen[/C1]"
+            }
+        ]
+    },
+    {
+        title: "Morning Prayer WK4 Sunday",
+        sections: [
+            {
+                name: "LEADER",
+                lyrics: "(PSALM 118)\nPraise the Lord, for his loving kindness will never fail, alleluia.\n(THE SIGN OF THE CROSS)"
+            },
+            {
+                name: "LEADER",
+                lyrics: "O God come to my assistance"
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]O Lord make haste to help me[/C1]"
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1](DOXOLOGY)\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "Give thanks to the Lord for he is good,\nfor his love endures forever."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Let the sons of Israel say:\n“His love endures for ever.”\nLet the sons of  Aaron say:\n“His love endures for ever.”\nLet those who fear the Lord say:\n“His love endures for ever.”[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "I called to the Lord in my distress;\nhe answered and freed me.\nThe Lord is at my side; I do not fear.\nWhat can man do against me?\nThe Lord is at my side as my helper:\nI shall look down on my foes."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]It is better to take refuge in the Lord\nthat to trust in men;\nit is better to take refuge on the Lord\nthan to trust in princes.[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "The nations all encompassed me;\nin the Lord’s name I crushed them.\nThey compassed me, compassed me about;\nin the Lord’s name I crushed them.\n+ They compassed me about like bees;\nthey blazed like a fire among thorns.\nIn the Lord’s name I crushed them."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1] I was hard-pressed and was falling,\nThe but the Lord came to help me.\nThe Lord is my strength and my song;\nhe is my savior.\nThere are shouts of joy and victory\nin the tents of the just.[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "The Lord’s right hand has triumphed;\nHis right hand raised me.\n+ The Lord’s right hand has triumphed;\nI shall not die, I shall live and recount his deeds.\nI was punished, I was punished by the Lord,\nbut not doomed to die."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Open to me the gates of holiness:\nI will enter and give thanks.\nThis is the Lord’s own gate\nwhere the just may enter.\nI will thank you for you have answered\nand you are my savior.[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "The stone which the builders rejected\nhas become the corner stone.\nThis is the work of the Lord,\na marvel in our eyes.\nThis day was made by the Lord;\nWe rejoice and are glad."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]O Lord, grant us salvation;\nO Lord, grant success.\nBlessed in the name of the Lord\nis he who comes.\nWe bless you from the house of the Lord;\nthe Lord God is our light.[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "Go forward in procession with branches\neven to the altar.\nYou are my God, I thank you.\nMy God, I praise you.\nGive thanks to the Lord for he is good;\nfor his love endures for ever."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1](DOXOLOGY)\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1](PSALM 118)\nPraise the Lord, for his loving kindness will never fail, alleluia.[/C1]"
+            },
+            {
+                name: "LEADER",
+                lyrics: "(PSALM 150)\nPraise the Lord for his infinite greatness, alleluia."
+            },
+            {
+                name: "CANTOR",
+                lyrics: "Praise God in his holy place,\npraise him in his mighty heavens.\nPraise him for his powerful deeds,\npraise his surpassing greatness.\n"
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]O praise him with sound of trumpet,\npraise him with lute and harp.\nPraise him with timbrel and dance,\npraise him with strings and pipes.[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "O praise him with resounding cymbals,\npraise him with clashing of cymbals.\nLet everything that lives and that breathes\ngive praise to the Lord."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1](DOXOLOGY)\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1](PSALM 150)\nPraise the Lord for his infinite greatness, alleluia.[/C1]"
+            },
+            {
+                name: "LEADER",
+                lyrics: "(SPONTANEOUS WORSHIP)\n(SCRIPTURE MEDITATION)\n(PRAYER OF RESPONSE)\n(PETITION)\n(THE LORD'S PRAYER)\n(CLOSING PRAYER)\n(SIGN OF THE CROSS)"
             }
         ]
     },
