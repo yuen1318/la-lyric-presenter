@@ -1799,16 +1799,16 @@ const rawSongs = [
                 lyrics: "In the beginning was the Word,\nAnd the Word was with God,\nAnd the Word was God."
             },
             {
-                name: "GROUP",
-                lyrics: "All things were made through Him,\nand without Him nothing was made\nthat has been made."
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]All things were made through Him,\nand without Him nothing was made\nthat has been made.[/C1]"
             },
             {
                 name: "ASSISTANT",
                 lyrics: "In Him was life,\nAnd the life\nwas the light of men."
             },
             {
-                name: "GROUP",
-                lyrics: "The light shines in the darkness,\nand the darkness\nhas not overcome it."
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]The light shines in the darkness,\nand the darkness\nhas not overcome it.[/C1]"
             },
             {
                 name: "ASSISTANT",
@@ -1827,8 +1827,8 @@ const rawSongs = [
                 lyrics: "Keep far from us all anxiety,\ndarkness and gloom;\nand grant that peace,\nlight and joy ever abide among us."
             },
             {
-                name: "GROUP",
-                lyrics: "For in You is the fountain of life;\nIn Your light do we see light."
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]For in You is the fountain of life;\nIn Your light do we see light.[/C1]"
             },
             {
                 name: "ASSISTANT",
@@ -1843,72 +1843,72 @@ const rawSongs = [
                 lyrics: "Blessed are You, Lord our God,\nKing of the Universe, who give us joy\nas we kindle the light for the Lord’s Day."
             },
             {
-                name: "GROUP",
-                lyrics: "Amen"
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Amen[/C1]"
             },
             {
                 name: "LEADER",
                 lyrics: "Let us trust in the Lord\nand in His saving help."
             },
             {
-                name: "GROUP",
-                lyrics: "The Lord is my light\nand my salvation."
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]The Lord is my light\nand my salvation.[/C1]"
             },
             {
                 name: "LEADER",
                 lyrics: "Let us receive His life\nand rejoice in His presence."
             },
             {
-                name: "GROUP",
-                lyrics: "He is the true light\nthat enlightens every man."
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]He is the true light\nthat enlightens every man.[/C1]"
             },
             {
                 name: "LEADER",
                 lyrics: "Let us keep His commandments\nand walk in His ways."
             },
             {
-                name: "GROUP",
-                lyrics: "His word is a lamp\nto my feet and a light for my path."
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]His word is a lamp\nto my feet and a light for my path.[/C1]"
             },
             {
                 name: "LEADER",
                 lyrics: "Let us proclaim His goodness\nand show forth His glory."
             },
             {
-                name: "GROUP",
-                lyrics: "We are the light of the world\nand the salt of the earth."
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]We are the light of the world\nand the salt of the earth.[/C1]"
             },
             {
                 name: "LEADER",
                 lyrics: "Brothers and sisters,\nthis is the Lord’s Day."
             },
             {
-                name: "GROUP",
-                lyrics: "Let us welcome it in joy and peace."
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Let us welcome it in joy and peace.[/C1]"
             },
             {
                 name: "LEADER",
                 lyrics: "Today we set aside the concerns of the week\nthat we may honor the Lord\nand celebrate His resurrection.\nToday we cease from our work\nin order to worship God,\nand remember the eternal life\nto which He has called us."
             },
             {
-                name: "GROUP",
-                lyrics: "The Lord Himself is with us,\nto refresh and strengthen us."
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]The Lord Himself is with us,\nto refresh and strengthen us.[/C1]"
             },
             {
                 name: "LEADER",
                 lyrics: "Let us welcome God\namong us and give Him glory."
             },
             {
-                name: "GROUP",
-                lyrics: "Let us love one another in Christ."
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Let us love one another in Christ.[/C1]"
             },
             {
                 name: "LEADER",
                 lyrics: "May the Holy Spirit be with us,\nto deepen our devotion to the Lord,\nand to increase our zeal for the\nway of life He has given us."
             },
             {
-                name: "GROUP",
-                lyrics: "Amen."
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Amen.[/C1]"
             },
             {
                 name: "LEADER",
@@ -1935,16 +1935,16 @@ const rawSongs = [
                 lyrics: "together with Christ,\nand raised up with Him,\nand made to sit in\nheavenly places with Him.\nLord our God, you have brought us\ninto the rest of Christ."
             },
             {
-                name: "GROUP",
-                lyrics: "Now we live with Him\nthrough the Holy Spirit,\nand we look for the day\nwhen we will dwell with Him\nin Your everlasting Kingdom."
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Now we live with Him\nthrough the Holy Spirit,\nand we look for the day\nwhen we will dwell with Him\nin Your everlasting Kingdom.[/C1]"
             },
             {
                 name: "LEADER",
                 lyrics: "Blessed are you, Lord, our God,\nKing of the Universe,\nwho have created the fruit of the vine"
             },
             {
-                name: "GROUP",
-                lyrics: "Amen."
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Amen.[/C1]"
             },
             {
                 name: "LEADER",
@@ -1955,8 +1955,8 @@ const rawSongs = [
                 lyrics: "celebration of His resurrection\nand of the new creation founded in Him.\nLook graciously upon your\nservants and show us your glory.\nBlessed are you, Lord our God,\nwho favor your people in\nthe days set aside to your honor."
             },
             {
-                name: "GROUP",
-                lyrics: "Amen.\n\n(Pass the wine)"
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Amen.\n\n(Pass the wine)[/C1]"
             },
             {
                 name: "LEADER",
@@ -1967,32 +1967,32 @@ const rawSongs = [
                 lyrics: "The eyes of all look to you, O Lord,\nand you give them\ntheir food in due season."
             },
             {
-                name: "GROUP",
-                lyrics: "You open Your hand,\nYou satisfy the desire\nof every living thing."
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]You open Your hand,\nYou satisfy the desire\nof every living thing.[/C1]"
             },
             {
                 name: "LEADER",
                 lyrics: "Blessed are you,\nLord our God, King of the Universe,\nwho brings forth bread from the earth."
             },
             {
-                name: "GROUP",
-                lyrics: "Amen.\n\n(Begin the meal)"
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Amen.\n\n(Begin the meal)[/C1]"
             },
             {
                 name: "LEADER",
                 lyrics: "Let us bless the Lord."
             },
             {
-                name: "GROUP",
-                lyrics: "Blessed be the name of the Lord\nfrom this time forth and forever."
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Blessed be the name of the Lord\nfrom this time forth and forever.[/C1]"
             },
             {
                 name: "LEADER",
                 lyrics: "Let us bless our God,\nof whose bounty we have partaken."
             },
             {
-                name: "GROUP",
-                lyrics: "Blessed be our God,\nof whose bounty we have partaken,\nand through whose goodness we live."
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Blessed be our God,\nof whose bounty we have partaken,\nand through whose goodness we live.[/C1]"
             },
             {
                 name: "LEADER",
@@ -2003,20 +2003,20 @@ const rawSongs = [
                 lyrics: "since you nourish and sustain all beings,\nand do good to all, and provide food for all\nyour creatures whom you have created.\nBlessed are you, Lord our God,\nKing of the Universe, who gives food to all."
             },
             {
-                name: "GROUP",
-                lyrics: "Blessed be His name forever."
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Blessed be His name forever.[/C1]"
             },
             {
                 name: "LEADER",
-                lyrics: "Blessed are you, Lord our God,\nfor by your great mercy we have been born anew\nto a living hope through the resurrection\nof Jesus Christ from the dead,\nand to an inheritance"
+                lyrics: "Blessed are you, Lord our God,\nfor by your great mercy \nwe have been born anew\nto a living hope through the resurrection\nof Jesus Christ from the dead,\nand to an inheritance"
             },
             {
                 name: "LEADER",
                 lyrics: "that is imperishable,\nundefiled and unfading.\nBlessed are You, Lord our God,\nKing of the Universe,\nfor giving us new life in Your Son."
             },
             {
-                name: "GROUP",
-                lyrics: "Blessed be His name forever."
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Blessed be His name forever.[/C1]"
             },
             {
                 name: "LEADER",
@@ -2031,16 +2031,16 @@ const rawSongs = [
                 lyrics: "so that we might be\nwithout spot or blemish,\nand ready for your Son’s return.\nBlessed are you, Lord our God,\nKing of the Universe,\nRuler and Builder of your people."
             },
             {
-                name: "GROUP",
-                lyrics: "Blessed be His name forever."
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Blessed be His name forever.[/C1]"
             },
             {
                 name: "LEADER",
                 lyrics: "May the Lord bless you and keep you;\nmay the Lord make his face to shine\nupon you and be gracious to you;\nmay the Lord lift up his countenance\nupon you and give you peace."
             },
             {
-                name: "GROUP",
-                lyrics: "Amen.\n\nHAPPY LORD'S DAY!"
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Amen.\n\nHAPPY LORD'S DAY![/C1]"
             },
         ]
     }

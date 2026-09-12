@@ -441,6 +441,14 @@
             transition: opacity 0.12s ease, transform 0.12s ease;
         }
 
+        .lyric-c1 {
+            color: #F9E8A2;
+        }
+
+        .lyric-c2 {
+            color: #F9E8A2;
+        }
+
         .lyric-wrapper.has-song {
             background: radial-gradient(ellipse at center, rgba(10, 10, 15, 0.35) 0%, rgba(10, 10, 15, 0.55) 100%);
             backdrop-filter: blur(12px);
@@ -1127,13 +1135,28 @@
         }
     }
 
+    function parseLyrics(text) {
+        if (!text) return '';
+        return text
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/\[C1\]([\s\S]*?)\[\/C1\]/g, '<span class="lyric-c1">$1</span>')
+            .replace(/\[C2\]([\s\S]*?)\[\/C2\]/g, '<span class="lyric-c2">$1</span>');
+    }
+
+    function stripColorTags(text) {
+        if (!text) return '';
+        return text.replace(/\[C1\]([\s\S]*?)\[\/C1\]/g, '$1').replace(/\[C2\]([\s\S]*?)\[\/C2\]/g, '$1');
+    }
+
     function updateDisplay() {
         const prevSong = lyricWrapper.dataset.activeSong;
         if (currentSong?.sections?.[currentSectionIndex]) {
             const sec = currentSong.sections[currentSectionIndex];
-            sectionBadge.textContent = sec.name;
-            setBadgeColor(sec.name);
-            lyricText.innerText = sec.lyrics;
+            sectionBadge.innerHTML = parseLyrics(sec.name);
+            setBadgeColor(stripColorTags(sec.name));
+            lyricText.innerHTML = parseLyrics(sec.lyrics);
             lyricWrapper.classList.add('has-song');
         } else if (currentSong) {
             sectionBadge.textContent = '';
