@@ -2043,5 +2043,150 @@ const rawSongs = [
                 lyrics: "[C1]Amen.\n\nHAPPY LORD'S DAY![/C1]"
             },
         ]
-    }
+    },
+    {
+        title: "Night Prayers",
+        sections: [
+            {
+                name: "LEADER",
+                lyrics: "O God, come to my assistance."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]O Lord, make haste to help me.[/C1]"
+            },
+            {
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "When I call, answer me,\nO God of justice;\nFrom anguish You released me,\nhave mercy and hear me!"
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]O men, how long\nwill your hearts be closed?\nWill you love what is futile\nand seek what is false?[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "It is the Lord who grants favors\nto those whom He loves;\nThe Lord hears me\nwhenever I call Him."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Fear Him, do not sin,\nponder on your bed and be still.\nMake justice your sacrifice\nand trust in the Lord.\n[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "“What can bring us\nhappiness?” many say.\nLift up the light\nof Your face on us, O Lord.\n"
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]You have put into my heart\na greater joy\nThan they have from abundance\nof corn and new wine.\n[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "I will lie down in peace\nand sleep comes at once.\nFor You alone, Lord,\nmake me dwell in safety."
+            },
+            {
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "He who dwells in the shelter\nof the Most High\nAnd abides in the shade\nof the Almighty"
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Says to the Lord, “My refuge,\nMy stronghold, my God\nin whom I trust!”[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "It is He who will free you from the snare\nOf the fowler who seeks to destroy you."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]He will conceal you with his pinions\nAnd under His wings\nyou will find refuge.[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "You will not fear the terror of the night\nNor the arrow that flies by day."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Nor the plague that prowls\nin the darkness\nNor the scourge that\nlays waste at noon.[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "A thousand may fall at your side,\nTen thousand fall at your right."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]You it will never approach\nHis faithfulness is buckler and shield.[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "Your eyes have only to look\nTo see how the wicked are repaid."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]You who have said, “Lord, my refuge!”\nAnd have made the Most High\nyour dwelling.[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "Upon you no evil shall fall\nNo plague approach where you dwell."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]For you has He commanded His angels\nTo keep you in all your ways.[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "They shall bear you upon their hands\nLest you strike your foot against a stone."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]On the lion and the viper you will tread\nAnd trample the young lion\nand the dragon.[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "Since he clings to Me in love,\nI will free him\nProtect him for he knows My name."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]When he calls I shall answer,\n“I am with you.\nI will save him in distress\nand give him glory.”[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "With length of life I will content him,\nI shall let him see My saving power."
+            },
+            {
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1](INTERCESSION)[/C1]"
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Lord, save us while we are awake.\nProtect us while we sleep.\nAnd Christ with whom\nwe keep our watch\nWill guard our souls in peace.[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "Now, Lord, you will let\nyour servant go in peace\nAccording to your word\nFor my eyes have seen your saving deed\nWhich you have set before all men\nA light for revelation to the Gentiles\nAnd for glory to your people Israel."
+            },
+            {
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "May the Almighty and merciful Lord\nGrant us a restful night and a peaceful death."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Amen[/C1]"
+            }
+        ]
+    },
 ];
