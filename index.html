@@ -449,6 +449,11 @@
             color: #F9E8A2;
         }
 
+        .lyric-f1 {
+            font-style: italic;
+            font-weight: 400;
+        }
+
         .lyric-wrapper.has-song {
             background: radial-gradient(ellipse at center, rgba(10, 10, 15, 0.35) 0%, rgba(10, 10, 15, 0.55) 100%);
             backdrop-filter: blur(12px);
@@ -1142,12 +1147,13 @@
             .replace(/</g, '&lt;')
             .replace(/>/g, '&gt;')
             .replace(/\[C1\]([\s\S]*?)\[\/C1\]/g, '<span class="lyric-c1">$1</span>')
-            .replace(/\[C2\]([\s\S]*?)\[\/C2\]/g, '<span class="lyric-c2">$1</span>');
+            .replace(/\[C2\]([\s\S]*?)\[\/C2\]/g, '<span class="lyric-c2">$1</span>')
+            .replace(/\[F1\]([\s\S]*?)\[\/F1\]/g, '<span class="lyric-f1">$1</span>');
     }
 
     function stripColorTags(text) {
         if (!text) return '';
-        return text.replace(/\[C1\]([\s\S]*?)\[\/C1\]/g, '$1').replace(/\[C2\]([\s\S]*?)\[\/C2\]/g, '$1');
+        return text.replace(/\[C1\]([\s\S]*?)\[\/C1\]/g, '$1').replace(/\[C2\]([\s\S]*?)\[\/C2\]/g, '$1').replace(/\[F1\]([\s\S]*?)\[\/F1\]/g, '$1');
     }
 
     function updateDisplay() {

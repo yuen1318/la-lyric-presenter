@@ -2,13 +2,13 @@ const rawSongs = [
     {
         title: "A New Spirit",
         sections: [
-            { name: "VERSE", lyrics: "(Men)\nLord I want to serve before You\nWith tongues of fire and a heart set free\nCome rebuild this fallen temple\nI am Yours I surrender and I yield" },
-            { name: "VERSE", lyrics: "(Women)\nLord I want to sing Your praises\nWith tongues of fire and a heart set free\nCome and fill this broken vessel\nI am Yours I surrender and I yield" },
-            { name: "CHORUS", lyrics: "A new heart I will give you says the Lord\nAnd a new Spirit I will put within you\n(2x)" },
+            { name: "VERSE", lyrics: "[F1](Men)[/F1]\nLord I want to serve before You\nWith tongues of fire and a heart set free\nCome rebuild this fallen temple\nI am Yours I surrender and I yield" },
+            { name: "VERSE", lyrics: "[F1](Women)[/F1]\nLord I want to sing Your praises\nWith tongues of fire and a heart set free\nCome and fill this broken vessel\nI am Yours I surrender and I yield" },
+            { name: "CHORUS", lyrics: "A new heart I will give you says the Lord\nAnd a new Spirit I will put within you\n[F1](2x)[/F1]" },
             { name: "VERSE", lyrics: "Lord I’ll be sin’s slave no longer\nThe blood of Christ has set me free\nTake my heart my mind my voice Lord\nI am Yours I surrender and I yield" },
-            { name: "CHORUS", lyrics: "A new heart I will give you says the Lord\nAnd a new Spirit I will put within you\n(2x)" },
-            { name: "BRIDGE", lyrics: "Renew, revive, restore us O Lord\n(3x)" },
-            { name: "BRIDGE", lyrics: "A new heart I will give you says the Lord\nAnd a new Spirit I will put within you\n\n(Renew, revive, restore us O Lord)\n(2x)" },
+            { name: "CHORUS", lyrics: "A new heart I will give you says the Lord\nAnd a new Spirit I will put within you\n[F1](2x)[/F1]" },
+            { name: "BRIDGE", lyrics: "Renew, revive, restore us O Lord\n[F1](3x)[/F1]" },
+            { name: "BRIDGE", lyrics: "A new heart I will give you says the Lord\nAnd a new Spirit I will put within you\n\n[F1](Renew, revive, restore us O Lord)[/F1]\n[F1](2x)[/F1]" },
             { name: "END", lyrics: "Lord we want to see Your kingdom\nA church renewed and a world redeemed\nCleanse our lips to speak Your gospel\nWe are Yours we surrender and we yield" }
         ]
     },
@@ -17,19 +17,19 @@ const rawSongs = [
         sections: [
             { name: "VERSE", lyrics: "We have heard we have seen\nWonders great mighty deeds\nFrom your hand we receive\nGoodness and mercy" },
             { name: "VERSE", lyrics: "Age to age you command\nWhat you speak ever stands\nBy your word and your power\nWe find hope rest secure\nSo by faith we will rise and declare" },
-            { name: "CHORUS", lyrics: "You are holy\n(3x)" },
+            { name: "CHORUS", lyrics: "You are holy\n[F1](3x)[/F1]" },
             { name: "VERSE", lyrics: "Nations rise kingdoms fail\nYou remain you prevail\nRobed in strength crowned with grace\nJustice and mercy" },
             { name: "VERSE", lyrics: "To your throne we draw near\nBrought by love without fear\nLifted hands hearts redeemed\nFreed from death unashamed\nSo by faith we will rise and declare" },
-            { name: "CHORUS", lyrics: "You are holy\n(3x)" },
+            { name: "CHORUS", lyrics: "You are holy\n[F1](3x)[/F1]" },
             { name: "BRIDGE", lyrics: "All blessing all glory all honor and praise\nOur God everlasting the Ancient of Days\nIn sovereignty reigning in wisdom and truth\nYour servants your people your children\nBring worship only to you\nWorship only to you" },
-            { name: "END", lyrics: "For you are holy\nYou are holy\nYou are holy\n(2x)" }
+            { name: "END", lyrics: "For you are holy\nYou are holy\nYou are holy\n[F1](2x)[/F1]" }
         ]
     },
     {
         title: "All That Is Good",
         sections: [
             { name: "VERSE", lyrics: "All that is good, all that is love\nWhatever is holy, whatever is true –\nYou are their source,\nYou are their fount,\nYou, Lord, and You alone!" },
-            { name: "REFRAIN", lyrics: "Holy,\nholy,\nholy, O Lord Most High!\n(2x)" },
+            { name: "REFRAIN", lyrics: "Holy,\nholy,\nholy, O Lord Most High!\n[F1](2x)[/F1]" },
             { name: "VERSE", lyrics: "All that is good, all that is love\nWhatever is holy, whatever is true –\nYou are their source,\nYou are their fount,\nYou, Lord, and You alone!" },
             { name: "END", lyrics: "Worthy, worthy,\nworthy, O Lord Most High!\nWorthy, worthy, worthy, O Lord\nYou are worthy, O Lord,\nYou are worthy, O Lord Most High!" }
         ]
@@ -73,10 +73,10 @@ const rawSongs = [
     {
         title: "Ascribe Greatness",
         sections: [
-            { name: "VERSE", lyrics: "Ascribe greatness to our God, the Rock\nHis work is perfect\nAnd all His ways are just.\n(2x)" },
-            { name: "VERSE", lyrics: "A God of faithfulness and\nWithout injustice,\nGood and upright is He.\n(2x)" },
-            { name: "VERSE", lyrics: "Ascribe greatness to our God, the Rock\nHis work is perfect\nAnd all His ways are just.\n(2x)" },
-            { name: "END", lyrics: "A God of faithfulness and\nWithout injustice,\nGood and upright is He.\n(2x)" }
+            { name: "VERSE", lyrics: "Ascribe greatness to our God, the Rock\nHis work is perfect\nAnd all His ways are just.\n[F1](2x)[/F1]" },
+            { name: "VERSE", lyrics: "A God of faithfulness and\nWithout injustice,\nGood and upright is He.\n[F1](2x)[/F1]" },
+            { name: "VERSE", lyrics: "Ascribe greatness to our God, the Rock\nHis work is perfect\nAnd all His ways are just.\n[F1](2x)[/F1]" },
+            { name: "END", lyrics: "A God of faithfulness and\nWithout injustice,\nGood and upright is He.\n[F1](2x)[/F1]" }
         ]
     },
     {
@@ -84,7 +84,7 @@ const rawSongs = [
         sections: [
             { name: "VERSE", lyrics: "I will give thanks to Thee,\nO Lord, among the people.\nI will sing praises to Thee\nAmong the nations." },
             { name: "VERSE", lyrics: "For Thy steadfast love is great,\nIs great to the heavens\nAnd Thy faithfulness,\nThy faithfulness to the clouds." },
-            { name: "REFRAIN", lyrics: "Be exalted, O God, above the heavens\nLet Thy glory be over all the earth.\n(2x)" },
+            { name: "REFRAIN", lyrics: "Be exalted, O God, above the heavens\nLet Thy glory be over all the earth.\n[F1](2x)[/F1]" },
             { name: "VERSE", lyrics: "I will give thanks to Thee,\nO Lord, among the people.\nI will sing praises to Thee\nAmong the nations." },
             { name: "VERSE", lyrics: "For Thy steadfast love is great,\nIs great to the heavens\nAnd Thy faithfulness,\nThy faithfulness to the clouds." },
             { name: "END", lyrics: "Be exalted, O God, above the heavens\nLet Thy glory,\nlet Thy glory\nLet Thy glory be over all the earth." }
@@ -98,7 +98,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Heaven cannot contain Him\nNor the bounds of earth.\nYet, O glorious mystery,\nVirgin gives Him birth." },
             { name: "REFRAIN", lyrics: "Unto God be glory\nPeace to men be given.\nThis is His will who dwelleth\nIn the heights of heaven." },
             { name: "VERSE", lyrics: "Now the light ariseth\nIn the darkened skies.\nNow the proud are humbled\nAnd the lowly rise." },
-            { name: "END", lyrics: "Unto God be glory\nPeace to men be given.\nThis is His will who dwelleth\nIn the heights of heaven.\n(2x)" }
+            { name: "END", lyrics: "Unto God be glory\nPeace to men be given.\nThis is His will who dwelleth\nIn the heights of heaven.\n[F1](2x)[/F1]" }
         ]
     },
     {
@@ -108,7 +108,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "The kingdom of the world has become\nThe kingdom of our Lord\nAnd of His Christ\nAnd He shall reign forever and ever.\nAmen." },
             { name: "REFRAIN", lyrics: "Blessing and glory,\nWisdom and thanksgiving,\nHonor and power and might\nBe to our God, forever and ever.\nAmen.  Amen.  Amen." },
             { name: "VERSE", lyrics: "Now the salvation and the power\nAnd the kingdom of our God\nAnd the authority of His Christ have come." },
-            { name: "END", lyrics: "Blessing and glory,\nWisdom and thanksgiving,\nHonor and power and might\nBe to our God, forever and ever.\nAmen.  Amen.  Amen.\n(2x)" }
+            { name: "END", lyrics: "Blessing and glory,\nWisdom and thanksgiving,\nHonor and power and might\nBe to our God, forever and ever.\nAmen.  Amen.  Amen.\n[F1](2x)[/F1]" }
         ]
     },
     {
@@ -132,15 +132,15 @@ const rawSongs = [
             { name: "VERSE", lyrics: "We seek the Lord\nO come Holy Spirit\nAnd teach us to worship\nThe one enthroned on high" },
             { name: "VERSE", lyrics: "Inspire O Spirit\nWith words for the Father\nWe join all creation\nTo fill his courts with praise" },
             { name: "CHORUS", lyrics: "We sing breathe on us O Breath of God\nBreathe on us O Breath of God" },
-            { name: "CHORUS", lyrics: "(Men)\nBreathe on us O Breath of God\n\n(Women)\nO Holy Spirit hover over us\nAnd we will take new form" },
-            { name: "CHORUS", lyrics: "(Men)\nBreathe on us O Breath of God\n\n(Women)\nWe want to praise the Father lifted high\nAnd see his kingdom come" },
+            { name: "CHORUS", lyrics: "[F1](Men)[/F1]\nBreathe on us O Breath of God\n\n[F1](Women)[/F1]\nO Holy Spirit hover over us\nAnd we will take new form" },
+            { name: "CHORUS", lyrics: "[F1](Men)[/F1]\nBreathe on us O Breath of God\n\n[F1](Women)[/F1]\nWe want to praise the Father lifted high\nAnd see his kingdom come" },
             { name: "VERSE", lyrics: "We seek the Lord\nO come Holy Spirit\nAnd teach us to worship\nThe one enthroned on high" },
             { name: "VERSE", lyrics: "Inspire O Spirit\nWith words for the Father\nWe join all creation\nTo fill his courts with praise" },
             { name: "CHORUS", lyrics: "We sing breathe on us O Breath of God\nBreathe on us O Breath of God" },
-            { name: "CHORUS", lyrics: "(Men)\nBreathe on us O Breath of God\n\n(Women)\nO Holy Spirit hover over us\nAnd we will take new form" },
-            { name: "CHORUS", lyrics: "(Men)\nBreathe on us O Breath of God\n\n(Women)\nWe want to praise the Father lifted high\nAnd see his kingdom come" },
-            { name: "END", lyrics: "(Men)\nBreathe on us O Breath of God\n\n(Women)\nO Holy Spirit hover over us\nAnd we will take new form" },
-            { name: "END", lyrics: "(Men)\nBreathe on us O Breath of God\n\n(Women)\nWe want to praise the Father lifted high\nAnd see his kingdom come" }
+            { name: "CHORUS", lyrics: "[F1](Men)[/F1]\nBreathe on us O Breath of God\n\n[F1](Women)[/F1]\nO Holy Spirit hover over us\nAnd we will take new form" },
+            { name: "CHORUS", lyrics: "[F1](Men)[/F1]\nBreathe on us O Breath of God\n\n[F1](Women)[/F1]\nWe want to praise the Father lifted high\nAnd see his kingdom come" },
+            { name: "END", lyrics: "[F1](Men)[/F1]\nBreathe on us O Breath of God\n\n[F1](Women)[/F1]\nO Holy Spirit hover over us\nAnd we will take new form" },
+            { name: "END", lyrics: "[F1](Men)[/F1]\nBreathe on us O Breath of God\n\n[F1](Women)[/F1]\nWe want to praise the Father lifted high\nAnd see his kingdom come" }
         ]
     },
     {
@@ -153,7 +153,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Admire the towers, the walls,\nThe fortress of God\nWe are hid beneath His wings.\nLord and warrior is armed\nWith scepter and rod\nAnd triumph we see Him bring." },
             { name: "REFRAIN", lyrics: "Build Your throne in our assembly\nFor we prepare Your habitation.\nPitch Your tent in our praise and glory\nBuild your throne, O Lord." },
             { name: "VERSE", lyrics: "O Jerusalem, declare:\n“Who is your King?”\nElohim, dreaded and strong.\nAll dominions, the pow’rs,\nSpirits of the air\nShall receive the full wrath of God." },
-            { name: "REFRAIN", lyrics: "Build Your throne in our assembly\nFor we prepare Your habitation.\nPitch Your tent in our praise and glory\nBuild Your throne, O Lord.\n(2x)" },
+            { name: "REFRAIN", lyrics: "Build Your throne in our assembly\nFor we prepare Your habitation.\nPitch Your tent in our praise and glory\nBuild Your throne, O Lord.\n[F1](2x)[/F1]" },
             { name: "END", lyrics: "Build Your throne, build Your throne\nBuild Your throne, O Lord!" }
         ]
     },
@@ -161,10 +161,10 @@ const rawSongs = [
         title: "By Your Steadfast Love",
         sections: [
             { name: "VERSE", lyrics: "By Your steadfast love,\nI will enter Your house.\nI will worship You in Your holy temple" },
-            { name: "VERSE", lyrics: "And revere Your name\nAs I bow before You,\nExalt in You, my Lord, my shield.\nAlleluia! (8x)" },
-            { name: "VERSE", lyrics: "By Your steadfast love, (Alleluia)\nI will enter Your house. (Alleluia)\nI will worship You (Alleluia)\nin Your holy temple (Alleluia)" },
-            { name: "VERSE", lyrics: "And revere Your name (Alleluia)\nAs I bow before You, (Alleluia)\nExalt in You, (Alleluia)\nmy Lord, my shield. (Alleluia)" },
-            { name: "END", lyrics: "Alleluia! (8x)" }
+            { name: "VERSE", lyrics: "And revere Your name\nAs I bow before You,\nExalt in You, my Lord, my shield.\nAlleluia! [F1](8x)[/F1]" },
+            { name: "VERSE", lyrics: "By Your steadfast love, [F1](Alleluia)[/F1]\nI will enter Your house. [F1](Alleluia)[/F1]\nI will worship You [F1](Alleluia)[/F1]\nin Your holy temple [F1](Alleluia)[/F1]" },
+            { name: "VERSE", lyrics: "And revere Your name [F1](Alleluia)[/F1]\nAs I bow before You, [F1](Alleluia)[/F1]\nExalt in You, [F1](Alleluia)[/F1]\nmy Lord, my shield. [F1](Alleluia)[/F1]" },
+            { name: "END", lyrics: "Alleluia! [F1](8x)[/F1]" }
         ]
     },
     {
@@ -184,7 +184,7 @@ const rawSongs = [
     {
         title: "Come Holy Spirit",
         sections: [
-            { name: "VERSE", lyrics: "Come Holy Spirit\nCome great Fire of God\nEnkindle in us the fire of your love\nTransform us that we may become\nThe image of God's only Son\n(2x)" },
+            { name: "VERSE", lyrics: "Come Holy Spirit\nCome great Fire of God\nEnkindle in us the fire of your love\nTransform us that we may become\nThe image of God's only Son\n[F1](2x)[/F1]" },
             { name: "CHORUS", lyrics: "Make us h-o-ly, h-o-ly\nAs you are h-o-ly" },
             { name: "VERSE", lyrics: "Come Holy Spirit\nCome great Fire of God\nEnkindle in us the fire of your love\nTransform us that we may become\nThe image of God's only Son" },
             { name: "CHORUS", lyrics: "Make us h-o-ly, h-o-ly\nAs you are h-o-ly" },
@@ -194,12 +194,12 @@ const rawSongs = [
     {
         title: "Come Let Us Go Up",
         sections: [
-            { name: "REFRAIN", lyrics: "Come, let us go up\nTo the mountain of the Lord\nUnto the house\nOf the God of Jacob.\n(2x)" },
+            { name: "REFRAIN", lyrics: "Come, let us go up\nTo the mountain of the Lord\nUnto the house\nOf the God of Jacob.\n[F1](2x)[/F1]" },
             { name: "VERSE", lyrics: "And the law will go forth from Zion\nAnd the word of the Lord from Jerusalem.\nWe will walk in His footsteps\nAnd He will teach us His ways." },
-            { name: "REFRAIN", lyrics: "Come, let us go up\nTo the mountain of the Lord\nUnto the house\nOf the God of Jacob.\n(2x)" },
+            { name: "REFRAIN", lyrics: "Come, let us go up\nTo the mountain of the Lord\nUnto the house\nOf the God of Jacob.\n[F1](2x)[/F1]" },
             { name: "VERSE", lyrics: "And He will judge many peoples,\nAnd decide for mighty nations far and wide.\nSwords will be beaten into plowshares\nAnd nations will not learn war again." },
-            { name: "REFRAIN", lyrics: "Come, let us go up\nTo the mountain of the Lord\nUnto the house of the God of Jacob!\n(2x)" },
-            { name: "END", lyrics: "Unto the house of the God of Jacob! (2x)" }
+            { name: "REFRAIN", lyrics: "Come, let us go up\nTo the mountain of the Lord\nUnto the house of the God of Jacob!\n[F1](2x)[/F1]" },
+            { name: "END", lyrics: "Unto the house of the God of Jacob! [F1](2x)[/F1]" }
         ]
     },
     {
@@ -210,7 +210,7 @@ const rawSongs = [
             { name: "REFRAIN", lyrics: "Come let us magnify the Lord,\nLet His praise be upon our lips.\nCome let us bless Him at all times.\nFor we have tasted and seen.\nWe have tasted and seen." },
             { name: "VERSE", lyrics: "Seek the Lord, you His children, seek the Lord.\nFor those who seek the Lord,\nThey will find Him who redeems." },
             { name: "VERSE", lyrics: "Love the Lord, love and serve Him\nForever more.\nFor those who love the Lord,\nThey will see Him face to face." },
-            { name: "END", lyrics: "Come let us magnify the Lord,\nLet His praise be upon our lips.\nCome let us bless Him at all times.\nFor we have tasted and seen.\nWe have tasted and seen.\n(2x)" }
+            { name: "END", lyrics: "Come let us magnify the Lord,\nLet His praise be upon our lips.\nCome let us bless Him at all times.\nFor we have tasted and seen.\nWe have tasted and seen.\n[F1](2x)[/F1]" }
         ]
     },
     {
@@ -235,9 +235,9 @@ const rawSongs = [
             { name: "VERSE", lyrics: "And these are the days of Ezekiel\nThe dry bones becoming as flesh\nAnd these are the days\nOf Your servant, David\nRebuilding a temple of praise." },
             { name: "VERSE", lyrics: "And these are the days of the harvest\nThe fields are as white in the world\nAnd we are the laborers\nIn Your vineyard\nDeclaring the word of the Lord." },
             { name: "REFRAIN", lyrics: "Behold, He comes, riding on the clouds\nShining like the sun at the trumpet call\nSo lift your voice, it’s the year of jubilee\nAnd out of Zion’s Hill salvation comes." },
-            { name: "BRIDGE", lyrics: "There's no God like Jehovah.\n(8x)" },
-            { name: "REFRAIN", lyrics: "Behold, He comes, riding on the clouds\nShining like the sun at the trumpet call\nSo lift your voice, it’s the year of jubilee\nAnd out of Zion’s Hill salvation comes.\n(2x)" },
-            { name: "END", lyrics: "Out of Zion’s Hill salvation comes!\n(2x)" }
+            { name: "BRIDGE", lyrics: "There's no God like Jehovah.\n[F1](8x)[/F1]" },
+            { name: "REFRAIN", lyrics: "Behold, He comes, riding on the clouds\nShining like the sun at the trumpet call\nSo lift your voice, it’s the year of jubilee\nAnd out of Zion’s Hill salvation comes.\n[F1](2x)[/F1]" },
+            { name: "END", lyrics: "Out of Zion’s Hill salvation comes!\n[F1](2x)[/F1]" }
         ]
     },
     {
@@ -256,10 +256,10 @@ const rawSongs = [
     {
         title: "Exodus 15",
         sections: [
-            { name: "VERSE", lyrics: "The Lord is my strength and my song.\nAnd He is become my salvation,\nHe is my God!\n(2x)" },
-            { name: "VERSE", lyrics: "And I shall prepare Him my heart!\n(3x)" },
-            { name: "VERSE", lyrics: "The Lord, He shall reign\nForever and ever, Amen!\n(2x)" },
-            { name: "END", lyrics: "And I shall prepare Him my heart!\n(3x)" }
+            { name: "VERSE", lyrics: "The Lord is my strength and my song.\nAnd He is become my salvation,\nHe is my God!\n[F1](2x)[/F1]" },
+            { name: "VERSE", lyrics: "And I shall prepare Him my heart!\n[F1](3x)[/F1]" },
+            { name: "VERSE", lyrics: "The Lord, He shall reign\nForever and ever, Amen!\n[F1](2x)[/F1]" },
+            { name: "END", lyrics: "And I shall prepare Him my heart!\n[F1](3x)[/F1]" }
         ]
     },
     {
@@ -285,32 +285,32 @@ const rawSongs = [
     {
         title: "Firm Foundation",
         sections: [
-            { name: "CHORUS", lyrics: "Jesus You’re my firm foundation\nI know I can stand secure\nJesus You’re my firm foundation\nI put my hope in Your holy Word\nI put my hope in Your holy Word\n(2x)" },
-            { name: "VERSE", lyrics: "(Men) I have a living hope\n(Women) I have a living hope\n(Men) I have a future\n(Women) I have a future\n(Men) God has a plan for me\n(Women) God has a plan for me\n(All) Of this I’m sure, of this I’m sure" },
+            { name: "CHORUS", lyrics: "Jesus You’re my firm foundation\nI know I can stand secure\nJesus You’re my firm foundation\nI put my hope in Your holy Word\nI put my hope in Your holy Word\n[F1](2x)[/F1]" },
+            { name: "VERSE", lyrics: "[F1](Men)[/F1] I have a living hope\n[F1](Women)[/F1] I have a living hope\n[F1](Men)[/F1] I have a future\n[F1](Women)[/F1] I have a future\n[F1](Men)[/F1] God has a plan for me\n[F1](Women)[/F1] God has a plan for me\n[F1](All)[/F1] Of this I’m sure, of this I’m sure" },
             { name: "CHORUS", lyrics: "Jesus You’re my firm foundation\nI know I can stand secure\nJesus You’re my firm foundation\nI put my hope in Your holy Word\nI put my hope in Your holy Word" },
-            { name: "VERSE", lyrics: "(Men) Your Word is faithful\n(Women) Your Word is faithful\n(Men) Mighty with power\n(Women) Mighty with power\n(Men) God will deliver me\n(Women) God will deliver me\n(All) Of this I’m sure, of this I’m sure" },
-            { name: "CHORUS", lyrics: "Jesus You’re my firm foundation\nI know I can stand secure\nJesus You’re my firm foundation\nI put my hope in Your holy Word\nI put my hope in Your holy Word\n(2x)" },
+            { name: "VERSE", lyrics: "[F1](Men)[/F1] Your Word is faithful\n[F1](Women)[/F1] Your Word is faithful\n[F1](Men)[/F1] Mighty with power\n[F1](Women)[/F1] Mighty with power\n[F1](Men)[/F1] God will deliver me\n[F1](Women)[/F1] God will deliver me\n[F1](All)[/F1] Of this I’m sure, of this I’m sure" },
+            { name: "CHORUS", lyrics: "Jesus You’re my firm foundation\nI know I can stand secure\nJesus You’re my firm foundation\nI put my hope in Your holy Word\nI put my hope in Your holy Word\n[F1](2x)[/F1]" },
             { name: "CHORUS", lyrics: "Jesus You’re my firm foundation\nI know I can stand secure\nJesus You’re my firm foundation\nI put my hope in Your holy Word\nI put my hope in Your holy Word\nI put my hope in Your holy Word" },
-            { name: "END", lyrics: "(Women) You're my firm foundation\n(Men) You're the rock of my salvation\n(All) You're my firm foundation" }
+            { name: "END", lyrics: "[F1](Women)[/F1] You're my firm foundation\n[F1](Men)[/F1] You're the rock of my salvation\n[F1](All)[/F1] You're my firm foundation" }
         ]
     },
     {
         title: "For Such A Time As This",
         sections: [
-            { name: "REFRAIN", lyrics: "(Women) For such a time as this\n(Men) We are called to give our all\n(Women) For such a time as this\n(Men) Let us leave all else behind" },
-            { name: "REFRAIN", lyrics: "(All) To follow Christ, to spread His light\nTo do not our will but His\nWe were born to live\nFor such a time as this." },
+            { name: "REFRAIN", lyrics: "[F1](Women)[/F1] For such a time as this\n[F1](Men)[/F1] We are called to give our all\n[F1](Women)[/F1] For such a time as this\n[F1](Men)[/F1] Let us leave all else behind" },
+            { name: "REFRAIN", lyrics: "[F1](All)[/F1] To follow Christ, to spread His light\nTo do not our will but His\nWe were born to live\nFor such a time as this." },
             { name: "VERSE", lyrics: "Behold a new day is dawning\nA new time now is at hand\nBut still the call of our God\nRings out in our land." },
             { name: "VERSE", lyrics: "And now our race is beginning\nAnd by God’s grace may we run\nThe course which He sets before us\nIn Jesus His Son." },
-            { name: "VERSE", lyrics: "(Men)  If not now, when?\nIf not us, who?\nWhom is He equipping to stand?" },
-            { name: "VERSE", lyrics: "(Women) If not here, where?\nIf not we, who?\nWho will run our race till the end?" },
-            { name: "REFRAIN", lyrics: "(Women) For such a time as this\n(Men) We are called to give our all\n(Women) For such a time as this\n(Men) Let us leave all else behind" },
-            { name: "REFRAIN", lyrics: "(All) To follow Christ, to spread His light\nTo do not our will but His\nWe were born to live\nFor such a time as this." },
+            { name: "VERSE", lyrics: "[F1](Men)[/F1]  If not now, when?\nIf not us, who?\nWhom is He equipping to stand?" },
+            { name: "VERSE", lyrics: "[F1](Women)[/F1] If not here, where?\nIf not we, who?\nWho will run our race till the end?" },
+            { name: "REFRAIN", lyrics: "[F1](Women)[/F1] For such a time as this\n[F1](Men)[/F1] We are called to give our all\n[F1](Women)[/F1] For such a time as this\n[F1](Men)[/F1] Let us leave all else behind" },
+            { name: "REFRAIN", lyrics: "[F1](All)[/F1] To follow Christ, to spread His light\nTo do not our will but His\nWe were born to live\nFor such a time as this." },
             { name: "VERSE", lyrics: "Behold a new day is dawning\nA new time now is at hand\nBut still the call of our God\nRings out in our land." },
             { name: "VERSE", lyrics: "And now our race is beginning\nAnd by God’s grace may we run\nThe course which He sets before us\nIn Jesus His Son." },
-            { name: "VERSE", lyrics: "(Men)  If not now, when?\nIf not us, who?\nWhom is He equipping to stand?" },
-            { name: "VERSE", lyrics: "(Women) If not here, where?\nIf not we, who?\nWho will run our race till the end?" },
-            { name: "REFRAIN", lyrics: "(Women) For such a time as this\n(Men) We are called to give our all\n(Women) For such a time as this\n(Men) Let us leave all else behind" },
-            { name: "REFRAIN", lyrics: "(All) To follow Christ, to spread His light\nTo do not our will but His\nWe were born to live\nFor such a time as this." },
+            { name: "VERSE", lyrics: "[F1](Men)[/F1]  If not now, when?\nIf not us, who?\nWhom is He equipping to stand?" },
+            { name: "VERSE", lyrics: "[F1](Women)[/F1] If not here, where?\nIf not we, who?\nWho will run our race till the end?" },
+            { name: "REFRAIN", lyrics: "[F1](Women)[/F1] For such a time as this\n[F1](Men)[/F1] We are called to give our all\n[F1](Women)[/F1] For such a time as this\n[F1](Men)[/F1] Let us leave all else behind" },
+            { name: "REFRAIN", lyrics: "[F1](All)[/F1] To follow Christ, to spread His light\nTo do not our will but His\nWe were born to live\nFor such a time as this." },
             { name: "END", lyrics: "We were born to live\nFor such a time as this." }
 
         ]
@@ -323,10 +323,10 @@ const rawSongs = [
             { name: "CHORUS", lyrics: "For the Lord he reigns over all the earth\nAnd his name is great to the highest heaven\nAnd the firm earth shakes\nAnd the waves lie still\nAnd the hard heart breaks to his sovereign will\nFor the Lord he reigns—Amen\nFor the Lord he reigns—Amen" },
             { name: "VERSE", lyrics: "Jesus Redeemer our Savior\nWho purchased us by your blood\nAll of your people acclaim you\nAs the light of the world\nAs the hope of our soul\nAs the king who will come again" },
             { name: "CHORUS", lyrics: "For the Lord he reigns over all the earth\nAnd his name is great to the highest heaven\nAnd the firm earth shakes\nAnd the waves lie still\nAnd the hard heart breaks to his sovereign will\nFor the Lord he reigns—Amen\nFor the Lord he reigns—Amen" },
-            { name: "BRIDGE", lyrics: "(Men) For the Lord he reigns! Amen!\n(Women) He reigns in the highest!\n(Men) For the Lord he reigns! Amen!\n(Women) He reigns in the earth!" },
-            { name: "BRIDGE", lyrics: "(Men) For the Lord he reigns! Amen!\n(Women) He reigns in the nations!\n(Men) For the Lord he reigns! Amen!\n(Women) He reigns in his Church!" },
-            { name: "CHORUS", lyrics: "For the Lord he reigns over all the earth\nAnd his name is great to the highest heaven\nAnd the firm earth shakes\nAnd the waves lie still\nAnd the hard heart breaks to his sovereign will\n(2x)" },
-            { name: "END", lyrics: "For the Lord he reigns—Amen (2x)\nFor the Lord he reigns\nHe reigns—Amen" }
+            { name: "BRIDGE", lyrics: "[F1](Men)[/F1] For the Lord he reigns! Amen!\n[F1](Women)[/F1] He reigns in the highest!\n[F1](Men)[/F1] For the Lord he reigns! Amen!\n[F1](Women)[/F1] He reigns in the earth!" },
+            { name: "BRIDGE", lyrics: "[F1](Men)[/F1] For the Lord he reigns! Amen!\n[F1](Women)[/F1] He reigns in the nations!\n[F1](Men)[/F1] For the Lord he reigns! Amen!\n[F1](Women)[/F1] He reigns in his Church!" },
+            { name: "CHORUS", lyrics: "For the Lord he reigns over all the earth\nAnd his name is great to the highest heaven\nAnd the firm earth shakes\nAnd the waves lie still\nAnd the hard heart breaks to his sovereign will\n[F1](2x)[/F1]" },
+            { name: "END", lyrics: "For the Lord he reigns—Amen [F1](2x)[/F1]\nFor the Lord he reigns\nHe reigns—Amen" }
         ]
     },
     {
@@ -362,7 +362,7 @@ const rawSongs = [
         sections: [
             { name: "VERSE", lyrics: "We kneel before you Father\nFrom whom your sons and daughters have their name\nWe have your name\nFor from the world's foundation\nYou chose us to be blameless in your sight" },
             { name: "VERSE", lyrics: "And in your love you destined us\nTo be your own true children\nThat we might live to praise your glorious grace" },
-            { name: "CHORUS", lyrics: "Then Father make us one\nFather make us one\nThat all might live to praise your glorious grace\n(2x)" },
+            { name: "CHORUS", lyrics: "Then Father make us one\nFather make us one\nThat all might live to praise your glorious grace\n[F1](2x)[/F1]" },
             { name: "VERSE", lyrics: "You lavished love upon us\nYou sent us your beloved only Son\nYour only Son\nIn him we have redemption\nForgiveness of transgressions by his blood\nBy his blood" },
             { name: "VERSE", lyrics: "And you made known the mystery\nOf your great will and pleasure\nTo bring all things together under him" },
             { name: "CHORUS", lyrics: "Then Father make us one\nFather make us one\nThat all might live to praise your glorious grace" },
@@ -386,35 +386,35 @@ const rawSongs = [
             { name: "VERSE", lyrics: "God is my refuge,\nmy trust and my deliverer.\nA help close at hand in times of distress."},
             { name: "VERSE", lyrics: "So I will lift my eyes unto the mountains,\nFrom whence comes my help?\nFrom the Lord, enthroned on high;\nHe is my rock and my salvation, I’ll stand firm." },
             { name: "VERSE", lyrics: "God is my refuge,\nmy trust and my deliverer.\nA help close at hand in times of distress." },
-            { name: "VERSE", lyrics: "So I will lift my eyes unto the mountains,\nFrom whence comes my help?\nFrom the Lord, enthroned on high;\nHe is my rock and my salvation, I’ll stand firm.\n(2x)" }
+            { name: "VERSE", lyrics: "So I will lift my eyes unto the mountains,\nFrom whence comes my help?\nFrom the Lord, enthroned on high;\nHe is my rock and my salvation, I’ll stand firm.\n[F1](2x)[/F1]" }
         ]
     },
     {
         title: "God With Us",
         sections: [
-            { name: "VERSE", lyrics: "He walked where I walked (echo)\nHe stood where I stand (echo)\nHe felt what I feel (echo)\nHe understands (echo)" },
-            { name: "VERSE", lyrics: "He knows my frailties (echo)\nShared my humanity (echo)\nTempted in every way (echo)\nYet did not sin. (echo)" },
-            { name: "REFRAIN", lyrics: "God with us, so close to us\nGod with us, Emmanuel. (2x)\n Emmanuel!" },
-            { name: "VERSE", lyrics: "One of the hated race (echo)\nStung by the prejudice (echo)\nSuffering injustice (echo)\nYet He forgives. (echo)" },
-            { name: "VERSE", lyrics: "Wept for my wasted years (echo)\nPaid for my wickedness (echo)\nHe died in my place (echo)\nThat I might live. (echo)" },
-            { name: "END", lyrics: "God with us, so close to us\nGod with us, Emmanuel. (4x)\n Emmanuel! (3x)" }
+            { name: "VERSE", lyrics: "He walked where I walked [F1](echo)[/F1]\nHe stood where I stand [F1](echo)[/F1]\nHe felt what I feel [F1](echo)[/F1]\nHe understands [F1](echo)[/F1]" },
+            { name: "VERSE", lyrics: "He knows my frailties [F1](echo)[/F1]\nShared my humanity [F1](echo)[/F1]\nTempted in every way [F1](echo)[/F1]\nYet did not sin. [F1](echo)[/F1]" },
+            { name: "REFRAIN", lyrics: "God with us, so close to us\nGod with us, Emmanuel. [F1](2x)[/F1]\n Emmanuel!" },
+            { name: "VERSE", lyrics: "One of the hated race [F1](echo)[/F1]\nStung by the prejudice [F1](echo)[/F1]\nSuffering injustice [F1](echo)[/F1]\nYet He forgives. [F1](echo)[/F1]" },
+            { name: "VERSE", lyrics: "Wept for my wasted years [F1](echo)[/F1]\nPaid for my wickedness [F1](echo)[/F1]\nHe died in my place [F1](echo)[/F1]\nThat I might live. [F1](echo)[/F1]" },
+            { name: "END", lyrics: "God with us, so close to us\nGod with us, Emmanuel. [F1](4x)[/F1]\n Emmanuel! [F1](3x)[/F1]" }
         ]
     },
     {
         title: "Great And Marvelous",
         sections: [
             { name: "VERSE", lyrics: "Great and marvelous are all Your deeds\nO Lord our God Almighty.\nJust and true are all Your ways\nYou are King throughout all ages\nThroughout all ages!" },
-            { name: "REFRAIN", lyrics: "We, Your people, now proclaim You\nAnd sing Your glorious praise:\n(Women) Blessing and honor,\nGlory and power\n(Men) Blessing, honor, glory, power\n(All) Be to our God forever." },
-            { name: "REFRAIN", lyrics: "(Women) Blessing and honor,\nGlory and power\n(Men) Blessing, honor, glory, power\n(All) Be to our God forever.  Amen!" },
+            { name: "REFRAIN", lyrics: "We, Your people, now proclaim You\nAnd sing Your glorious praise:\n[F1](Women)[/F1] Blessing and honor,\nGlory and power\n[F1](Men)[/F1] Blessing, honor, glory, power\n[F1](All)[/F1] Be to our God forever." },
+            { name: "REFRAIN", lyrics: "[F1](Women)[/F1] Blessing and honor,\nGlory and power\n[F1](Men)[/F1] Blessing, honor, glory, power\n[F1](All)[/F1] Be to our God forever.  Amen!" },
             { name: "VERSE", lyrics: "Who will not fear You, O Lord,\nAnd bring glory to Your name?\nYou are holy!\nAll the nations will bow down\nAnd worship at Your throne,\nYour glorious throne!" },
-            { name: "REFRAIN", lyrics: "We, Your people, now proclaim You\nAnd sing Your glorious praise:\n(Women) Blessing and honor,\nGlory and power\n(Men) Blessing, honor, glory, power\n(All) Be to our God forever." },
-            { name: "REFRAIN", lyrics: "(Women) Blessing and honor,\nGlory and power\n(Men) Blessing, honor, glory, power\n(All) Be to our God forever.\n(2x)\nAmen!" },
+            { name: "REFRAIN", lyrics: "We, Your people, now proclaim You\nAnd sing Your glorious praise:\n[F1](Women)[/F1] Blessing and honor,\nGlory and power\n[F1](Men)[/F1] Blessing, honor, glory, power\n[F1](All)[/F1] Be to our God forever." },
+            { name: "REFRAIN", lyrics: "[F1](Women)[/F1] Blessing and honor,\nGlory and power\n[F1](Men)[/F1] Blessing, honor, glory, power\n[F1](All)[/F1] Be to our God forever.\n[F1](2x)[/F1]\nAmen!" },
         ]
     },
     {
         title: "He Has Covered Himself In Glory",
         sections: [
-            { name: "REFRAIN", lyrics: "Let us sing to the Lord!\nHe has covered Himself in glory!\nLet us sing to the Lord!\nHe has covered Himself in praise!\n(2x)" },
+            { name: "REFRAIN", lyrics: "Let us sing to the Lord!\nHe has covered Himself in glory!\nLet us sing to the Lord!\nHe has covered Himself in praise!\n[F1](2x)[/F1]" },
             { name: "VERSE", lyrics: "I will sing to the Lord\nHe is gloriously triumphant\nRider, horse and chariot\nHas He hurled into the sea!" },
             { name: "VERSE", lyrics: "My strength and my courage\nIs the Lord, my Savior.\nHe is my God and the God\nOf my fathers – I exalt Him!" },
             { name: "REFRAIN", lyrics: "Let us sing to the Lord!\nHe has covered Himself in glory!\nLet us sing to the Lord!\nHe has covered Himself in praise!" },
@@ -423,7 +423,7 @@ const rawSongs = [
             { name: "REFRAIN", lyrics: "Let us sing to the Lord!\nHe has covered Himself in glory!\nLet us sing to the Lord!\nHe has covered Himself in praise!" },
             { name: "VERSE", lyrics: "The people You chose\nYou redeemed, and planted them on\nYour holy mountain.\nThe place where You made Your seat,\nThe dwelling place of our God!" },
             { name: "VERSE", lyrics: "From His sanctuary,\nEstablished by His hand,\nSeated in glory, the Lord shall reign\nForever and ever!" },
-            { name: "REFRAIN", lyrics: "Let us sing to the Lord!\nHe has covered Himself in glory!\nLet us sing to the Lord!\nHe has covered Himself in praise!\n(2x)" },
+            { name: "REFRAIN", lyrics: "Let us sing to the Lord!\nHe has covered Himself in glory!\nLet us sing to the Lord!\nHe has covered Himself in praise!\n[F1](2x)[/F1]" },
             { name: "END", lyrics: "He has covered Himself in glory!\nHe has covered Himself in praise!" }
         ]
     },
@@ -433,7 +433,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "He is the image of the invisible God,\nFirst-born of all creation.\nIn Him all was made,\nThe heavens and earth,\nAll things created through Him." },
             { name: "REFRAIN", lyrics: "He is before all things,\nAnd in Him all things hold together.\nIn Him the fullness of God\nWas pleased to dwell.\nHe is the glory of God,\nBearing the stamp of His nature,\nUpholding the universe by His word." },
             { name: "VERSE", lyrics: "And through His being\nAll things are made one\nAll that was once divided\nHeaven and earth united to Him\nPeace by the blood of His cross." },
-            { name: "END", lyrics: "He is before all things\nAnd in Him all things hold together.\nIn Him the fullness of God\nWas pleased to dwell.\nHe is the glory of God,\nBearing the stamp of His nature,\nUpholding the universe by His word.\n(2x)" }
+            { name: "END", lyrics: "He is before all things\nAnd in Him all things hold together.\nIn Him the fullness of God\nWas pleased to dwell.\nHe is the glory of God,\nBearing the stamp of His nature,\nUpholding the universe by His word.\n[F1](2x)[/F1]" }
         ]
     },
     {
@@ -442,7 +442,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "He is exalted\nThe King is exalted on high,\nI will praise Him!\nHe is exalted, forever exalted\nAnd I will praise His name!" },
             { name: "REFRAIN", lyrics: "He is the Lord,\nForever His truth shall reign.\nHeaven and earth\nRejoice in His holy name.\nHe is exalted,\nThe King is exalted on high." },
             { name: "VERSE", lyrics: "He is exalted\nThe King is exalted on high,\nI will praise Him!\nHe is exalted, forever exalted\nAnd I will praise His name!" },
-            { name: "REFRAIN", lyrics: "He is the Lord,\nForever His truth shall reign.\nHeaven and earth\nRejoice in His holy name.\nHe is exalted,\nThe King is exalted on high.\n(2x)" },
+            { name: "REFRAIN", lyrics: "He is the Lord,\nForever His truth shall reign.\nHeaven and earth\nRejoice in His holy name.\nHe is exalted,\nThe King is exalted on high.\n[F1](2x)[/F1]" },
             { name: "END", lyrics: "He is exalted,\nThe King is exalted on high." }
         ]
     },
@@ -452,7 +452,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Heaven is my home,\nI am Kingdom-bound.\nI am not my own, for once I was lost\nBut in Christ I am found." },
             { name: "VERSE", lyrics: "All my treasure on high safely set apart\nFor in heaven I find\nThe fount of my joy,\nThe source of my life,\nThe first love of my heart." },
             { name: "VERSE", lyrics: "Heaven is my home,\nI am Kingdom-bound.\nI am not my own, for once I was lost\nBut in Christ I am found." },
-            { name: "END", lyrics: "All my treasure on high safely set apart\nFor in heaven I find\nThe fount of my joy,\nThe source of my life,\nThe first love of my heart.\n(2x)" }
+            { name: "END", lyrics: "All my treasure on high safely set apart\nFor in heaven I find\nThe fount of my joy,\nThe source of my life,\nThe first love of my heart.\n[F1](2x)[/F1]" }
         ]
     },
     {
@@ -470,18 +470,18 @@ const rawSongs = [
     {
         title: "Hinei mah Tov",
         sections: [
-            { name: "VERSE", lyrics: "Hinei mah tov umah naim,\nShevet achim gam yachad. (2x)" },
-            { name: "VERSE", lyrics: "Hinei mah tov, Hinei mah tov,\nLai lai lai lai lai lai lai lai lai lai … (2x)" },
-            { name: "VERSE", lyrics: "Behold how good and pleasant it is\nFor brothers to dwell together. (2x)" },
-            { name: "VERSE", lyrics: "In unity, in unity,\nLai lai lai lai lai lai lai lai lai lai … (2x)" },
-            { name: "VERSE", lyrics: "Hinei mah tov umah naim,\nShevet achim gam yachad. (2x)" },
-            { name: "VERSE", lyrics: "Hinei mah tov, Hinei mah tov,\nLai lai lai lai lai lai lai lai lai lai … (2x)" },
-            { name: "VERSE", lyrics: "Lai lai lai lai lai lai lai lai lai lai … (2x)" },
-            { name: "VERSE", lyrics: "Behold how good and pleasant it is\nFor brothers to dwell together. (2x)" },
-            { name: "VERSE", lyrics: "In unity, in unity,\nLai lai lai lai lai lai lai lai lai lai … (2x)" },
-            { name: "VERSE", lyrics: "Behold how good and pleasant it is\nFor brothers to dwell together. (2x)" },
-            { name: "VERSE", lyrics: "In unity, in unity,\nLai lai lai lai lai lai lai lai lai lai … (2x)" },
-            { name: "END", lyrics: "Lai lai lai lai lai lai lai lai lai lai … (2x)" }
+            { name: "VERSE", lyrics: "Hinei mah tov umah naim,\nShevet achim gam yachad. [F1](2x)[/F1]" },
+            { name: "VERSE", lyrics: "Hinei mah tov, Hinei mah tov,\nLai lai lai lai lai lai lai lai lai lai … [F1](2x)[/F1]" },
+            { name: "VERSE", lyrics: "Behold how good and pleasant it is\nFor brothers to dwell together. [F1](2x)[/F1]" },
+            { name: "VERSE", lyrics: "In unity, in unity,\nLai lai lai lai lai lai lai lai lai lai … [F1](2x)[/F1]" },
+            { name: "VERSE", lyrics: "Hinei mah tov umah naim,\nShevet achim gam yachad. [F1](2x)[/F1]" },
+            { name: "VERSE", lyrics: "Hinei mah tov, Hinei mah tov,\nLai lai lai lai lai lai lai lai lai lai … [F1](2x)[/F1]" },
+            { name: "VERSE", lyrics: "Lai lai lai lai lai lai lai lai lai lai … [F1](2x)[/F1]" },
+            { name: "VERSE", lyrics: "Behold how good and pleasant it is\nFor brothers to dwell together. [F1](2x)[/F1]" },
+            { name: "VERSE", lyrics: "In unity, in unity,\nLai lai lai lai lai lai lai lai lai lai … [F1](2x)[/F1]" },
+            { name: "VERSE", lyrics: "Behold how good and pleasant it is\nFor brothers to dwell together. [F1](2x)[/F1]" },
+            { name: "VERSE", lyrics: "In unity, in unity,\nLai lai lai lai lai lai lai lai lai lai … [F1](2x)[/F1]" },
+            { name: "END", lyrics: "Lai lai lai lai lai lai lai lai lai lai … [F1](2x)[/F1]" }
 
         ]
     },
@@ -520,7 +520,7 @@ const rawSongs = [
             { name: "REFRAIN", lyrics: "All glory and honor and praise\nBe to the Ancient of days.\nWe praise You, we worship You,\nOur Lord and our King!\nOn high!" },
             { name: "VERSE", lyrics: "Holy, O holy, Lord God Almighty!\nWorthy, O worthy\nGlorious Prince of peace!" },
             { name: "VERSE", lyrics: "We bring our lives to You,\nA sacrifice to You, we stand in awe\nBefore Your holy name." },
-            { name: "END", lyrics: "All glory and honor and praise\nBe to the Ancient of days.\nWe praise You, we worship You,\nOur Lord and our King!\n(2x)\nOn high!" }
+            { name: "END", lyrics: "All glory and honor and praise\nBe to the Ancient of days.\nWe praise You, we worship You,\nOur Lord and our King!\n[F1](2x)[/F1]\nOn high!" }
         ]
     },
     {
@@ -539,23 +539,23 @@ const rawSongs = [
         sections: [
             { name: "VERSE", lyrics: "I bow my knee before Your throne.\nI know my life is not my own.\nI offer up a song of praise\nTo bring You pleasure, Lord." },
             { name: "VERSE", lyrics: "I seek the Giver, not the gift.\nMy heart’s desire is to lift You\nHigh above all earthly kings\nTo bring You pleasure, Lord." },
-            { name: "REFRAIN", lyrics: "Hallelujah!  Hallelujah!\nHallelujah!  Glory to the King!\n(2x)" },
+            { name: "REFRAIN", lyrics: "Hallelujah!  Hallelujah!\nHallelujah!  Glory to the King!\n[F1](2x)[/F1]" },
             { name: "VERSE", lyrics: "I bow my knee before Your throne.\nI know my life is not my own.\nI offer up a song of praise\nTo bring You pleasure, Lord." },
-            { name: "END", lyrics: "Hallelujah!  Hallelujah!\nHallelujah!  Glory to the King!\n(2x)\nHallelujah!  Glory to the King!" }
+            { name: "END", lyrics: "Hallelujah!  Hallelujah!\nHallelujah!  Glory to the King!\n[F1](2x)[/F1]\nHallelujah!  Glory to the King!" }
         ]
     },
     {
         title: "I Delight In Your Will",
         sections: [
-            { name: "VERSE", lyrics: "Patiently I sought the Lord;\nHe has heard my cry,\nAnd He has drawn me up\nAnd made my steps secure\n(2x)" },
+            { name: "VERSE", lyrics: "Patiently I sought the Lord;\nHe has heard my cry,\nAnd He has drawn me up\nAnd made my steps secure\n[F1](2x)[/F1]" },
             { name: "VERSE", lyrics: "And I said, “Behold I come\nIn the steps of my Savior before me.\nBehold I come to you!”" },
             { name: "CHORUS", lyrics: "I delight in your will, O my God;\nAnd your law is within my heart.\nAnd I come to serve your Word." },
             { name: "CHORUS", lyrics: "And I will speak of your steadfast love\nAnd I’ll tell of your faithfulness.\nYes, I come to do your will,\nFor you have set me free." },
-            { name: "VERSE", lyrics: "Sacrifice and offering\nYou do not desire\nBut you have given me\nAn open ear, Oh Lord.\n(2x)" },
+            { name: "VERSE", lyrics: "Sacrifice and offering\nYou do not desire\nBut you have given me\nAn open ear, Oh Lord.\n[F1](2x)[/F1]" },
             { name: "VERSE", lyrics: "And I said, “Behold I come\nIn the steps of my Savior before me.\nBehold I come to you!”" },
             { name: "CHORUS", lyrics: "I delight in your will, O my God;\nAnd your law is within my heart.\nAnd I come to serve your Word." },
             { name: "CHORUS", lyrics: "And I will speak of your steadfast love\nAnd I’ll tell of your faithfulness.\nYes, I come to do your will,\nFor you have set me free." },
-            { name: "VERSE", lyrics: "Great is the Lord! Great is the Lord!\nLet all who love him say it:\nGreat is the Lord!\n(2x)" },
+            { name: "VERSE", lyrics: "Great is the Lord! Great is the Lord!\nLet all who love him say it:\nGreat is the Lord!\n[F1](2x)[/F1]" },
             { name: "CHORUS", lyrics: "I delight in your will, O my God;\nAnd your law is within my heart.\nAnd I come to serve your Word." },
             { name: "END", lyrics: "And I will speak of your steadfast love\nAnd I’ll tell of your faithfulness.\nYes, I come to do your will,\nFor you have set me free." }
         ]
@@ -590,11 +590,11 @@ const rawSongs = [
     {
         title: "I Will Give Thanks",
         sections: [
-            { name: "VERSE", lyrics: "I will give thanks\nI will give thanks to the Lord\nI will give thanks to the Lord with my whole heart\n(2x)" },
+            { name: "VERSE", lyrics: "I will give thanks\nI will give thanks to the Lord\nI will give thanks to the Lord with my whole heart\n[F1](2x)[/F1]" },
             { name: "CHORUS", lyrics: "And I will tell All your wonderful deeds.\nI will be glad and exult in you.\nI will sing praise to your name, O Most High.\nI will give thanks to the Lord \nwith my whole heart" },
-            { name: "VERSE", lyrics: "I will give thanks\nI will give thanks to the Lord\nI will give thanks to the Lord with my whole heart\n(2x)" },
+            { name: "VERSE", lyrics: "I will give thanks\nI will give thanks to the Lord\nI will give thanks to the Lord with my whole heart\n[F1](2x)[/F1]" },
             { name: "CHORUS", lyrics: "And I will tell All your wonderful deeds.\nI will be glad and exult in you.\nI will sing praise to your name, O Most High.\nI will give thanks to the Lord \nwith my whole heart" },
-            { name: "END", lyrics: "I will give thanks\nI will give thanks to the Lord\nI will give thanks to the Lord with my whole heart\n(2x)\nI will give thanks to the Lord with my whole heart" }
+            { name: "END", lyrics: "I will give thanks\nI will give thanks to the Lord\nI will give thanks to the Lord with my whole heart\n[F1](2x)[/F1]\nI will give thanks to the Lord with my whole heart" }
         ]
     },
     {
@@ -605,7 +605,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Through the abundance\nOf Your steadfast love\nWe come into Your holy place.\nIn the fear of You we worship\nAt Your throne of mercy and grace." },
             { name: "REFRAIN", lyrics: "For in You is the fountain of life,\nIn Your light, we see light.\nFor in You is the fountain of life,\nIn Your light do we see light." },
             { name: "VERSE", lyrics: "We feast on the abundance\nOf Your house as on the richest food.\nFrom Your river of delights\nWe drink our fill of all that is good." },
-            { name: "END", lyrics: "For in You is the fountain of life,\nIn Your light, we see light.\nFor in You is the fountain of life,\nIn Your light do we see light.\n(2x)" },
+            { name: "END", lyrics: "For in You is the fountain of life,\nIn Your light, we see light.\nFor in You is the fountain of life,\nIn Your light do we see light.\n[F1](2x)[/F1]" },
         ]
     },
     {
@@ -620,7 +620,7 @@ const rawSongs = [
             { name: "REFRAIN", lyrics: "Arise, shine out, for your light has come\nThe glory of Yahweh is rising on you.\nThough night still covers the earth\nAnd darkness the people,\nAbove you Yahweh now rises,\nAbove you His glory appears, arise!" },
             { name: "VERSE", lyrics: "No more will the sun give you daylight\nNor moonlight shine on you\nBut Yahweh will be your eternal light\nYour God will be your splendor." },
             { name: "VERSE", lyrics: "Your sun will set no more\nNor your moon wane.\nBut Yahweh will be your eternal light\nAnd your days of mourning\nWill pass from your sight." },
-            { name: "END", lyrics: "Arise, shine out, for your light has come\nThe glory of Yahweh is rising on you.\nThough night still covers the earth\nAnd darkness the people,\nAbove you Yahweh now rises,\nAbove you His glory appears, arise!\n(2x)" }
+            { name: "END", lyrics: "Arise, shine out, for your light has come\nThe glory of Yahweh is rising on you.\nThough night still covers the earth\nAnd darkness the people,\nAbove you Yahweh now rises,\nAbove you His glory appears, arise!\n[F1](2x)[/F1]" }
         ]
     },
     {
@@ -644,7 +644,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Rise up, O children of God\nMake ready your hands for war.\nThe King now stands before us\nWe join together as loyalists\nTo build His kingdom here on earth\nAnd join in heaven’s chorus." },
             { name: "REFRAIN", lyrics: "Lead on, O Lord,\nUnsheathing our swords.\nWe arm ourselves with Your truth.\nBurn in our hearts, enflame our lives.\nThe battle is now, we’re here to fight." },
             { name: "VERSE", lyrics: "This age it seeks to destroy.\nClouds my mind,\nRobs my heart of Your joy.\nWe pray together for vision.\nOur ears are poised to listen.\nLead us now unto war\nWe accept our mission." },
-            { name: "REFRAIN", lyrics: "Lead on, O Lord,\nUnsheathing our swords.\nWe arm ourselves with Your truth.\nBurn in our hearts, enflame our lives.\nThe battle is now, we’re here to fight.\n(2x)" },
+            { name: "REFRAIN", lyrics: "Lead on, O Lord,\nUnsheathing our swords.\nWe arm ourselves with Your truth.\nBurn in our hearts, enflame our lives.\nThe battle is now, we’re here to fight.\n[F1](2x)[/F1]" },
             { name: "END", lyrics: "The battle is now, we’re here\nThe battle is now, we’re here\nThe battle is now, we’re here to fight" }
         ]
     },
@@ -657,18 +657,18 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Marching on our God will go before us.\nMay we follow in the footsteps of our savior.\nIn his great love he died upon a cross." },
             { name: "VERSE", lyrics: "Let us press on without counting the cost.\nSo we move forward, with our eyes above\nOn him who ransomed us in love." },
             { name: "REFRAIN", lyrics: "The clarion calls we will press on towards \nthe one who calls us onwards now into battle\nWith joy we rise \nand we will answer our King's call\nAs we cry \"Holy worthy mighty is our Lord.\"" },
-            { name: "VERSE", lyrics: "WOMEN:\nHe is glorious, victorious in pow'r (4x)\n\nMEN:\nLet God arise (3x)" },
+            { name: "VERSE", lyrics: "WOMEN:\nHe is glorious, victorious in pow'r [F1](4x)[/F1]\n\nMEN:\nLet God arise [F1](3x)[/F1]" },
             { name: "END", lyrics: "As for me I will press on towards \nthe one who calls us onwards now into battle\nWith joy we rise \nand we will answer our King's call\nAs we cry \"Holy worthy mighty is our Lord.\"" }
         ]
     },
     {
         title: "Let The Fire Fall",
         sections: [
-            { name: "VERSE", lyrics: "Holy Spirit, (Holy Spirit)\nCome with Your fire!\n(2x)\n\nHoly Spirit, come with Your fire!\n(2x)" },
+            { name: "VERSE", lyrics: "Holy Spirit, [F1](Holy Spirit)[/F1]\nCome with Your fire!\n[F1](2x)[/F1]\n\nHoly Spirit, come with Your fire!\n[F1](2x)[/F1]" },
             { name: "REFRAIN", lyrics: "Come, Holy Spirit, let the fire fall!\nCome, Holy Spirit, let the fire fall!\nLet the fire fall!  Let the fire fall!" },
-            { name: "VERSE", lyrics: "Holy Spirit, (Holy Spirit)\nPurify my heart!\n(2x)\n\nHoly Spirit, purify my heart!\n(2x)" },
+            { name: "VERSE", lyrics: "Holy Spirit, [F1](Holy Spirit)[/F1]\nPurify my heart!\n[F1](2x)[/F1]\n\nHoly Spirit, purify my heart!\n[F1](2x)[/F1]" },
             { name: "REFRAIN", lyrics: "Come, Holy Spirit, let the fire fall!\nCome, Holy Spirit, let the fire fall!\nLet the fire fall!  Let the fire fall!" },
-            { name: "VERSE", lyrics: "Holy Spirit, (Holy Spirit)\nSet my life on fire!\n(2x)\n\nHoly Spirit, set my life on fire!\n(2x)" },
+            { name: "VERSE", lyrics: "Holy Spirit, [F1](Holy Spirit)[/F1]\nSet my life on fire!\n[F1](2x)[/F1]\n\nHoly Spirit, set my life on fire!\n[F1](2x)[/F1]" },
             { name: "REFRAIN", lyrics: "Come, Holy Spirit, let the fire fall!\nCome, Holy Spirit, let the fire fall!\nLet the fire fall!  Let the fire fall!" },
             { name: "END", lyrics: "Let the fire fall!  Let the fire fall!" }
         ]
@@ -676,12 +676,12 @@ const rawSongs = [
     {
         title: "Let The Saints Be Joyful",
         sections: [
-            { name: "REFRAIN", lyrics: "Let the saints be joyful in glory,\nLet the high praises of God\nBe in their mouth,\nAnd a two-edged sword\nIn their hand.\n(2x)" },
+            { name: "REFRAIN", lyrics: "Let the saints be joyful in glory,\nLet the high praises of God\nBe in their mouth,\nAnd a two-edged sword\nIn their hand.\n[F1](2x)[/F1]" },
             { name: "VERSE", lyrics: "Enter His gates with thanksgiving,\nEnter His courts with praise.\nBe thankful to Him, bless His name.\nFor the Lord is good\nAnd His mercy is everlasting\nAnd His truth endureth for all time." },
-            { name: "REFRAIN", lyrics: "Let the saints be joyful in glory,\nLet the high praises of God\nBe in their mouth,\nAnd a two-edged sword\nIn their hand.\n(2x)" },
+            { name: "REFRAIN", lyrics: "Let the saints be joyful in glory,\nLet the high praises of God\nBe in their mouth,\nAnd a two-edged sword\nIn their hand.\n[F1](2x)[/F1]" },
             { name: "VERSE", lyrics: "Enter His gates with thanksgiving,\nEnter His courts with praise.\nBe thankful to Him, bless His name.\nFor the Lord is good\nAnd His mercy is everlasting\nAnd His truth endureth for all time." },
-            { name: "REFRAIN", lyrics: "Let the saints be joyful in glory,\nLet the high praises of God\nBe in their mouth,\nAnd a two-edged sword\nIn their hand.\n(2x)" },
-            { name: "REFRAIN", lyrics: "And a two-edged sword\nIn their hand.\n(3x)" },
+            { name: "REFRAIN", lyrics: "Let the saints be joyful in glory,\nLet the high praises of God\nBe in their mouth,\nAnd a two-edged sword\nIn their hand.\n[F1](2x)[/F1]" },
+            { name: "REFRAIN", lyrics: "And a two-edged sword\nIn their hand.\n[F1](3x)[/F1]" },
         ]
     },
     {
@@ -692,7 +692,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "The angel of the Lord encamps\n‘Round those who fear His name\nTo save them\nAnd deliver them from harm.\nThough lions roar with hunger\nWe lack for no good thing.\nNo wonder then we praise Him\nWith our song." },
             { name: "REFRAIN", lyrics: "Let us exalt His name together forever.\nI sought the Lord, He heard me\nAnd delivered me from my fears.\nLet us exalt His name together forever.\nO, sing His praises, magnify the Lord." },
             { name: "VERSE", lyrics: "Come, children, now and hear me\nIf you would see long life\nJust keep your lips\nFrom wickedness and lies.\nDo good and turn from evil\nSeek peace instead of strife\nLove righteousness\nAnd God will hear your cry." },
-            { name: "END", lyrics: "Let us exalt His name together forever.\nI sought the Lord, He heard me\nAnd delivered me from my fears.\nLet us exalt His name together forever.\nO, sing His praises, magnify the Lord.\n(2x)\n\nO, sing His praises, magnify the Lord." }
+            { name: "END", lyrics: "Let us exalt His name together forever.\nI sought the Lord, He heard me\nAnd delivered me from my fears.\nLet us exalt His name together forever.\nO, sing His praises, magnify the Lord.\n[F1](2x)[/F1]\n\nO, sing His praises, magnify the Lord." }
         ]
     },
     {
@@ -704,7 +704,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Ruler of nations,\nThe world has yet to see\nThe full release of Your promise,\nThe Church in victory." },
             { name: "VERSE", lyrics: "Turn to us, Lord, and touch us.\nMake us strong in Your might.\nOvercome our weakness,\nThat we could stand up and fight." },
             { name: "REFRAIN", lyrics: "Let Your glory fall on this room.\nLet it go forth from here to the nations.\nLet Your fragrance rest in this place\nAs we gather to seek Your face." },
-            { name: "VERSE", lyrics: "Let your Kingdom come. (echo) \nLet Your will be done. (echo)\nLet us see on earth (echo)\nThe glory of Your Son.\n(3x)" },
+            { name: "VERSE", lyrics: "Let your Kingdom come. [F1](echo)[/F1] \nLet Your will be done. [F1](echo)[/F1]\nLet us see on earth [F1](echo)[/F1]\nThe glory of Your Son.\n[F1](3x)[/F1]" },
             { name: "END", lyrics: "Let Your glory fall on this room.\nLet it go forth from here to the nations.\nLet Your fragrance rest in this place\nAs we gather to seek Your face.\n\nWe are gathered to seek Your face." },
         ]
     },
@@ -715,17 +715,17 @@ const rawSongs = [
             { name: "REFRAIN", lyrics: "You came from heaven to earth\nTo show the way\nFrom the earth to the cross\nMy debt to pay\nFrom the cross to the grave\nFrom the grave to the sky\nLord, I lift Your name on high." },
             { name: "VERSE", lyrics: "Lord, I lift Your name on high.\nLord, I love to sing Your praises.\nI’m so glad You’re in my life.\nI’m so glad You came to save us." },
             { name: "REFRAIN", lyrics: "You came from heaven to earth\nTo show the way\nFrom the earth to the cross\nMy debt to pay\nFrom the cross to the grave\nFrom the grave to the sky\nLord, I lift Your name on high." },
-            { name: "END", lyrics: "You came from heaven to earth\nTo show the way\nFrom the earth to the cross\nMy debt to pay\nFrom the cross to the grave\nFrom the grave to the sky\nLord, I lift Your name on high.\n(2x)" }
+            { name: "END", lyrics: "You came from heaven to earth\nTo show the way\nFrom the earth to the cross\nMy debt to pay\nFrom the cross to the grave\nFrom the grave to the sky\nLord, I lift Your name on high.\n[F1](2x)[/F1]" }
         ]
     },
     {
         title: "Lord Jesus We Enthrone You",
         sections: [
             { name: "VERSE", lyrics: "Lord Jesus, we enthrone You.\nWe proclaim You are King.\nStanding here in the midst of us\nWe raise You up with our praise." },
-            { name: "REFRAIN", lyrics: "And as we worship build a throne\n(3x)\n\nCome, Lord Jesus, and take Your place!" },
+            { name: "REFRAIN", lyrics: "And as we worship build a throne\n[F1](3x)[/F1]\n\nCome, Lord Jesus, and take Your place!" },
             { name: "VERSE", lyrics: "Lord Jesus, we enthrone You.\nWe proclaim You are King.\nStanding here in the midst of us\nWe raise You up with our praise." },
-            { name: "REFRAIN", lyrics: "And as we worship build a throne\n(3x)\n\nCome, Lord Jesus, and take Your place!" },
-            { name: "END", lyrics: "And as we worship build a throne\n(3x)\n\nCome, Lord Jesus, and take Your place!\n(2x)" }
+            { name: "REFRAIN", lyrics: "And as we worship build a throne\n[F1](3x)[/F1]\n\nCome, Lord Jesus, and take Your place!" },
+            { name: "END", lyrics: "And as we worship build a throne\n[F1](3x)[/F1]\n\nCome, Lord Jesus, and take Your place!\n[F1](2x)[/F1]" }
         ]
     },
     {
@@ -736,13 +736,13 @@ const rawSongs = [
             { name: "REFRAIN", lyrics: "Hallelujah, our King!  Glory to God!\nWe call on Your name.\nGive us strength for the fight.\nBuild us up by Your power.\nMake us one in Your name.\nYour Kingdom come!" },
             { name: "VERSE", lyrics: "Lord, we come into Your holy presence\nThere to gaze upon Your face.\nThrough the veil\nWe see You robed in glory\nBefore Your throne to take our place." },
             { name: "VERSE", lyrics: "And with our voices\nWe now praise Your name:\nYou are our King and no other!\nWe cry to You, “Establish your reign!”\nWe shout, “Your Kingdom come!”" },
-            { name: "END", lyrics: "Hallelujah, our King!  Glory to God!\nWe call on Your name.\nGive us strength for the fight.\nBuild us up by Your power.\nMake us one in Your name.\nYour Kingdom come!\n(2x)" },
+            { name: "END", lyrics: "Hallelujah, our King!  Glory to God!\nWe call on Your name.\nGive us strength for the fight.\nBuild us up by Your power.\nMake us one in Your name.\nYour Kingdom come!\n[F1](2x)[/F1]" },
         ]
     },
     {
         title: "Lord We Give To You",
         sections: [
-            { name: "REFRAIN", lyrics: "Lord, we give to You\nThe glory and honor You are due\nWith hearts and hands upraised.\nNo worldly riches compare\nWith the joy of seeing You face to face.\n(2x)" },
+            { name: "REFRAIN", lyrics: "Lord, we give to You\nThe glory and honor You are due\nWith hearts and hands upraised.\nNo worldly riches compare\nWith the joy of seeing You face to face.\n[F1](2x)[/F1]" },
             { name: "END", lyrics: "With the joy of seeing You face to face." }
         ]
     },
@@ -754,7 +754,7 @@ const rawSongs = [
             { name: "REFRAIN", lyrics: "Set my heart on fire for Thee!\nMagnify Your light in me!\nLove that dies… that love may rise\nYour love raised on high!" },
             { name: "VERSE", lyrics: "Lord, enkindle me.\nFan the flame in my heart for Thee.\nTake my life to be Your life,\nBe the light in me." },
             { name: "VERSE", lyrics: "Mold me to your likeness,\nPurified in holiness.\nWarm my heart to be Your heart,\nLove Your world through me." },
-            { name: "END", lyrics: "Set my heart on fire for Thee!\nMagnify Your light in me!\nLove that dies… that love may rise\nYour love raised on high!\n(2x)\n\nLord, enkindle me." },
+            { name: "END", lyrics: "Set my heart on fire for Thee!\nMagnify Your light in me!\nLove that dies… that love may rise\nYour love raised on high!\n[F1](2x)[/F1]\n\nLord, enkindle me." },
         ]
     },
     {
@@ -797,13 +797,13 @@ const rawSongs = [
     {
         title: "Mighty Is Our God",
         sections: [
-            { name: "REFRAIN", lyrics: "Hallelujah! (8x)" },
+            { name: "REFRAIN", lyrics: "Hallelujah! [F1](8x)[/F1]" },
             { name: "REFRAIN", lyrics: "Mighty is our God, the everlasting King.\nAll the earth proclaim\nThe glories of His name.\nEnthroned in the heavens\nThe angels sing His praise.\nMighty is our God!  Holy is He!" },
-            { name: "REFRAIN", lyrics: "Hallelujah! (8x)" },
+            { name: "REFRAIN", lyrics: "Hallelujah! [F1](8x)[/F1]" },
             { name: "REFRAIN", lyrics: "Praise Him, sun and moon.\nPraise Him, stars of light.\nPraise Him in the depths\nAnd praise Him in the heights.\nLet the heavens be glad\nAnd the earth rejoice!\nMighty is our God!  Holy is He!" },
-            { name: "REFRAIN", lyrics: "Hallelujah! (8x)" },
+            { name: "REFRAIN", lyrics: "Hallelujah! [F1](8x)[/F1]" },
             { name: "REFRAIN", lyrics: "Witness to all men \nThe joy of the Lord.\nFor upon us all\nHis love He has poured.\nLet every tongue confess forever:\n“Jesus is Lord!  Worthy is He!”" },
-            { name: "END", lyrics: "Hallelujah! (8x)" }
+            { name: "END", lyrics: "Hallelujah! [F1](8x)[/F1]" }
         ]
     },
     {
@@ -812,7 +812,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Praise You, Lord, mighty King of Zion,\nMighty God of Israel.\nSave us, Lord, from the roaring lion\nCast down the workings of the infidel." },
             { name: "REFRAIN", lyrics: "O my Strength, I will sing Thy praises.\nThou, O Lord, are a shield to me.\nO my King, though the battle rages\nI look with vict’ry on my enemies." },
             { name: "VERSE", lyrics: "Rouse Thyself like a roaring fire,\nIsrael’s hope, bright Morning Star.\nBurn like chaff the father of liars\nLight up creation with Thy blazing pow’r." },
-            { name: "REFRAIN", lyrics: "O my Strength, I will sing Thy praises.\nThou, O Lord, are a shield to me.\nO my King, though the battle rages\nI look with vict’ry on my enemies.\n(2x)" },
+            { name: "REFRAIN", lyrics: "O my Strength, I will sing Thy praises.\nThou, O Lord, are a shield to me.\nO my King, though the battle rages\nI look with vict’ry on my enemies.\n[F1](2x)[/F1]" },
             { name: "END", lyrics: "Praise You, Lord, mighty King of Zion!" }
         ]
     },
@@ -831,12 +831,12 @@ const rawSongs = [
         title: "My Inheritance the Lord",
         sections: [
             { name: "VERSE", lyrics: "My inheritance the Lord my promised expectation\nHow excellent my reward in him\nIn him is my song my cup and firm foundation\nMy tower my all in all the Lord" },
-            { name: "CHORUS", lyrics: "(Men) And now my God I search to see your face\n(Women) And rejoice in knowing you (…rejoice in knowing you)\n(Men) To find you in my eyes renewed by faith\n(Women) and adore forever more (…adore forever more)\n(Men) To taste of heaven in the center of my soul\n(All) I long to love you Lord" },
+            { name: "CHORUS", lyrics: "[F1](Men)[/F1] And now my God I search to see your face\n[F1](Women)[/F1] And rejoice in knowing you [F1](…rejoice in knowing you)[/F1]\n[F1](Men)[/F1] To find you in my eyes renewed by faith\n[F1](Women)[/F1] and adore forever more [F1](…adore forever more)[/F1]\n[F1](Men)[/F1] To taste of heaven in the center of my soul\n[F1](All)[/F1] I long to love you Lord" },
             { name: "VERSE", lyrics: "In his goodness he has raised and placed me at his table\nWhat thing could compare itself to you!\nIn your presence Lord my joy and my desire\nForever in you I long to live" },
-            { name: "CHORUS", lyrics: "(Men) And now my God I search to see your face\n(Women) And rejoice in knowing you (…rejoice in knowing you)\n(Men) To find you in my eyes renewed by faith\n(Women) and adore forever more (…adore forever more)\n(Men) To taste of heaven in the center of my soul\n(All) I long to love you Lord" },
+            { name: "CHORUS", lyrics: "[F1](Men)[/F1] And now my God I search to see your face\n[F1](Women)[/F1] And rejoice in knowing you [F1](…rejoice in knowing you)[/F1]\n[F1](Men)[/F1] To find you in my eyes renewed by faith\n[F1](Women)[/F1] and adore forever more [F1](…adore forever more)[/F1]\n[F1](Men)[/F1] To taste of heaven in the center of my soul\n[F1](All)[/F1] I long to love you Lord" },
             { name: "VERSE", lyrics: "I will lift my voice to you, with music celebrating\nYour presence for all eternity\nRejoicing I will praise on harp and lyre playing\nMy portion eternally receive" },
-            { name: "CHORUS", lyrics: "(Men) And now my God I search to see your face\n(Women) And rejoice in knowing you (…rejoice in knowing you)\n(Men) To find you in my eyes renewed by faith\n(Women) and adore forever more (…adore forever more)\n(Men) To taste of heaven in the center of my soul\n(All) I long to love you Lord" },
-            { name: "END", lyrics: "(Men) You are forever my portion O Lord\n(Women) My inheritance the Lord\n(2x)\n\n(Men) You are forever my portion O Lord\n(All) My inheritance the Lord" }
+            { name: "CHORUS", lyrics: "[F1](Men)[/F1] And now my God I search to see your face\n[F1](Women)[/F1] And rejoice in knowing you [F1](…rejoice in knowing you)[/F1]\n[F1](Men)[/F1] To find you in my eyes renewed by faith\n[F1](Women)[/F1] and adore forever more [F1](…adore forever more)[/F1]\n[F1](Men)[/F1] To taste of heaven in the center of my soul\n[F1](All)[/F1] I long to love you Lord" },
+            { name: "END", lyrics: "[F1](Men)[/F1] You are forever my portion O Lord\n[F1](Women)[/F1] My inheritance the Lord\n[F1](2x)[/F1]\n\n[F1](Men)[/F1] You are forever my portion O Lord\n[F1](All)[/F1] My inheritance the Lord" }
         ]
     },
     {
@@ -847,7 +847,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "I gaze upon Your temple\nAnd I behold Your beauty and grace.\nYour love is better than life, Lord,\nWith joyful heart\nI will sing of Your praises." },
             { name: "REFRAIN", lyrics: "So I will bless You with all that I am.\nIn Your name I will lift up my hands.\nMy soul shall rise to Your banquet of life\nMy mouth shall praise You with joy\nMy mouth shall praise You with joy." },
             { name: "VERSE", lyrics: "Each night I watch for Your light\nUpon my bed I ponder Your mercy.\nMy soul clings closely to You, Lord.\nYou are my strength\nAnd Your love will uphold me." },
-            { name: "END", lyrics: "So I will bless You with all that I am.\nIn Your name I will lift up my hands.\nMy soul shall rise to Your banquet of life\nMy mouth shall praise You with joy\nMy mouth shall praise You with joy.\n(2x)" }
+            { name: "END", lyrics: "So I will bless You with all that I am.\nIn Your name I will lift up my hands.\nMy soul shall rise to Your banquet of life\nMy mouth shall praise You with joy\nMy mouth shall praise You with joy.\n[F1](2x)[/F1]" }
         ]
     },
     {
@@ -858,23 +858,23 @@ const rawSongs = [
             { name: "REFRAIN", lyrics: "God alone is my rock\nAnd I’ll not be moved,\nI find shelter in His wings.\nHe alone is my strength and shield.\nHow my heart leaps for joy,\nI will ever give thanks unto Him." },
             { name: "VERSE", lyrics: "For You have been my refuge, Lord,\nA strong tow’r against the foe\nMy help in times of distress\nMy joy in times of affliction." },
             { name: "VERSE", lyrics: "For you have heard my cry, O God,\nListened to my supplication.\nFrom the ends of the earth I cry,\nLead me to the rock that is higher than I." },
-            { name: "END", lyrics: "God alone is my rock\nAnd I’ll not be moved,\nI find shelter in His wings.\nHe alone is my strength and shield.\nHow my heart leaps for joy,\nI will ever give thanks unto Him.\n(2x)" }
+            { name: "END", lyrics: "God alone is my rock\nAnd I’ll not be moved,\nI find shelter in His wings.\nHe alone is my strength and shield.\nHow my heart leaps for joy,\nI will ever give thanks unto Him.\n[F1](2x)[/F1]" }
         ]
     },
     {
         title: "Nada Te Turbe",
         sections: [
-            { name: "VERSE", lyrics: "Nada te turbe, nada te_espante,\nTodo se pasa, Dios no se muda.\nLa paciencia todo lo_alcanza.\nQuien a Dios tiene nada le falta.\nSolo Dios basta! (3x)\nAleluya.\n(2x)" }
+            { name: "VERSE", lyrics: "Nada te turbe, nada te_espante,\nTodo se pasa, Dios no se muda.\nLa paciencia todo lo_alcanza.\nQuien a Dios tiene nada le falta.\nSolo Dios basta! [F1](3x)[/F1]\nAleluya.\n[F1](2x)[/F1]" }
         ]
     },
     {
         title: "Open The Eyes Of My Heart",
         sections: [
-            { name: "VERSE", lyrics: "Open the eyes of my heart, Lord.\nOpen the eyes of my heart,\nI want to see You,\nI want to see You.\n(2x)" },
+            { name: "VERSE", lyrics: "Open the eyes of my heart, Lord.\nOpen the eyes of my heart,\nI want to see You,\nI want to see You.\n[F1](2x)[/F1]" },
             { name: "REFRAIN", lyrics: "To see You high and lifted up\nShining in the light of Your glory.\nPour out Your power and love\nAs we sing “Holy, holy, holy!”" },
-            { name: "VERSE", lyrics: "Open the eyes of my heart, Lord.\nOpen the eyes of my heart,\nI want to see You,\nI want to see You.\n(2x)" },
-            { name: "REFRAIN", lyrics: "To see You high and lifted up\nShining in the light of Your glory.\nPour out Your power and love\nAs we sing “Holy, holy, holy!”\n(2x)" },
-            { name: "END", lyrics: "Holy, holy, holy!\nHoly, holy, holy!\nHoly, holy, holy!\nI want to see You.\n(2x)" }
+            { name: "VERSE", lyrics: "Open the eyes of my heart, Lord.\nOpen the eyes of my heart,\nI want to see You,\nI want to see You.\n[F1](2x)[/F1]" },
+            { name: "REFRAIN", lyrics: "To see You high and lifted up\nShining in the light of Your glory.\nPour out Your power and love\nAs we sing “Holy, holy, holy!”\n[F1](2x)[/F1]" },
+            { name: "END", lyrics: "Holy, holy, holy!\nHoly, holy, holy!\nHoly, holy, holy!\nI want to see You.\n[F1](2x)[/F1]" }
         ]
     },
     {
@@ -891,13 +891,13 @@ const rawSongs = [
         title: "Praise The Lord All Nations",
         sections: [
             { name: "VERSE", lyrics: "Rise up, your light has come;\nHis glory shines upon you.\nThough darkness reigns on earth,\nHis light has risen on you.\nAnd to it all the nations come;\nTheir kings shall seek its brightness\nLift up your eyes and see; behold His light." },
-            { name: "REFRAIN", lyrics: "Praise the Lord, all nations\nAnd extol Him all you peoples.\n(2x)" },
+            { name: "REFRAIN", lyrics: "Praise the Lord, all nations\nAnd extol Him all you peoples.\n[F1](2x)[/F1]" },
             { name: "REFRAIN", lyrics: "For great is His steadfast love toward us,\nAnd the faithfulness of the Lord \nEndures forever. Alleluia." },
             { name: "VERSE", lyrics: "From the east and from the west\nHe calls His sons and daughters.\nFrom ev’ry land they come\nTo drink life-giving waters.\nThen you shall see, and radiant be;\nYour heart shall thrill with gladness.\nThe wealth of all the nations shall be yours." },
-            { name: "REFRAIN", lyrics: "Praise the Lord, all nations\nAnd extol Him all you peoples.\n(2x)" },
+            { name: "REFRAIN", lyrics: "Praise the Lord, all nations\nAnd extol Him all you peoples.\n[F1](2x)[/F1]" },
             { name: "REFRAIN", lyrics: "For great is His steadfast love toward us,\nAnd the faithfulness of the Lord \nEndures forever. Alleluia." },
-            { name: "REFRAIN", lyrics: "Praise the Lord, all nations\nAnd extol Him all you peoples.\n(2x)" },
-            { name: "END", lyrics: "For great is His steadfast love toward us,\nAnd the faithfulness of the Lord \nEndures forever. Alleluia.\n\nAlleluia. Praise the Lord, all nations. (3x)" },
+            { name: "REFRAIN", lyrics: "Praise the Lord, all nations\nAnd extol Him all you peoples.\n[F1](2x)[/F1]" },
+            { name: "END", lyrics: "For great is His steadfast love toward us,\nAnd the faithfulness of the Lord \nEndures forever. Alleluia.\n\nAlleluia. Praise the Lord, all nations. [F1](3x)[/F1]" },
         ]
     },
     {
@@ -906,7 +906,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Who shall not fear and glorify\nYour name, O Lord?\nWho shall not bow and worship You,\nO Lord Most High?\nWe will praise Your name!" },
             { name: "REFRAIN", lyrics: "High on high You reign\nHigh on high, enthroned in heaven\nHigh on high You reign\nAll glory belongs to Your name!" },
             { name: "VERSE", lyrics: "Great are Your works, O Lord our God,\nTo those You love.\nMajestic are You in holiness,\nO God, our King.\nWe will praise Your name!" },
-            { name: "REFRAIN", lyrics: "High on high You reign\nHigh on high, enthroned in heaven\nHigh on high You reign\nAll glory belongs to Your name!\n(2x)" },
+            { name: "REFRAIN", lyrics: "High on high You reign\nHigh on high, enthroned in heaven\nHigh on high You reign\nAll glory belongs to Your name!\n[F1](2x)[/F1]" },
             { name: "END", lyrics: "High on high You reign!" }
         ]
     },
@@ -924,17 +924,17 @@ const rawSongs = [
     {
         title: "Prince Of Peace",
         sections: [
-            { name: "VERSE", lyrics: "You are holy  (You are holy)\nYou are mighty  (You are mighty)\nYou are worthy  (You are worthy)\nWorthy of praise  (Worthy of praise)\nI will follow  (I will follow)\nI will listen  (I will listen)\nI will love You  (I will love You)\nAll of my days  (All of my days)" },
-            { name: "VERSE", lyrics: "(MEN)\nI will sing to and worship\nThe King who is worthy.\nI will love and adore You,\nI will bow down before You.\n(2x)" },
+            { name: "VERSE", lyrics: "You are holy  [F1](You are holy)[/F1]\nYou are mighty  [F1](You are mighty)[/F1]\nYou are worthy  [F1](You are worthy)[/F1]\nWorthy of praise  [F1](Worthy of praise)[/F1]\nI will follow  [F1](I will follow)[/F1]\nI will listen  [F1](I will listen)[/F1]\nI will love You  [F1](I will love You)[/F1]\nAll of my days  [F1](All of my days)[/F1]" },
+            { name: "VERSE", lyrics: "[F1](MEN)[/F1]\nI will sing to and worship\nThe King who is worthy.\nI will love and adore You,\nI will bow down before You.\n[F1](2x)[/F1]" },
             { name: "VERSE", lyrics: "You are my Prince of peace\nAnd I will live my life for You." },
-            { name: "VERSE", lyrics: "You are holy  (You are holy)\nYou are mighty  (You are mighty)\nYou are worthy  (You are worthy)\nWorthy of praise  (Worthy of praise)\nI will follow  (I will follow)\nI will listen  (I will listen)\nI will love You  (I will love You)\nAll of my days  (All of my days)" },
-            { name: "VERSE", lyrics: "(WOMEN)\nYou are Lord of lords,\nYou are King of kings,\nYou are mighty God, Lord of everything.\nYou’re Emmanuel, you’re the great I AM\nYou’re the Prince of peace\nWho is the Lamb." },
-            { name: "VERSE", lyrics: "(WOMEN)\nYou’re the living God,\nYou’re my saving grace,\nYou will live forever,\nYou are Ancient of days.\nYou are Alpha, Omega, beginning and end.\nYou’re my Savior, Messiah,\nRedeemer and friend." },
+            { name: "VERSE", lyrics: "You are holy  [F1](You are holy)[/F1]\nYou are mighty  [F1](You are mighty)[/F1]\nYou are worthy  [F1](You are worthy)[/F1]\nWorthy of praise  [F1](Worthy of praise)[/F1]\nI will follow  [F1](I will follow)[/F1]\nI will listen  [F1](I will listen)[/F1]\nI will love You  [F1](I will love You)[/F1]\nAll of my days  [F1](All of my days)[/F1]" },
+            { name: "VERSE", lyrics: "[F1](WOMEN)[/F1]\nYou are Lord of lords,\nYou are King of kings,\nYou are mighty God, Lord of everything.\nYou’re Emmanuel, you’re the great I AM\nYou’re the Prince of peace\nWho is the Lamb." },
+            { name: "VERSE", lyrics: "[F1](WOMEN)[/F1]\nYou’re the living God,\nYou’re my saving grace,\nYou will live forever,\nYou are Ancient of days.\nYou are Alpha, Omega, beginning and end.\nYou’re my Savior, Messiah,\nRedeemer and friend." },
             { name: "VERSE", lyrics: "You are my Prince of peace\nAnd I will live my life for You." },
-            { name: "VERSE", lyrics: "You are holy  (You are holy)\nYou are mighty  (You are mighty)\nYou are worthy  (You are worthy)\nWorthy of praise  (Worthy of praise)\nI will follow  (I will follow)\nI will listen  (I will listen)\nI will love You  (I will love You)\nAll of my days  (All of my days)" },
-            { name: "VERSE", lyrics: "(MEN)\nI will sing to and worship\nThe King who is worthy.\nI will love and adore You,\nI will bow down before You.\n\n(WOMEN)\nYou are Lord of lords,\nYou are King of kings,\nYou are mighty God, Lord of everything.\nYou’re Emmanuel, you’re the great I AM\nYou’re the Prince of peace\nWho is the Lamb." },
-            { name: "VERSE", lyrics: "(MEN)\nI will sing to and worship\nThe King who is worthy.\nI will love and adore You,\nI will bow down before You.\n\n(WOMEN)\nYou’re the living God,\nYou’re my saving grace,\nYou will live forever,\nYou are Ancient of days.\nYou are Alpha, Omega, beginning and end.\nYou’re my Savior, Messiah,\nRedeemer and friend." },
-            { name: "END", lyrics: "You are my Prince of peace\nAnd I will live my life for You.\n(2x)" }
+            { name: "VERSE", lyrics: "You are holy  [F1](You are holy)[/F1]\nYou are mighty  [F1](You are mighty)[/F1]\nYou are worthy  [F1](You are worthy)[/F1]\nWorthy of praise  [F1](Worthy of praise)[/F1]\nI will follow  [F1](I will follow)[/F1]\nI will listen  [F1](I will listen)[/F1]\nI will love You  [F1](I will love You)[/F1]\nAll of my days  [F1](All of my days)[/F1]" },
+            { name: "VERSE", lyrics: "[F1](MEN)[/F1]\nI will sing to and worship\nThe King who is worthy.\nI will love and adore You,\nI will bow down before You.\n\n[F1](WOMEN)[/F1]\nYou are Lord of lords,\nYou are King of kings,\nYou are mighty God, Lord of everything.\nYou’re Emmanuel, you’re the great I AM\nYou’re the Prince of peace\nWho is the Lamb." },
+            { name: "VERSE", lyrics: "[F1](MEN)[/F1]\nI will sing to and worship\nThe King who is worthy.\nI will love and adore You,\nI will bow down before You.\n\n[F1](WOMEN)[/F1]\nYou’re the living God,\nYou’re my saving grace,\nYou will live forever,\nYou are Ancient of days.\nYou are Alpha, Omega, beginning and end.\nYou’re my Savior, Messiah,\nRedeemer and friend." },
+            { name: "END", lyrics: "You are my Prince of peace\nAnd I will live my life for You.\n[F1](2x)[/F1]" }
         ]
     },
     {
@@ -944,7 +944,7 @@ const rawSongs = [
             { name: "REFRAIN", lyrics: "I am Your servant,\nThe one You have chosen,\nI have been called \nand been freed from the grave.\nSo I will lift up the cup of salvation\nAnd I will call on the name of the Lord,\nI will give thanks in the house of the Lord." },
             { name: "VERSE", lyrics: "I love You, Lord,\nFor You have heard my cry.\nYou freed my life\nFrom the shadow of death.\nMy feet had stumbled,\nYou bore me up, Lord,\nI walk with You in the land of the just.\nSo I will pay my vows to You, Lord,\nWithin Your house,\nBefore the people of God." },
             { name: "REFRAIN", lyrics: "I am Your servant,\nThe one You have chosen,\nI have been called \nand been freed from the grave.\nSo I will lift up the cup of salvation\nAnd I will call on the name of the Lord,\nI will give thanks in the house of the Lord." },
-            { name: "END", lyrics: "I am Your servant,\nThe one You have chosen,\nI have been called \nand been freed from the grave.\nSo I will lift up the cup of salvation\nAnd I will call on the name of the Lord,\nI will give thanks in the house of the Lord.\n\nI will give thanks! (2x)" }
+            { name: "END", lyrics: "I am Your servant,\nThe one You have chosen,\nI have been called \nand been freed from the grave.\nSo I will lift up the cup of salvation\nAnd I will call on the name of the Lord,\nI will give thanks in the house of the Lord.\n\nI will give thanks! [F1](2x)[/F1]" }
         ]
     },
     {
@@ -955,7 +955,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "A day in Your courts\nIs more precious to me\nThan a thousand without You, my God.\nThe servant at Your gates\nIs more blessed than he\nWhose wealth keeps him\nFar from You, Lord." },
             { name: "CHORUS", lyrics: "Blessed are those, Lord,\nWhose strength is in Thee,\nWho find their life in Your praise.\nThey shall grow strong,\nGo from strength unto strength,\nUntil they see You face to face." },
             { name: "VERSE", lyrics: "The Almighty is a sun,\nA shield for His own,\nFor all those who walk in His ways.\nNo blessing withheld,\nEndless favor bestowed\nOn him who has made You his prize." },
-            { name: "END", lyrics: "Blessed are those, Lord,\nWhose strength is in Thee,\nWho find their life in Your praise.\nThey shall grow strong,\nGo from strength unto strength,\nUntil they see You face to face.\n(2x)" }
+            { name: "END", lyrics: "Blessed are those, Lord,\nWhose strength is in Thee,\nWho find their life in Your praise.\nThey shall grow strong,\nGo from strength unto strength,\nUntil they see You face to face.\n[F1](2x)[/F1]" }
         ]
     },
     {
@@ -966,7 +966,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "For the Lord is the great God\nAnd the King above kings\nIn His hands are the depths of the earth\nThe mountains are His and the sea is His\nHe formed all living things." },
             { name: "REFRAIN", lyrics: "Alleluia! Alleluia!\nHope in God, O my soul,\nIn Him your joy will be full." },
             { name: "VERSE", lyrics: "Come, let us bow down and worship Him\nLet us kneel before the Lord our maker.\nFor He is our God and His people are we\nThe flock under His care." },
-            { name: "END", lyrics: "Alleluia! Alleluia!\nHope in God, O my soul,\nIn Him your joy will be full.\n(2x)" }
+            { name: "END", lyrics: "Alleluia! Alleluia!\nHope in God, O my soul,\nIn Him your joy will be full.\n[F1](2x)[/F1]" }
         ]
     },
     {
@@ -975,7 +975,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Purify my heart,\nLet me be as gold and precious silver.\nPurify my heart,\nLet me be as gold, pure gold." },
             { name: "REFRAIN", lyrics: "Refiner’s fire,\nMy heart’s one desire is to be holy,\nSet apart for You, Lord.\nI choose to be holy,\nSet apart for You, my Master\nReady to do Your will." },
             { name: "VERSE", lyrics: "Purify my heart,\nCleanse me from within\nAnd make me holy.\nPurify my heart,\nCleanse me from my sin deep within." },
-            { name: "END", lyrics: "Refiner’s fire,\nMy heart’s one desire is to be holy,\nSet apart for You, Lord.\nI choose to be holy,\nSet apart for You, my Master\nReady to do Your will.\n(2x)" }
+            { name: "END", lyrics: "Refiner’s fire,\nMy heart’s one desire is to be holy,\nSet apart for You, Lord.\nI choose to be holy,\nSet apart for You, my Master\nReady to do Your will.\n[F1](2x)[/F1]" }
         ]
     },
     {
@@ -986,7 +986,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "My soul He freed from death\nMy eyes from tears\nI shall walk before the Lord\nIn the land of the living" },
             { name: "REFRAIN", lyrics: "Return, O my soul, to your rest\nReturn, my soul,\nFor the Lord has been good to you" },
             { name: "VERSE", lyrics: "How can I repay the Lord\nFor all His goodness to me?\nI will pay my vows to Him\nBefore His people." },
-            { name: "END", lyrics: "Return, O my soul, to your rest\nReturn, my soul,\nFor the Lord has been good to you \n(2x)" }
+            { name: "END", lyrics: "Return, O my soul, to your rest\nReturn, my soul,\nFor the Lord has been good to you \n[F1](2x)[/F1]" }
         ]
     },
     {
@@ -997,7 +997,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Lives we’ve offered brought before You\nAs all heaven’s hosts adore\nPray’rs with heav’nly incense burning\nRise to shroud Your holy throne.\nCountless saints\nRobed white in splendor\nWashed in blood of spotless Lamb\nNever more to thirst or hunger\nEver more to understand." },
             { name: "REFRAIN", lyrics: "You, O fount of life eternal\nYou, the source of endless joy\nFace to face with love forever:\n“Gloria!” will angels cry\n“Glory!” will our hearts reply.\n“Holy, holy, holy is the Lord!”" },
             { name: "VERSE", lyrics: "Ev’ry tear wiped by the Father\nEvery nation’s tumult quelled\nRoar of sea and crash of thunder\nBy His will creation stilled.\nHeaven’s hosts then awed to silence\nAt the Lamb enthroned above\nThen will we the silence shatter\nWorshipping the Face of love!" },
-            { name: "END", lyrics: "You, O fount of life eternal\nYou, the source of endless joy\nFace to face with love forever:\n“Gloria!” will angels cry\n“Glory!” will our hearts reply.\n“Holy, holy, holy is the Lord!”\n(2x)" }
+            { name: "END", lyrics: "You, O fount of life eternal\nYou, the source of endless joy\nFace to face with love forever:\n“Gloria!” will angels cry\n“Glory!” will our hearts reply.\n“Holy, holy, holy is the Lord!”\n[F1](2x)[/F1]" }
         ]
     },
     {
@@ -1006,7 +1006,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Salvation belongs to our God\nWho sits upon the throne\nAnd unto the Lamb:\nPraise and glory, wisdom and thanks\nHonor and power and strength." },
             { name: "REFRAIN", lyrics: "Be to our God forever and ever!\nBe to our God forever and ever!\nBe to our God forever and ever!\nAmen!" },
             { name: "VERSE", lyrics: "And we, the redeemed, shall be strong\nIn purpose and unity\nDeclaring aloud:\nPraise and glory, wisdom and thanks\nHonor and power and strength." },
-            { name: "END", lyrics: "Be to our God forever and ever!\nBe to our God forever and ever!\nBe to our God forever and ever!\nAmen!\n(2x)" }
+            { name: "END", lyrics: "Be to our God forever and ever!\nBe to our God forever and ever!\nBe to our God forever and ever!\nAmen!\n[F1](2x)[/F1]" }
         ]
     },
     {
@@ -1017,7 +1017,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Lord, I come to Your awesome presence\nFrom the shadows into Your radiance\nBy the blood I may enter Your brightness\nSearch me, try me,\nConsume all my darkness.\nShine on me, shine on me!" },
             { name: "REFRAIN", lyrics: "Shine, Jesus, shine.\nFill this land with the Father’s glory.\nBlaze, Spirit, blaze.  Set our hearts on fire.\nFlow, river, flow.\nFlood the nations with grace and mercy.\nSend forth Your word, Lord,\nAnd let there be light." },
             { name: "VERSE", lyrics: "As we gaze on Your kingly brightness\nSo our faces display Your likeness\nEver changing from glory to glory\nMirrored here, may our lives\nTell your story.\nShine on me, Shine on me!" },
-            { name: "END", lyrics: "Shine, Jesus, shine.\nFill this land with the Father’s glory.\nBlaze, Spirit, blaze.  Set our hearts on fire.\nFlow, river, flow.\nFlood the nations with grace and mercy.\nSend forth Your word, Lord,\nAnd let there be light.\n(2x)" }
+            { name: "END", lyrics: "Shine, Jesus, shine.\nFill this land with the Father’s glory.\nBlaze, Spirit, blaze.  Set our hearts on fire.\nFlow, river, flow.\nFlood the nations with grace and mercy.\nSend forth Your word, Lord,\nAnd let there be light.\n[F1](2x)[/F1]" }
         ]
     },
     {
@@ -1043,7 +1043,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "For the Lord has been \nGracious and merciful,\nAll His ways rich in steadfast love \nAs the skies rise high over all the earth, \nSo far has God removed all our sins." },
             { name: "REFRAIN", lyrics: "So bless the Lord Oh my soul; \nAll within me exalt Him\nRing out my heart; sing out my soul!\nDo not forget in His mercy \nHe has set you free.\nOh Lord be blessed in me." },
             { name: "VERSE", lyrics: "As a father is moved and compassionate,\nQuick to spare the son whom He loves,\nSo does God's face of grace ever seek\nTo save the people so close to His heart." },
-            { name: "END", lyrics: "So bless the Lord Oh my soul; \nAll within me exalt Him\nRing out my heart; sing out my soul!\nDo not forget in His mercy \nHe has set you free.\nOh Lord be blessed in me.\n(2x)\n\nOh Lord be blessed in me." }
+            { name: "END", lyrics: "So bless the Lord Oh my soul; \nAll within me exalt Him\nRing out my heart; sing out my soul!\nDo not forget in His mercy \nHe has set you free.\nOh Lord be blessed in me.\n[F1](2x)[/F1]\n\nOh Lord be blessed in me." }
         ]
     },
     {
@@ -1064,7 +1064,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Our hearts know no fear\nStrong and faithful is our God.\nWe are His, precious and dear\nA rock unmoved, He is our God." },
             { name: "REFRAIN", lyrics: "For though a thousand may fall\nAnd mountains may crumble\nWe shall continue to stand.\nFor men who are mighty and tall\nMay falter and tremble\nWe shall possess the land.\nFor strong and faithful is our God.\nFor strong and faithful is our God." },
             { name: "VERSE", lyrics: "Clouds of night may fill the sky\nStorms that rage may blow the day\nBut let your hearts rest in your God\nHe will shield you all the way." },
-            { name: "END", lyrics: "For though a thousand may fall\nAnd mountains may crumble\nWe shall continue to stand.\nFor men who are mighty and tall\nMay falter and tremble\nWe shall possess the land.\nFor strong and faithful is our God.\nFor strong and faithful is our God.\n(2x)\n\nFor strong and faithful is our God." }
+            { name: "END", lyrics: "For though a thousand may fall\nAnd mountains may crumble\nWe shall continue to stand.\nFor men who are mighty and tall\nMay falter and tremble\nWe shall possess the land.\nFor strong and faithful is our God.\nFor strong and faithful is our God.\n[F1](2x)[/F1]\n\nFor strong and faithful is our God." }
         ]
     },
     {
@@ -1078,7 +1078,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "The eyes of the Lord are on the just\nAnd His ears toward all their cries\nThe Lord is near to the broken heart\nAnd the crushed in Spirit, He saves." },
             { name: "REFRAIN", lyrics: "Taste and see\nHow good our God can be!\nO taste and see\nHow good our God can be!" },
             { name: "VERSE", lyrics: "O taste and see the Lord is good\nAnd happy are all who trust in Him\nO fear the Lord, you His holy ones\nTrust in Him and lack no good thing." },
-            { name: "END", lyrics: "Taste and see\nHow good our God can be!\nO taste and see\nHow good our God can be!\n(2x)" }
+            { name: "END", lyrics: "Taste and see\nHow good our God can be!\nO taste and see\nHow good our God can be!\n[F1](2x)[/F1]" }
         ]
     },
     {
@@ -1104,19 +1104,19 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Once we were no people, Lord,\nNow we are one in the house of God\nLiving stones now joined in Christ.\nFor we have seen Your temple brings\nThe hopeless heart to the hope of glory." },
             { name: "REFRAIN", lyrics: "Take us higher up, draw us deeper still\nFurther into Your heart, O Lord.\nMake us living light, set us on a hill\nShine forth through us, O radiant Son!" },
             { name: "VERSE", lyrics: "For we are a chosen race\nA shining light set up on a hill\nA holy nation, royal priests\nMay we proclaim Your wondrous name\nUntil the day when You come in glory." },
-            { name: "END", lyrics: "Take us higher up, draw us deeper still\nFurther into Your heart, O Lord.\nMake us living light, set us on a hill\nShine forth through us, O radiant Son\n(2x)" }
+            { name: "END", lyrics: "Take us higher up, draw us deeper still\nFurther into Your heart, O Lord.\nMake us living light, set us on a hill\nShine forth through us, O radiant Son\n[F1](2x)[/F1]" }
         ]
     },
     {
         title: "The Light Of Christ",
         sections: [
-            { name: "REFRAIN", lyrics: "The light of Christ\nHas come into the world.\nThe light of Christ\nHas come into the world.\n(2x)" },
+            { name: "REFRAIN", lyrics: "The light of Christ\nHas come into the world.\nThe light of Christ\nHas come into the world.\n[F1](2x)[/F1]" },
             { name: "VERSE", lyrics: "All men must be born again\nTo see the Kingdom of God.\nThe water and the Spirit\nBring new life in God’s love." },
-            { name: "REFRAIN", lyrics: "The light of Christ (echo)\nHas come into the world. (echo)\nThe light of Christ (echo)\nHas come into the world. (echo)" },
+            { name: "REFRAIN", lyrics: "The light of Christ [F1](echo)[/F1]\nHas come into the world. [F1](echo)[/F1]\nThe light of Christ [F1](echo)[/F1]\nHas come into the world. [F1](echo)[/F1]" },
             { name: "VERSE", lyrics: "God gave up His only Son\nOut of love for the world\nSo that all men who believe in Him\nWill live forever." },
-            { name: "REFRAIN", lyrics: "The light of Christ (echo)\nHas come into the world. (echo)\nThe light of Christ (echo)\nHas come into the world. (echo)" },
+            { name: "REFRAIN", lyrics: "The light of Christ [F1](echo)[/F1]\nHas come into the world. [F1](echo)[/F1]\nThe light of Christ [F1](echo)[/F1]\nHas come into the world. [F1](echo)[/F1]" },
             { name: "VERSE", lyrics: "The light of God has come to us\nSo that we might have salvation.\nFrom the darkness of our sins\nWe walk into glory with Christ Jesus." },
-            { name: "REFRAIN", lyrics: "The light of Christ (echo)\nHas come into the world. (echo)\nThe light of Christ (echo)\nHas come into the world. (echo)" }
+            { name: "REFRAIN", lyrics: "The light of Christ [F1](echo)[/F1]\nHas come into the world. [F1](echo)[/F1]\nThe light of Christ [F1](echo)[/F1]\nHas come into the world. [F1](echo)[/F1]" }
         ]
     },
     {
@@ -1127,32 +1127,32 @@ const rawSongs = [
             { name: "VERSE", lyrics: "On the first day Jesus arose from the dead\nAnd death was led captive away\nMorning broke into the tomb shadows fled\nNight was no more" },
             { name: "CHORUS", lyrics: "So let light shine out of darkness\nFor Christ is the light of the world\nYes the light shines in the darkness\nAnd the darkness has not overcome" },
             { name: "VERSE", lyrics: "On the last day, when earth and heaven have passed\nThe Lord shall create them anew\nWe shall arise from the dead\nAnd the Lamb shall be our light" },
-            { name: "END", lyrics: "So let light shine out of darkness\nFor Christ is the light of the world\nYes the light shines in the darkness\nAnd the darkness has not overcome\n(2x)" }
+            { name: "END", lyrics: "So let light shine out of darkness\nFor Christ is the light of the world\nYes the light shines in the darkness\nAnd the darkness has not overcome\n[F1](2x)[/F1]" }
         ]
     },
     {
         title: "The Magnificat",
         sections: [
-            { name: "REFRAIN", lyrics: "My soul (my soul) magnifies the Lord\nAnd my spirit (my spirit)\nRejoices (rejoices) in God my Savior!" },
+            { name: "REFRAIN", lyrics: "My soul [F1](my soul)[/F1] magnifies the Lord\nAnd my spirit [F1](my spirit)[/F1]\nRejoices [F1](rejoices)[/F1] in God my Savior!" },
             { name: "VERSE", lyrics: "For He who is mighty\nHas done great things\nAnd holy is His name\nFrom age to age His mercy is\nOn those who fear Him\nHe fills the hungry with good things\nHe helps those serve Him." },
-            { name: "REFRAIN", lyrics: "My soul (my soul) magnifies the Lord\nAnd my spirit (my spirit)\nRejoices (rejoices) in God my Savior!" },
+            { name: "REFRAIN", lyrics: "My soul [F1](my soul)[/F1] magnifies the Lord\nAnd my spirit [F1](my spirit)[/F1]\nRejoices [F1](rejoices)[/F1] in God my Savior!" },
             { name: "VERSE", lyrics: "He scatters the proud\nAnd He lifts up the lowly\nHe has shown strength with His arm\nFor the Word became flesh and\nHe dwelt among us\nNo one has seen the Father\nBut the Son has made Him known." },
-            { name: "REFRAIN", lyrics: "My soul (my soul) magnifies the Lord\nAnd my spirit (my spirit)\nRejoices (rejoices) in God my Savior!" },
+            { name: "REFRAIN", lyrics: "My soul [F1](my soul)[/F1] magnifies the Lord\nAnd my spirit [F1](my spirit)[/F1]\nRejoices [F1](rejoices)[/F1] in God my Savior!" },
             { name: "VERSE", lyrics: "The words of the Lord are Spirit and life\nBlessed are the people\nWho hear them and keep them.\nWhen God speaks His word\nLet it be fulfilled in me.\nFor with the Lord, nothing is impossible." },
-            { name: "REFRAIN", lyrics: "My soul (my soul) magnifies the Lord\nAnd my spirit (my spirit)\nRejoices (rejoices) in God my Savior!" },
-            { name: "END", lyrics: "My spirit (my spirit) rejoices (rejoices)\n in Jesus, my Savior!" }
+            { name: "REFRAIN", lyrics: "My soul [F1](my soul)[/F1] magnifies the Lord\nAnd my spirit [F1](my spirit)[/F1]\nRejoices [F1](rejoices)[/F1] in God my Savior!" },
+            { name: "END", lyrics: "My spirit [F1](my spirit)[/F1] rejoices [F1](rejoices)[/F1]\n in Jesus, my Savior!" }
         ]
     },
     {
         title: "The People Of God",
         sections: [
-            { name: "REFRAIN", lyrics: "The people of God shines forth like lights\nThe sword of the Spirit is in their hands\nThat You, O Lord, might be glorified\nMay Your Kingdom come!\n(2x)" },
+            { name: "REFRAIN", lyrics: "The people of God shines forth like lights\nThe sword of the Spirit is in their hands\nThat You, O Lord, might be glorified\nMay Your Kingdom come!\n[F1](2x)[/F1]" },
             { name: "VERSE", lyrics: "Come together, O people of God\nLet all men see in our unity\nThat we live for Jesus the King!" },
             { name: "REFRAIN", lyrics: "The people of God shines forth like lights\nThe sword of the Spirit is in their hands\nThat You, O Lord, might be glorified\nMay Your Kingdom come!" },
             { name: "VERSE", lyrics: "Let our hearts not tire and fail\nBurning always with the zeal\nFor the service of Your name." },
             { name: "REFRAIN", lyrics: "The people of God shines forth like lights\nThe sword of the Spirit is in their hands\nThat You, O Lord, might be glorified\nMay Your Kingdom come!" },
             { name: "VERSE", lyrics: "Let the Lord God conquer our fear\nSo that we might be free\nTo lay our lives before His throne." },
-            { name: "END", lyrics: "The people of God shines forth like lights\nThe sword of the Spirit is in their hands\nThat You, O Lord, might be glorified\nMay Your Kingdom come!\n(2x)\nMay Your Kingdom come! (2x)" }
+            { name: "END", lyrics: "The people of God shines forth like lights\nThe sword of the Spirit is in their hands\nThat You, O Lord, might be glorified\nMay Your Kingdom come!\n[F1](2x)[/F1]\nMay Your Kingdom come! [F1](2x)[/F1]" }
         ]
     },
     {
@@ -1163,18 +1163,18 @@ const rawSongs = [
             { name: "REFRAIN", lyrics: "Awake, O sleeper, rise to life\nAnd Christ will give you light.\nLift your head, behold the river!\nHe mounts His throne\nTo shouts of praise\nBe opened, heaven’s gates!\nEnter in, O King of glory!" },
             { name: "VERSE", lyrics: "“Come!” the Spirit calls\nAnd with the bride, the Spirit cries:\n“Souls that thirst can drink\nTheir fill of water without price.”" },
             { name: "VERSE", lyrics: "Blest are those who wash their robes\nTo gain the tree of life\nFace to face with endless grace\nLift up your hearts to hear the cry." },
-            { name: "END", lyrics: "Awake, O sleeper, rise to life\nAnd Christ will give you light.\nLift your head, behold the river!\nHe mounts His throne\nTo shouts of praise\nBe opened, heaven’s gates!\nEnter in, O King of glory!\n(2x)\n\nO King of glory!" }
+            { name: "END", lyrics: "Awake, O sleeper, rise to life\nAnd Christ will give you light.\nLift your head, behold the river!\nHe mounts His throne\nTo shouts of praise\nBe opened, heaven’s gates!\nEnter in, O King of glory!\n[F1](2x)[/F1]\n\nO King of glory!" }
         ]
     },
     {
         title: "There Is One Light",
         sections: [
             { name: "VERSE", lyrics: "There is one light no darkness can conquer,\nThat shines from the beauty\nNo eye can contain\nA spoken word that sounds forth creation\nWhich time will not silence, \nAnd all things sustains." },
-            { name: "REFRAIN", lyrics: "Behold such love. (One Lord of love.)\nGod’s holy love. (Our Lord of love.)\nYou are holy, You are worthy, \nSent from the Father, Spirit filled one\nWithin the three of love, the holy Son." },
+            { name: "REFRAIN", lyrics: "Behold such love. [F1](One Lord of love.)[/F1]\nGod’s holy love. [F1](Our Lord of love.)[/F1]\nYou are holy, You are worthy, \nSent from the Father, Spirit filled one\nWithin the three of love, the holy Son." },
             { name: "VERSE", lyrics: "Of royal blood, the King of all kingship,\nOf holiest lineage as high priest He came.\nThe sacrifice, both temple and off’ring,\nGreat shepherd of mercy,\nThe Lamb who was slain." },
-            { name: "REFRAIN", lyrics: "Behold such love. (One Lord of love.)\nGod’s holy love. (Our Lord of love.)\nYou are holy, You are worthy, \nSent from the Father, Spirit filled one\nWithin the three of love, the holy Son." },
+            { name: "REFRAIN", lyrics: "Behold such love. [F1](One Lord of love.)[/F1]\nGod’s holy love. [F1](Our Lord of love.)[/F1]\nYou are holy, You are worthy, \nSent from the Father, Spirit filled one\nWithin the three of love, the holy Son." },
             { name: "VERSE", lyrics: "Though in God’s form, \nChrist humbly descended, became as a servant \nThrough death He was raised.\nAnd therefore, God has highly exalted\nThe name of Christ Jesus above every name." },
-            { name: "END", lyrics: "Behold such love. (One Lord of love.)\nGod’s holy love. (Our Lord of love.)\nYou are holy, You are worthy, \nSent from the Father, Spirit filled one\nWithin the three of love, the holy Son.\nYou are holy, You are worthy, \nSent from the Father, Spirit filled one\nWithin the three of love, the holy Son." }
+            { name: "END", lyrics: "Behold such love. [F1](One Lord of love.)[/F1]\nGod’s holy love. [F1](Our Lord of love.)[/F1]\nYou are holy, You are worthy, \nSent from the Father, Spirit filled one\nWithin the three of love, the holy Son.\nYou are holy, You are worthy, \nSent from the Father, Spirit filled one\nWithin the three of love, the holy Son." }
         ]
     },
     {
@@ -1185,8 +1185,8 @@ const rawSongs = [
             { name: "CHORUS", lyrics: "There is power in the Spirit of our God\nin the name\nin the blood\nThere is power in the Spirit of our God\nto proclaim\nto heal\nto conquer and to live" },
             { name: "VERSE", lyrics: "There is power in the cross\nin the blood he shed for us\nTo redeem our every loss\nto present us pure and just" },
             { name: "CHORUS", lyrics: "There is power in the Spirit of our God\nin the name in the blood\nThere is power in the Spirit of our God\nto proclaim to heal to conquer and to live" },
-            { name: "BRIDGE", lyrics: "And we shall be filled with power\nwhen the Spirit comes on us\nAnd we will lift Jesus higher\nwhen the Spirit comes on us\n(2x)" },
-            { name: "END", lyrics: "There is power in the Spirit of our God\nin the name in the blood\nThere is power in the Spirit of our God\nto proclaim\nto heal to\nconquer and to live\n(2x)" }
+            { name: "BRIDGE", lyrics: "And we shall be filled with power\nwhen the Spirit comes on us\nAnd we will lift Jesus higher\nwhen the Spirit comes on us\n[F1](2x)[/F1]" },
+            { name: "END", lyrics: "There is power in the Spirit of our God\nin the name in the blood\nThere is power in the Spirit of our God\nto proclaim\nto heal to\nconquer and to live\n[F1](2x)[/F1]" }
         ]
     },
     {
@@ -1195,13 +1195,13 @@ const rawSongs = [
             { name: "VERSE", lyrics: "I will touch your eyes\nDo not lose heart.\nI will touch you again\nTill you see the angels and saints\nSurrounding the throne" },
             { name: "VERSE", lyrics: "Till you see the brightness\nAnd majesty of the throne\nWhere your God reigns forever and ever\nYou’ll see them more clearly" },
             { name: "VERSE", lyrics: "Thousands and thousands\nSurrounding the throne\nAnd they’re shouting by night\nAnd by day to your God:" },
-            { name: "END", lyrics: "Holy, (holy) holy (holy)\nis the Lord God Almighty!\nHoly, (holy) holy (holy)\nis the Lord God Almighty!\nAnd I’ll touch you again\nTill you see that your home is in heav’n.\n(2x)" }
+            { name: "END", lyrics: "Holy, [F1](holy)[/F1] holy [F1](holy)[/F1]\nis the Lord God Almighty!\nHoly, [F1](holy)[/F1] holy [F1](holy)[/F1]\nis the Lord God Almighty!\nAnd I’ll touch you again\nTill you see that your home is in heav’n.\n[F1](2x)[/F1]" }
         ]
     },
     {
         title: "To Love You and To Make You Loved",
         sections: [
-            { name: "REFRAIN", lyrics: "To know You, O Lord,\nAnd to know Your love,\nTo love You and to make You loved!\n(2x)" },
+            { name: "REFRAIN", lyrics: "To know You, O Lord,\nAnd to know Your love,\nTo love You and to make You loved!\n[F1](2x)[/F1]" },
             { name: "VERSE", lyrics: "Servants of the Lord\nOurs the upward call:\nTo lay down our lives\nAnd to give our all." },
             { name: "REFRAIN", lyrics: "To know You, O Lord,\nAnd to know Your love,\nTo love You and to make You loved!" },
             { name: "VERSE", lyrics: "For to live is Christ\nAnd to die is gain\nBoth in death and life\nOurs a single aim!" },
@@ -1209,14 +1209,14 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Riches, honor, fame –\nGladly we despise\nThat we may attain\nThe pearl of great price." },
             { name: "REFRAIN", lyrics: "To know You, O Lord,\nAnd to know Your love,\nTo love You and to make You loved!" },
             { name: "VERSE", lyrics: "Nothing in this world\nShall possess our hearts.\nYou alone, O Lord,\nAre the better part!" },
-            { name: "END", lyrics: "To know You, O Lord,\nAnd to know Your love,\nTo love You and to make You loved!\n(2x)\n\nTo love You and to make You loved! (2x)" }
+            { name: "END", lyrics: "To know You, O Lord,\nAnd to know Your love,\nTo love You and to make You loved!\n[F1](2x)[/F1]\n\nTo love You and to make You loved! [F1](2x)[/F1]" }
         ]
     },
     {
         title: "To The King Of Ages",
         sections: [
-            { name: "REFRAIN", lyrics: "To the King of ages,\nImmortal and invisible,\nThe only God!\n(2x)\n\nBe honor and glory\nForever and ever!\n(2x)\nAmen!" },
-            { name: "END", lyrics: "To the King of ages,\nImmortal and invisible,\nThe only God!\n(2x)\n\nBe honor and glory\nForever and ever!\nBe honor and glory\nForever and ever! Amen!\n(2x)" }
+            { name: "REFRAIN", lyrics: "To the King of ages,\nImmortal and invisible,\nThe only God!\n[F1](2x)[/F1]\n\nBe honor and glory\nForever and ever!\n[F1](2x)[/F1]\nAmen!" },
+            { name: "END", lyrics: "To the King of ages,\nImmortal and invisible,\nThe only God!\n[F1](2x)[/F1]\n\nBe honor and glory\nForever and ever!\nBe honor and glory\nForever and ever! Amen!\n[F1](2x)[/F1]" }
         ]
     },
     {
@@ -1226,7 +1226,7 @@ const rawSongs = [
             { name: "CHORUS", lyrics: "To whom else shall we go?\nWho else would we follow?\nWe have come to know that you are the Christ\nTo whom else shall we go?" },
             { name: "VERSE", lyrics: "When the victory is well in hand\nAnd the King takes his throne\nWill he say to us, \"Will you stay with me,\nCome and live within my home?\"" },
             { name: "CHORUS", lyrics: "To whom else shall we go?\nWho else would we follow?\nWe have come to know and love you O Lord.\nTo whom else shall we go?" },
-            { name: "BRIDGE", lyrics: "Your words are Spirit and life!\n(3x)" },
+            { name: "BRIDGE", lyrics: "Your words are Spirit and life!\n[F1](3x)[/F1]" },
             { name: "END", lyrics: "To whom else shall we go? Who else would we follow?\nWe have come to know that you are the Christ\nTo whom else shall we go? Who else would we follow?\nWe have come to know and love you O Lord.\nTo whom else shall we go?" }
         ]
     },
@@ -1241,7 +1241,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Pray for peace, Jerusalem, \nProsperity at home\nPeace inside your city walls\nThat comes from God alone." },
             { name: "REFRAIN", lyrics: "I rejoiced when they said to me:\n“Let us go unto the house of the Lord!”\nStanding there, O Jerusalem,\nIn your gates unto the house of the Lord." },
             { name: "VERSE", lyrics: "Since we are God’s people\nI say, “Peace be to you.”\nMay the God who dwells in us\nYour happiness renew." },
-            { name: "END", lyrics: "I rejoiced when they said to me:\n“Let us go unto the house of the Lord!”\nStanding there, O Jerusalem,\nIn your gates unto the house of the Lord.\n(2x)" }
+            { name: "END", lyrics: "I rejoiced when they said to me:\n“Let us go unto the house of the Lord!”\nStanding there, O Jerusalem,\nIn your gates unto the house of the Lord.\n[F1](2x)[/F1]" }
         ]
     },
     {
@@ -1253,7 +1253,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "We struggle not against mere flesh and blood\nBut strive with dark dominions above.\nOur weapons molded not by human hands\nBut by the pow’r of Christ Jesus we stand\nHolding the sword of the Spirit in hand\nHe is the Word of God!" },
             { name: "REFRAIN", lyrics: "We are men of Jesus Christ\nWe’ve come to serve the Lord\nIn the strength of God.\nCome, O men of Jesus Christ\nCome, servants of the Lord\nCome and take your stand." },
             { name: "VERSE", lyrics: "To Christ our King we offer all our lives\nA fragrant offering and sacrifice\nTo live is Christ, to die is gain for us\nTriumphant praises to God we sing\nRejoice in vict’ry with Christ the King\nHe is the Word of God!" },
-            { name: "END", lyrics: "We are men of Jesus Christ\nWe’ve come to serve the Lord\nIn the strength of God.\nCome, O men of Jesus Christ\nCome, servants of the Lord\nCome and take your stand.(2x)\nServe the word of God" }
+            { name: "END", lyrics: "We are men of Jesus Christ\nWe’ve come to serve the Lord\nIn the strength of God.\nCome, O men of Jesus Christ\nCome, servants of the Lord\nCome and take your stand.[F1](2x)[/F1]\nServe the word of God" }
         ]
     },
     {
@@ -1301,11 +1301,11 @@ const rawSongs = [
         title: "We Will Magnify",
         sections: [
             { name: "VERSE", lyrics: "O Lord our God,\nHow majestic is your name!\nThe earth is full of your glory.\nO Lord our God,\nYou are robed in majesty.\nYou set your glory above the heavens." },
-            { name: "REFRAIN", lyrics: "We will magnify, we will magnify\nThe Lord enthroned in Zion!\n(2x)" },
+            { name: "REFRAIN", lyrics: "We will magnify, we will magnify\nThe Lord enthroned in Zion!\n[F1](2x)[/F1]" },
             { name: "VERSE", lyrics: "O Lord our God,\nYou have established a throne.\nYou reign in righteousness and splendor.\nO Lord our God,\nThe skies are ringing with your praise.\nSoon those on earth will come to worship." },
-            { name: "REFRAIN", lyrics: "We will magnify, we will magnify\nThe Lord enthroned in Zion!\n(2x)" },
+            { name: "REFRAIN", lyrics: "We will magnify, we will magnify\nThe Lord enthroned in Zion!\n[F1](2x)[/F1]" },
             { name: "VERSE", lyrics: "O Lord our God,\nThe world was made at your command.\nIn you all things now hold together.\nNow to Him who sits\nOn the throne and to the Lamb\nBe praise and glory and power forever." },
-            { name: "END", lyrics: "We will magnify, we will magnify\nThe Lord enthroned in Zion!\n(4x)" },
+            { name: "END", lyrics: "We will magnify, we will magnify\nThe Lord enthroned in Zion!\n[F1](4x)[/F1]" },
         ]
     },
     {
@@ -1314,7 +1314,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Forgetting what lies behind\nSetting our hearts on the prize\nAlways keeping our eyes on our Lord Jesus.\nWe’re running the race to win\nAll the way to the end\nLaying down every sin\nThat would seek to hinder us." },
             { name: "REFRAIN", lyrics: "And we’ll be faithful to our calling\nFor You are able to keep us from falling\nFor in Your promise we will trust\nYou’ll be faithful to finish\nThe work You began in us." },
             { name: "VERSE", lyrics: "Forgetting what lies behind\nSetting our hearts on the prize\nAlways keeping our eyes on our Lord Jesus.\nWe’re running the race to win\nAll the way to the end\nLaying down every sin\nThat would seek to hinder us." },
-            { name: "REFRAIN", lyrics: "And we’ll be faithful to our calling\nFor You are able to keep us from falling\nFor in Your promise we will trust\nYou’ll be faithful to finish\nThe work You began in us.\n(2x)" },
+            { name: "REFRAIN", lyrics: "And we’ll be faithful to our calling\nFor You are able to keep us from falling\nFor in Your promise we will trust\nYou’ll be faithful to finish\nThe work You began in us.\n[F1](2x)[/F1]" },
         ]
     },
     {
@@ -1335,7 +1335,7 @@ const rawSongs = [
     {
         title: "Who Is Like Thee",
         sections: [
-            { name: "REFRAIN", lyrics: "So good, so kind, so merciful, so just\nSo pure, so righteous, so with us\nSo wise, so faithful, so full of grace\nSo steadfast, so loving is the Lord.\nWho is like Thee?\nWho is like Thee, O Lord?\n(2x)" },
+            { name: "REFRAIN", lyrics: "So good, so kind, so merciful, so just\nSo pure, so righteous, so with us\nSo wise, so faithful, so full of grace\nSo steadfast, so loving is the Lord.\nWho is like Thee?\nWho is like Thee, O Lord?\n[F1](2x)[/F1]" },
             { name: "END", lyrics: "So wise, so faithful, so full of grace\nSo steadfast, so loving is the Lord.\nWho is like Thee?\nWho is like Thee, O Lord?" }
         ]
     },
@@ -1356,11 +1356,11 @@ const rawSongs = [
     {
         title: "Worship The Lord",
         sections: [
-            { name: "REFRAIN", lyrics: "Worship the Lord in Spirit and truth\nWorship the Lord in love.\n(2x)" },
-            { name: "VERSE", lyrics: "Let us fix our eyes on Him\nWith pure hearts rise to Him\nThe King of glory in our midst.\n(2x)" },
-            { name: "REFRAIN", lyrics: "Worship the Lord in Spirit and truth\nWorship the Lord in love.\n(2x)" },
-            { name: "VERSE", lyrics: "Let us fix our eyes on Him\nWith pure hearts rise to Him\nThe King of glory in our midst.\n(2x)" },
-            { name: "END", lyrics: "Worship the Lord in Spirit and truth\nWorship the Lord in love.\n(2x)" },
+            { name: "REFRAIN", lyrics: "Worship the Lord in Spirit and truth\nWorship the Lord in love.\n[F1](2x)[/F1]" },
+            { name: "VERSE", lyrics: "Let us fix our eyes on Him\nWith pure hearts rise to Him\nThe King of glory in our midst.\n[F1](2x)[/F1]" },
+            { name: "REFRAIN", lyrics: "Worship the Lord in Spirit and truth\nWorship the Lord in love.\n[F1](2x)[/F1]" },
+            { name: "VERSE", lyrics: "Let us fix our eyes on Him\nWith pure hearts rise to Him\nThe King of glory in our midst.\n[F1](2x)[/F1]" },
+            { name: "END", lyrics: "Worship the Lord in Spirit and truth\nWorship the Lord in love.\n[F1](2x)[/F1]" },
         ]
     },
     {
@@ -1418,7 +1418,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "In the time after the suff’ring of the Lord\nHe showed us many ways\nHe was still alive\nAnd He told us not to leave Jerusalem\nUntil we are bold with power on High" },
             { name: "REFRAIN", lyrics: "You will receive power\nWhen the Holy Spirit falls upon You\nAnd you will be My witnesses\nTo the ends of all the earth" },
             { name: "VERSE", lyrics: "In the time after the suff’ring of the Lord\nHe showed us many ways\nHe was still alive\nAnd He told us not to leave Jerusalem\nUntil we are bold with power on High" },
-            { name: "END", lyrics: "You will receive power\nWhen the Holy Spirit falls upon You\nAnd you will be My witnesses\nTo the ends of all the earth\n(2x)\nTo the ends of all the earth (2x)" }
+            { name: "END", lyrics: "You will receive power\nWhen the Holy Spirit falls upon You\nAnd you will be My witnesses\nTo the ends of all the earth\n[F1](2x)[/F1]\nTo the ends of all the earth [F1](2x)[/F1]" }
         ]
     },
     {
@@ -1484,7 +1484,7 @@ const rawSongs = [
             },
             {
                 name: "BRIDGE",
-                lyrics: "I'll give You my heart, I'll give You my soul,\nMy mind and my strength; I'll give You my all\n(4x)"
+                lyrics: "I'll give You my heart, I'll give You my soul,\nMy mind and my strength; I'll give You my all\n[F1](4x)[/F1]"
             },
             {
                 name: "CHORUS",
@@ -1550,7 +1550,7 @@ const rawSongs = [
             },
             {
                 name: "END",
-                lyrics: "Sing to the Lord a song of praise,\nWith new hearts, bless His name.\nSing to the Lord a song of praise,\nTo all the earth, His deeds proclaim.\n(2x)"
+                lyrics: "Sing to the Lord a song of praise,\nWith new hearts, bless His name.\nSing to the Lord a song of praise,\nTo all the earth, His deeds proclaim.\n[F1](2x)[/F1]"
             }
         ]
     },
@@ -1583,7 +1583,7 @@ const rawSongs = [
             },
             {
                 name: "END",
-                lyrics: "Sing joyfully unto the Lord!\nAll the lands\nServe the Lord with gladness!\nCome into His presence with singing!\n(2x)\nwith singing! (3x)"
+                lyrics: "Sing joyfully unto the Lord!\nAll the lands\nServe the Lord with gladness!\nCome into His presence with singing!\n[F1](2x)[/F1]\nwith singing! [F1](3x)[/F1]"
             }
         ]
     },
@@ -1625,19 +1625,19 @@ const rawSongs = [
         sections: [
             {
                 name: "VERSE",
-                lyrics: "We want to see Jesus lifted high\nA banner that flies across this land\nThat all men might see\nThe truth and know\nHe is the way to heaven.\n(2x)"
+                lyrics: "We want to see Jesus lifted high\nA banner that flies across this land\nThat all men might see\nThe truth and know\nHe is the way to heaven.\n[F1](2x)[/F1]"
             },
             {
                 name: "REFRAIN",
-                lyrics: "We want to see, we want to see\nWe want to see Jesus lifted high.\n(2x)"
+                lyrics: "We want to see, we want to see\nWe want to see Jesus lifted high.\n[F1](2x)[/F1]"
             },
             {
                 name: "VERSE",
-                lyrics: "We want to see Jesus lifted high\nA banner that flies across this land\nThat all men might see\nThe truth and know\nHe is the way to heaven.\n(2x)"
+                lyrics: "We want to see Jesus lifted high\nA banner that flies across this land\nThat all men might see\nThe truth and know\nHe is the way to heaven.\n[F1](2x)[/F1]"
             },
             {
                 name: "REFRAIN",
-                lyrics: "We want to see, we want to see\nWe want to see Jesus lifted high.\n(2x)"
+                lyrics: "We want to see, we want to see\nWe want to see Jesus lifted high.\n[F1](2x)[/F1]"
             },
             {
                 name: "BRIDGE",
@@ -1645,11 +1645,11 @@ const rawSongs = [
             },
             {
                 name: "VERSE",
-                lyrics: "We want to see Jesus lifted high\nA banner that flies across this land\nThat all men might see\nThe truth and know\nHe is the way to heaven.\n(2x)"
+                lyrics: "We want to see Jesus lifted high\nA banner that flies across this land\nThat all men might see\nThe truth and know\nHe is the way to heaven.\n[F1](2x)[/F1]"
             },
             {
                 name: "END",
-                lyrics: "We want to see, we're gonna see\nWe're gonna see Jesus lifted high.\n(2x)"
+                lyrics: "We want to see, we're gonna see\nWe're gonna see Jesus lifted high.\n[F1](2x)[/F1]"
             },
         ]
     },
@@ -1662,7 +1662,7 @@ const rawSongs = [
             },
             {
                 name: "REFRAIN",
-                lyrics: "Singing “Hallelujah,”\n(3x)"
+                lyrics: "Singing “Hallelujah,”\n[F1](3x)[/F1]"
             },
             {
                 name: "VERSE",
@@ -1670,7 +1670,7 @@ const rawSongs = [
             },
             {
                 name: "REFRAIN",
-                lyrics: "Singing “Hallelujah,”\n(3x)"
+                lyrics: "Singing “Hallelujah,”\n[F1](3x)[/F1]"
             },
             {
                 name: "VERSE",
@@ -1678,7 +1678,7 @@ const rawSongs = [
             },
             {
                 name: "END",
-               lyrics: "Singing “Hallelujah,”\n(6x)"
+               lyrics: "Singing “Hallelujah,”\n[F1](6x)[/F1]"
             }
         ]
     },
@@ -1692,7 +1692,7 @@ const rawSongs = [
             },
             {
                 name: "REFRAIN",
-                lyrics: "The Lord reigneth\nAnd blessed be my rock\nAnd let the God of my salvation\nBe exalted! \n(2x)"
+                lyrics: "The Lord reigneth\nAnd blessed be my rock\nAnd let the God of my salvation\nBe exalted! \n[F1](2x)[/F1]"
             },
             {
                 name: "VERSE",
@@ -1700,7 +1700,7 @@ const rawSongs = [
             },
             {
                 name: "END",
-                lyrics: "The Lord reigneth\nAnd blessed be my rock\nAnd let the God of my salvation\nBe exalted! \n(4x)"
+                lyrics: "The Lord reigneth\nAnd blessed be my rock\nAnd let the God of my salvation\nBe exalted! \n[F1](4x)[/F1]"
             },
         ]
     },
@@ -1709,7 +1709,7 @@ const rawSongs = [
         sections: [
             {
                 name: "VERSE",
-                lyrics: "The fear of the Lord (echo)\nIs the beginning of wisdom (echo) \nThe fear of the Lord (echo)\nIs the beginning of wisdom (echo) \nAnd the knowledge of the Holy One \nIs understanding"
+                lyrics: "The fear of the Lord [F1](echo)[/F1]\nIs the beginning of wisdom [F1](echo)[/F1] \nThe fear of the Lord [F1](echo)[/F1]\nIs the beginning of wisdom [F1](echo)[/F1] \nAnd the knowledge of the Holy One \nIs understanding"
             },
             {
                 name: "CHORUS",
@@ -1717,7 +1717,7 @@ const rawSongs = [
             },
             {
                 name: "VERSE",
-                lyrics: "The ways of the Lord (echo) \nAre above all reason (echo) \nThe ways of the Lord (echo)\nAre above all reason (echo)\nAnd the will of our sovereign God \nEndures forever"
+                lyrics: "The ways of the Lord [F1](echo)[/F1] \nAre above all reason [F1](echo)[/F1] \nThe ways of the Lord [F1](echo)[/F1]\nAre above all reason [F1](echo)[/F1]\nAnd the will of our sovereign God \nEndures forever"
             },
             {
                 name: "CHORUS",
@@ -1725,7 +1725,7 @@ const rawSongs = [
             },
             {
                 name: "VERSE",
-                lyrics: "God, you always prevail  \nYour Word never fails \nYour way is higher \nYou’re the hope of our souls  \nOur all in all \nTo You, we are anchored, O Lord\n(2X)"
+                lyrics: "God, you always prevail  \nYour Word never fails \nYour way is higher \nYou’re the hope of our souls  \nOur all in all \nTo You, we are anchored, O Lord\n[F1](2X)[/F1]"
             },
             {
                 name: "CHORUS",
@@ -1733,11 +1733,11 @@ const rawSongs = [
             },
             {
                 name: "VERSE",
-                lyrics: "The Spirit of the Lord (echo)  \nIs moving within us (echo)  \nThe Spirit of the Lord (echo)\nIs moving within us (echo)"
+                lyrics: "The Spirit of the Lord [F1](echo)[/F1]  \nIs moving within us [F1](echo)[/F1]  \nThe Spirit of the Lord [F1](echo)[/F1]\nIs moving within us [F1](echo)[/F1]"
             },
             {
                 name: "END",
-                lyrics: "And the fire of His love \nWill renew the earth \n(2X)"
+                lyrics: "And the fire of His love \nWill renew the earth \n[F1](2X)[/F1]"
             }
         ]
     },
@@ -1766,7 +1766,7 @@ const rawSongs = [
             },
             {
                 name: "END",
-                lyrics: "I am your servant forever\nand here I will remain\nI am your servant forever\nfreely I come and freely stay\n(2x)"
+                lyrics: "I am your servant forever\nand here I will remain\nI am your servant forever\nfreely I come and freely stay\n[F1](2x)[/F1]"
             }
         ]
     },
@@ -1787,7 +1787,7 @@ const rawSongs = [
             },
             {
                 name: "END",
-                lyrics: "Purify us, make us more like you\nMirrors of your glory, walking in the truth\nJesus Christ, make us holy, make us new\nFree to serve you in the life you call us to\n(2X)\nMake us more like you"
+                lyrics: "Purify us, make us more like you\nMirrors of your glory, walking in the truth\nJesus Christ, make us holy, make us new\nFree to serve you in the life you call us to\n[F1](2X)[/F1]\nMake us more like you"
             }
         ]
     },
@@ -1832,7 +1832,7 @@ const rawSongs = [
             },
             {
                 name: "ASSISTANT",
-                lyrics: "(Light the candle)"
+                lyrics: "[F1](Light the candle)[/F1]"
             },
             {
                 name: "ASSISTANT",
@@ -1912,15 +1912,15 @@ const rawSongs = [
             },
             {
                 name: "LEADER",
-                lyrics: "(Worship)"
+                lyrics: "[F1](Worship)[/F1]"
             },
             {
                 name: "LEADER",
-                lyrics: "(Men - Pour and raise the wine)"
+                lyrics: "[F1](Men - Pour and raise the wine)[/F1]"
             },
             {
                 name: "LEADER",
-                lyrics: "Let us praise God with this symbol of joy,\nand thank Him for the\nblessings of the past week\nfor health, strength, and wisdom,\nfor our life together\nin (Family/Community)"
+                lyrics: "Let us praise God with this symbol of joy,\nand thank Him for the\nblessings of the past week\nfor health, strength, and wisdom,\nfor our life together\nin [F1](Family/Community)[/F1]"
             },
             {
                 name: "LEADER",
@@ -1956,11 +1956,11 @@ const rawSongs = [
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]Amen.\n\n(Pass the wine)[/C1]"
+                lyrics: "[C1]Amen.\n\n[F1](Pass the wine)[/F1][/C1]"
             },
             {
                 name: "LEADER",
-                lyrics: "(Men - Raise the bread)"
+                lyrics: "[F1](Men - Raise the bread)[/F1]"
             },
             {
                 name: "LEADER",
@@ -1976,7 +1976,7 @@ const rawSongs = [
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]Amen.\n\n(Begin the meal)[/C1]"
+                lyrics: "[C1]Amen.\n\n[F1](Begin the meal)[/F1][/C1]"
             },
             {
                 name: "LEADER",
@@ -2024,7 +2024,7 @@ const rawSongs = [
             },
             {
                 name: "LEADER",
-                lyrics: "on the eve of his sacrifice, and that we in\n(Family/Community)\nmay be a sign of that unity\nand a means of its growth.\nMay all your people be renewed\nin the power of your Spirit,"
+                lyrics: "on the eve of his sacrifice, and that we in\n[F1](Family/Community)[/F1]\nmay be a sign of that unity\nand a means of its growth.\nMay all your people be renewed\nin the power of your Spirit,"
             },
             {
                 name: "LEADER",
@@ -2057,7 +2057,7 @@ const rawSongs = [
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](DOXOLOGY)\nPraise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
+                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nPraise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "CANTOR",
@@ -2089,7 +2089,7 @@ const rawSongs = [
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](DOXOLOGY)\nPraise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
+                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nPraise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "CANTOR",
@@ -2161,11 +2161,11 @@ const rawSongs = [
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](DOXOLOGY)\nPraise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
+                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nPraise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](INTERCESSION)[/C1]"
+                lyrics: "[C1][F1](INTERCESSION)[/F1][/C1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -2177,7 +2177,7 @@ const rawSongs = [
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](DOXOLOGY)\nPraise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
+                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nPraise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "CANTOR",
@@ -2194,7 +2194,7 @@ const rawSongs = [
         sections: [
             {
                 name: "LEADER",
-                lyrics: "(PSALM 118)\nPraise the Lord,\nfor his loving kindness\nwill never fail, alleluia.\n(SIGN OF THE CROSS)"
+                lyrics: "[F1](PSALM 118)[/F1]\nPraise the Lord,\nfor his loving kindness\nwill never fail, alleluia.\n[F1](SIGN OF THE CROSS)[/F1]"
             },
             {
                 name: "LEADER",
@@ -2206,7 +2206,7 @@ const rawSongs = [
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](DOXOLOGY)\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
             },
             {
                 name: "CANTOR",
@@ -2254,15 +2254,15 @@ const rawSongs = [
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](DOXOLOGY)\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](PSALM 118)\nPraise the Lord,\nfor his loving kindness\nwill never fail, alleluia.[/C1]"
+                lyrics: "[C1][F1](PSALM 118)[/F1]\nPraise the Lord,\nfor his loving kindness\nwill never fail, alleluia.[/C1]"
             },
             {
                 name: "LEADER",
-                lyrics: "(PSALM 150)\nPraise the Lord\nfor his infinite greatness, alleluia."
+                lyrics: "[F1](PSALM 150)[/F1]\nPraise the Lord\nfor his infinite greatness, alleluia."
             },
             {
                 name: "CANTOR",
@@ -2278,15 +2278,15 @@ const rawSongs = [
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](DOXOLOGY)\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](PSALM 150)\nPraise the Lord\nfor his infinite greatness, alleluia.[/C1]"
+                lyrics: "[C1][F1](PSALM 150)[/F1]\nPraise the Lord\nfor his infinite greatness, alleluia.[/C1]"
             },
             {
                 name: "LEADER",
-                lyrics: "(SPONTANEOUS WORSHIP)\n(SCRIPTURE MEDITATION)\n(PRAYER OF RESPONSE)\n(PETITION)\n(THE LORD'S PRAYER)\n(CLOSING PRAYER)\n(SIGN OF THE CROSS)"
+                lyrics: "[F1](SPONTANEOUS WORSHIP)[/F1]\n[F1](SCRIPTURE MEDITATION)[/F1]\n[F1](PRAYER OF RESPONSE)[/F1]\n[F1](PETITION)[/F1]\n[F1](THE LORD'S PRAYER)[/F1]\n[F1](CLOSING PRAYER)[/F1]\n[F1](SIGN OF THE CROSS)[/F1]"
             }
         ]
     },
@@ -2295,7 +2295,7 @@ const rawSongs = [
         sections: [
             {
                 name: "LEADER",
-                lyrics: "(PSALM 51)\nCreate a clean heart in me, O God;\nrenew in me a steadfast spirit.\n(SIGN OF THE CROSS)"
+                lyrics: "[F1](PSALM 51)[/F1]\nCreate a clean heart in me, O God;\nrenew in me a steadfast spirit.\n[F1](SIGN OF THE CROSS)[/F1]"
             },
             {
                 name: "LEADER",
@@ -2307,7 +2307,7 @@ const rawSongs = [
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](DOXOLOGY)\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
             },
             {
                 name: "CANTOR",
@@ -2351,15 +2351,15 @@ const rawSongs = [
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](DOXOLOGY)\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](PSALM 51)\nCreate a clean heart in me, O God;\nrenew in me a steadfast spirit.[/C1]"
+                lyrics: "[C1][F1](PSALM 51)[/F1]\nCreate a clean heart in me, O God;\nrenew in me a steadfast spirit.[/C1]"
             },
             {
                 name: "LEADER",
-                lyrics: "(PSALM 147:12-20)\nZion, praise your God,\nwho sent his Word to renew the earth."
+                lyrics: "[F1](PSALM 147:12-20)[/F1]\nZion, praise your God,\nwho sent his Word to renew the earth."
             },
             {
                 name: "CANTOR",
@@ -2379,15 +2379,15 @@ const rawSongs = [
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](DOXOLOGY)\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](PSALM 147:12-20)\nZion, praise your God,\nwho sent his Word to renew the earth.[/C1]"
+                lyrics: "[C1][F1](PSALM 147:12-20)[/F1]\nZion, praise your God,\nwho sent his Word to renew the earth.[/C1]"
             },
             {
                 name: "LEADER",
-                lyrics: "(SPONTANEOUS WORSHIP)\n(SCRIPTURE MEDITATION)\n(PRAYER OF RESPONSE)\n(PETITION)\n(THE LORD'S PRAYER)\n(CLOSING PRAYER)\n(SIGN OF THE CROSS)"
+                lyrics: "[F1](SPONTANEOUS WORSHIP)[/F1]\n[F1](SCRIPTURE MEDITATION)[/F1]\n[F1](PRAYER OF RESPONSE)[/F1]\n[F1](PETITION)[/F1]\n[F1](THE LORD'S PRAYER)[/F1]\n[F1](CLOSING PRAYER)[/F1]\n[F1](SIGN OF THE CROSS)[/F1]"
             }
         ]
     },
@@ -2396,7 +2396,7 @@ const rawSongs = [
         sections: [
             {
                 name: "LEADER",
-                lyrics: "(PSALM 92)\nWe do well to sing to your name,\nMost High, and proclaim your mercy at daybreak.\n(SIGN OF THE CROSS)"
+                lyrics: "[F1](PSALM 92)[/F1]\nWe do well to sing to your name,\nMost High, and proclaim your mercy at daybreak.\n[F1](SIGN OF THE CROSS)[/F1]"
             },
             {
                 name: "LEADER",
@@ -2408,7 +2408,7 @@ const rawSongs = [
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](DOXOLOGY)\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
             },
             {
                 name: "CANTOR",
@@ -2432,15 +2432,15 @@ const rawSongs = [
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](DOXOLOGY)\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](PSALM 92)\nWe do well to sing to your name,\nMost High, and proclaim your mercy at daybreak.[/C1]"
+                lyrics: "[C1][F1](PSALM 92)[/F1]\nWe do well to sing to your name,\nMost High, and proclaim your mercy at daybreak.[/C1]"
             },
             {
                 name: "LEADER",
-                lyrics: "(PSALM 8)\nOn the lips of children and infants\nyou have found perfect praise."
+                lyrics: "[F1](PSALM 8)[/F1]\nOn the lips of children and infants\nyou have found perfect praise."
             },
             {
                 name: "CANTOR",
@@ -2468,15 +2468,15 @@ const rawSongs = [
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](DOXOLOGY)\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](PSALM 8)\nOn the lips of children and\ninfants you have found perfect praise.[/C1]"
+                lyrics: "[C1][F1](PSALM 8)[/F1]\nOn the lips of children and\ninfants you have found perfect praise.[/C1]"
             },
             {
                 name: "LEADER",
-                lyrics: "(SPONTANEOUS WORSHIP)\n(SCRIPTURE MEDITATION)\n(PRAYER OF RESPONSE)\n(PETITION)\n(THE LORD'S PRAYER)\n(CLOSING PRAYER)\n(SIGN OF THE CROSS)"
+                lyrics: "[F1](SPONTANEOUS WORSHIP)[/F1]\n[F1](SCRIPTURE MEDITATION)[/F1]\n[F1](PRAYER OF RESPONSE)[/F1]\n[F1](PETITION)[/F1]\n[F1](THE LORD'S PRAYER)[/F1]\n[F1](CLOSING PRAYER)[/F1]\n[F1](SIGN OF THE CROSS)[/F1]"
             }
         ]
     },
