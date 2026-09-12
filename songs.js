@@ -2391,4 +2391,93 @@ const rawSongs = [
             }
         ]
     },
+    {
+        title: "Morning Prayer WK4 Saturday",
+        sections: [
+            {
+                name: "LEADER",
+                lyrics: "(PSALM 92)\nWe do well to sing to your name, Most High, and proclaim your mercy at daybreak.\n(THE SIGN OF THE CROSS)"
+            },
+            {
+                name: "LEADER",
+                lyrics: "O God come to my assistance"
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]O Lord make haste to help me[/C1]"
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1](DOXOLOGY)\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "It is good to give thanks to the Lord,\nto make music to your name, O Most High,\nto proclaim your  love in the morning\nand your truth in the watches of the night,\non the ten-stringed lyre and the lute,\nwith the murmuring sound of the harp."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Your deeds, O Lord, have made me glad;\nfor the work of your hands I shout with joy.\nO Lord, how great are your works!\nHow deep are your designs!\nThe foolish man cannot know this\nand the fool cannot understand.[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "+ Though the wicked spring up like grass\nand all who do evil thrive,\nthey are doomed to be eternally destroyed.\n+ But you, Lord, are  eternally on high.\nSee how your enemies perish;\nall doers of evil are scattered."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]To me you give the wild ox’s strength;\nyou anoint me with the purest oil.\nMy eyes looked in triumph on my foes;\nmy ears heard gladly of their fail.\nThe just will flourish like the palm-tree\nand grow like a Lebanon cedar.[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "Planted in the house of the Lord,\nthey will flourish in the courts of our God,\nstill bearing fruit when they are old,\nstill full of sap, still green,\nto proclaim that the lord is just.\nIn him, my rock, there’s no wrong."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1](DOXOLOGY)\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1](PSALM 92)\nWe do well to sing to your name, Most High, and proclaim your mercy at daybreak.[/C1]"
+            },
+            {
+                name: "LEADER",
+                lyrics: "(PSALM 8)\nOn the lips of children and infants you have found perfect praise."
+            },
+            {
+                name: "CANTOR",
+                lyrics: "How great is your name, o Lord our God,\nthrough all the Earth!"
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Your majesty is praised above the heavens;\nOn the lips of children and of babes\nYou have found praise to foil your enemies,\nTo silence the foe and the rebel.[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "When I see the heavens, the work of your hands,\nthe moon and the stars which you arranged,\nwhat is man that you should keep him in mind,\nmortal man that you care for him?"
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Yet you have made him little less than a god;\nwith glory and honor you crowned him,\ngave him power over the works of your hand,\nput all things under his feet.\n[/C1]"
+            },
+            {
+                name: "CANTOR",
+                lyrics: "All of them, sheep and cattle,\nyes even the savage beasts,\nbirds of the air and fish\nthat make their way through the waters."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]How great is your name , O Lord our God,\nThrough all the earth![/C1]"
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1](DOXOLOGY)\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1](PSALM 8)\nOn the lips of children and infants you have found perfect praise.[/C1]"
+            },
+            {
+                name: "LEADER",
+                lyrics: "(SPONTANEOUS WORSHIP)\n(SCRIPTURE MEDITATION)\n(PRAYER OF RESPONSE)\n(PETITION)\n(THE LORD'S PRAYER)\n(CLOSING PRAYER)\n(SIGN OF THE CROSS)"
+            }
+        ]
+    },
 ];
