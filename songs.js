@@ -2194,7 +2194,7 @@ const rawSongs = [
         sections: [
             {
                 name: "LEADER",
-                lyrics: "(PSALM 118)\nPraise the Lord, for his loving kindness will never fail, alleluia.\n(THE SIGN OF THE CROSS)"
+                lyrics: "(PSALM 118)\nPraise the Lord,\nfor his loving kindness\nwill never fail, alleluia.\n(SIGN OF THE CROSS)"
             },
             {
                 name: "LEADER",
@@ -2258,11 +2258,11 @@ const rawSongs = [
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](PSALM 118)\nPraise the Lord, for his loving kindness will never fail, alleluia.[/C1]"
+                lyrics: "[C1](PSALM 118)\nPraise the Lord,\nfor his loving kindness\nwill never fail, alleluia.[/C1]"
             },
             {
                 name: "LEADER",
-                lyrics: "(PSALM 150)\nPraise the Lord for his infinite greatness, alleluia."
+                lyrics: "(PSALM 150)\nPraise the Lord\nfor his infinite greatness, alleluia."
             },
             {
                 name: "CANTOR",
@@ -2282,7 +2282,7 @@ const rawSongs = [
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](PSALM 150)\nPraise the Lord for his infinite greatness, alleluia.[/C1]"
+                lyrics: "[C1](PSALM 150)\nPraise the Lord\nfor his infinite greatness, alleluia.[/C1]"
             },
             {
                 name: "LEADER",
@@ -2295,7 +2295,7 @@ const rawSongs = [
         sections: [
             {
                 name: "LEADER",
-                lyrics: "(PSALM 51)\nCreate a clean heart in me, O God; renew in me a steadfast spirit.\n(THE SIGN OF THE CROSS)"
+                lyrics: "(PSALM 51)\nCreate a clean heart in me,\nO God; renew in me a steadfast spirit.\n(SIGN OF THE CROSS)"
             },
             {
                 name: "LEADER",
@@ -2355,11 +2355,11 @@ const rawSongs = [
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](PSALM 51)\nCreate a clean heart in me, O God; renew in me a steadfast spirit.[/C1]"
+                lyrics: "[C1](PSALM 51)\nCreate a clean heart in me,\nO God; renew in me a steadfast spirit.[/C1]"
             },
             {
                 name: "LEADER",
-                lyrics: "(PSALM 147:12-20)\nZion, praise your God, who sent his Word to renew the earth."
+                lyrics: "(PSALM 147:12-20)\nZion, praise your God,\nwho sent his Word to renew the earth."
             },
             {
                 name: "CANTOR",
@@ -2383,7 +2383,7 @@ const rawSongs = [
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](PSALM 147:12-20)\nZion, praise your God, who sent his Word to renew the earth.[/C1]"
+                lyrics: "[C1](PSALM 147:12-20)\nZion, praise your God,\nwho sent his Word to renew the earth.[/C1]"
             },
             {
                 name: "LEADER",
@@ -2396,7 +2396,7 @@ const rawSongs = [
         sections: [
             {
                 name: "LEADER",
-                lyrics: "(PSALM 92)\nWe do well to sing to your name, Most High, and proclaim your mercy at daybreak.\n(THE SIGN OF THE CROSS)"
+                lyrics: "(PSALM 92)\nWe do well to sing to your name,\nMost High, and proclaim your mercy at daybreak.\n(SIGN OF THE CROSS)"
             },
             {
                 name: "LEADER",
@@ -2436,11 +2436,11 @@ const rawSongs = [
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](PSALM 92)\nWe do well to sing to your name, Most High, and proclaim your mercy at daybreak.[/C1]"
+                lyrics: "[C1](PSALM 92)\nWe do well to sing to your name,\nMost High, and proclaim your mercy at daybreak.[/C1]"
             },
             {
                 name: "LEADER",
-                lyrics: "(PSALM 8)\nOn the lips of children and infants you have found perfect praise."
+                lyrics: "(PSALM 8)\nOn the lips of children and infants\nyou have found perfect praise."
             },
             {
                 name: "CANTOR",
@@ -2472,7 +2472,7 @@ const rawSongs = [
             },
             {
                 name: "[C1]GROUP[/C1]",
-                lyrics: "[C1](PSALM 8)\nOn the lips of children and infants you have found perfect praise.[/C1]"
+                lyrics: "[C1](PSALM 8)\nOn the lips of children and\ninfants you have found perfect praise.[/C1]"
             },
             {
                 name: "LEADER",
