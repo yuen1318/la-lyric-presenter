@@ -130,6 +130,59 @@
             pointer-events: auto;
         }
 
+        .nav-left-controls {
+            grid-column: 1;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            min-width: 0;
+        }
+
+        .clean-view-btn {
+            position: fixed;
+            right: 16px;
+            bottom: 16px;
+            width: 42px;
+            height: 42px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 auto;
+            z-index: 101;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 9999px;
+            background: rgba(30, 30, 32, 0.78);
+            color: rgba(255, 255, 255, 0.7);
+            cursor: pointer;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+            transition: background-color 160ms ease, color 160ms ease, transform 120ms ease;
+        }
+
+        .clean-view-btn svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .clean-view-btn:hover,
+        .clean-view-btn[aria-pressed="true"] {
+            background: rgba(41, 151, 255, 0.28);
+            color: #ffffff;
+        }
+
+        .clean-view-btn:active {
+            transform: scale(0.94);
+        }
+
+        body.home-view #lyricWrapper,
+        body.home-view #sectionBadge,
+        body.home-view #slideCounter {
+            visibility: hidden;
+        }
+
+        body.home-view #welcomeMessage {
+            display: none;
+        }
+
         /* ============================================================
            MAGIC SEARCH / TITLE BAR + DROPDOWN
         ============================================================ */
@@ -255,6 +308,11 @@
         .top-clear-btn:hover {
             color: var(--color-body-on-dark);
             background: rgba(255, 255, 255, 0.18);
+        }
+
+        html.cursor-hidden,
+        html.cursor-hidden * {
+            cursor: none !important;
         }
 
         /* Dropdown song list */
@@ -393,7 +451,6 @@
         }
 
         .section-badge {
-            grid-column: 1;
             justify-self: start;
             align-self: center;
             display: inline-flex;
@@ -607,6 +664,16 @@
            RESPONSIVE
         ============================================================ */
         @media (max-width: 850px) {
+            .nav-left-controls {
+                display: contents;
+            }
+
+            .clean-view-btn {
+                position: fixed;
+                right: 12px;
+                bottom: 12px;
+            }
+
             .app .main-area .lyric-wrapper {
                 padding: 1.2rem 1.5rem;
                 border-radius: 32px;
@@ -888,7 +955,15 @@
 <body>
 
 <div class="global-nav" id="globalNav">
-    <div class="section-badge" id="sectionBadge"></div>
+    <div class="nav-left-controls">
+        <button class="clean-view-btn" id="cleanViewBtn" type="button" aria-label="Home view" aria-pressed="false" title="Home view">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="m3.5 10.8 8.5-7 8.5 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.5 9.5v10h13v-10M9.5 19.5v-5h5v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="section-badge" id="sectionBadge"></div>
+    </div>
     <div class="search-shell" id="searchShell">
         <div class="top-search-bar" id="topSearchBar">
             <svg class="top-search-icon" id="topSearchIcon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -948,6 +1023,7 @@
     const slideCounter = document.getElementById("slideCounter");
     const slideCount = document.getElementById("slideCount");
     const welcomeMessage = document.getElementById("welcomeMessage");
+    const cleanViewBtn = document.getElementById("cleanViewBtn");
 
     const progressDots = null;
 
@@ -1194,6 +1270,8 @@
     async function selectSong(song) {
         if (!song) return;
         const wasDiff = currentSong !== song;
+        document.body.classList.remove('home-view');
+        cleanViewBtn.setAttribute('aria-pressed', 'false');
         currentSong = song;
         currentSectionIndex = 0;
         updateDisplay();
@@ -1404,11 +1482,27 @@
 
     function enableFullscreen() {
         mainArea.addEventListener('dblclick', toggleFullscreen);
+        let cursorHideTimer = null;
+
+        const showCursorTemporarily = () => {
+            document.documentElement.classList.remove('cursor-hidden');
+            clearTimeout(cursorHideTimer);
+            if (document.fullscreenElement) {
+                cursorHideTimer = setTimeout(() => {
+                    document.documentElement.classList.add('cursor-hidden');
+                }, 1000);
+            }
+        };
+
+        document.addEventListener('mousemove', showCursorTemporarily);
         document.addEventListener('fullscreenchange', () => {
             if (document.fullscreenElement) {
                 lockLandscape();
+                showCursorTemporarily();
             } else {
                 unlockOrientation();
+                clearTimeout(cursorHideTimer);
+                document.documentElement.classList.remove('cursor-hidden');
             }
             if (currentSong) updateFontSizeInstant();
             if (currentSong) slideCounter.classList.remove('hidden-counter');
@@ -1450,6 +1544,23 @@
         window.addEventListener('resize', () => {
             if (currentSong?.sections?.[currentSectionIndex]) updateFontSizeInstant();
             if (currentSong) fitSearchWidthToTitle(currentSong.title);
+        });
+    }
+
+    function initCleanView() {
+        cleanViewBtn.addEventListener('click', () => {
+            document.body.classList.add('home-view');
+            currentSong = null;
+            currentSectionIndex = 0;
+            topSearchInput.value = '';
+            topTitleLabel.textContent = '';
+            currentSearchTerm = '';
+            topClearBtn.classList.remove('visible');
+            topSearchBar.classList.remove('has-song');
+            resetSearchWidth();
+            cleanViewBtn.setAttribute('aria-pressed', 'true');
+            updateDisplay();
+            hideDropdown();
         });
     }
 
@@ -1497,6 +1608,7 @@
         initResize();
         observeLyrics();
         initTouchGestures();
+        initCleanView();
         currentSong = null;
         updateDisplay();
         renderDropdown("");
