@@ -2004,11 +2004,49 @@ const rawSongs = [
             },
             {
                 name: "VERSE",
-                lyrics: "What shall we offer to the Lord,Our faithful King,\nWho always leads us in His victory?\nA life of praise and adoration\nWe will seek\nAnd by His Spirit please Him\nAs His sons."
+                lyrics: "What shall we offer to the Lord, Our faithful King,\nWho always leads us in His victory?\nA life of praise and adoration\nWe will seek\nAnd by His Spirit please Him\nAs His sons."
             },
             {
                 name: "END",
                 lyrics: "All praise to Him\nWho has redeemed our lives.\nAll thanks to Him\nWho claims our hearts.\nWe gladly follow in obedience to Him\nOur God and King\nWho names us for Himself."
+            }
+        ]
+    },
+    {
+        title: "Holy, Holy, Holy Lord",
+        sections: [
+            {
+                name: "VERSE",
+                lyrics: "The powers of heaven bow, and thrones are set in place\nThe Father seated at the centre\nTen thousand thousands bring an endless hymn of praise\nSinging, Holy, holy Lord."
+            },
+            {
+                name: "VERSE",
+                lyrics: "And from his throne goes forth a blazing stream of flame\nAnd his is blessing, power and honour\nWho will not fear this God and glorify his name\nSinging, Holy, holy Lord?"
+            },
+            {
+                name: "BRIDGE",
+                lyrics: "Then to the great I AM\nOne like a Son of Man\nIs borne upon the clouds of glory\nThe heavens silent fall\nThen worthy comes the call\nAnd all the throne room cries out, Holy!"
+            },
+            {
+                name: "CHORUS",
+                lyrics: "All hail the victory of the Lamb\nCreation's king whose blood has foiled the serpent's plan\nRaised up to sit at God's right hand\nHoly, holy, holy Lord!"
+            },
+            {
+                name: "BRIDGE",
+                lyrics: "You are the first and last\nYour kingdom shall not pass\nYour reign established for the ages\nOur Saviour crucified\nYour wounds now glorified\nEnthroned upon your people's praises"
+            },
+            {
+                name: "END",
+                lyrics: "All hail the victory of the Lamb\nCreation's king whose blood has foiled the serpent's plan\nRaised up to sit at God's right hand\nHoly, holy, holy Lord!\n[F1](2x)[/F1]\nHoly, holy, holy Lord!"
+            }
+        ]
+    },
+    {
+        title: "Sovereign Lord",
+        sections: [
+            {
+                name: "VERSE",
+                lyrics: "You, Lord, are my King,\nmy hope and my strength\nYou, Lord, are near me,\nsurround me and call me\nAnd I give my life to you\nboth now and for ever\nI worship before your throne.\nI lay my will before you\nSovereign Lord, sovereign Lord\n[F1](2x)[/F1]"
             }
         ]
     },
