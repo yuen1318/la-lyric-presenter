@@ -138,41 +138,6 @@
             min-width: 0;
         }
 
-        .clean-view-btn {
-            position: fixed;
-            right: 16px;
-            bottom: 16px;
-            width: 42px;
-            height: 42px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            flex: 0 0 auto;
-            z-index: 101;
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            border-radius: 9999px;
-            background: rgba(30, 30, 32, 0.78);
-            color: rgba(255, 255, 255, 0.7);
-            cursor: pointer;
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
-            transition: background-color 160ms ease, color 160ms ease, transform 120ms ease;
-        }
-
-        .clean-view-btn svg {
-            width: 20px;
-            height: 20px;
-        }
-
-        .clean-view-btn:hover,
-        .clean-view-btn[aria-pressed="true"] {
-            background: rgba(41, 151, 255, 0.28);
-            color: #ffffff;
-        }
-
-        .clean-view-btn:active {
-            transform: scale(0.94);
-        }
-
         body.home-view #lyricWrapper,
         body.home-view #sectionBadge,
         body.home-view #slideCounter {
@@ -393,6 +358,12 @@
             background: rgba(255, 255, 255, 0.08);
         }
 
+        .song-title.keyboard-selected {
+            background: rgba(255, 255, 255, 0.12);
+            outline: 2px solid rgba(41, 151, 255, 0.75);
+            outline-offset: -2px;
+        }
+
         .song-title:active {
             transform: scale(0.98);
         }
@@ -583,11 +554,12 @@
             background: rgba(255, 255, 255, 0.12);
             border: 1px solid rgba(255, 255, 255, 0.25);
             border-radius: 6px;
-            padding: 2px 8px;
+            padding: 1px 6px;
             font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-            font-size: 0.9rem;
+            font-size: 0.78rem;
+            line-height: 1.35;
             letter-spacing: 0;
-            margin: 0 2px;
+            margin: 0 3px;
         }
 
         /* ============================================================
@@ -666,12 +638,6 @@
         @media (max-width: 850px) {
             .nav-left-controls {
                 display: contents;
-            }
-
-            .clean-view-btn {
-                position: fixed;
-                right: 12px;
-                bottom: 12px;
             }
 
             .app .main-area .lyric-wrapper {
@@ -956,12 +922,6 @@
 
 <div class="global-nav" id="globalNav">
     <div class="nav-left-controls">
-        <button class="clean-view-btn" id="cleanViewBtn" type="button" aria-label="Home view" aria-pressed="false" title="Home view">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="m3.5 10.8 8.5-7 8.5 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M5.5 9.5v10h13v-10M9.5 19.5v-5h5v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </button>
         <div class="section-badge" id="sectionBadge"></div>
     </div>
     <div class="search-shell" id="searchShell">
@@ -986,6 +946,8 @@
         <div class="welcome-message" id="welcomeMessage">
             ✨ Type in the search bar to find a song<br>
             <kbd>←</kbd> <kbd>→</kbd> &nbsp;Navigate sections<br>
+            <kbd>alt</kbd> <kbd>Shift</kbd> <kbd>H</kbd> &nbsp;Home view<br>
+            <kbd>alt</kbd> <kbd>Shift</kbd> <kbd>F</kbd> &nbsp;Open search<br>
             Double‑click &nbsp;Toggle fullscreen<br>
             <kbd>Esc</kbd> &nbsp;Exit fullscreen
         </div>
@@ -1010,6 +972,7 @@
     let isSearching = false;
     let wasSidebarOpenBeforeFullscreen = false;
     let isTransitioning = false;
+    let highlightedSearchIndex = -1;
 
     const topSearchBar = document.getElementById("topSearchBar");
     const topSearchInput = document.getElementById("topSearchInput");
@@ -1023,7 +986,6 @@
     const slideCounter = document.getElementById("slideCounter");
     const slideCount = document.getElementById("slideCount");
     const welcomeMessage = document.getElementById("welcomeMessage");
-    const cleanViewBtn = document.getElementById("cleanViewBtn");
 
     const progressDots = null;
 
@@ -1271,7 +1233,6 @@
         if (!song) return;
         const wasDiff = currentSong !== song;
         document.body.classList.remove('home-view');
-        cleanViewBtn.setAttribute('aria-pressed', 'false');
         currentSong = song;
         currentSectionIndex = 0;
         updateDisplay();
@@ -1337,6 +1298,7 @@
     }
 
     function renderDropdown(term = "") {
+        highlightedSearchIndex = -1;
         if (!songDatabase.length) {
             songDropdown.innerHTML = `<div class="empty-message">✨ no songs available</div>`;
             return;
@@ -1375,12 +1337,55 @@
         }
     }
 
+    function moveSearchHighlight(direction) {
+        const songElements = [...songDropdown.querySelectorAll('.song-title')];
+        if (!songElements.length) return;
+
+        highlightedSearchIndex = (highlightedSearchIndex + direction + songElements.length) % songElements.length;
+        songElements.forEach((element, index) => {
+            element.classList.toggle('keyboard-selected', index === highlightedSearchIndex);
+        });
+        songElements[highlightedSearchIndex].scrollIntoView({ block: 'nearest' });
+    }
+
     function initKeyboard() {
         document.addEventListener('keydown', e => {
+            if (e.altKey && e.shiftKey && e.code === 'KeyH') {
+                e.preventDefault();
+                goHomeView();
+                return;
+            }
+            if (e.altKey && e.shiftKey && e.code === 'KeyF') {
+                e.preventDefault();
+                if (currentSong) {
+                    currentSearchTerm = '';
+                    topSearchInput.value = '';
+                    topClearBtn.classList.remove('visible');
+                    topSearchBar.classList.remove('has-song');
+                    resetSearchWidth();
+                }
+                topSearchInput.focus();
+                renderDropdown(currentSearchTerm);
+                showDropdown();
+                return;
+            }
             if (document.activeElement?.id === 'topSearchInput') {
                 if (e.key === 'Escape') {
                     topSearchInput.blur();
                     hideDropdown();
+                } else if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    moveSearchHighlight(1);
+                } else if (e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    moveSearchHighlight(-1);
+                } else if (e.key === 'Enter') {
+                    const songElements = [...songDropdown.querySelectorAll('.song-title')];
+                    const selectedIndex = highlightedSearchIndex >= 0 ? highlightedSearchIndex : 0;
+                    if (songElements[selectedIndex]) {
+                        e.preventDefault();
+                        songElements[selectedIndex].click();
+                    }
                 }
                 return;
             }
@@ -1547,21 +1552,18 @@
         });
     }
 
-    function initCleanView() {
-        cleanViewBtn.addEventListener('click', () => {
-            document.body.classList.add('home-view');
-            currentSong = null;
-            currentSectionIndex = 0;
-            topSearchInput.value = '';
-            topTitleLabel.textContent = '';
-            currentSearchTerm = '';
-            topClearBtn.classList.remove('visible');
-            topSearchBar.classList.remove('has-song');
-            resetSearchWidth();
-            cleanViewBtn.setAttribute('aria-pressed', 'true');
-            updateDisplay();
-            hideDropdown();
-        });
+    function goHomeView() {
+        document.body.classList.add('home-view');
+        currentSong = null;
+        currentSectionIndex = 0;
+        topSearchInput.value = '';
+        topTitleLabel.textContent = '';
+        currentSearchTerm = '';
+        topClearBtn.classList.remove('visible');
+        topSearchBar.classList.remove('has-song');
+        resetSearchWidth();
+        updateDisplay();
+        hideDropdown();
     }
 
     function observeLyrics() {
@@ -1608,7 +1610,6 @@
         initResize();
         observeLyrics();
         initTouchGestures();
-        initCleanView();
         currentSong = null;
         updateDisplay();
         renderDropdown("");
