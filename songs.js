@@ -1876,6 +1876,35 @@ const rawSongs = [
         ]
     },
     {
+        title: "Our Hearts Will Rise",
+        sections: [
+            {
+                name: "VERSE",
+                lyrics: "Eye has not seen, no ear has heard\nNo heart conceived\nThe hope prepared for us.\nNow we see dimly, but one day clearly\nFace to face we shall behold our God."
+            },
+            {
+                name: "REFRAIN",
+                lyrics: "Our hearts will rise\nAs You open our eyes\nAnd we see You in glory\nAnd we’re taken by love!\nThen we shall know\nEven as we’re known:\nYou are love eternal, You are the One!"
+            },
+            {
+                name: "VERSE",
+                lyrics: "And all creation waits with eager longing\nUntil the Father then reveals His own.\nSo we are pilgrims searching for that city\nOur hearts are restless\nFor Your love alone."
+            },
+            {
+                name: "REFRAIN",
+                lyrics: "Our hearts will rise\nAs You open our eyes\nAnd we see You in glory\nAnd we’re taken by love!\nThen we shall know\nEven as we’re known:\nYou are love eternal, You are the One!"
+            },
+            {
+                name: "VERSE",
+                lyrics: "And in that city, there is no temple,\nThere is no grieving\nAnd there is no night.\nBut there is Jesus before the Father\nAnd by the Spirit we will wake to light."
+            },
+            {
+                name: "END",
+                lyrics: "Our hearts will rise\nAs You open our eyes\nAnd we see You in glory\nAnd we’re taken by love!\nThen we shall know\nEven as we’re known:\nYou are love eternal, You are the One!\n(2x)"
+            }
+        ]
+    },
+    {
         title: "Lord You Are More Precious Than Silver",
         sections: [
             {
