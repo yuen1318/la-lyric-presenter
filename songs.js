@@ -2036,8 +2036,66 @@ const rawSongs = [
                 lyrics: "You are the first and last\nYour kingdom shall not pass\nYour reign established for the ages\nOur Saviour crucified\nYour wounds now glorified\nEnthroned upon your people's praises"
             },
             {
+                name: "CHORUS",
+                lyrics: "All hail the victor, Jesus Christ\nCreation ransomed in your sovereign sacrifice\nYour death triumphant wins us life\nHoly, holy, holy Lord!"
+            },
+            {
                 name: "END",
-                lyrics: "All hail the victory of the Lamb\nCreation's king whose blood has foiled the serpent's plan\nRaised up to sit at God's right hand\nHoly, holy, holy Lord!\n[F1](2x)[/F1]\nHoly, holy, holy Lord!"
+                lyrics: "All hail the victory of the Lamb\nCreation's king whose blood has foiled the serpent's plan\nRaised up to sit at God's right hand\nHoly, holy, holy Lord!\nHoly, holy, holy Lord!"
+            }
+        ]
+    },
+    {
+        title: "Song Of Ascent",
+        sections: [
+            {
+                name: "VERSE",
+                lyrics: "Rise up we’ve heard the call\nto ascend the holy mountain\nTo praise the Lord of all\nto worship at his footstool\nWe do not come to a place of fear\nOf darkness and terror and storm\nBut to the heavenly Jerusalem\nWhere saints and angels praise before the throne"
+            },
+            {
+                name: "CHORUS",
+                lyrics: "Sing a song of ascent\nas they sang as they went\nTo the dwelling of God Almighty\nSing to him a new song oh awaken the dawn\nTo the place where he rests\nSing a song of ascent"
+            },
+            {
+                name: "VERSE",
+                lyrics: "Such grace we have been shown\nA kingdom opened to us\nThis world is not our home\nThis flesh no lasting dwelling\nBut our praise will rise above these things\nAnd silence the lies of the foe\nSo with hearts set on pilgrimage\nFrom strength to strength we go"
+            },
+            {
+                name: "END",
+                lyrics: "Sing a song of ascent\nas they sang as they went\nTo the dwelling of God Almighty\nSing to him a new song oh awaken the dawn\nTo the place where he rests\nSing a song of ascent\n[F1](2x)[/F1]"
+            }
+        ]
+    },
+    {
+        title: "Shine On Us",
+        sections: [
+            {
+                name: "CHORUS",
+                lyrics: "Shine on us!  Shine on us!\nLet Your face shine on us, O Lord\nAnd we shall be saved."
+            },
+            {
+                name: "VERSE",
+                lyrics: "Light of the world, true light of God\nShed on us your grace.\nBright morning star, rise in our hearts\nGive to us the light of\nThe glory of our God\nShining in Your face."
+            },
+            {
+                name: "CHORUS",
+                lyrics: "Shine on us!  Shine on us!\nLet Your face shine on us, O Lord\nAnd we shall be saved."
+            },
+            {
+                name: "VERSE",
+                lyrics: "Lamp to our feet, light for our path\nBright eternal day\nPillar of fire, great burning torch\nYou are the light of\nThe knowledge of our God\nShowing us the way."
+            },
+            {
+                name: "CHORUS",
+                lyrics: "Shine on us!  Shine on us!\nLet Your face shine on us, O Lord\nAnd we shall be saved."
+            },
+            {
+                name: "VERSE",
+                lyrics: "O blazing Sun of righteousness\nIn Your light we see.\nO Lamb of God, we seek Your face\nYou are the light of\nThe city of our God\nFor all eternity."
+            },
+            {
+                name: "END",
+                lyrics: "Shine on us!  Shine on us!\nLet Your face shine on us, O Lord\nAnd we shall be saved."
             }
         ]
     },
