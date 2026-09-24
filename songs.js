@@ -2588,12 +2588,8 @@ const rawSongs = [
                 lyrics: "[F1](PREPARATORY BLESSING)[/F1]\nLet my prayer, O Lord,\ncome before you as incense,\nthe lifting of my hands\nas a sacrifice.\n[F1](SIGN OF THE CROSS)[/F1]\n"
             },
             {
-                name: "LEADER",
-                lyrics: "O God come to my assistance"
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]O Lord make haste to help me[/C1]"
+                name: "INVOCATION",
+                lyrics: "O God, come to my assistance.\n[F1][C1]O Lord, make haste to help me.[/C1][/F1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -2604,47 +2600,27 @@ const rawSongs = [
                 lyrics: "[F1](PSALM 118)[/F1]\nPraise the Lord,\nfor his loving kindness\nwill never fail, alleluia."
             },
             {
-                name: "CANTOR",
-                lyrics: "Give thanks to the Lord for he is good,\nfor his love endures forever."
+                name: "PSALM 118",
+                lyrics: "Give thanks to the Lord for he is good,\nfor his love endures forever.\n[F1][C1]Let the sons of Israel say:\n“His love endures for ever.”\nLet the sons of  Aaron say:\n“His love endures for ever.”\nLet those who fear the Lord say:\n“His love endures for ever.”[/C1][/F1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]Let the sons of Israel say:\n“His love endures for ever.”\nLet the sons of  Aaron say:\n“His love endures for ever.”\nLet those who fear the Lord say:\n“His love endures for ever.”[/C1]"
+                name: "PSALM 118",
+                lyrics: "I called to the Lord in my distress;\nhe answered and freed me.\nThe Lord is at my side; I do not fear.\nWhat can man do against me?\nThe Lord is at my side as my helper:\nI shall look down on my foes./n[F1][C1]It is better to take refuge in the Lord\nthat to trust in men;\nit is better to take refuge on the Lord\nthan to trust in princes.[/C1][/F1]"
             },
             {
-                name: "CANTOR",
-                lyrics: "I called to the Lord in my distress;\nhe answered and freed me.\nThe Lord is at my side; I do not fear.\nWhat can man do against me?\nThe Lord is at my side as my helper:\nI shall look down on my foes."
+                name: "PSALM 118",
+                lyrics: "The nations all encompassed me;\nin the Lord’s name I crushed them.\nThey compassed me, compassed me about;\nin the Lord’s name I crushed them.\n+ They compassed me about like bees;\nthey blazed like a fire among thorns.\nIn the Lord’s name I crushed them.\n[F1][C1]I was hard-pressed and was falling,\nThe but the Lord came to help me.\nThe Lord is my strength and my song;\nhe is my savior.\nThere are shouts of joy and victory\nin the tents of the just.[/C1][/F1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]It is better to take refuge in the Lord\nthat to trust in men;\nit is better to take refuge on the Lord\nthan to trust in princes.[/C1]"
+                name: "PSALM 118",
+                lyrics: "The Lord’s right hand has triumphed;\nHis right hand raised me.\n+ The Lord’s right hand has triumphed;\nI shall not die, I shall live and recount his deeds.\nI was punished, I was punished by the Lord,\nbut not doomed to die.\n[F1][C1]Open to me the gates of holiness:\nI will enter and give thanks.\nThis is the Lord’s own gate\nwhere the just may enter.\nI will thank you for you have answered\nand you are my savior.[/C1][/F1]"
             },
             {
-                name: "CANTOR",
-                lyrics: "The nations all encompassed me;\nin the Lord’s name I crushed them.\nThey compassed me, compassed me about;\nin the Lord’s name I crushed them.\n+ They compassed me about like bees;\nthey blazed like a fire among thorns.\nIn the Lord’s name I crushed them."
+                name: "PSALM 118",
+                lyrics: "The stone which the builders rejected\nhas become the corner stone.\nThis is the work of the Lord,\na marvel in our eyes.\nThis day was made by the Lord;\nWe rejoice and are glad.\n[F1][C1]O Lord, grant us salvation;\nO Lord, grant success.\nBlessed in the name of the Lord\nis he who comes.\nWe bless you from the house of the Lord;\nthe Lord God is our light.[/C1][/F1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1] I was hard-pressed and was falling,\nThe but the Lord came to help me.\nThe Lord is my strength and my song;\nhe is my savior.\nThere are shouts of joy and victory\nin the tents of the just.[/C1]"
-            },
-            {
-                name: "CANTOR",
-                lyrics: "The Lord’s right hand has triumphed;\nHis right hand raised me.\n+ The Lord’s right hand has triumphed;\nI shall not die, I shall live and recount his deeds.\nI was punished, I was punished by the Lord,\nbut not doomed to die."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]Open to me the gates of holiness:\nI will enter and give thanks.\nThis is the Lord’s own gate\nwhere the just may enter.\nI will thank you for you have answered\nand you are my savior.[/C1]"
-            },
-            {
-                name: "CANTOR",
-                lyrics: "The stone which the builders rejected\nhas become the corner stone.\nThis is the work of the Lord,\na marvel in our eyes.\nThis day was made by the Lord;\nWe rejoice and are glad."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]O Lord, grant us salvation;\nO Lord, grant success.\nBlessed in the name of the Lord\nis he who comes.\nWe bless you from the house of the Lord;\nthe Lord God is our light.[/C1]"
-            },
-            {
-                name: "CANTOR",
+                name: "PSALM 118",
                 lyrics: "Go forward in procession with branches\neven to the altar.\nYou are my God, I thank you.\nMy God, I praise you.\nGive thanks to the Lord for he is good;\nfor his love endures for ever."
             },
             {
@@ -2660,15 +2636,11 @@ const rawSongs = [
                 lyrics: "[F1](PSALM 150)[/F1]\nPraise the Lord\nfor his infinite greatness, alleluia."
             },
             {
-                name: "CANTOR",
-                lyrics: "Praise God in his holy place,\npraise him in his mighty heavens.\nPraise him for his powerful deeds,\npraise his surpassing greatness."
+                name: "PSALM 150",
+                lyrics: "Praise God in his holy place,\npraise him in his mighty heavens.\nPraise him for his powerful deeds,\npraise his surpassing greatness.\n[F1][C1]O praise him with sound of trumpet,\npraise him with lute and harp.\nPraise him with timbrel and dance,\npraise him with strings and pipes.[/C1][/F1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]O praise him with sound of trumpet,\npraise him with lute and harp.\nPraise him with timbrel and dance,\npraise him with strings and pipes.[/C1]"
-            },
-            {
-                name: "CANTOR",
+                name: "PSALM 150",
                 lyrics: "O praise him with resounding cymbals,\npraise him with clashing of cymbals.\nLet everything that lives and that breathes\ngive praise to the Lord."
             },
             {
@@ -2693,12 +2665,8 @@ const rawSongs = [
                 lyrics: "[F1](PREPARATORY BLESSING)[/F1]\nLet my prayer, O Lord,\ncome before you as incense,\nthe lifting of my hands\nas a sacrifice.\n[F1](SIGN OF THE CROSS)[/F1]\n"
             },
             {
-                name: "LEADER",
-                lyrics: "O God come to my assistance"
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]O Lord make haste to help me[/C1]"
+                name: "INVOCATION",
+                lyrics: "O God, come to my assistance.\n[F1][C1]O Lord, make haste to help me.[/C1][/F1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -2770,12 +2738,8 @@ const rawSongs = [
                 lyrics: "[F1](PREPARATORY BLESSING)[/F1]\nLet my prayer, O Lord,\ncome before you as incense,\nthe lifting of my hands\nas a sacrifice.\n[F1](SIGN OF THE CROSS)[/F1]\n"
             },
             {
-                name: "LEADER",
-                lyrics: "O God come to my assistance"
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]O Lord make haste to help me[/C1]"
+                name: "INVOCATION",
+                lyrics: "O God, come to my assistance.\n[F1][C1]O Lord, make haste to help me.[/C1][/F1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -2786,23 +2750,15 @@ const rawSongs = [
                 lyrics: "[F1](PSALM 92)[/F1]\nWe do well to sing to your name,\nMost High, and proclaim your mercy at daybreak"
             },
             {
-                name: "CANTOR",
-                lyrics: "It is good to give thanks to the Lord,\nto make music to your name, O Most High,\nto proclaim your  love in the morning\nand your truth in the watches of the night,\non the ten-stringed lyre and the lute,\nwith the murmuring sound of the harp."
+                name: "PSALM 92",
+                lyrics: "It is good to give thanks to the Lord,\nto make music to your name, O Most High,\nto proclaim your  love in the morning\nand your truth in the watches of the night,\non the ten-stringed lyre and the lute,\nwith the murmuring sound of the harp.\n[F1][C1]Your deeds, O Lord, have made me glad;\nfor the work of your hands I shout with joy.\nO Lord, how great are your works!\nHow deep are your designs!\nThe foolish man cannot know this\nand the fool cannot understand.[/C1][/F1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]Your deeds, O Lord, have made me glad;\nfor the work of your hands I shout with joy.\nO Lord, how great are your works!\nHow deep are your designs!\nThe foolish man cannot know this\nand the fool cannot understand.[/C1]"
+                name: "PSALM 92",
+                lyrics: "+ Though the wicked spring up like grass\nand all who do evil thrive,\nthey are doomed to be eternally destroyed.\n+ But you, Lord, are  eternally on high.\nSee how your enemies perish;\nall doers of evil are scattered.\n[F1][C1]To me you give the wild ox’s strength;\nyou anoint me with the purest oil.\nMy eyes looked in triumph on my foes;\nmy ears heard gladly of their fail.\nThe just will flourish like the palm-tree\nand grow like a Lebanon cedar.[/C1][/F1]"
             },
             {
-                name: "CANTOR",
-                lyrics: "+ Though the wicked spring up like grass\nand all who do evil thrive,\nthey are doomed to be eternally destroyed.\n+ But you, Lord, are  eternally on high.\nSee how your enemies perish;\nall doers of evil are scattered."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]To me you give the wild ox’s strength;\nyou anoint me with the purest oil.\nMy eyes looked in triumph on my foes;\nmy ears heard gladly of their fail.\nThe just will flourish like the palm-tree\nand grow like a Lebanon cedar.[/C1]"
-            },
-            {
-                name: "CANTOR",
+                name: "PSALM 92",
                 lyrics: "Planted in the house of the Lord,\nthey will flourish in the courts of our God,\nstill bearing fruit when they are old,\nstill full of sap, still green,\nto proclaim that the lord is just.\nIn him, my rock, there’s no wrong."
             },
             {
@@ -2818,28 +2774,16 @@ const rawSongs = [
                 lyrics: "[F1](PSALM 8)[/F1]\nOn the lips of children and infants\nyou have found perfect praise."
             },
             {
-                name: "CANTOR",
-                lyrics: "How great is your name, o Lord our God,\nthrough all the Earth!"
+                name: "PSALM 8",
+                lyrics: "How great is your name, o Lord our God,\nthrough all the Earth!\n[F1][C1]Your majesty is praised above the heavens;\nOn the lips of children and of babes\nYou have found praise to foil your enemies,\nTo silence the foe and the rebel.[/C1][/F1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]Your majesty is praised above the heavens;\nOn the lips of children and of babes\nYou have found praise to foil your enemies,\nTo silence the foe and the rebel.[/C1]"
+                name: "PSALM 8",
+                lyrics: "When I see the heavens, the work of your hands,\nthe moon and the stars which you arranged,\nwhat is man that you should keep him in mind,\nmortal man that you care for him?\n[F1][C1]Yet you have made him little less than a god;\nwith glory and honor you crowned him,\ngave him power over the works of your hand,\nput all things under his feet.\n[/C1][/F1]"
             },
             {
-                name: "CANTOR",
-                lyrics: "When I see the heavens, the work of your hands,\nthe moon and the stars which you arranged,\nwhat is man that you should keep him in mind,\nmortal man that you care for him?"
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]Yet you have made him little less than a god;\nwith glory and honor you crowned him,\ngave him power over the works of your hand,\nput all things under his feet.\n[/C1]"
-            },
-            {
-                name: "CANTOR",
-                lyrics: "All of them, sheep and cattle,\nyes even the savage beasts,\nbirds of the air and fish\nthat make their way through the waters."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]How great is your name , O Lord our God,\nThrough all the earth![/C1]"
+                name: "PSALM 8",
+                lyrics: "All of them, sheep and cattle,\nyes even the savage beasts,\nbirds of the air and fish\nthat make their way through the waters.\n[F1][C1]How great is your name , O Lord our God,\nThrough all the earth![/C1][/F1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -2863,12 +2807,8 @@ const rawSongs = [
                 lyrics: "[F1](PREPARATORY BLESSING)[/F1]\nLet my prayer, O Lord,\ncome before you as incense,\nthe lifting of my hands\nas a sacrifice.\n[F1](SIGN OF THE CROSS)[/F1]\n"
             },
             {
-                name: "LEADER",
-                lyrics: "O God come to my assistance"
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]O Lord make haste to help me[/C1]"
+                name: "INVOCATION",
+                lyrics: "O God, come to my assistance.\n[F1][C1]O Lord, make haste to help me.[/C1][/F1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -2940,12 +2880,8 @@ const rawSongs = [
                 lyrics: "[F1](PREPARATORY BLESSING)[/F1]\nLet my prayer, O Lord,\ncome before you as incense,\nthe lifting of my hands\nas a sacrifice.\n[F1](SIGN OF THE CROSS)[/F1]\n"
             },
             {
-                name: "LEADER",
-                lyrics: "O God come to my assistance"
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]O Lord make haste to help me[/C1]"
+                name: "INVOCATION",
+                lyrics: "O God, come to my assistance.\n[F1][C1]O Lord, make haste to help me.[/C1][/F1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -3001,12 +2937,8 @@ const rawSongs = [
                 lyrics: "[F1](PREPARATORY BLESSING)[/F1]\nLet my prayer, O Lord,\ncome before you as incense,\nthe lifting of my hands\nas a sacrifice.\n[F1](SIGN OF THE CROSS)[/F1]\n"
             },
             {
-                name: "LEADER",
-                lyrics: "O God come to my assistance"
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]O Lord make haste to help me[/C1]"
+                name: "INVOCATION",
+                lyrics: "O God, come to my assistance.\n[F1][C1]O Lord, make haste to help me.[/C1][/F1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
