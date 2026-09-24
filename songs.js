@@ -2544,7 +2544,7 @@ const rawSongs = [
             },
             {
                 name: "PSALM 91",
-                lyrics: "Since he clings to Me in love,\nI will free him\nProtect him for he knows My name.\n[F1][C1]When he calls I shall answer,\n“I am with you.\nI will save him in distress\nand give him glory.”[/C1][F1]"
+                lyrics: "Since he clings to Me in love,\nI will free him\nProtect him for he knows My name.\n[F1][C1]When he calls I shall answer,\n“I am with you.\nI will save him in distress\nand give him glory.”[/C1][/F1]"
             },
             {
                 name: "PSALM 91",
