@@ -2868,7 +2868,7 @@ const rawSongs = [
             },
             {
                 name: "LEADER",
-                lyrics: "[F1](SPONTANEOUS WORSHIP)[/F1]\n[F1](SCRIPTURE MEDITATION)[/F1]\n[F1](PRAYER OF RESPONSE)[/F1]\n[F1](PETITION)[/F1]\n[F1](THE LORD'S PRAYER)[/F1]\n[F1](CLOSING PRAYER)[/F1]\n[F1](SIGN OF THE CROSS)[/F1]"
+                lyrics: "[F1](SCRIPTURE MEDITATION)[/F1]\n[F1](PRAYER OF RESPONSE)[/F1]\n[F1](PETITION)[/F1]\n[F1](THE LORD'S PRAYER)[/F1]\n[F1](SPONTANEOUS WORSHIP)[/F1]"
             }
         ]
     },
