@@ -675,6 +675,19 @@ const rawSongs = [
         ]
     },
     {
+        title: "Hail The Conqueror",
+        sections: [
+            { name: "CHORUS", lyrics: "Hail the conqueror\nHail, Redeemer\nJesus Christ, our deliverer\nBy your strong and mighty arm\nYours, the victory\nYou, who opened heaven’s door\nYou, who once were dead\nYou live forevermore" },
+            { name: "VERSE", lyrics: "And you, when you are lifted up\nYou will draw all nations to your side\nAnd now the ruler of this world\nIs cast out, and you are lifted high!" },
+            { name: "CHORUS", lyrics: "Hail the conqueror\nHail, Redeemer\nJesus Christ, our deliverer\nBy your strong and mighty arm\nYours, the victory\nYou, who opened heaven’s door\nYou, who once were dead\nYou live forevermore" },
+            { name: "VERSE", lyrics: "And we, the ransomed of the Lord\nWe are yours, purchased at a price\nAnd now the kingdom and the throne\nThey are yours: the robe, the crown, the prize!\nYou are lifted high!" },
+            { name: "CHORUS", lyrics: "Hail the conqueror\nHail, Redeemer\nJesus Christ, our deliverer\nBy your strong and mighty arm\nYours, the victory\nYou, who opened heaven’s door\nYou, who once were dead\nYou live forevermore" },
+            { name: "BRIDGE", lyrics: "All kingdoms, all rulers\nYou place under your feet\nYour power has conquered\nOur final enemy!\n[F1](2x)[/F1]" },
+            { name: "END", lyrics: "Hail the conqueror\nHail, Redeemer\nJesus Christ, our deliverer\nBy your strong and mighty arm\nYours, the victory\nYou, who opened heaven’s door\nYou, who once were dead\nYou live forevermore\nYou live forevermore" },
+            
+        ]
+    },
+    {
         title: "Let The Fire Fall",
         sections: [
             { name: "VERSE", lyrics: "Holy Spirit, [F1](Holy Spirit)[/F1]\nCome with Your fire!\n[F1](2x)[/F1]\n\nHoly Spirit, come with Your fire!\n[F1](2x)[/F1]" },
