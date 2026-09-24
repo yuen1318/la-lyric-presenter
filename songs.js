@@ -2487,72 +2487,72 @@ const rawSongs = [
         sections: [
             {
                 name: "INVOCATION",
-                lyrics: "O God, come to my assistance.\n[F1][C1]O Lord, make haste to help me.[/C1][/F1]"
+                lyrics: "O God, come to my assistance.\n[C1]O Lord, make haste to help me.[/C1]"
             },
             
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nPraise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "PSALM 4",
-                lyrics: "When I call, answer me,\nO God of justice;\nFrom anguish You released me,\nhave mercy and hear me!\n[F1][C1]O men, how long\nwill your hearts be closed?\nWill you love what is futile\nand seek what is false?[/C1][/F1]"
+                lyrics: "When I call, answer me,\nO God of justice;\nFrom anguish You released me,\nhave mercy and hear me!\n[C1]O men, how long\nwill your hearts be closed?\nWill you love what is futile\nand seek what is false?[/C1]"
             },
             {
                 name: "PSALM 4",
-                lyrics: "It is the Lord who grants favors\nto those whom He loves;\nThe Lord hears me\nwhenever I call Him.\n[F1][C1]Fear Him, do not sin,\nponder on your bed and be still.\nMake justice your sacrifice\nand trust in the Lord.\n[/C1][/F1]"
+                lyrics: "It is the Lord who grants favors\nto those whom He loves;\nThe Lord hears me\nwhenever I call Him.\n[C1]Fear Him, do not sin,\nponder on your bed and be still.\nMake justice your sacrifice\nand trust in the Lord.\n[/C1]"
             },
             {
                 name: "PSALM 4",
-                lyrics: "“What can bring us\nhappiness?” many say.\nLift up the light\nof Your face on us, O Lord.\n[F1][C1]You have put into my heart\na greater joy\nThan they have from abundance\nof corn and new wine.\n[/C1][/F1]"
+                lyrics: "“What can bring us\nhappiness?” many say.\nLift up the light\nof Your face on us, O Lord.\n[C1]You have put into my heart\na greater joy\nThan they have from abundance\nof corn and new wine.\n[/C1]"
             },
             {
                 name: "PSALM 4",
                 lyrics: "I will lie down in peace\nand sleep comes at once.\nFor You alone, Lord,\nmake me dwell in safety."
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nPraise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "PSALM 91",
-                lyrics: "He who dwells in the shelter\nof the Most High\nAnd abides in the shade\nof the Almighty\n[F1][C1]Says to the Lord, “My refuge,\nMy stronghold, my God\nin whom I trust!”[/C1][/F1]"
+                lyrics: "He who dwells in the shelter\nof the Most High\nAnd abides in the shade\nof the Almighty\n[C1]Says to the Lord, “My refuge,\nMy stronghold, my God\nin whom I trust!”[/C1]"
             },
             {
                 name: "PSALM 91",
-                lyrics: "It is He who will free you from the snare\nOf the fowler who seeks to destroy you.\n[F1][C1]He will conceal you with his pinions\nAnd under His wings\nyou will find refuge.[/C1][/F1]"
+                lyrics: "It is He who will free you from the snare\nOf the fowler who seeks to destroy you.\n[C1]He will conceal you with his pinions\nAnd under His wings\nyou will find refuge.[/C1]"
             },
             {
                 name: "PSALM 91",
-                lyrics: "You will not fear the terror of the night\nNor the arrow that flies by day.\n[F1][C1]Nor the plague that prowls\nin the darkness\nNor the scourge that\nlays waste at noon.[/C1][/F1]"
+                lyrics: "You will not fear the terror of the night\nNor the arrow that flies by day.\n[C1]Nor the plague that prowls\nin the darkness\nNor the scourge that\nlays waste at noon.[/C1]"
             },
             {
                 name: "PSALM 91",
-                lyrics: "A thousand may fall at your side,\nTen thousand fall at your right.\n[F1][C1]You it will never approach\nHis faithfulness is buckler and shield.[/C1][/F1]"
+                lyrics: "A thousand may fall at your side,\nTen thousand fall at your right.\n[C1]You it will never approach\nHis faithfulness is buckler and shield.[/C1]"
             },
             {
                 name: "PSALM 91",
-                lyrics: "Your eyes have only to look\nTo see how the wicked are repaid.\n[F1][C1]You who have said, “Lord, my refuge!”\nAnd have made the Most High\nyour dwelling.[/C1][/F1]"
+                lyrics: "Your eyes have only to look\nTo see how the wicked are repaid.\n[C1]You who have said, “Lord, my refuge!”\nAnd have made the Most High\nyour dwelling.[/C1]"
             },
             {
                 name: "PSALM 91",
-                lyrics: "Upon you no evil shall fall\nNo plague approach where you dwell.\n[F1][C1]For you has He commanded His angels\nTo keep you in all your ways.[/C1][/F1]"
+                lyrics: "Upon you no evil shall fall\nNo plague approach where you dwell.\n[C1]For you has He commanded His angels\nTo keep you in all your ways.[/C1]"
             },
             {
                 name: "PSALM 91",
-                lyrics: "They shall bear you upon their hands\nLest you strike your foot against a stone.\n[F1][C1]On the lion and the viper you will tread\nAnd trample the young lion\nand the dragon.[/C1][/F1]"
+                lyrics: "They shall bear you upon their hands\nLest you strike your foot against a stone.\n[C1]On the lion and the viper you will tread\nAnd trample the young lion\nand the dragon.[/C1]"
             },
             {
                 name: "PSALM 91",
-                lyrics: "Since he clings to Me in love,\nI will free him\nProtect him for he knows My name.\n[F1][C1]When he calls I shall answer,\n“I am with you.\nI will save him in distress\nand give him glory.”[/C1][/F1]"
+                lyrics: "Since he clings to Me in love,\nI will free him\nProtect him for he knows My name.\n[C1]When he calls I shall answer,\n“I am with you.\nI will save him in distress\nand give him glory.”[/C1]"
             },
             {
                 name: "PSALM 91",
                 lyrics: "With length of life I will content him,\nI shall let him see My saving power."
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nPraise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -2567,8 +2567,8 @@ const rawSongs = [
                 lyrics: "Now, Lord, you will let\nyour servant go in peace\nAccording to your word\nFor my eyes have seen your saving deed\nWhich you have set before all men\nA light for revelation to the Gentiles\nAnd for glory to your people Israel."
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nPraise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "CANTOR",
@@ -2589,11 +2589,11 @@ const rawSongs = [
             },
             {
                 name: "INVOCATION",
-                lyrics: "O God, come to my assistance.\n[F1][C1]O Lord, make haste to help me.[/C1][/F1]"
+                lyrics: "O God, come to my assistance.\n[C1]O Lord, make haste to help me.[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "LEADER",
@@ -2601,31 +2601,31 @@ const rawSongs = [
             },
             {
                 name: "PSALM 118",
-                lyrics: "Give thanks to the Lord for he is good,\nfor his love endures forever.\n[F1][C1]Let the sons of Israel say:\n“His love endures for ever.”\nLet the sons of  Aaron say:\n“His love endures for ever.”\nLet those who fear the Lord say:\n“His love endures for ever.”[/C1][/F1]"
+                lyrics: "Give thanks to the Lord for he is good,\nfor his love endures forever.\n[C1]Let the sons of Israel say:\n“His love endures for ever.”\nLet the sons of  Aaron say:\n“His love endures for ever.”\nLet those who fear the Lord say:\n“His love endures for ever.”[/C1]"
             },
             {
                 name: "PSALM 118",
-                lyrics: "I called to the Lord in my distress;\nhe answered and freed me.\nThe Lord is at my side; I do not fear.\nWhat can man do against me?\nThe Lord is at my side as my helper:\nI shall look down on my foes./n[F1][C1]It is better to take refuge in the Lord\nthat to trust in men;\nit is better to take refuge on the Lord\nthan to trust in princes.[/C1][/F1]"
+                lyrics: "I called to the Lord in my distress;\nhe answered and freed me.\nThe Lord is at my side; I do not fear.\nWhat can man do against me?\nThe Lord is at my side as my helper:\nI shall look down on my foes.\n[C1]It is better to take refuge in the Lord\nthat to trust in men;\nit is better to take refuge on the Lord\nthan to trust in princes.[/C1]"
             },
             {
                 name: "PSALM 118",
-                lyrics: "The nations all encompassed me;\nin the Lord’s name I crushed them.\nThey compassed me, compassed me about;\nin the Lord’s name I crushed them.\n+ They compassed me about like bees;\nthey blazed like a fire among thorns.\nIn the Lord’s name I crushed them.\n[F1][C1]I was hard-pressed and was falling,\nThe but the Lord came to help me.\nThe Lord is my strength and my song;\nhe is my savior.\nThere are shouts of joy and victory\nin the tents of the just.[/C1][/F1]"
+                lyrics: "The nations all encompassed me;\nin the Lord’s name I crushed them.\nThey compassed me, compassed me about;\nin the Lord’s name I crushed them.\n+ They compassed me about like bees;\nthey blazed like a fire among thorns.\nIn the Lord’s name I crushed them.\n[C1]I was hard-pressed and was falling,\nThe but the Lord came to help me.\nThe Lord is my strength and my song;\nhe is my savior.\nThere are shouts of joy and victory\nin the tents of the just.[/C1]"
             },
             {
                 name: "PSALM 118",
-                lyrics: "The Lord’s right hand has triumphed;\nHis right hand raised me.\n+ The Lord’s right hand has triumphed;\nI shall not die, I shall live and recount his deeds.\nI was punished, I was punished by the Lord,\nbut not doomed to die.\n[F1][C1]Open to me the gates of holiness:\nI will enter and give thanks.\nThis is the Lord’s own gate\nwhere the just may enter.\nI will thank you for you have answered\nand you are my savior.[/C1][/F1]"
+                lyrics: "The Lord’s right hand has triumphed;\nHis right hand raised me.\n+ The Lord’s right hand has triumphed;\nI shall not die, I shall live and recount his deeds.\nI was punished, I was punished by the Lord,\nbut not doomed to die.\n[C1]Open to me the gates of holiness:\nI will enter and give thanks.\nThis is the Lord’s own gate\nwhere the just may enter.\nI will thank you for you have answered\nand you are my savior.[/C1]"
             },
             {
                 name: "PSALM 118",
-                lyrics: "The stone which the builders rejected\nhas become the corner stone.\nThis is the work of the Lord,\na marvel in our eyes.\nThis day was made by the Lord;\nWe rejoice and are glad.\n[F1][C1]O Lord, grant us salvation;\nO Lord, grant success.\nBlessed in the name of the Lord\nis he who comes.\nWe bless you from the house of the Lord;\nthe Lord God is our light.[/C1][/F1]"
+                lyrics: "The stone which the builders rejected\nhas become the corner stone.\nThis is the work of the Lord,\na marvel in our eyes.\nThis day was made by the Lord;\nWe rejoice and are glad.\n[C1]O Lord, grant us salvation;\nO Lord, grant success.\nBlessed in the name of the Lord\nis he who comes.\nWe bless you from the house of the Lord;\nthe Lord God is our light.[/C1]"
             },
             {
                 name: "PSALM 118",
                 lyrics: "Go forward in procession with branches\neven to the altar.\nYou are my God, I thank you.\nMy God, I praise you.\nGive thanks to the Lord for he is good;\nfor his love endures for ever."
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -2637,15 +2637,15 @@ const rawSongs = [
             },
             {
                 name: "PSALM 150",
-                lyrics: "Praise God in his holy place,\npraise him in his mighty heavens.\nPraise him for his powerful deeds,\npraise his surpassing greatness.\n[F1][C1]O praise him with sound of trumpet,\npraise him with lute and harp.\nPraise him with timbrel and dance,\npraise him with strings and pipes.[/C1][/F1]"
+                lyrics: "Praise God in his holy place,\npraise him in his mighty heavens.\nPraise him for his powerful deeds,\npraise his surpassing greatness.\n[C1]O praise him with sound of trumpet,\npraise him with lute and harp.\nPraise him with timbrel and dance,\npraise him with strings and pipes.[/C1]"
             },
             {
                 name: "PSALM 150",
                 lyrics: "O praise him with resounding cymbals,\npraise him with clashing of cymbals.\nLet everything that lives and that breathes\ngive praise to the Lord."
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -2666,11 +2666,11 @@ const rawSongs = [
             },
             {
                 name: "INVOCATION",
-                lyrics: "O God, come to my assistance.\n[F1][C1]O Lord, make haste to help me.[/C1][/F1]"
+                lyrics: "O God, come to my assistance.\n[C1]O Lord, make haste to help me.[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "LEADER",
@@ -2678,27 +2678,27 @@ const rawSongs = [
             },
             {
                 name: "PSALM 51",
-                lyrics: "Have mercy on me, God, in your kindness.\nIn you compassion blot out my offense.\nO wash me more and more from my guilt\nand cleanse me from my sin.\n[C1][F1]My offenses truly I know them;\nmy sin is always before me.\nAgainst you, you alone, have I sinned;\nwhat is evil in your sight I have done.\n[/F1][/C1]"
+                lyrics: "Have mercy on me, God, in your kindness.\nIn you compassion blot out my offense.\nO wash me more and more from my guilt\nand cleanse me from my sin.\n[C1]My offenses truly I know them;\nmy sin is always before me.\nAgainst you, you alone, have I sinned;\nwhat is evil in your sight I have done.\n[/C1]"
             },
             {
                 name: "PSALM 51",
-                lyrics: "That you may be justified when you give sentence\nand be without reproach when you judge.\nO see, in guilt I was born,\na sinner was I conceived.\n[F1][C1]Indeed you love truth in the heart;\nthen in the secret of my heart teach me wisdom.\nO purify me, then I shall be clean;\nO wash me, I shall be whiter than snow.[/C1][/F1]"
+                lyrics: "That you may be justified when you give sentence\nand be without reproach when you judge.\nO see, in guilt I was born,\na sinner was I conceived.\n[C1]Indeed you love truth in the heart;\nthen in the secret of my heart teach me wisdom.\nO purify me, then I shall be clean;\nO wash me, I shall be whiter than snow.[/C1]"
             },
             {
                 name: "PSALM 51",
-                lyrics: "Make me hear rejoicing and gladness,\nthat the bones you have crushed may revive.\nFrom my sins turn away your face\nand blot out all my guilt.\n[F1][C1]A pure heart create for me, O God,\nput a steadfast spirit within me,\nDo not cast me away from your presence,\nnor deprive me of your holy spirit.[/C1][/F1]"
+                lyrics: "Make me hear rejoicing and gladness,\nthat the bones you have crushed may revive.\nFrom my sins turn away your face\nand blot out all my guilt.\n[C1]A pure heart create for me, O God,\nput a steadfast spirit within me,\nDo not cast me away from your presence,\nnor deprive me of your holy spirit.[/C1]"
             },
             {
                 name: "PSALM 51",
-                lyrics: "Give me again the joy of your help;\nwith a spirit of fervor sustain me,\nthat I may teach transgressors your ways\nand sinners may return to you.\n[F1][C1]O rescue me, God, my helper,\nand my tongue shall ring out your goodness.\nO Lord, open my lips\nand my mouth shall declare your praise.[/C1][/F1]"
+                lyrics: "Give me again the joy of your help;\nwith a spirit of fervor sustain me,\nthat I may teach transgressors your ways\nand sinners may return to you.\n[C1]O rescue me, God, my helper,\nand my tongue shall ring out your goodness.\nO Lord, open my lips\nand my mouth shall declare your praise.[/C1]"
             },
             {
                 name: "PSALM 51",
-                lyrics: "For in sacrifice you take no delight,\nburnt offering from me you would refuse,\nmy sacrifice, a contrite spirit.\nA humbled, contrite heart you will not spurn.\n[F1][C1]In your goodness, show favor to Zion:\nrebuild the walls of Jerusalem.\nThen you will be pleased with lawful sacrifice,\nholocausts offered on your altar.[/C1][/F1]"
+                lyrics: "For in sacrifice you take no delight,\nburnt offering from me you would refuse,\nmy sacrifice, a contrite spirit.\nA humbled, contrite heart you will not spurn.\n[C1]In your goodness, show favor to Zion:\nrebuild the walls of Jerusalem.\nThen you will be pleased with lawful sacrifice,\nholocausts offered on your altar.[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -2710,15 +2710,15 @@ const rawSongs = [
             },
             {
                 name: "PSALM 147:12-20",
-                lyrics: "O praise the Lord, Jerusalem!\nZion praise your God!\nHe has strengthened the bars of your gates,\nhe has blessed the children within you.\nHe established peace on your borders,\nhe feeds you with finest wheat.\n[F1][C1]He sends out his word to the ear\nhand swiftly runs his command.\nHe showers down snow white as wool,\nhe scatters hoar-frost like ashes.[/C1][/F1]"
+                lyrics: "O praise the Lord, Jerusalem!\nZion praise your God!\nHe has strengthened the bars of your gates,\nhe has blessed the children within you.\nHe established peace on your borders,\nhe feeds you with finest wheat.\n[C1]He sends out his word to the ear\nhand swiftly runs his command.\nHe showers down snow white as wool,\nhe scatters hoar-frost like ashes.[/C1]"
             },
             {
                 name: "PSALM 147:12-20",
-                lyrics: "He hurls down hailstones like crumbs.\nThe waters are frozen at his touch;\nhe sends forth his word and it melts them:\nat the breath of his mouth the waters flow.\n[F1][C1]He makes his word known to Jacob,\nto Israel his laws and decrees.\nHe has not dealt thus with other nations;\nhe has not taught then his decrees.[/C1][/F1]"
+                lyrics: "He hurls down hailstones like crumbs.\nThe waters are frozen at his touch;\nhe sends forth his word and it melts them:\nat the breath of his mouth the waters flow.\n[C1]He makes his word known to Jacob,\nto Israel his laws and decrees.\nHe has not dealt thus with other nations;\nhe has not taught then his decrees.[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -2739,11 +2739,11 @@ const rawSongs = [
             },
             {
                 name: "INVOCATION",
-                lyrics: "O God, come to my assistance.\n[F1][C1]O Lord, make haste to help me.[/C1][/F1]"
+                lyrics: "O God, come to my assistance.\n[C1]O Lord, make haste to help me.[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "LEADER",
@@ -2751,19 +2751,19 @@ const rawSongs = [
             },
             {
                 name: "PSALM 92",
-                lyrics: "It is good to give thanks to the Lord,\nto make music to your name, O Most High,\nto proclaim your  love in the morning\nand your truth in the watches of the night,\non the ten-stringed lyre and the lute,\nwith the murmuring sound of the harp.\n[F1][C1]Your deeds, O Lord, have made me glad;\nfor the work of your hands I shout with joy.\nO Lord, how great are your works!\nHow deep are your designs!\nThe foolish man cannot know this\nand the fool cannot understand.[/C1][/F1]"
+                lyrics: "It is good to give thanks to the Lord,\nto make music to your name, O Most High,\nto proclaim your  love in the morning\nand your truth in the watches of the night,\non the ten-stringed lyre and the lute,\nwith the murmuring sound of the harp.\n[C1]Your deeds, O Lord, have made me glad;\nfor the work of your hands I shout with joy.\nO Lord, how great are your works!\nHow deep are your designs!\nThe foolish man cannot know this\nand the fool cannot understand.[/C1]"
             },
             {
                 name: "PSALM 92",
-                lyrics: "+ Though the wicked spring up like grass\nand all who do evil thrive,\nthey are doomed to be eternally destroyed.\n+ But you, Lord, are  eternally on high.\nSee how your enemies perish;\nall doers of evil are scattered.\n[F1][C1]To me you give the wild ox’s strength;\nyou anoint me with the purest oil.\nMy eyes looked in triumph on my foes;\nmy ears heard gladly of their fail.\nThe just will flourish like the palm-tree\nand grow like a Lebanon cedar.[/C1][/F1]"
+                lyrics: "+ Though the wicked spring up like grass\nand all who do evil thrive,\nthey are doomed to be eternally destroyed.\n+ But you, Lord, are  eternally on high.\nSee how your enemies perish;\nall doers of evil are scattered.\n[C1]To me you give the wild ox’s strength;\nyou anoint me with the purest oil.\nMy eyes looked in triumph on my foes;\nmy ears heard gladly of their fail.\nThe just will flourish like the palm-tree\nand grow like a Lebanon cedar.[/C1]"
             },
             {
                 name: "PSALM 92",
                 lyrics: "Planted in the house of the Lord,\nthey will flourish in the courts of our God,\nstill bearing fruit when they are old,\nstill full of sap, still green,\nto proclaim that the lord is just.\nIn him, my rock, there’s no wrong."
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -2775,19 +2775,19 @@ const rawSongs = [
             },
             {
                 name: "PSALM 8",
-                lyrics: "How great is your name, o Lord our God,\nthrough all the Earth!\n[F1][C1]Your majesty is praised above the heavens;\nOn the lips of children and of babes\nYou have found praise to foil your enemies,\nTo silence the foe and the rebel.[/C1][/F1]"
+                lyrics: "How great is your name, o Lord our God,\nthrough all the Earth!\n[C1]Your majesty is praised above the heavens;\nOn the lips of children and of babes\nYou have found praise to foil your enemies,\nTo silence the foe and the rebel.[/C1]"
             },
             {
                 name: "PSALM 8",
-                lyrics: "When I see the heavens, the work of your hands,\nthe moon and the stars which you arranged,\nwhat is man that you should keep him in mind,\nmortal man that you care for him?\n[F1][C1]Yet you have made him little less than a god;\nwith glory and honor you crowned him,\ngave him power over the works of your hand,\nput all things under his feet.\n[/C1][/F1]"
+                lyrics: "When I see the heavens, the work of your hands,\nthe moon and the stars which you arranged,\nwhat is man that you should keep him in mind,\nmortal man that you care for him?\n[C1]Yet you have made him little less than a god;\nwith glory and honor you crowned him,\ngave him power over the works of your hand,\nput all things under his feet.\n[/C1]"
             },
             {
                 name: "PSALM 8",
-                lyrics: "All of them, sheep and cattle,\nyes even the savage beasts,\nbirds of the air and fish\nthat make their way through the waters.\n[F1][C1]How great is your name , O Lord our God,\nThrough all the earth![/C1][/F1]"
+                lyrics: "All of them, sheep and cattle,\nyes even the savage beasts,\nbirds of the air and fish\nthat make their way through the waters.\n[C1]How great is your name , O Lord our God,\nThrough all the earth![/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -2808,11 +2808,11 @@ const rawSongs = [
             },
             {
                 name: "INVOCATION",
-                lyrics: "O God, come to my assistance.\n[F1][C1]O Lord, make haste to help me.[/C1][/F1]"
+                lyrics: "O God, come to my assistance.\n[C1]O Lord, make haste to help me.[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "LEADER",
@@ -2820,27 +2820,27 @@ const rawSongs = [
             },
             {
                 name: "PSALM 51",
-                lyrics: "Have mercy on me, God, in your kindness.\nIn your compassion blot out my offense.\nO wash me more and more from my guilt\nand cleanse me from my sin.\n[F1][C1]My offense truly I know them;\nmy sin is always before me.\nAgainst you, you alone, have I sinned;\nwhat is evil in your sight I have done.[/C1][/F1]"
+                lyrics: "Have mercy on me, God, in your kindness.\nIn your compassion blot out my offense.\nO wash me more and more from my guilt\nand cleanse me from my sin.\n[C1]My offense truly I know them;\nmy sin is always before me.\nAgainst you, you alone, have I sinned;\nwhat is evil in your sight I have done.[/C1]"
             },
             {
                 name: "PSALM 51",
-                lyrics: "That you may be justified when you give sentence\nand be without reproach when you judge.\nO see, in guilt I was born,\na sinner was conceived.\n[F1][C1]Indeed you love the truth in the heart;\nthen in the secret of my heart teach me wisdom.\nO purify me, then I shall be clean\no wash me, I shall be whiter than snow.[/C1][/F1]"
+                lyrics: "That you may be justified when you give sentence\nand be without reproach when you judge.\nO see, in guilt I was born,\na sinner was conceived.\n[C1]Indeed you love the truth in the heart;\nthen in the secret of my heart teach me wisdom.\nO purify me, then I shall be clean\no wash me, I shall be whiter than snow.[/C1]"
             },
             {
                 name: "PSALM 51",
-                lyrics: "Make me hear rejoicing and gladness,\nthat the bones you have crushed may revive.\nFrom my sins turn away your face\nand blot out all my guilt.\n[F1][C1]A pure heart create for me, O God,\nput a steadfast spirit within me.\nDo not cast me away from your presence,\nnor deprive me of your Holy Spirit.[/C1][/F1]"
+                lyrics: "Make me hear rejoicing and gladness,\nthat the bones you have crushed may revive.\nFrom my sins turn away your face\nand blot out all my guilt.\n[C1]A pure heart create for me, O God,\nput a steadfast spirit within me.\nDo not cast me away from your presence,\nnor deprive me of your Holy Spirit.[/C1]"
             },
             {
                 name: "PSALM 51",
-                lyrics: "Give me again the joy of your help;\nwith a spirit of fervor sustain me,\nthat I may teach transgressors your ways\nand sinners may return to you.\n[F1][C1]O rescue me, God, my helper,\nand my tongue shall ring out goodness.\nO Lord, open my lips\nand my mouth shall declare your praise.[/C1][/F1]"
+                lyrics: "Give me again the joy of your help;\nwith a spirit of fervor sustain me,\nthat I may teach transgressors your ways\nand sinners may return to you.\n[C1]O rescue me, God, my helper,\nand my tongue shall ring out goodness.\nO Lord, open my lips\nand my mouth shall declare your praise.[/C1]"
             },
             {
                 name: "PSALM 51",
-                lyrics: "For in sacrifice you take no delight,\nburnt offering from me you would refuse,\nmy sacrifice, a contrite spirit.\nA humbled, contrite heart you will not spurn.\n[F1][C1]In your goodness, show favor to Zion:\nrebuild the walls of Jerusalem.\nThen you will pleased with lawful sacrifice,\nholocausts offered on your altar.[/C1][/F1]"
+                lyrics: "For in sacrifice you take no delight,\nburnt offering from me you would refuse,\nmy sacrifice, a contrite spirit.\nA humbled, contrite heart you will not spurn.\n[C1]In your goodness, show favor to Zion:\nrebuild the walls of Jerusalem.\nThen you will pleased with lawful sacrifice,\nholocausts offered on your altar.[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -2852,15 +2852,15 @@ const rawSongs = [
             },
             {
                 name: "PSALM 100",
-                lyrics: "+ Cry out with joy to the Lord, all the earth.\nServe the Lord with gladness.\nCome before Him, singing for joy.\n[F1][C1]+ Know the he, the Lord, is God.\nHe made us, we belong to him,\nWe are his people, the sheep of his flock.[/C1][/F1]"
+                lyrics: "+ Cry out with joy to the Lord, all the earth.\nServe the Lord with gladness.\nCome before Him, singing for joy.\n[C1]+ Know the he, the Lord, is God.\nHe made us, we belong to him,\nWe are his people, the sheep of his flock.[/C1]"
             },
             {
                 name: "PSALM 100",
-                lyrics: "+ Go within his gates, giving thanks.\nEnter his courts with songs of praise.\nGive thanks to him and bless his name.\n[F1][C1]+ Indeed, how good is the Lord,\nEternal His merciful love.\nHe is faithful from age to age.[/C1][/F1]"
+                lyrics: "+ Go within his gates, giving thanks.\nEnter his courts with songs of praise.\nGive thanks to him and bless his name.\n[C1]+ Indeed, how good is the Lord,\nEternal His merciful love.\nHe is faithful from age to age.[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -2881,11 +2881,11 @@ const rawSongs = [
             },
             {
                 name: "INVOCATION",
-                lyrics: "O God, come to my assistance.\n[F1][C1]O Lord, make haste to help me.[/C1][/F1]"
+                lyrics: "O God, come to my assistance.\n[C1]O Lord, make haste to help me.[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "LEADER",
@@ -2893,15 +2893,15 @@ const rawSongs = [
             },
             {
                 name: "PSALM 119:145-152",
-                lyrics: "I will call with all my heart; Lord, hear me,\nI will keep your commands.\nI will call upon you, save me\nand I will do your will.\n[F1][C1]I rise before dawn and cry for help;\nI hope in your word.\nMy eyes watch through the night\nto ponder your promise.[/C1][/F1]"
+                lyrics: "I will call with all my heart; Lord, hear me,\nI will keep your commands.\nI will call upon you, save me\nand I will do your will.\n[C1]I rise before dawn and cry for help;\nI hope in your word.\nMy eyes watch through the night\nto ponder your promise.[/C1]"
             },
             {
                 name: "PSALM 119:145-152",
-                lyrics: "In Your love hear my voice, O Lord;\ngive me life by your decrees.\nThose who harm me unjustly drew near:\nthey are afar from your law.\n[F1][C1]But, you O Lord, are close:\nyour commands are truth.\nLong have I known that your will\nis established forever.[/C1][/F1]"
+                lyrics: "In Your love hear my voice, O Lord;\ngive me life by your decrees.\nThose who harm me unjustly drew near:\nthey are afar from your law.\n[C1]But, you O Lord, are close:\nyour commands are truth.\nLong have I known that your will\nis established forever.[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -2913,11 +2913,11 @@ const rawSongs = [
             },
             {
                 name: "PSALM 117",
-                lyrics: "O praise the Lord, all you nations,\nacclaim Him, all you peoples!\n[F1][C1]Strong is His love for us;\nhe is faithful for ever.[/C1][F2]"
+                lyrics: "O praise the Lord, all you nations,\nacclaim Him, all you peoples!\n[C1]Strong is His love for us;\nhe is faithful for ever.[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -2938,11 +2938,11 @@ const rawSongs = [
             },
             {
                 name: "INVOCATION",
-                lyrics: "O God, come to my assistance.\n[F1][C1]O Lord, make haste to help me.[/C1][/F1]"
+                lyrics: "O God, come to my assistance.\n[C1]O Lord, make haste to help me.[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "LEADER",
@@ -2950,15 +2950,15 @@ const rawSongs = [
             },
             {
                 name: "PSALM 63:2-9",
-                lyrics: "O God, you are my God, for you I long;\nfor you my soul is thirsting.\nMy body pines for you\nlike a dry, weary land without water.\nSo I gaze on you in the sanctuary\nto see your strength and your glory.\n[F1][C1]For your love is better than life,\nmy lips will speak your praise.\nSo I will bless you all my life,\nin your name I will lift up my hands.\nMy soul shall be filled as with a banquet,\nmy mouth shall praise you with joy.[/C1][/F1]"
+                lyrics: "O God, you are my God, for you I long;\nfor you my soul is thirsting.\nMy body pines for you\nlike a dry, weary land without water.\nSo I gaze on you in the sanctuary\nto see your strength and your glory."
             },
             {
                 name: "PSALM 63:2-9",
-                lyrics: "On my bed I remember you.\nOn you I muse through the night\nfor you have been my help;\nin the shadow of your wings I rejoice.\nMy soul clings to you;\nyour right hand holds me fast."
+                lyrics: "[C1]For your love is better than life,\nmy lips will speak your praise.\nSo I will bless you all my life,\nin your name I will lift up my hands.\nMy soul shall be filled as with a banquet,\nmy mouth shall praise you with joy.[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -2970,15 +2970,15 @@ const rawSongs = [
             },
             {
                 name: "PSALM 149",
-                lyrics: "Sing a new song to the Lord,\nhis praise in the assembly of the faithful.\nLet Israel rejoice in its maker,\nlet Zion’s sons exult in their king.\nLet them praise His name with dancing\nand make music with timbrel and harp.\n[F1][C1]For the Lord takes delight in his people.\nHe crowns the poor with salvation.\nLet the faithful rejoice in their glory,\nshout for joy and take their rest.\nLet the praise of God be in their lips\nand a two-edged sword in their hand[/C1][F2]"
+                lyrics: "Sing a new song to the Lord,\nhis praise in the assembly of the faithful.\nLet Israel rejoice in its maker,\nlet Zion’s sons exult in their king.\nLet them praise His name with dancing\nand make music with timbrel and harp.\n[C1]For the Lord takes delight in his people.\nHe crowns the poor with salvation.\nLet the faithful rejoice in their glory,\nshout for joy and take their rest.\nLet the praise of God be in their lips\nand a two-edged sword in their hand[/C1]"
             },
             {
                 name: "PSALM 149",
                 lyrics: "To deal out vengeance to the nations\nand punishment to all the peoples;\nto bind their kings in chains\nand their nobles in fetters of iron;\nto carry out the sentence pre-ordained;\nthis honor is for all His faithful."
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1][F1](DOXOLOGY)[/F1]\nGlory be to the Father,\nand to the Son,\nand to the Holy Spirit,\nas it was in the beginning,\nis now and ever shall be\nworld without end, Amen[/C1]"
+                name: "[C1]DOXOLOGY[/C1]",
+                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
