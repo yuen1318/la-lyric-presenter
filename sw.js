@@ -1,4 +1,4 @@
-const VERSION = '2.4.0'; // ← bump this on each deploy
+const VERSION = '2.5.0'; // ← bump this on each deploy
 const CACHE_NAME = `la-lyric-v${VERSION}`;
 const ASSETS_TO_CACHE = [
   './',
