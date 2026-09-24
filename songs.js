@@ -645,7 +645,7 @@ const rawSongs = [
             { name: "REFRAIN", lyrics: "Lead on, O Lord,\nUnsheathing our swords.\nWe arm ourselves with Your truth.\nBurn in our hearts, enflame our lives.\nThe battle is now, we’re here to fight." },
             { name: "VERSE", lyrics: "This age it seeks to destroy.\nClouds my mind,\nRobs my heart of Your joy.\nWe pray together for vision.\nOur ears are poised to listen.\nLead us now unto war\nWe accept our mission." },
             { name: "REFRAIN", lyrics: "Lead on, O Lord,\nUnsheathing our swords.\nWe arm ourselves with Your truth.\nBurn in our hearts, enflame our lives.\nThe battle is now, we’re here to fight.\n[F1](2x)[/F1]" },
-            { name: "END", lyrics: "The battle is now, we’re here\nThe battle is now, we’re here\nThe battle is now, we’re here to fight" }
+            { name: "END", lyrics: "The battle is now, we’re here\nThe battle is now, we’re here to fight" }
         ]
     },
     {
