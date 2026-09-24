@@ -649,6 +649,19 @@ const rawSongs = [
         ]
     },
     {
+        title: "The Lord Is My Rock",
+        sections: [
+            { name: "VERSE", lyrics: "The chains of death fastened upon me\nThe snares of sin laid their grip on me\nTo the Lord I shouted\nTo the God of my rescue\nFrom His temple the Most High heard my voice" },
+            { name: "VERSE", lyrics: "The heavens bowed; God came down to earth\nThe thunder rolled as His Word went forth\nFrom on high He sought me\nFrom the waters He drew me\nAnd delivered me from my enemy" },
+            { name: "CHORUS", lyrics: "The Lord is my rock and my fortress\nAnd my deliverer\nMy God and my rock in Whom I take refuge\nMy shield and my salvation\nAnd I shall not be moved\nAnd I shall not be shaken" },
+            { name: "VERSE", lyrics: "Now by Your strength I can crush a troop\nAnd by Your might bend a bow of bronze\nWith the Lord beside me\nDemons scatter before me\nGod my champion trains my hands for war" },
+            { name: "CHORUS", lyrics: "The Lord is my rock and my fortress\nAnd my deliverer\nMy God and my rock in Whom I take refuge\nMy shield and my salvation\nMy rock and my fortress\nAnd my deliverer\nMy God and my rock in Whom I take refuge\nMy shield and my salvation\nAnd I shall not be moved\nAnd I shall not be shaken" },
+            { name: "BRIDGE", lyrics: "The Lord my God lightens my darkness\nThe Lord my God lightens my darkness\nThe Lord my God lightens my darkness\nThe Lord my God lightens my darkness" },
+            { name: "VERSE", lyrics: "The Lord, He lives; blessed be my rock!\nExalted be Christ my victory!\nYou will reign forever\nKing above every nation\nWhile Your people sing praises to Your name!" },
+            { name: "END", lyrics: "The Lord is my rock and my fortress\nAnd my deliverer\nMy God and my rock in Whom I take refuge\nMy shield and my salvation\nMy rock and my fortress\nAnd my deliverer\nMy God and my rock in Whom I take refuge\nMy shield and my salvation\nAnd I shall not be moved\nAnd I shall not be shaken" },
+        ]
+    },
+    {
         title: "Let God Arise",
         sections: [
             { name: "VERSE", lyrics: "Let us rise with our eyes now fixed on Jesus.\nMay we come to know \nhis precious love victorious.\nLet us stand with the shield of faith around us" },
