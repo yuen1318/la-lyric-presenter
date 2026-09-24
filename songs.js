@@ -2756,44 +2756,24 @@ const rawSongs = [
                 lyrics: "[F1](PSALM 51)[/F1]\nCreate a clean heart in me, O God;\nrenew in me a steadfast spirit."
             },
             {
-                name: "CANTOR",
-                lyrics: "Have mercy on me, God, in your kindness.\nIn you compassion blot out my offense.\nO wash me more and more from my guilt\nand cleanse me from my sin."
+                name: "PSALM 51",
+                lyrics: "Have mercy on me, God, in your kindness.\nIn you compassion blot out my offense.\nO wash me more and more from my guilt\nand cleanse me from my sin.\n\n[C1][F1]My offenses truly I know them;\nmy sin is always before me.\nAgainst you, you alone, have I sinned;\nwhat is evil in your sight I have done.\n[/F1][/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]My offenses truly I know them;\nmy sin is always before me.\nAgainst you, you alone, have I sinned;\nwhat is evil in your sight I have done.\n[/C1]"
+                name: "PSALM 51",
+                lyrics: "That you may be justified when you give sentence\nand be without reproach when you judge.\nO see, in guilt I was born,\na sinner was I conceived.\n\n[F1][C1]Indeed you love truth in the heart;\nthen in the secret of my heart teach me wisdom.\nO purify me, then I shall be clean;\nO wash me, I shall be whiter than snow.[/C1][/F1]"
             },
             {
-                name: "CANTOR",
-                lyrics: "That you may be justified when you give sentence\nand be without reproach when you judge.\nO see, in guilt I was born,\na sinner was I conceived."
+                name: "PSALM 51",
+                lyrics: "Make me hear rejoicing and gladness,\nthat the bones you have crushed may revive.\nFrom my sins turn away your face\nand blot out all my guilt.\n\n[F1][C1]A pure heart create for me, O God,\nput a steadfast spirit within me,\nDo not cast me away from your presence,\nnor deprive me of your holy spirit.[/C1][/F1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]Indeed you love truth in the heart;\nthen in the secret of my heart teach me wisdom.\nO purify me, then I shall be clean;\nO wash me, I shall be whiter than snow.[/C1]"
+                name: "PSALM 51",
+                lyrics: "Give me again the joy of your help;\nwith a spirit of fervor sustain me,\nthat I may teach transgressors your ways\nand sinners may return to you.\n\n[F1][C1]O rescue me, God, my helper,\nand my tongue shall ring out your goodness.\nO Lord, open my lips\nand my mouth shall declare your praise.[/C1][/F1]"
             },
             {
-                name: "CANTOR",
-                lyrics: "Make me hear rejoicing and gladness,\nthat the bones you have crushed may revive.\nFrom my sins turn away your face\nand blot out all my guilt."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]A pure heart create for me, O God,\nput a steadfast spirit within me,\nDo not cast me away from your presence,\nnor deprive me of your holy spirit.[/C1]"
-            },
-            {
-                name: "CANTOR",
-                lyrics: "Give me again the joy of your help;\nwith a spirit of fervor sustain me,\nthat I may teach transgressors your ways\nand sinners may return to you."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]O rescue me, God, my helper,\nand my tongue shall ring out your goodness.\nO Lord, open my lips\nand my mouth shall declare your praise.[/C1]"
-            },
-            {
-                name: "CANTOR",
-                lyrics: "For in sacrifice you take no delight,\nburnt offering from me you would refuse,\nmy sacrifice, a contrite spirit.\nA humbled, contrite heart you will not spurn."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]In your goodness, show favor to Zion:\nrebuild the walls of Jerusalem.\nThen you will be pleased with lawful sacrifice,\nholocausts offered on your altar.[/C1]"
+                name: "PSALM 51",
+                lyrics: "For in sacrifice you take no delight,\nburnt offering from me you would refuse,\nmy sacrifice, a contrite spirit.\nA humbled, contrite heart you will not spurn.\n\n[F1][C1]In your goodness, show favor to Zion:\nrebuild the walls of Jerusalem.\nThen you will be pleased with lawful sacrifice,\nholocausts offered on your altar.[/C1][/F1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -2808,20 +2788,12 @@ const rawSongs = [
                 lyrics: "[F1](PSALM 147:12-20)[/F1]\nZion, praise your God,\nwho sent his Word to renew the earth."
             },
             {
-                name: "CANTOR",
-                lyrics: "O praise the Lord, Jerusalem!\nZion praise your God!\nHe has strengthened the bars of your gates,\nhe has blessed the children within you.\nHe established peace on your borders,\nhe feeds you with finest wheat."
+                name: "PSALM 147:12-20",
+                lyrics: "O praise the Lord, Jerusalem!\nZion praise your God!\nHe has strengthened the bars of your gates,\nhe has blessed the children within you.\nHe established peace on your borders,\nhe feeds you with finest wheat.\n\n[F1][C1]He sends out his word to the ear\nhand swiftly runs his command.\nHe showers down snow white as wool,\nhe scatters hoar-frost like ashes.[/C1][/F1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]He sends out his word to the ear\nhand swiftly runs his command.\nHe showers down snow white as wool,\nhe scatters hoar-frost like ashes.[/C1]"
-            },
-            {
-                name: "CANTOR",
-                lyrics: "He hurls down hailstones like crumbs.\nThe waters are frozen at his touch;\nhe sends forth his word and it melts them:\nat the breath of his mouth the waters flow."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]He makes his word known to Jacob,\nto Israel his laws and decrees.\nHe has not dealt thus with other nations;\nhe has not taught then his decrees.[/C1]"
+                name: "PSALM 147:12-20",
+                lyrics: "He hurls down hailstones like crumbs.\nThe waters are frozen at his touch;\nhe sends forth his word and it melts them:\nat the breath of his mouth the waters flow.\n\n[F1][C1]He makes his word known to Jacob,\nto Israel his laws and decrees.\nHe has not dealt thus with other nations;\nhe has not taught then his decrees.[/C1][/F1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -2954,44 +2926,24 @@ const rawSongs = [
                 lyrics: "[F1](PSALM 51)[/F1]\nLord, you will accept the\ntrue sacrifice offered on your altar."
             },
             {
-                name: "CANTOR",
-                lyrics: "Have mercy on me, God, in your kindness.\nIn your compassion blot out my offense.\nO wash me more and more from my guilt\nand cleanse me from my sin."
+                name: "PSALM 51",
+                lyrics: "Have mercy on me, God, in your kindness.\nIn your compassion blot out my offense.\nO wash me more and more from my guilt\nand cleanse me from my sin.\n\n[F1][C1]My offense truly I know them;\nmy sin is always before me.\nAgainst you, you alone, have I sinned;\nwhat is evil in your sight I have done.[/C1][/F1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]My offense truly I know them;\nmy sin is always before me.\nAgainst you, you alone, have I sinned;\nwhat is evil in your sight I have done.[/C1]"
+                name: "PSALM 51",
+                lyrics: "That you may be justified when you give sentence\nand be without reproach when you judge.\nO see, in guilt I was born,\na sinner was conceived.\n\n[F1][C1]Indeed you love the truth in the heart;\nthen in the secret of my heart teach me wisdom.\nO purify me, then I shall be clean\no wash me, I shall be whiter than snow.[/C1][/F1]"
             },
             {
-                name: "CANTOR",
-                lyrics: "That you may be justified when you give sentence\nand be without reproach when you judge.\nO see, in guilt I was born,\na sinner was conceived.\n"
+                name: "PSALM 51",
+                lyrics: "Make me hear rejoicing and gladness,\nthat the bones you have crushed may revive.\nFrom my sins turn away your face\nand blot out all my guilt.\n\n[F1][C1]A pure heart create for me, O God,\nput a steadfast spirit within me.\nDo not cast me away from your presence,\nnor deprive me of your Holy Spirit.[/C1][/F1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]Indeed you love the truth in the heart;\nthen in the secret of my heart teach me wisdom.\nO purify me, then I shall be clean\no wash me, I shall be whiter than snow.[/C1]"
+                name: "PSALM 51",
+                lyrics: "Give me again the joy of your help;\nwith a spirit of fervor sustain me,\nthat I may teach transgressors your ways\nand sinners may return to you.\n\n[F1][C1]O rescue me, God, my helper,\nand my tongue shall ring out goodness.\nO Lord, open my lips\nand my mouth shall declare your praise.[/C1][/F1]"
             },
             {
-                name: "CANTOR",
-                lyrics: "Make me hear rejoicing and gladness,\nthat the bones you have crushed may revive.\nFrom my sins turn away your face\nand blot out all my guilt.\n"
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]A pure heart create for me, O God,\nput a steadfast spirit within me.\nDo not cast me away from your presence,\nnor deprive me of your Holy Spirit.[/C1]"
-            },
-            {
-                name: "CANTOR",
-                lyrics: "Give me again the joy of your help;\nwith a spirit of fervor sustain me,\nthat I may teach transgressors your ways\nand sinners may return to you."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]O rescue me, God, my helper,\nand my tongue shall ring out goodness.\nO Lord, open my lips\nand my mouth shall declare your praise.[/C1]"
-            },
-            {
-                name: "CANTOR",
-                lyrics: "For in sacrifice you take no delight,\nburnt offering from me you would refuse,\nmy sacrifice, a contrite spirit.\nA humbled, contrite heart you will not spurn."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]In your goodness, show favor to Zion:\nrebuild the walls of Jerusalem.\nThen you will pleased with lawful sacrifice,\nholocausts offered on your altar. [/C1]"
+                name: "PSALM 51",
+                lyrics: "For in sacrifice you take no delight,\nburnt offering from me you would refuse,\nmy sacrifice, a contrite spirit.\nA humbled, contrite heart you will not spurn.\n\n[F1][C1]In your goodness, show favor to Zion:\nrebuild the walls of Jerusalem.\nThen you will pleased with lawful sacrifice,\nholocausts offered on your altar.[/C1][/F1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -3006,20 +2958,12 @@ const rawSongs = [
                 lyrics: "[F1](PSALM 100)[/F1]\nLet us go into God’s presence singing for joy."
             },
             {
-                name: "CANTOR",
-                lyrics: "+ Cry out with joy to the Lord, all the earth.\nServe the Lord with gladness.\nCome before Him, singing for joy."
+                name: "PSALM 100",
+                lyrics: "+ Cry out with joy to the Lord, all the earth.\nServe the Lord with gladness.\nCome before Him, singing for joy.\n\n[F1][C1]+ Know the he, the Lord, is God.\nHe made us, we belong to him,\nWe are his people, the sheep of his flock.[/C1][/F1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]+ Know the he, the Lord, is God.\nHe made us, we belong to him,\nWe are his people, the sheep of his flock.[/C1]"
-            },
-            {
-                name: "CANTOR",
-                lyrics: "+ Go within his gates, giving thanks.\nEnter his courts with songs of praise.\nGive thanks to him and bless his name."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]+ Indeed, how good is the Lord,\nEternal His merciful love.\nHe is faithful from age to age.[/C1]"
+                name: "PSALM 100",
+                lyrics: "+ Go within his gates, giving thanks.\nEnter his courts with songs of praise.\nGive thanks to him and bless his name.\n\n[F1][C1]+ Indeed, how good is the Lord,\nEternal His merciful love.\nHe is faithful from age to age.[/C1][/F1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -3059,20 +3003,12 @@ const rawSongs = [
                 lyrics: "[F1](PSALM 119:145-152)[/F1]\nDawn finds me ready\nto welcome you, my God."
             },
             {
-                name: "CANTOR",
-                lyrics: "I will call with all my heart; Lord, hear me,\nI will keep your commands.\nI will call upon you, save me\nand I will do your will."
+                name: "PSALM 119:145-152",
+                lyrics: "I will call with all my heart; Lord, hear me,\nI will keep your commands.\nI will call upon you, save me\nand I will do your will.\n\n[F1][C1]I rise before dawn and cry for help;\nI hope in your word.\nMy eyes watch through the night\nto ponder your promise.[/C1][/F1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]I rise before dawn and cry for help;\nI hope in your word.\nMy eyes watch through the night\nto ponder your promise.[/C1]"
-            },
-            {
-                name: "CANTOR",
-                lyrics: "In Your love hear my voice, O Lord;\ngive me life by your decrees.\nThose who harm me unjustly drew near:\nthey are afar from your law."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]But, you O Lord, are close:\nyour commands are truth.\nLong have I known that your will\nis established forever.[/C1]"
+                name: "PSALM 119:145-152",
+                lyrics: "In Your love hear my voice, O Lord;\ngive me life by your decrees.\nThose who harm me unjustly drew near:\nthey are afar from your law.\n\n[F1][C1]But, you O Lord, are close:\nyour commands are truth.\nLong have I known that your will\nis established forever.[/C1][/F1]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -3087,12 +3023,8 @@ const rawSongs = [
                 lyrics: "[F1](PSALM 117)[/F1]\nBlessed is he who comes\nin the name of the Lord, alleluia."
             },
             {
-                name: "CANTOR",
-                lyrics: "O praise the Lord, all you nations,\nacclaim Him, all you peoples!"
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]Strong is His love for us;\nhe is faithful for ever.[/C1]"
+                name: "PSALM 117",
+                lyrics: "O praise the Lord, all you nations,\nacclaim Him, all you peoples!\n\n[F1][C1]Strong is His love for us;\nhe is faithful for ever.[/C1][F2]"
             },
             {
                 name: "[C1]GROUP[/C1]",
@@ -3132,15 +3064,11 @@ const rawSongs = [
                 lyrics: "[F1](PSALM 63:2-9)[/F1]\nAs morning breaks I look to you,\nO God, to be my strength this day, alleluia"
             },
             {
-                name: "CANTOR",
-                lyrics: "O God, you are my God, for you I long;\nfor you my soul is thirsting.\nMy body pines for you\nlike a dry, weary land without water.\nSo I gaze on you in the sanctuary\nto see your strength and your glory."
+                name: "PSALM 63:2-9",
+                lyrics: "O God, you are my God, for you I long;\nfor you my soul is thirsting.\nMy body pines for you\nlike a dry, weary land without water.\nSo I gaze on you in the sanctuary\nto see your strength and your glory.\n\n[F1][C1]For your love is better than life,\nmy lips will speak your praise.\nSo I will bless you all my life,\nin your name I will lift up my hands.\nMy soul shall be filled as with a banquet,\nmy mouth shall praise you with joy.[/C1][/F1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]For your love is better than life,\nmy lips will speak your praise.\nSo I will bless you all my life,\nin your name I will lift up my hands.\nMy soul shall be filled as with a banquet,\nmy mouth shall praise you with joy.[/C1]"
-            },
-            {
-                name: "CANTOR",
+                name: "PSALM 63:2-9",
                 lyrics: "On my bed I remember you.\nOn you I muse through the night\nfor you have been my help;\nin the shadow of your wings I rejoice.\nMy soul clings to you;\nyour right hand holds me fast."
             },
             {
@@ -3156,15 +3084,11 @@ const rawSongs = [
                 lyrics: "[F1](PSALM 149)[/F1]\nLet the people of Zion\nrejoice in their king, alleluia."
             },
             {
-                name: "CANTOR",
-                lyrics: "Sing a new song to the Lord,\nhis praise in the assembly of the faithful.\nLet Israel rejoice in its maker,\nlet Zion’s sons exult in their king.\nLet them praise His name with dancing\nand make music with timbrel and harp."
+                name: "PSALM 149",
+                lyrics: "Sing a new song to the Lord,\nhis praise in the assembly of the faithful.\nLet Israel rejoice in its maker,\nlet Zion’s sons exult in their king.\nLet them praise His name with dancing\nand make music with timbrel and harp.\n\n[F1][C1]For the Lord takes delight in his people.\nHe crowns the poor with salvation.\nLet the faithful rejoice in their glory,\nshout for joy and take their rest.\nLet the praise of God be in their lips\nand a two-edged sword in their hand[/C1][F2]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]For the Lord takes delight in his people.\nHe crowns the poor with salvation.\nLet the faithful rejoice in their glory,\nshout for joy and take their rest.\nLet the praise of God be in their lips\nand a two-edged sword in their hand[/C1]"
-            },
-            {
-                name: "CANTOR",
+                name: "PSALM 149",
                 lyrics: "To deal out vengeance to the nations\nand punishment to all the peoples;\nto bind their kings in chains\nand their nobles in fetters of iron;\nto carry out the sentence pre-ordained;\nthis honor is for all His faithful."
             },
             {
