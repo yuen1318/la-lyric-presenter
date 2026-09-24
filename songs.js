@@ -2596,7 +2596,7 @@ const rawSongs = [
                 lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
-                name: "LEADER",
+                name: "ANTIPHON",
                 lyrics: "[F1](PSALM 118)[/F1]\nPraise the Lord,\nfor his loving kindness\nwill never fail, alleluia."
             },
             {
@@ -2628,11 +2628,11 @@ const rawSongs = [
                 lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
+                name: "[C1]ANTIPHON[/C1]",
                 lyrics: "[C1][F1](PSALM 118)[/F1]\nPraise the Lord,\nfor his loving kindness\nwill never fail, alleluia.[/C1]"
             },
             {
-                name: "LEADER",
+                name: "ANTIPHON",
                 lyrics: "[F1](PSALM 150)[/F1]\nPraise the Lord\nfor his infinite greatness, alleluia."
             },
             {
@@ -2648,7 +2648,7 @@ const rawSongs = [
                 lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
+                name: "[C1]ANTIPHON[/C1]",
                 lyrics: "[C1][F1](PSALM 150)[/F1]\nPraise the Lord\nfor his infinite greatness, alleluia.[/C1]"
             },
             {
@@ -2673,7 +2673,7 @@ const rawSongs = [
                 lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
-                name: "LEADER",
+                name: "ANTIPHON",
                 lyrics: "[F1](PSALM 51)[/F1]\nCreate a clean heart in me, O God;\nrenew in me a steadfast spirit."
             },
             {
@@ -2701,11 +2701,11 @@ const rawSongs = [
                 lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
+                name: "[C1]ANTIPHON[/C1]",
                 lyrics: "[C1][F1](PSALM 51)[/F1]\nCreate a clean heart in me, O God;\nrenew in me a steadfast spirit.[/C1]"
             },
             {
-                name: "LEADER",
+                name: "ANTIPHON",
                 lyrics: "[F1](PSALM 147:12-20)[/F1]\nZion, praise your God,\nwho sent his Word to renew the earth."
             },
             {
@@ -2721,7 +2721,7 @@ const rawSongs = [
                 lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
+                name: "[C1]ANTIPHON[/C1]",
                 lyrics: "[C1][F1](PSALM 147:12-20)[/F1]\nZion, praise your God,\nwho sent his Word to renew the earth.[/C1]"
             },
             {
@@ -2746,7 +2746,7 @@ const rawSongs = [
                 lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
-                name: "LEADER",
+                name: "ANTIPHON",
                 lyrics: "[F1](PSALM 92)[/F1]\nWe do well to sing to your name,\nMost High, and proclaim your mercy at daybreak"
             },
             {
@@ -2766,11 +2766,11 @@ const rawSongs = [
                 lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
+                name: "[C1]ANTIPHON[/C1]",
                 lyrics: "[C1][F1](PSALM 92)[/F1]\nWe do well to sing to your name,\nMost High, and proclaim your mercy at daybreak.[/C1]"
             },
             {
-                name: "LEADER",
+                name: "ANTIPHON",
                 lyrics: "[F1](PSALM 8)[/F1]\nOn the lips of children and infants\nyou have found perfect praise."
             },
             {
@@ -2790,7 +2790,7 @@ const rawSongs = [
                 lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
+                name: "[C1]ANTIPHON[/C1]",
                 lyrics: "[C1][F1](PSALM 8)[/F1]\nOn the lips of children and\ninfants you have found perfect praise.[/C1]"
             },
             {
@@ -2815,7 +2815,7 @@ const rawSongs = [
                 lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
-                name: "LEADER",
+                name: "ANTIPHON",
                 lyrics: "[F1](PSALM 51)[/F1]\nLord, you will accept the\ntrue sacrifice offered on your altar."
             },
             {
@@ -2843,11 +2843,11 @@ const rawSongs = [
                 lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
+                name: "[C1]ANTIPHON[/C1]",
                 lyrics: "[C1][F1](PSALM 51)[/F1]\nLord, you will accept the\ntrue sacrifice offered on your altar.[/C1]"
             },
             {
-                name: "LEADER",
+                name: "ANTIPHON",
                 lyrics: "[F1](PSALM 100)[/F1]\nLet us go into God’s presence singing for joy."
             },
             {
@@ -2863,7 +2863,7 @@ const rawSongs = [
                 lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
+                name: "[C1]ANTIPHON[/C1]",
                 lyrics: "[C1][F1](PSALM 100)[/F1]\nLet us go into God’s presence singing for joy.[/C1]"
             },
             {
@@ -2888,7 +2888,7 @@ const rawSongs = [
                 lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
-                name: "LEADER",
+                name: "ANTIPHON",
                 lyrics: "[F1](PSALM 119:145-152)[/F1]\nDawn finds me ready\nto welcome you, my God."
             },
             {
@@ -2904,11 +2904,11 @@ const rawSongs = [
                 lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
+                name: "[C1]ANTIPHON[/C1]",
                 lyrics: "[C1][F1](PSALM 119:145-152)[/F1]\nDawn finds me ready\nto welcome you, my God.[/C1]"
             },
             {
-                name: "LEADER",
+                name: "ANTIPHON",
                 lyrics: "[F1](PSALM 117)[/F1]\nBlessed is he who comes\nin the name of the Lord, alleluia."
             },
             {
@@ -2920,7 +2920,7 @@ const rawSongs = [
                 lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
+                name: "[C1]ANTIPHON[/C1]",
                 lyrics: "[C1][F1](PSALM 117)[/F1]\nBlessed is he who comes\nin the name of the Lord, alleluia.[/C1]"
             },
             {
@@ -2945,7 +2945,7 @@ const rawSongs = [
                 lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
-                name: "LEADER",
+                name: "ANTIPHON",
                 lyrics: "[F1](PSALM 63:2-9)[/F1]\nAs morning breaks I look to you,\nO God, to be my strength this day, alleluia"
             },
             {
@@ -2961,11 +2961,11 @@ const rawSongs = [
                 lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
+                name: "[C1]ANTIPHON[/C1]",
                 lyrics: "[C1][F1](PSALM 63:2-9)[/F1]\nAs morning breaks I look to you,\nO God, to be my strength this day, alleluia[/C1]"
             },
             {
-                name: "LEADER",
+                name: "ANTIPHON",
                 lyrics: "[F1](PSALM 149)[/F1]\nLet the people of Zion\nrejoice in their king, alleluia."
             },
             {
@@ -2981,7 +2981,7 @@ const rawSongs = [
                 lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
+                name: "[C1]ANTIPHON[/C1]",
                 lyrics: "[C1][F1](PSALM 149)[/F1]\nLet the people of Zion\nrejoice in their king, alleluia.[/C1]"
             },
             {
