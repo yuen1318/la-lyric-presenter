@@ -2109,6 +2109,60 @@ const rawSongs = [
         ]
     },
     {
+        title: "Fountain Of Life",
+        sections: [
+            {
+                name: "VERSE",
+                lyrics: "Fountain of life, ocean of love\nSource of all truth and beauty\nComing down from above."
+            },
+            {
+                name: "VERSE",
+                lyrics: "Torrent of joy, wellspring of hope\nRiver of living waters\nFlowing out from my soul."
+            },
+            {
+                name: "VERSE",
+                lyrics: "O God, my God, for You I long\nMy soul thirsts for You\nMy flesh faints for You\nForever to You I belong."
+            },
+            {
+                name: "END",
+                lyrics: "O God, my God, there at Your side\nThe fullness of grace\nThe light of Your face\nIn You am I satisfied."
+            }
+        ]
+    },
+    {
+        title: "Where Else Could I Go",
+        sections: [
+            {
+                name: "VERSE",
+                lyrics: "My soul thirsts for you\nMy flesh faints for you\nO Lord for you alone I long\nThe flesh counts for nothing\nThere's life in your Spirit\nO Lord let me come to you"
+            },
+            {
+                name: "PRE-CHORUS",
+                lyrics: "For I know I'll never be whole\nUntil I'm one with you"
+            },
+            {
+                name: "CHORUS",
+                lyrics: "Where else could I go\nWhere else would I go\nWhere else could I go\nWhere else would I go\nOnly you have words of life eternal"
+            },
+            {
+                name: "VERSE",
+                lyrics: "My soul thirsts for you\nMy flesh faints for you\nO Lord for you alone I long\nThe flesh counts for nothing\nThere's life in your Spirit\nO Lord let me come to you"
+            },
+            {
+                name: "PRE-CHORUS",
+                lyrics: "For I know I'll never be whole\nUntil I'm one with you"
+            },
+            {
+                name: "CHORUS",
+                lyrics: "Where else could I go\nWhere else would I go\nWhere else could I go\nWhere else would I go\nOnly you have words of life eternal\n[F1](2x)[/F1]"
+            },
+            {
+                name: "END",
+                lyrics: "Only you have words of life O Lord\nOnly you have words of life O Lord\nOnly you have words of life eternal"
+            }
+        ]
+    },
+    {
         title: "The Voice Of One Calling In The Desert",
         sections: [
             {
