@@ -2487,7 +2487,7 @@ const rawSongs = [
         sections: [
             {
                 name: "INVOCATION",
-                lyrics: "O God, come to my assistance.\n\n[F1][C1]O Lord, make haste to help me.[/C1][/F1]"
+                lyrics: "O God, come to my assistance.\n[F1][C1]O Lord, make haste to help me.[/C1][/F1]"
             },
             
             {
