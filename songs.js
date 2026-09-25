@@ -91,6 +91,18 @@ const rawSongs = [
         ]
     },
     {
+        title: "I Am Blessed",
+        sections: [
+            { name: "VERSE", lyrics: "You called me out of my darkness\nYou loved me and showed me the way\nYou filled me with hope and with yearning\nTo know you and give you all I am" },
+            { name: "CHORUS", lyrics: "I am blessed to be in your service\nI am blessed to call you my friend\nI am blessed to share you with others\nMy Rock, my Refuge and my Lord" },
+            { name: "VERSE", lyrics: "My past, my present and my future\nI place them all in your hands\nFor I trust you, I trust you, my Jesus\nI am yours; use me as you will" },
+            { name: "CHORUS", lyrics: "I am blessed to be in your service\nI am blessed to call you my friend\nI am blessed to share you with others\nMy Rock, my Refuge and my Lord" },
+            { name: "VERSE", lyrics: "I hear your voice on the water\n“Come out, come out into the deep”\nThough I fear, I will follow your calling\nIn your will is where I want to be" },
+            { name: "CHORUS", lyrics: "I am blessed to be in your service\nI am blessed to call you my friend\nI am blessed to share you with others\nMy Rock, my Refuge and my Lord" },
+            { name: "END", lyrics: "I am blessed to be in your service\nI am blessed to call you my friend\nI am blessed to share you with others\nMy Rock, my Refuge and my Lord [F1](3x)[/F1]" },
+        ]
+    },
+    {
         title: "Bethlehem Rejoices",
         sections: [
             { name: "VERSE", lyrics: "Bethlehem rejoices\nHark! The voices clear\nSinging in the starlight\nNearer and more near." },
