@@ -2138,6 +2138,56 @@ const rawSongs = [
         ]
     },
     {
+        title: "The Lord Is Here",
+        sections: [
+            {
+                name: "VERSE",
+                lyrics: "Hallelujah! Hallelujah!\nShout your praises on high\nFor the Lord is here.\nKing of kings and Lord of lords\nHoly, holy is He!"
+            },
+            {
+                name: "VERSE",
+                lyrics: "Put your hand in the air, everybody.\nShout your praises on high.\nThe Lord our God is here with us\nHe’s in our midst."
+            },
+            {
+                name: "VERSE",
+                lyrics: "He is faithful, yes, He is.\nThough we’re not He remains like this.\nNow let me hear everybody\nSing and dance\nFor the Lord is here."
+            },
+        ]
+    },
+    {
+        title: "Let The Righteous Rejoice",
+        sections: [
+            {
+                name: "REFRAIN",
+                lyrics: "Praise the Lord, O my soul,\nAnd forget not all His benefits.\nPraise the Lord, O my soul.\nLet the righteous rejoice and be glad.\n[F1](2x)[/F1]"
+            },
+            {
+                name: "VERSE",
+                lyrics: "Blessed are they who hunger\nFor righteousness,\nSurely they will be filled.\nAnd those who suffer\nFor the sake of righteousness\nTheirs is the Kingdom of heaven."
+            },
+            {
+                name: "REFRAIN",
+                lyrics: "Praise the Lord, O my soul,\nAnd forget not all His benefits.\nPraise the Lord, O my soul.\nLet the righteous rejoice and be glad."
+            },
+            {
+                name: "VERSE",
+                lyrics: "Seek first His kingdom\nAnd His righteousness,\nMake God your portion in life.\nSecure your treasure in heaven alone\nWhere your treasure is\nYour heart will be also."
+            },
+            {
+                name: "REFRAIN",
+                lyrics: "Rejoice and be glad, O my soul.\nI know that my Redeemer lives \nAnd I shall see the face of God."
+            },
+            {
+                name: "REFRAIN",
+                lyrics: "Praise the Lord, O my soul,\nAnd forget not all His benefits.\nPraise the Lord, O my soul.\nLet the righteous rejoice and be glad."
+            },
+            {
+                name: "END",
+                lyrics: "Rejoice and be glad, O my soul.\nI know that my Redeemer lives\nAnd I shall see the face of God. [F1](3x)[/F1]"
+            }
+        ]
+    },
+    {
         title: "Arise My Soul",
         sections: [
             {
