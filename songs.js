@@ -2165,8 +2165,12 @@ const rawSongs = [
                 lyrics: "Hear, O daughter, incline your ear\nLeave behind your people\nAnd your father’s house.\nFor the King desires you.\nBow to Him for He is your Lord!"
             },
             {
+                name: "REFRAIN",
+                lyrics: "Arise, my soul, be glad this day\nThe King of kings has called to you,\n“Follow Me, wherever I lead.\nLeave behind all things that burden you\nAnd let your heart rejoice in Me.\nI have come to lead you home”"
+            },
+            {
                 name: "END",
-                lyrics: "Arise, my soul, be glad this day\nThe King of kings has called to you,\n“Follow Me, wherever I lead.\nLeave behind all things that burden you\nAnd let your heart rejoice in Me.\nI have come to lead you home.\n[F1](2x)[/F1]\nI will come to bring you home.”"
+                lyrics: "Arise, my soul, be glad this day\nThe King of kings has called to you,\n“Follow Me, wherever I lead.\nLeave behind all things that burden you\nAnd let your heart rejoice in Me.\nI will come to bring you home.”"
             }
         ]
     },
