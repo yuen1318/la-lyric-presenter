@@ -2187,7 +2187,7 @@ const rawSongs = [
             },
             {
                 name: "REFRAIN",
-                lyrics: "Have Your way with me, O Lord.\nWork out Your will in my life.\nForm me according to Your ways,\nO Lord, at any cost to me.\nHave Your way with me.[F1](2x)[/F1]"
+                lyrics: "Have Your way with me, O Lord.\nWork out Your will in my life.\nForm me according to Your ways,\nO Lord, at any cost to me.\n[F1](2x)[/F1]\nHave Your way with me [F1](2x)[/F1]"
             }
         ]
     },
