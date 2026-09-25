@@ -716,8 +716,8 @@ const rawSongs = [
         sections: [
             { name: "REFRAIN", lyrics: "Let the saints be joyful in glory,\nLet the high praises of God\nBe in their mouth,\nAnd a two-edged sword\nIn their hand.\n[F1](2x)[/F1]" },
             { name: "VERSE", lyrics: "Enter His gates with thanksgiving,\nEnter His courts with praise.\nBe thankful to Him, bless His name.\nFor the Lord is good\nAnd His mercy is everlasting\nAnd His truth endureth for all time." },
-            { name: "VERSE", lyrics: "Enter His gates with thanksgiving,\nEnter His courts with praise!\nBe thankful to Him, bless His name.\n[C1]Let the saints be joyful in glory,\nLet the high praises of God be in their mouth,\nAnd a two-edged sword in their hand.[/C1]" },
-            { name: "VERSE", lyrics: "For the Lord is good\nAnd His mercy is everlasting\nAnd His truth endureth for all time.\n[C1]Let the saints be joyful in glory\nLet the high praises of God be in their mouth\nAnd a two-edged sword in their hand.\n[/C1]" },
+            { name: "VERSE", lyrics: "[F1](Men)[/F1]\nEnter His gates with thanksgiving,\nEnter His courts with praise!\nBe thankful to Him, bless His name.\n[C1][F1](Women)[/F1]\nLet the saints be joyful in glory,\nLet the high praises of God be in their mouth,\nAnd a two-edged sword in their hand.[/C1]" },
+            { name: "VERSE", lyrics: "[F1](Men)[/F1]\nFor the Lord is good\nAnd His mercy is everlasting\nAnd His truth endureth for all time.\n[C1][F1](Women)[/F1]\nLet the saints be joyful in glory\nLet the high praises of God be in their mouth\nAnd a two-edged sword in their hand.\n[/C1]" },
             
             
             { name: "END", lyrics: "Let the saints be joyful in glory,\nLet the high praises of God\nBe in their mouth,\nAnd a two-edged sword\nIn their hand.\n[F1](2x)[/F1]" },
