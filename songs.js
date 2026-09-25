@@ -2852,7 +2852,7 @@ const rawSongs = [
             },
             {
                 name: "[C1]DOXOLOGY[/C1]",
-                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
+                lyrics: "[C1]Glory be to the Father,\nand to the Son,\nand to the Holy Spirit.\nAs it was in the beginning,\nis now, and ever shall be,\nworld without end. Amen.[/C1]"
             },
             {
                 name: "[C1]ANTIPHON[/C1]",
@@ -2872,7 +2872,7 @@ const rawSongs = [
             },
             {
                 name: "[C1]DOXOLOGY[/C1]",
-                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
+                lyrics: "[C1]Glory be to the Father,\nand to the Son,\nand to the Holy Spirit.\nAs it was in the beginning,\nis now, and ever shall be,\nworld without end. Amen.[/C1]"
             },
             {
                 name: "[C1]ANTIPHON[/C1]",
@@ -2897,7 +2897,7 @@ const rawSongs = [
             },
             {
                 name: "[C1]DOXOLOGY[/C1]",
-                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
+                lyrics: "[C1]Glory be to the Father,\nand to the Son,\nand to the Holy Spirit.\nAs it was in the beginning,\nis now, and ever shall be,\nworld without end. Amen.[/C1]"
             },
             {
                 name: "ANTIPHON",
@@ -2913,7 +2913,7 @@ const rawSongs = [
             },
             {
                 name: "[C1]DOXOLOGY[/C1]",
-                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
+                lyrics: "[C1]Glory be to the Father,\nand to the Son,\nand to the Holy Spirit.\nAs it was in the beginning,\nis now, and ever shall be,\nworld without end. Amen.[/C1]"
             },
             {
                 name: "[C1]ANTIPHON[/C1]",
@@ -2929,7 +2929,7 @@ const rawSongs = [
             },
             {
                 name: "[C1]DOXOLOGY[/C1]",
-                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
+                lyrics: "[C1]Glory be to the Father,\nand to the Son,\nand to the Holy Spirit.\nAs it was in the beginning,\nis now, and ever shall be,\nworld without end. Amen.[/C1]"
             },
             {
                 name: "[C1]ANTIPHON[/C1]",
@@ -2954,7 +2954,7 @@ const rawSongs = [
             },
             {
                 name: "[C1]DOXOLOGY[/C1]",
-                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
+                lyrics: "[C1]Glory be to the Father,\nand to the Son,\nand to the Holy Spirit.\nAs it was in the beginning,\nis now, and ever shall be,\nworld without end. Amen.[/C1]"
             },
             {
                 name: "ANTIPHON",
@@ -2970,7 +2970,7 @@ const rawSongs = [
             },
             {
                 name: "[C1]DOXOLOGY[/C1]",
-                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
+                lyrics: "[C1]Glory be to the Father,\nand to the Son,\nand to the Holy Spirit.\nAs it was in the beginning,\nis now, and ever shall be,\nworld without end. Amen.[/C1]"
             },
             {
                 name: "[C1]ANTIPHON[/C1]",
@@ -2990,7 +2990,7 @@ const rawSongs = [
             },
             {
                 name: "[C1]DOXOLOGY[/C1]",
-                lyrics: "[C1]Praise the Father, the Son and Holy Spirit\nBoth now and forever.\nThe God who is, who was and is to come\nAt the end of the ages.\n[/C1]"
+                lyrics: "[C1]Glory be to the Father,\nand to the Son,\nand to the Holy Spirit.\nAs it was in the beginning,\nis now, and ever shall be,\nworld without end. Amen.[/C1]"
             },
             {
                 name: "[C1]ANTIPHON[/C1]",
