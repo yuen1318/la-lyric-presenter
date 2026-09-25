@@ -2138,6 +2138,60 @@ const rawSongs = [
         ]
     },
     {
+        title: "Arise My Soul",
+        sections: [
+            {
+                name: "REFRAIN",
+                lyrics: "Arise, my soul, be glad this day\nThe King of kings has called to you,\n“Follow Me, wherever I lead.\nLeave behind all things that burden you\nAnd let your heart rejoice in Me.\nI have come to lead you home.”"
+            },
+            {
+                name: "VERSE",
+                lyrics: "I have redeemed you.\nI’ve called you by name \nAnd you are mine.\nYou are precious in my eyes.\nYou are honored and I love you."
+            },
+            {
+                name: "REFRAIN",
+                lyrics: "Arise, my soul, be glad this day\nThe King of kings has called to you,\n“Follow Me, wherever I lead.\nLeave behind all things that burden you\nAnd let your heart rejoice in Me.\nI have come to lead you home.”"
+            },
+            {
+                name: "VERSE",
+                lyrics: "I am He who wipes away your sins.\nI remember them no more.\nI have poured my Spirit out on you.\nNow you say, “I am the Lord’s!”"
+            },
+            {
+                name: "REFRAIN",
+                lyrics: "Arise, my soul, be glad this day\nThe King of kings has called to you,\n“Follow Me, wherever I lead.\nLeave behind all things that burden you\nAnd let your heart rejoice in Me.\nI have come to lead you home.”"
+            },
+            {
+                name: "VERSE",
+                lyrics: "Hear, O daughter, incline your ear\nLeave behind your people\nAnd your father’s house.\nFor the King desires you.\nBow to Him for He is your Lord!"
+            },
+            {
+                name: "END",
+                lyrics: "Arise, my soul, be glad this day\nThe King of kings has called to you,\n“Follow Me, wherever I lead.\nLeave behind all things that burden you\nAnd let your heart rejoice in Me.\nI have come to lead you home.\nI will come to bring you home.”"
+            }
+        ]
+    },
+    {
+        title: "Have Your Way With Me",
+        sections: [
+            {
+                name: "VERSE",
+                lyrics: "I am the handmaid of the Lord\nBe it done to me according to Thy word.\nNot my will but Your will be done.\nTeach me Your ways\nAnd lead me in Your truth."
+            },
+            {
+                name: "REFRAIN",
+                lyrics: "Have Your way with me, O Lord.\nWork out Your will in my life.\nForm me according to Your ways,\nO Lord, at any cost to me."
+            },
+            {
+                name: "VERSE",
+                lyrics: "Not by might or by my own strength\nBut by Your Holy Spirit\nYou formed Your image in me.\nI must decrease and You must increase\nRoot out all things in me\nThat do not glorify You."
+            },
+            {
+                name: "REFRAIN",
+                lyrics: "Have Your way with me, O Lord.\nWork out Your will in my life.\nForm me according to Your ways,\nO Lord, at any cost to me.\nHave Your way with me.[F1](2x)[/F1]"
+            }
+        ]
+    },
+    {
         title: "Sovereign Lord",
         sections: [
             {
