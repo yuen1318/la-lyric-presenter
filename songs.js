@@ -2267,6 +2267,15 @@ const rawSongs = [
         ]
     },
     {
+        title: "You Alone Are Holy",
+        sections: [
+            { name: "VERSE", lyrics: "O Lord God Almighty, O Lord Most Holy\nYou are King of kings and Lord of lords\nThe Father of us all.\nAnd we bow down before You\nEvery creature shall adore You.\nYou are mighty God, the Messiah\nThe Savior of the world." },
+            { name: "REFRAIN", lyrics: "You alone are holy!\nYou alone, O Lord!\nYou alone are worthy, Lamb of God!" },
+            { name: "VERSE", lyrics: "O Lord God Almighty, O Lord Most Holy\nYou are King of kings and Lord of lords\nThe Father of us all.\nAnd we bow down before You\nEvery creature shall adore You.\nYou are mighty God, the Messiah\nThe Savior of the world." },
+            { name: "REFRAIN", lyrics: "We behold Your splendor\nSeated on the throne\nRobed and crowned with glory\nEver more\n\nMighty Lord!  Mighty Lord!" },
+        ]
+    },
+    {
         title: "Fountain Of Life",
         sections: [
             {
