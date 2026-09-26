@@ -2453,8 +2453,12 @@ const rawSongs = [
                 lyrics: "Let us thank him this day especially for\nthe great blessings he has\nbestowed on us in Christ.\nFrom His fullness we have all\nreceived grace upon grace.\nWe who were dead through sin\nhave been brought to life"
             },
             {
-                name: "LEADER-[C1]GROUP[/C1]",
-                lyrics: "together with Christ,\nand raised up with Him,\nand made to sit in\nheavenly places with Him.\nLord our God, you have brought us\ninto the rest of Christ.\n[C1]Now we live with Him\nthrough the Holy Spirit,\nand we look for the day\nwhen we will dwell with Him\nin Your everlasting Kingdom.[/C1]"
+                name: "LEADER",
+                lyrics: "together with Christ,\nand raised up with Him,\nand made to sit in\nheavenly places with Him.\nLord our God, you have brought us\ninto the rest of Christ."
+            },
+            {
+                name: "[C1]GROUP[/C1]",
+                lyrics: "[C1]Now we live with Him\nthrough the Holy Spirit,\nand we look for the day\nwhen we will dwell with Him\nin Your everlasting Kingdom.[/C1]"
             },
             {
                 name: "LEADER-[C1]GROUP[/C1]",
