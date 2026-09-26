@@ -2365,20 +2365,12 @@ const rawSongs = [
         title: "LD - Ordinary Time",
         sections: [
             {
-                name: "ASSISTANT",
-                lyrics: "In the beginning was the Word,\nAnd the Word was with God,\nAnd the Word was God."
+                name: "ASSISTANT-[C1]GROUP[/C1]",
+                lyrics: "In the beginning was the Word,\nAnd the Word was with God,\nAnd the Word was God.\n[C1]All things were made through Him,\nand without Him nothing was made\nthat has been made.[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]All things were made through Him,\nand without Him nothing was made\nthat has been made.[/C1]"
-            },
-            {
-                name: "ASSISTANT",
-                lyrics: "In Him was life,\nAnd the life\nwas the light of men."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]The light shines in the darkness,\nand the darkness\nhas not overcome it.[/C1]"
+                name: "ASSISTANT-[C1]GROUP[/C1]",
+                lyrics: "In Him was life,\nAnd the life\nwas the light of men.\n[C1]The light shines in the darkness,\nand the darkness\nhas not overcome it.[/C1]"
             },
             {
                 name: "ASSISTANT",
@@ -2393,12 +2385,8 @@ const rawSongs = [
                 lyrics: "Father of mercy, continue\nYour loving kindness toward us.\nMake us worthy to walk\nin the way of Your Son,\nloyal to Your teaching,\nand unwavering in love and service."
             },
             {
-                name: "ASSISTANT",
-                lyrics: "Keep far from us all anxiety,\ndarkness and gloom;\nand grant that peace,\nlight and joy ever abide among us."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]For in You is the fountain of life;\nIn Your light do we see light.[/C1]"
+                name: "ASSISTANT-[C1]GROUP[/C1]",
+                lyrics: "Keep far from us all anxiety,\ndarkness and gloom;\nand grant that peace,\nlight and joy ever abide among us.\n[C1]For in You is the fountain of life;\nIn Your light do we see light.[/C1]"
             },
             {
                 name: "ASSISTANT",
@@ -2409,76 +2397,40 @@ const rawSongs = [
                 lyrics: "Blessed are You, Lord our God,\nwho created light on the first day,\nand raised Your Son, the Light of the World,\nto begin the new creation."
             },
             {
-                name: "ASSISTANT",
-                lyrics: "Blessed are You, Lord our God,\nKing of the Universe, who give us joy\nas we kindle the light for the Lord’s Day."
+                name: "ASSISTANT-[C1]GROUP[/C1]",
+                lyrics: "Blessed are You, Lord our God,\nKing of the Universe, who give us joy\nas we kindle the light for the Lord’s Day.\n[C1]Amen[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]Amen[/C1]"
+                name: "LEADER-[C1]GROUP[/C1]",
+                lyrics: "Let us trust in the Lord\nand in His saving help.\n[C1]The Lord is my light\nand my salvation.[/C1]"
             },
             {
-                name: "LEADER",
-                lyrics: "Let us trust in the Lord\nand in His saving help."
+                name: "LEADER-[C1]GROUP[/C1]",
+                lyrics: "Let us receive His life\nand rejoice in His presence.\n[C1]He is the true light\nthat enlightens every man.[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]The Lord is my light\nand my salvation.[/C1]"
+                name: "LEADER-[C1]GROUP[/C1]",
+                lyrics: "Let us keep His commandments\nand walk in His ways.\n[C1]His word is a lamp\nto my feet and a light for my path.[/C1]"
             },
             {
-                name: "LEADER",
-                lyrics: "Let us receive His life\nand rejoice in His presence."
+                name: "LEADER-[C1]GROUP[/C1]",
+                lyrics: "Let us proclaim His goodness\nand show forth His glory.\n[C1]We are the light of the world\nand the salt of the earth.[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]He is the true light\nthat enlightens every man.[/C1]"
+                name: "LEADER-[C1]GROUP[/C1]",
+                lyrics: "Brothers and sisters,\nthis is the Lord’s Day.\n[C1]Let us welcome it in joy and peace.[/C1]"
             },
             {
-                name: "LEADER",
-                lyrics: "Let us keep His commandments\nand walk in His ways."
+                name: "LEADER-[C1]GROUP[/C1]",
+                lyrics: "Today we set aside the concerns of the week\nthat we may honor the Lord\nand celebrate His resurrection.\nToday we cease from our work\nin order to worship God,\nand remember the eternal life\nto which He has called us.\n[C1]The Lord Himself is with us,\nto refresh and strengthen us.[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]His word is a lamp\nto my feet and a light for my path.[/C1]"
+                name: "LEADER-[C1]GROUP[/C1]",
+                lyrics: "Let us welcome God\namong us and give Him glory.\n[C1]Let us love one another in Christ.[/C1]"
             },
             {
-                name: "LEADER",
-                lyrics: "Let us proclaim His goodness\nand show forth His glory."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]We are the light of the world\nand the salt of the earth.[/C1]"
-            },
-            {
-                name: "LEADER",
-                lyrics: "Brothers and sisters,\nthis is the Lord’s Day."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]Let us welcome it in joy and peace.[/C1]"
-            },
-            {
-                name: "LEADER",
-                lyrics: "Today we set aside the concerns of the week\nthat we may honor the Lord\nand celebrate His resurrection.\nToday we cease from our work\nin order to worship God,\nand remember the eternal life\nto which He has called us."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]The Lord Himself is with us,\nto refresh and strengthen us.[/C1]"
-            },
-            {
-                name: "LEADER",
-                lyrics: "Let us welcome God\namong us and give Him glory."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]Let us love one another in Christ.[/C1]"
-            },
-            {
-                name: "LEADER",
-                lyrics: "May the Holy Spirit be with us,\nto deepen our devotion to the Lord,\nand to increase our zeal for the\nway of life He has given us."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]Amen.[/C1]"
+                name: "LEADER-[C1]GROUP[/C1]",
+                lyrics: "May the Holy Spirit be with us,\nto deepen our devotion to the Lord,\nand to increase our zeal for the\nway of life He has given us.\n[C1]Amen.[/C1]"
             },
             {
                 name: "LEADER",
@@ -2501,92 +2453,56 @@ const rawSongs = [
                 lyrics: "Let us thank him this day especially for\nthe great blessings he has\nbestowed on us in Christ.\nFrom His fullness we have all\nreceived grace upon grace.\nWe who were dead through sin\nhave been brought to life"
             },
             {
-                name: "LEADER",
-                lyrics: "together with Christ,\nand raised up with Him,\nand made to sit in\nheavenly places with Him.\nLord our God, you have brought us\ninto the rest of Christ."
+                name: "LEADER-[C1]GROUP[/C1]",
+                lyrics: "together with Christ,\nand raised up with Him,\nand made to sit in\nheavenly places with Him.\nLord our God, you have brought us\ninto the rest of Christ.\n[C1]Now we live with Him\nthrough the Holy Spirit,\nand we look for the day\nwhen we will dwell with Him\nin Your everlasting Kingdom.[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]Now we live with Him\nthrough the Holy Spirit,\nand we look for the day\nwhen we will dwell with Him\nin Your everlasting Kingdom.[/C1]"
-            },
-            {
-                name: "LEADER",
-                lyrics: "Blessed are you, Lord, our God,\nKing of the Universe,\nwho have created the fruit of the vine"
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]Amen.[/C1]"
+                name: "LEADER-[C1]GROUP[/C1]",
+                lyrics: "Blessed are you, Lord, our God,\nKing of the Universe,\nwho have created the fruit of the vine\n[C1]Amen.[/C1]"
             },
             {
                 name: "LEADER",
                 lyrics: "Blessed are you, Lord our God,\nfor the true rest you have\ngiven us in your Son Jesus,\nand for this day which is a\ncommemoration of his redeeming work.\nWe welcome this day with gladness,\nand consecrate it to the"
             },
             {
-                name: "LEADER",
-                lyrics: "celebration of His resurrection\nand of the new creation founded in Him.\nLook graciously upon your\nservants and show us your glory.\nBlessed are you, Lord our God,\nwho favor your people in\nthe days set aside to your honor."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]Amen.\n\n[F1](Pass the wine)[/F1][/C1]"
+                name: "LEADER-[C1]GROUP[/C1]",
+                lyrics: "celebration of His resurrection\nand of the new creation founded in Him.\nLook graciously upon your\nservants and show us your glory.\nBlessed are you, Lord our God,\nwho favor your people in\nthe days set aside to your honor.\n[C1]Amen.\n\n[F1](Pass the wine)[/F1][/C1]"
             },
             {
                 name: "LEADER",
                 lyrics: "[F1](Men - Raise the bread)[/F1]"
             },
             {
-                name: "LEADER",
-                lyrics: "The eyes of all look to you, O Lord,\nand you give them\ntheir food in due season."
+                name: "LEADER-[C1]GROUP[/C1]",
+                lyrics: "The eyes of all look to you, O Lord,\nand you give them\ntheir food in due season.\n[C1]You open Your hand,\nYou satisfy the desire\nof every living thing.[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]You open Your hand,\nYou satisfy the desire\nof every living thing.[/C1]"
+                name: "LEADER-[C1]GROUP[/C1]",
+                lyrics: "Blessed are you,\nLord our God, King of the Universe,\nwho brings forth bread from the earth.\n[C1]Amen.\n\n[F1](Begin the meal)[/F1][/C1]"
             },
             {
-                name: "LEADER",
-                lyrics: "Blessed are you,\nLord our God, King of the Universe,\nwho brings forth bread from the earth."
+                name: "LEADER-[C1]GROUP[/C1]",
+                lyrics: "Let us bless the Lord.\n[C1]Blessed be the name of the Lord\nfrom this time forth and forever.[/C1]"
             },
             {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]Amen.\n\n[F1](Begin the meal)[/F1][/C1]"
-            },
-            {
-                name: "LEADER",
-                lyrics: "Let us bless the Lord."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]Blessed be the name of the Lord\nfrom this time forth and forever.[/C1]"
-            },
-            {
-                name: "LEADER",
-                lyrics: "Let us bless our God,\nof whose bounty we have partaken."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]Blessed be our God,\nof whose bounty we have partaken,\nand through whose goodness we live.[/C1]"
+                name: "LEADER-[C1]GROUP[/C1]",
+                lyrics: "Let us bless our God,\nof whose bounty we have partaken.\n[C1]Blessed be our God,\nof whose bounty we have partaken,\nand through whose goodness we live.[/C1]"
             },
             {
                 name: "LEADER",
                 lyrics: "Blessed are you, Lord our God,\nwho feed the whole world with your goodness,\nwith grace, with steadfast love and mercy.\nThrough your great goodness\nfood has never failed us.\nMay it not fail us for ever and ever,\nfor your great Name’s sake,"
             },
             {
-                name: "LEADER",
-                lyrics: "since you nourish and sustain all beings,\nand do good to all, and provide food for all\nyour creatures whom you have created.\nBlessed are you, Lord our God,\nKing of the Universe, who gives food to all."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]Blessed be His name forever.[/C1]"
+                name: "LEADER-[C1]GROUP[/C1]",
+                lyrics: "since you nourish and sustain all beings,\nand do good to all, and provide food for all\nyour creatures whom you have created.\nBlessed are you, Lord our God,\nKing of the Universe, who gives food to all.\n[C1]Blessed be His name forever.[/C1]"
             },
             {
                 name: "LEADER",
                 lyrics: "Blessed are you, Lord our God,\nfor by your great mercy \nwe have been born anew\nto a living hope through the resurrection\nof Jesus Christ from the dead,\nand to an inheritance"
             },
             {
-                name: "LEADER",
-                lyrics: "that is imperishable,\nundefiled and unfading.\nBlessed are You, Lord our God,\nKing of the Universe,\nfor giving us new life in Your Son."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]Blessed be His name forever.[/C1]"
+                name: "LEADER-[C1]GROUP[/C1]",
+                lyrics: "that is imperishable,\nundefiled and unfading.\nBlessed are You, Lord our God,\nKing of the Universe,\nfor giving us new life in Your Son.\n[C1]Blessed be His name forever.[/C1]"
             },
             {
                 name: "LEADER",
@@ -2597,12 +2513,8 @@ const rawSongs = [
                 lyrics: "on the eve of his sacrifice, and that we in\n[F1](Family/Community)[/F1]\nmay be a sign of that unity\nand a means of its growth.\nMay all your people be renewed\nin the power of your Spirit,"
             },
             {
-                name: "LEADER",
-                lyrics: "so that we might be\nwithout spot or blemish,\nand ready for your Son’s return.\nBlessed are you, Lord our God,\nKing of the Universe,\nRuler and Builder of your people."
-            },
-            {
-                name: "[C1]GROUP[/C1]",
-                lyrics: "[C1]Blessed be His name forever.[/C1]"
+                name: "LEADER-[C1]GROUP[/C1]",
+                lyrics: "so that we might be\nwithout spot or blemish,\nand ready for your Son’s return.\nBlessed are you, Lord our God,\nKing of the Universe,\nRuler and Builder of your people.\n[C1]Blessed be His name forever.[/C1]"
             },
             {
                 name: "LEADER",
