@@ -268,20 +268,32 @@
 
 ---
 
-## 20. Adornment & Misc.
+## 20. Custom Background Image
 
 | # | Rule |
 |---|------|
-| **20.1** | The app theme color is `#0a0a0f` (dark). |
-| **20.2** | Background image is `background.webp`, displayed `cover` / `center center` / `fixed`. |
-| **20.3** | Custom scrollbar: 6px wide, blue thumb (`#4f9eff`), dark track. |
-| **20.4** | Lyric text has dual text-shadow layers for readability: `0 4px 18px rgba(0,0,0,0.7)` + `0 2px 8px rgba(0,0,0,0.5)`. |
-| **20.5** | Section badge uses `letter-spacing: 4px` and `text-transform: uppercase`. |
-| **20.6** | Slide counter font is monospace, `font-weight: 700`, `letter-spacing: 1.5px`. |
-| **20.7** | User-scalable is disabled via `<meta name="viewport" content="user-scalable=no">`. |
-| **20.8** | Raleway font files (`.woff2`) are locally served — no external font CDN dependency. |
-| **20.9** | Font preloading: `Raleway-Regular.woff2` and `Raleway-SemiBold.woff2` are preloaded via `<link rel="preload">`. |
-| **20.10** | The `background.webp` image is preloaded as an `<link rel="preload" as="image">`. |
+| **20.1** | The home-screen instructions provide controls to upload or clear a custom background image. |
+| **20.2** | Uploads accept valid PNG files only: the browser-reported MIME type must be `image/png` and the file must have the PNG signature. |
+| **20.3** | The selected image is stored as a blob in IndexedDB and is restored whenever the app loads on the same browser and device. |
+| **20.4** | A saved custom image replaces the bundled `bg.webp` background until the user clears it or browser/site data is cleared. |
+| **20.5** | Clearing the custom background removes the IndexedDB entry and restores the bundled background. |
+| **20.6** | Storage or validation errors are shown in the home-screen background status message. |
+
+---
+
+## 21. Adornment & Misc.
+
+| # | Rule |
+|---|------|
+| **21.1** | The app theme color is `#0a0a0f` (dark). |
+| **21.2** | The bundled fallback background is `bg.webp`, displayed `cover` / `center center` / `fixed`. |
+| **21.3** | Custom scrollbar: 6px wide, blue thumb (`#4f9eff`), dark track. |
+| **21.4** | Lyric text has dual text-shadow layers for readability: `0 4px 18px rgba(0,0,0,0.7)` + `0 2px 8px rgba(0,0,0,0.5)`. |
+| **21.5** | Section badge uses `letter-spacing: 4px` and `text-transform: uppercase`. |
+| **21.6** | Slide counter font is monospace, `font-weight: 700`, `letter-spacing: 1.5px`. |
+| **21.7** | User-scalable is disabled via `<meta name="viewport" content="user-scalable=no">`. |
+| **21.8** | Raleway font files (`.woff2`) are locally served — no external font CDN dependency. |
+| **21.9** | The `bg.webp` image is preloaded as an `<link rel="preload" as="image">`. |
 
 ---
 
@@ -308,5 +320,6 @@
 | Touch Gestures | 8 |
 | Sidebar Toggle Button | 6 |
 | Section Type System | 4 |
+| Custom Background Image | 6 |
 | Adornment & Misc | 10 |
-| **Total** | **144** |
+| **Total** | **150** |

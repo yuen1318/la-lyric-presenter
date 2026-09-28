@@ -101,7 +101,7 @@
             height: 100vh;
             overflow: hidden;
             color: var(--color-body-on-dark);
-            background-image: url('./bg.webp');
+            background-image: var(--custom-background-image, url('./bg.webp'));
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
@@ -562,6 +562,51 @@
             margin: 0 3px;
         }
 
+        .background-controls {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .background-button {
+            appearance: none;
+            border: 1px solid rgba(255, 255, 255, 0.28);
+            border-radius: 9999px;
+            background: rgba(255, 255, 255, 0.12);
+            color: var(--color-body-on-dark);
+            cursor: pointer;
+            font: var(--type-button);
+            padding: 10px 16px;
+            transition: background-color 160ms ease, transform 120ms ease;
+        }
+
+        .background-button:hover:not(:disabled) {
+            background: rgba(255, 255, 255, 0.22);
+        }
+
+        .background-button:active:not(:disabled) {
+            transform: scale(0.97);
+        }
+
+        .background-button:focus-visible {
+            outline: 2px solid var(--color-primary-on-dark);
+            outline-offset: 2px;
+        }
+
+        .background-button:disabled {
+            cursor: not-allowed;
+            opacity: 0.45;
+        }
+
+        .background-status {
+            min-height: 1.4em;
+            margin-top: 10px;
+            color: rgba(255, 255, 255, 0.72);
+            font: var(--type-caption);
+        }
+
         /* ============================================================
            TRANSITIONS & ANIMATIONS
         ============================================================ */
@@ -950,6 +995,12 @@
             <kbd>alt</kbd> <kbd>Shift</kbd> <kbd>F</kbd> &nbsp;Open search<br>
             Double‑click &nbsp;Toggle fullscreen<br>
             <kbd>Esc</kbd> &nbsp;Exit fullscreen
+            <div class="background-controls">
+                <button class="background-button" id="uploadBackgroundButton" type="button">Upload PNG background</button>
+                <button class="background-button" id="clearBackgroundButton" type="button" disabled>Clear custom background</button>
+                <input id="backgroundFileInput" type="file" accept="image/png,.png" hidden>
+            </div>
+            <div class="background-status" id="backgroundStatus" role="status" aria-live="polite"></div>
         </div>
     </div>
 </div>
@@ -986,8 +1037,144 @@
     const slideCounter = document.getElementById("slideCounter");
     const slideCount = document.getElementById("slideCount");
     const welcomeMessage = document.getElementById("welcomeMessage");
+    const uploadBackgroundButton = document.getElementById("uploadBackgroundButton");
+    const clearBackgroundButton = document.getElementById("clearBackgroundButton");
+    const backgroundFileInput = document.getElementById("backgroundFileInput");
+    const backgroundStatus = document.getElementById("backgroundStatus");
 
     const progressDots = null;
+    const BACKGROUND_DB_NAME = 'lyric-presenter';
+    const BACKGROUND_STORE_NAME = 'settings';
+    const BACKGROUND_KEY = 'custom-background';
+    let backgroundObjectUrl = null;
+
+    function setBackgroundStatus(message) {
+        backgroundStatus.textContent = message;
+    }
+
+    function openBackgroundDatabase() {
+        return new Promise((resolve, reject) => {
+            const request = indexedDB.open(BACKGROUND_DB_NAME, 1);
+            request.onupgradeneeded = () => {
+                if (!request.result.objectStoreNames.contains(BACKGROUND_STORE_NAME)) {
+                    request.result.createObjectStore(BACKGROUND_STORE_NAME);
+                }
+            };
+            request.onsuccess = () => resolve(request.result);
+            request.onerror = () => reject(request.error || new Error('Unable to open background storage.'));
+        });
+    }
+
+    async function readBackground() {
+        const db = await openBackgroundDatabase();
+        try {
+            return await new Promise((resolve, reject) => {
+                const request = db.transaction(BACKGROUND_STORE_NAME, 'readonly')
+                    .objectStore(BACKGROUND_STORE_NAME)
+                    .get(BACKGROUND_KEY);
+                request.onsuccess = () => resolve(request.result);
+                request.onerror = () => reject(request.error || new Error('Unable to read the saved background.'));
+            });
+        } finally {
+            db.close();
+        }
+    }
+
+    async function saveBackground(file) {
+        const db = await openBackgroundDatabase();
+        try {
+            await new Promise((resolve, reject) => {
+                const request = db.transaction(BACKGROUND_STORE_NAME, 'readwrite')
+                    .objectStore(BACKGROUND_STORE_NAME)
+                    .put(file, BACKGROUND_KEY);
+                request.onsuccess = () => resolve();
+                request.onerror = () => reject(request.error || new Error('Unable to save the background.'));
+            });
+        } finally {
+            db.close();
+        }
+    }
+
+    async function deleteBackground() {
+        const db = await openBackgroundDatabase();
+        try {
+            await new Promise((resolve, reject) => {
+                const request = db.transaction(BACKGROUND_STORE_NAME, 'readwrite')
+                    .objectStore(BACKGROUND_STORE_NAME)
+                    .delete(BACKGROUND_KEY);
+                request.onsuccess = () => resolve();
+                request.onerror = () => reject(request.error || new Error('Unable to clear the background.'));
+            });
+        } finally {
+            db.close();
+        }
+    }
+
+    function applyCustomBackground(image) {
+        if (backgroundObjectUrl) URL.revokeObjectURL(backgroundObjectUrl);
+        backgroundObjectUrl = URL.createObjectURL(image);
+        document.body.style.setProperty('--custom-background-image', `url("${backgroundObjectUrl}")`);
+        clearBackgroundButton.disabled = false;
+    }
+
+    function restoreDefaultBackground() {
+        if (backgroundObjectUrl) URL.revokeObjectURL(backgroundObjectUrl);
+        backgroundObjectUrl = null;
+        document.body.style.removeProperty('--custom-background-image');
+        clearBackgroundButton.disabled = true;
+    }
+
+    async function isPng(file) {
+        if (!file || file.type !== 'image/png') return false;
+        const signature = new Uint8Array(await file.slice(0, 8).arrayBuffer());
+        return signature.length === 8 &&
+            signature.every((byte, index) => byte === [137, 80, 78, 71, 13, 10, 26, 10][index]);
+    }
+
+    function initBackgroundControls() {
+        uploadBackgroundButton.addEventListener('click', () => backgroundFileInput.click());
+        backgroundFileInput.addEventListener('change', async () => {
+            const [file] = backgroundFileInput.files;
+            backgroundFileInput.value = '';
+            if (!file) return;
+
+            try {
+                if (!(await isPng(file))) {
+                    setBackgroundStatus('Please select a valid PNG image.');
+                    return;
+                }
+                await saveBackground(file);
+                applyCustomBackground(file);
+                setBackgroundStatus('Custom background saved on this device.');
+            } catch (error) {
+                console.error('Could not save custom background:', error);
+                setBackgroundStatus('Unable to save the background. Please try again.');
+            }
+        });
+        clearBackgroundButton.addEventListener('click', async () => {
+            try {
+                await deleteBackground();
+                restoreDefaultBackground();
+                setBackgroundStatus('Custom background cleared.');
+            } catch (error) {
+                console.error('Could not clear custom background:', error);
+                setBackgroundStatus('Unable to clear the background. Please try again.');
+            }
+        });
+    }
+
+    async function loadSavedBackground() {
+        try {
+            const image = await readBackground();
+            if (image instanceof Blob && image.type === 'image/png') {
+                applyCustomBackground(image);
+                setBackgroundStatus('Using your saved custom background.');
+            }
+        } catch (error) {
+            console.error('Could not load custom background:', error);
+            setBackgroundStatus('Unable to load the saved background.');
+        }
+    }
 
     function escapeHtml(str) {
         if (!str) return "";
@@ -1604,6 +1791,7 @@
     }
 
     function init() {
+        initBackgroundControls();
         initSearch();
         initKeyboard();
         enableFullscreen();
@@ -1616,6 +1804,7 @@
         updateSlideCounter();
         resetSearchWidth();
         if (document.fonts?.ready) document.fonts.ready.then(resetSearchWidth);
+        loadSavedBackground();
     }
 
     init();
