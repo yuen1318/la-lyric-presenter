@@ -943,7 +943,7 @@ const rawSongs = [
             { name: "VERSE", lyrics: "Rise up, your light has come;\nHis glory shines upon you.\nThough darkness reigns on earth,\nHis light has risen on you.\nAnd to it all the nations come;\nTheir kings shall seek its brightness\nLift up your eyes and see; behold His light." },
             { name: "REFRAIN", lyrics: "Praise the Lord, all nations\nAnd extol Him all you peoples.\n[F1](2x)[/F1]" },
             { name: "REFRAIN", lyrics: "For great is His steadfast love toward us,\nAnd the faithfulness of the Lord \nEndures forever. Alleluia." },
-            { name: "VERSE", lyrics: "From the east and from the west\nHe calls His sons and daughters.\nFrom ev’ry land they come\nTo drink life-giving waters.\nThen you shall see, and radiant be;\nYour heart shall thrill with gladness.\nThe wealth of all the nations shall be yours." },
+            { name: "VERSE", lyrics: "From the east and from the west\nHe calls your sons and daughters.\nFrom ev’ry land they come\nTo drink life-giving waters.\nThen you shall see, and radiant be;\nYour heart shall thrill with gladness.\nThe wealth of all the nations shall be yours." },
             { name: "REFRAIN", lyrics: "Praise the Lord, all nations\nAnd extol Him all you peoples.\n[F1](2x)[/F1]" },
             { name: "REFRAIN", lyrics: "For great is His steadfast love toward us,\nAnd the faithfulness of the Lord \nEndures forever. Alleluia." },
             { name: "REFRAIN", lyrics: "Praise the Lord, all nations\nAnd extol Him all you peoples.\n[F1](2x)[/F1]" },
@@ -1883,7 +1883,7 @@ const rawSongs = [
             },
             {
                 name: "END",
-                lyrics: "The Lord the Lord\nA God merciful and gracious\nSlow to anger\nAnd abounding in steadfast love\nAnd faithfulness\n[F1](3x)[/F1]"
+                lyrics: "The Lord the Lord\nA God merciful and gracious\nSlow to anger\nAnd abounding in steadfast love\nAnd faithfulness"
             }
         ]
     },
